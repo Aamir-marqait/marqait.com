@@ -3,6 +3,17 @@
 
 import { useSEO } from "@/utils/seo";
 import { useState } from "react";
+import { z } from "zod";
+
+const contactFormSchema = z.object({
+  fullName: z.string().min(2, "Full name must be at least 2 characters").max(50, "Full name must be less than 50 characters"),
+  email: z.string().email("Please enter a valid email address"),
+  company: z.string().optional(),
+  message: z.string().min(10, "Message must be at least 10 characters").max(1000, "Message must be less than 1000 characters"),
+  consent: z.boolean().refine(val => val === true, "You must give consent to submit the form")
+});
+
+type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -16,6 +27,7 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" });
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleInputChange = (e: any) => {
     const { name, value, type } = e.target;
@@ -23,6 +35,11 @@ export default function ContactPage() {
       ...prev,
       [name]: type === "checkbox" ? e.target.checked : value,
     }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: "" }));
+    }
   };
 
   useSEO({
@@ -33,6 +50,22 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: "", message: "" });
+    setErrors({});
+
+    // Validate form data with Zod
+    const validation = contactFormSchema.safeParse(formData);
+    
+    if (!validation.success) {
+      const fieldErrors: Record<string, string> = {};
+      validation.error.issues.forEach((error) => {
+        if (error.path[0]) {
+          fieldErrors[error.path[0] as string] = error.message;
+        }
+      });
+      setErrors(fieldErrors);
+      setIsSubmitting(false);
+      return;
+    }
 
     const formDataToSend = new FormData();
     formDataToSend.append("access_key", "0a3a70cf-9b31-4dcd-9b68-934df7b505fa");
@@ -303,9 +336,11 @@ export default function ContactPage() {
                         value={formData.fullName}
                         onChange={handleInputChange}
                         placeholder="Enter Full Name"
-                        className="w-full px-3 sm:px-4 bg-transparent border border-white/15 rounded-[6px] text-white placeholder:text-[#9CA3AF] font-inter font-normal focus:border-purple-400 focus:outline-none transition-all duration-200
+                        className={`w-full px-3 sm:px-4 bg-transparent border rounded-[6px] text-white placeholder:text-[#9CA3AF] font-inter font-normal focus:border-purple-400 focus:outline-none transition-all duration-200
                         h-10 sm:h-11 lg:h-12
-                        text-sm sm:text-base lg:text-[16px]"
+                        text-sm sm:text-base lg:text-[16px] ${
+                          errors.fullName ? 'border-purple-500' : 'border-white/15'
+                        }`}
                         style={{
                           backdropFilter: "blur(7px)",
                           fontSize:
@@ -314,6 +349,9 @@ export default function ContactPage() {
                             "24px",
                         }}
                       />
+                      {errors.fullName && (
+                        <p className="text-purple-400 text-xs mt-1">{errors.fullName}</p>
+                      )}
                     </div>
 
                     <div className="space-y-2">
@@ -337,9 +375,11 @@ export default function ContactPage() {
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="Enter Email Address"
-                        className="w-full px-3 sm:px-4 bg-transparent border border-white/15 rounded-[6px] text-white placeholder:text-[#9CA3AF] font-inter font-normal focus:border-purple-400 focus:outline-none transition-all duration-200
+                        className={`w-full px-3 sm:px-4 bg-transparent border rounded-[6px] text-white placeholder:text-[#9CA3AF] font-inter font-normal focus:border-purple-400 focus:outline-none transition-all duration-200
                         h-10 sm:h-11 lg:h-12
-                        text-sm sm:text-base lg:text-[16px]"
+                        text-sm sm:text-base lg:text-[16px] ${
+                          errors.email ? 'border-purple-500' : 'border-white/15'
+                        }`}
                         style={{
                           backdropFilter: "blur(7px)",
                           fontSize:
@@ -348,6 +388,9 @@ export default function ContactPage() {
                             "24px",
                         }}
                       />
+                      {errors.email && (
+                        <p className="text-purple-400 text-xs mt-1">{errors.email}</p>
+                      )}
                     </div>
 
                     <div className="space-y-2">
@@ -440,8 +483,10 @@ export default function ContactPage() {
                         onChange={handleInputChange}
                         placeholder="Enter your Message..."
                         rows={4}
-                        className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-transparent border border-white/15 rounded-[6px] text-white placeholder:text-[#9CA3AF] font-inter font-normal focus:border-purple-400 focus:outline-none transition-all duration-200 resize-none
-                        text-sm sm:text-base lg:text-[16px]"
+                        className={`w-full px-3 sm:px-4 py-2 sm:py-3 bg-transparent border rounded-[6px] text-white placeholder:text-[#9CA3AF] font-inter font-normal focus:border-purple-400 focus:outline-none transition-all duration-200 resize-none
+                        text-sm sm:text-base lg:text-[16px] ${
+                          errors.message ? 'border-purple-500' : 'border-white/15'
+                        }`}
                         style={{
                           backdropFilter: "blur(7px)",
                           fontSize:
@@ -450,6 +495,9 @@ export default function ContactPage() {
                             "24px",
                         }}
                       />
+                      {errors.message && (
+                        <p className="text-purple-400 text-xs mt-1">{errors.message}</p>
+                      )}
                     </div>
 
                     {/* Consent Checkbox */}
@@ -508,6 +556,9 @@ export default function ContactPage() {
                         Marqait to store your submitted information.
                       </label>
                     </div>
+                    {errors.consent && (
+                      <p className="text-purple-400 text-xs mt-1">{errors.consent}</p>
+                    )}
 
                     {/* Status Message */}
                     {submitStatus.message && (
