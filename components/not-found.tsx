@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Search, ArrowLeft } from "lucide-react";
+import { Home, ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function NotFoundSection() {
@@ -74,9 +74,9 @@ export default function NotFoundSection() {
               Page Not Found
             </h2>
             <p className="text-gray-300 text-base sm:text-lg lg:text-xl xl:text-2xl leading-relaxed">
-              The page you're looking for seems to have vanished into the
+              The page you&apos;re looking for seems to have vanished into the
               digital void. Our AI is working to locate it, but in the meantime,
-              let's get you back on track.
+              let&apos;s get you back on track.
             </p>
           </div>
 
@@ -84,8 +84,8 @@ export default function NotFoundSection() {
           <div className="max-w-2xl mx-auto">
             <blockquote className="border-l-4 border-purple-500 pl-4 sm:pl-6 text-left">
               <p className="text-white text-base sm:text-lg lg:text-xl font-medium leading-relaxed italic">
-                "Even the most advanced AI occasionally takes a wrong turn.
-                Let's navigate back together."
+                &ldquo;Even the most advanced AI occasionally takes a wrong turn.
+                Let&apos;s navigate back together.&rdquo;
               </p>
             </blockquote>
           </div>

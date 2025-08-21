@@ -1,4 +1,12 @@
-export default function CopilotFeatureBoxes({ onScrollToContact }) {
+import Image from "next/image";
+
+interface CopilotFeatureBoxesProps {
+  onScrollToContact: () => void;
+}
+
+export default function CopilotFeatureBoxes({
+  onScrollToContact,
+}: CopilotFeatureBoxesProps) {
   return (
     <div className="mt-6 sm:mt-8 lg:mt-12 xl:mt-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-[4.875rem] xl:gap-[5.875rem] justify-items-center lg:justify-items-stretch">
@@ -7,11 +15,12 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
           {/* Image Container */}
           <div className="mb-6 sm:mb-8 lg:mb-10 xl:mb-12">
             <div className="rounded-xl overflow-hidden h-[120px] sm:h-[140px] md:h-[180px] lg:h-[200px] xl:h-[256px]">
-              <img
-                // src="/copilot1.png"
+              <Image
                 src="/3.png"
                 alt="AI Business Strategist"
-                className="w-full h-full object-cover"
+                width={500}
+                height={500}
+                className="object-cover"
               />
             </div>
           </div>
@@ -21,7 +30,7 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
             <div>
               <h3
                 className="text-white font-inter font-semibold leading-tight mb-3 sm:mb-4
-                text-[18px] leading-[24px]
+                text-[18px] 
                 sm:text-[20px] sm:leading-[26px]
                 md:text-[24px] md:leading-[30px]
                 lg:text-[28px] lg:leading-[34px]
@@ -31,7 +40,7 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
               </h3>
               <p
                 className="text-white font-inter font-normal leading-relaxed max-w-[422px]
-                text-[14px] leading-[20px]
+                text-[14px] 
                 sm:text-[15px] sm:leading-[22px]
                 md:text-[16px] md:leading-[24px]
                 lg:text-[17px] lg:leading-[25px]
@@ -50,13 +59,16 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
                   sm:px-5 sm:py-3 sm:text-base
                   lg:px-4 lg:py-4 lg:text-[16px] lg:leading-[30px] lg:tracking-[-0.4px]"
                 style={{
-                  boxShadow: "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
+                  boxShadow:
+                    "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset",
                 }}
               >
                 Try It Now
-                <img
+                <Image
                   src="/icons/arrow.svg"
                   alt="arrow-right"
+                  width={30}
+                  height={30}
                   className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                 />
               </button>
@@ -68,9 +80,11 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
                   lg:px-4 lg:py-4 lg:text-[16px] lg:leading-[30px] lg:tracking-[-0.4px]"
               >
                 Know More
-                <img
+                <Image
                   src="/icons/arrow.svg"
                   alt="arrow-right"
+                  width={30}
+                  height={30}
                   className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                 />
               </button>
@@ -83,11 +97,12 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
           {/* Image Container */}
           <div className="mb-6 sm:mb-8 lg:mb-10 xl:mb-12">
             <div className="rounded-xl overflow-hidden h-[120px] sm:h-[140px] md:h-[180px] lg:h-[200px] xl:h-[256px]">
-              <img
-                // src="/copilot2.png"
+              <Image
                 src="/2.png"
                 alt="Social Media Post Creator"
-                className="w-full h-full object-cover"
+                width={500}
+                height={500}
+                className="object-cover"
               />
             </div>
           </div>
@@ -97,7 +112,7 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
             <div>
               <h3
                 className="text-white font-inter font-semibold leading-tight mb-3 sm:mb-4
-                text-[18px] leading-[24px]
+                text-[18px] 
                 sm:text-[20px] sm:leading-[26px]
                 md:text-[24px] md:leading-[30px]
                 lg:text-[28px] lg:leading-[34px]
@@ -107,7 +122,7 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
               </h3>
               <p
                 className="text-white font-inter font-normal leading-relaxed max-w-[422px]
-                text-[14px] leading-[20px]
+                text-[14px] 
                 sm:text-[15px] sm:leading-[22px]
                 md:text-[16px] md:leading-[24px]
                 lg:text-[17px] lg:leading-[25px]
@@ -127,13 +142,16 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
                   sm:px-5 sm:py-3 sm:text-base
                   lg:px-4 lg:py-4 lg:text-[16px] lg:leading-[30px] lg:tracking-[-0.4px]"
                 style={{
-                  boxShadow: "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
+                  boxShadow:
+                    "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset",
                 }}
               >
                 Try It Now
-                <img
+                <Image
                   src="/icons/arrow.svg"
                   alt="arrow-right"
+                  width={30}
+                  height={30}
                   className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                 />
               </button>
@@ -145,9 +163,11 @@ export default function CopilotFeatureBoxes({ onScrollToContact }) {
                   lg:px-4 lg:py-4 lg:text-[16px] lg:leading-[30px] lg:tracking-[-0.4px]"
               >
                 Know More
-                <img
+                <Image
                   src="/icons/arrow.svg"
                   alt="arrow-right"
+                  width={30}
+                  height={30}
                   className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                 />
               </button>

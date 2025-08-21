@@ -202,10 +202,10 @@ export default function WaitlistModal({
                 </div>
                 <div className="space-y-2 sm:space-y-3">
                   <h3 className="text-white text-2xl sm:text-3xl font-bold">
-                    You're In!
+                    You&apos;re In!
                   </h3>
                   <p className="text-gray-300 text-sm sm:text-base">
-                    Welcome to the future of AI marketing. We'll notify you when
+                    Welcome to the future of AI marketing. We&apos;ll notify you when
                     early access is available.
                   </p>
                 </div>

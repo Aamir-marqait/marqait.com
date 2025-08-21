@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 
-export default function BlogContactForm({ className = "" }) {
+export default function BlogContactForm({ className = "" }: { className?: string }) {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -11,7 +11,7 @@ export default function BlogContactForm({ className = "" }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -19,7 +19,7 @@ export default function BlogContactForm({ className = "" }) {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -74,7 +74,7 @@ export default function BlogContactForm({ className = "" }) {
               Thank You!
             </h3>
             <p className="text-gray-300 text-base sm:text-lg">
-              Your message has been sent successfully. We'll get back to you
+              Your message has been sent successfully. We&apos;ll get back to you
               soon.
             </p>
           </div>

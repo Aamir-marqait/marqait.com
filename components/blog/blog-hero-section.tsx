@@ -123,8 +123,8 @@ export default function BlogHeroSection() {
                     lineHeight: "150%",
                   }}
                 >
-                  "Dive into practical insights, bold ideas, and
-                  behind-the-scenes of AI-powered growth.".
+                  &ldquo;Dive into practical insights, bold ideas, and
+                  behind-the-scenes of AI-powered growth.&rdquo;
                 </p>
               </blockquote>
             </div>

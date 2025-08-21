@@ -1,4 +1,5 @@
 import DotPattern from "../DotPattern";
+import Image from "next/image";
 
 export default function StatisticsSection() {
   const statistics = [
@@ -107,7 +108,7 @@ export default function StatisticsSection() {
                   className="text-white font-inter font-medium leading-[150%] whitespace-pre-line
                   text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px]"
                 >
-                  {stat.label}
+                  {/* {stat.label} */}
                 </p>
               </div>
 
@@ -119,9 +120,11 @@ export default function StatisticsSection() {
                   sm:w-[40px] sm:h-[40px] sm:p-[9px]
                   lg:w-[44px] lg:h-[44px] lg:p-[10px]"
                 >
-                  <img
+                  <Image
                     src="/icons/arrow-top-right.svg"
                     alt="arrow-up"
+                    width={24}
+                    height={24}
                     className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>

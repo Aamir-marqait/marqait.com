@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent, MouseEvent } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 
 import {
@@ -18,7 +20,7 @@ export default function Footer() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleSubscribe = async (e) => {
+  const handleSubscribe = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubscribing(true);
     await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -27,18 +29,28 @@ export default function Footer() {
     setIsSubscribing(false);
   };
 
-  const handleGrowthPodClick = (scrollFunction, buttonName) => (e) => {
-    e.preventDefault();
-    trackCTAClick(buttonName, "Footer");
-    if (pathname === "/growth-pods") {
-      scrollFunction();
-    } else {
-      router.push("/growth-pods");
-      setTimeout(() => scrollFunction(), 100);
-    }
-  };
+  const handleGrowthPodClick =
+    (scrollFunction: () => void, buttonName: string) =>
+    (e: MouseEvent<HTMLButtonElement>) => {
+      e.preventDefault();
+      trackCTAClick(buttonName, "Footer");
+      if (pathname === "/growth-pods") {
+        scrollFunction();
+      } else {
+        router.push("/growth-pods");
+        setTimeout(() => scrollFunction(), 100);
+      }
+    };
 
-  const footerLinks = {
+  const footerLinks: {
+    loremIpsum: Array<{
+      text: string;
+      url: string;
+      onClick: (e: MouseEvent<HTMLButtonElement>) => void;
+    }>;
+    quickLinks: Array<{ text: string; url: string }>;
+    company: Array<{ text: string; url: string }>;
+  } = {
     loremIpsum: [
       {
         text: "What are Growth Pods?",
@@ -93,9 +105,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12">
             <div className="lg:col-span-4 space-y-3 sm:space-y-4 lg:space-y-6">
               <div className="flex items-center space-x-3">
-                <img
+                <Image
                   src="/svg/footerlogo.svg"
                   alt="Marqait AI Logo"
+                  width={48}
+                  height={48}
                   className="h-8 sm:h-10 w-auto"
                 />
               </div>
@@ -260,28 +274,32 @@ export default function Footer() {
             <a
               href="https://www.facebook.com/share/1G2Rsu27c8/"
               onClick={() => trackCTAClick("Facebook", "Footer Social")}
-              className="text-gray-400 hover:text-white transition-colors duration-200 p-1 hover:scale-110 transform transition-transform"
+              className="text-gray-400 hover:text-white duration-200 p-1 hover:scale-110 transform transition-transform"
               aria-label="Facebook"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/icons/facebook.png"
                 alt="Facebook"
+                width={24}
+                height={24}
                 className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
               />
             </a>
             <a
               href="https://www.instagram.com/marqait.ai?igsh=MXNpdTExYzlpcGx3ZQ=="
               onClick={() => trackCTAClick("Instagram", "Footer Social")}
-              className="text-gray-400 hover:text-white transition-colors duration-200 p-1 hover:scale-110 transform transition-transform"
+              className="text-gray-400 hover:text-white  duration-200 p-1 hover:scale-110 transform transition-transform"
               aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/icons/instagram.png"
                 alt="Instagram"
+                width={24}
+                height={24}
                 className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
               />
             </a>
@@ -293,9 +311,11 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/icons/x.png"
                 alt="Twitter"
+                width={24}
+                height={24}
                 className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
               />
             </a>

@@ -64,7 +64,7 @@ export default function BlogSocialShare({ views = 369, url, title }: BlogSocialS
           viewBox="0 0 19 16"
           fill="none"
         >
-          <g clip-path="url(#clip0_621_15057)">
+          <g clipPath="url(#clip0_621_15057)">
             <path
               d="M14.3598 0H17.0757L11.1126 6.78967L18.0794 16H12.6122L8.33181 10.403L3.43144 16H0.715572L7.03291 8.73801L0.361328 0H5.96428L9.83144 5.11292L14.3598 0ZM13.4093 14.4059H14.9148L5.17314 1.53506H3.55542L13.4093 14.4059Z"
               fill="white"

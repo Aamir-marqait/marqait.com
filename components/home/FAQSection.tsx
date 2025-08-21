@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function FAQSection() {
   const [openAccordion, setOpenAccordion] = useState(0);
@@ -32,7 +34,7 @@ export default function FAQSection() {
     },
   ];
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: any) => {
     setOpenAccordion(openAccordion === index ? -1 : index);
   };
 
@@ -102,25 +104,31 @@ export default function FAQSection() {
             {/* AI Figure Image - Hidden on mobile/tablet, visible on desktop */}
             <div className="hidden lg:flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
-                <img
+                <Image
                   src="/pods/modelglow.png"
                   alt=""
+                  width={500}
+                  height={500}
                   className="absolute inset-0 object-cover z-0
                   w-80 h-80 -left-6 -top-8
                   lg:w-96 lg:h-96 lg:-left-8 lg:-top-10
                   xl:w-[500px] xl:h-[500px]"
                 />
-                <img
+                <Image
                   src="/pods/background.svg"
                   alt=""
+                  width={500}
+                  height={500}
                   className="absolute object-cover opacity-40 z-5
                   w-80 h-80 -left-6 -top-8
                   lg:w-96 lg:h-96 lg:-left-8 lg:-top-10
                   xl:w-[500px] xl:h-[500px]"
                 />
-                <img
+                <Image
                   src="/pods/ai.png"
                   alt="AI-Powered Growth Pods"
+                  width={500}
+                  height={500}
                   className="relative z-10
                   w-80 h-80
                   lg:w-96 lg:h-96
@@ -230,23 +238,29 @@ export default function FAQSection() {
         {/* AI Figure Image - Visible only on mobile/tablet, centered */}
         <div className="lg:hidden flex justify-center mt-8 sm:mt-12">
           <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
-            <img
+            <Image
               src="/pods/modelglow.png"
               alt=""
+              width={320}
+              height={320}
               className="absolute inset-0 object-cover z-0
               w-64 h-64 -left-4 -top-6
               sm:w-80 sm:h-80 sm:-left-6 sm:-top-8"
             />
-            <img
+            <Image
               src="/pods/background.svg"
               alt=""
+              width={320}
+              height={320}
               className="absolute object-cover opacity-40 z-5
               w-64 h-64 -left-4 -top-6
               sm:w-80 sm:h-80 sm:-left-6 sm:-top-8"
             />
-            <img
+            <Image
               src="/pods/ai.png"
               alt="AI-Powered Growth Pods"
+              width={320}
+              height={320}
               className="relative z-10
               w-64 h-64
               sm:w-80 sm:h-80"

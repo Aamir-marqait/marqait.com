@@ -1,7 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import CopilotFeatureBoxes from "./copilot-feature-boxes";
+import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
 
-export default function CopilotSection({ onScrollToContact }) {
+export default function CopilotSection({
+  onScrollToContact,
+}: {
+  onScrollToContact: any;
+}) {
   return (
     <section
       id="copilot"
@@ -45,7 +51,7 @@ export default function CopilotSection({ onScrollToContact }) {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Manage all your efforts with a smart 
+              Manage all your efforts with a smart
             </span>
             <br />
             <span className="text-white">marketing automation platform.</span>
@@ -101,13 +107,16 @@ export default function CopilotSection({ onScrollToContact }) {
                       sm:px-5 sm:py-3 sm:text-base
                       lg:px-4 lg:py-4 lg:text-[16px] lg:leading-[30px] lg:tracking-[-0.4px]"
                     style={{
-                      boxShadow: "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
+                      boxShadow:
+                        "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset",
                     }}
                   >
                     Try It Now
-                    <img
+                    <Image
                       src="/icons/arrow.svg"
                       alt="arrow-right"
+                      width={30}
+                      height={30}
                       className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                     />
                   </button>
@@ -122,9 +131,11 @@ export default function CopilotSection({ onScrollToContact }) {
                       lg:px-4 lg:py-4 lg:text-[16px] lg:leading-[30px] lg:tracking-[-0.4px]"
                   >
                     Know More
-                    <img
+                    <Image
                       src="/icons/arrow.svg"
                       alt="arrow-right"
+                      width={30}
+                      height={30}
                       className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                     />
                   </button>
@@ -163,10 +174,10 @@ export default function CopilotSection({ onScrollToContact }) {
                       lg:text-[14px] lg:leading-[150%]"
                     >
                       I run a modern eco-friendly skincare brand called
-                      'PureGlow'. We target women aged 25–40 who care about
-                      sustainability. We want a minimalist visual identity with
-                      earth-tone colors and elegant typography. Please generate
-                      a complete brand book.
+                      &lsquo;PureGlow&rsquo;. We target women aged 25–40 who
+                      care about sustainability. We want a minimalist visual
+                      identity with earth-tone colors and elegant typography.
+                      Please generate a complete brand book.
                     </p>
                   </div>
                 </div>
@@ -193,9 +204,11 @@ export default function CopilotSection({ onScrollToContact }) {
                       OUTPUT
                     </h4>
                   </div>
-                  <img
+                  <Image
                     src="/1.png"
                     alt="output"
+                    width={263}
+                    height={203}
                     className="flex-1 lg:w-[263px]  w-full sm:w-[240px] md:w-[250px] h-[220px] sm:h-[240px] md:h-[260px] lg:h-[203px] object-contain rounded-b-lg"
                   />
                 </div>

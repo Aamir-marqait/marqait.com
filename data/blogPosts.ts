@@ -103,3 +103,14 @@ export const blogPosts: BlogPost[] = [
     description: "Discover how AI can transform your customer experience and drive loyalty through personalized interactions."
   }
 ];
+
+// Utility functions
+export function getPostBySlug(slug: string): BlogPost | undefined {
+  return blogPosts.find(post => post.slug === slug);
+}
+
+export function getRecentPosts(excludeId?: string, limit: number = 4): BlogPost[] {
+  return blogPosts
+    .filter(post => post.id !== excludeId)
+    .slice(0, limit);
+}

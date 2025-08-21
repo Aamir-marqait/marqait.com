@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
+import Image from "next/image";
 
 export default function TeamCarouselSection() {
   const [currentIndex, setCurrentIndex] = useState(2); // Start with middle item active
@@ -54,7 +56,7 @@ export default function TeamCarouselSection() {
     return visible;
   };
 
-  const getImageSize = (position) => {
+  const getImageSize = (position: any) => {
     if (position === 0) {
       // Center image - largest (315.092px)
       return "w-[315.092px] h-[315.092px]";
@@ -67,7 +69,7 @@ export default function TeamCarouselSection() {
     }
   };
 
-  const getImageOpacity = (position) => {
+  const getImageOpacity = (position: any) => {
     if (position === 0) {
       return "opacity-100";
     } else if (Math.abs(position) === 1) {
@@ -77,7 +79,7 @@ export default function TeamCarouselSection() {
     }
   };
 
-  const getBorderStyle = (position) => {
+  const getBorderStyle = (position: any) => {
     if (position === 0) {
       return "border-[0.955px] border-white";
     } else if (Math.abs(position) === 1) {
@@ -87,7 +89,7 @@ export default function TeamCarouselSection() {
     }
   };
 
-  const getImageTransform = (position) => {
+  const getImageTransform = (position: any) => {
     if (position === 0) {
       return "translateX(0px)";
     } else if (position === 1) {
@@ -130,10 +132,11 @@ export default function TeamCarouselSection() {
                     )}`}
                   >
                     <div className="relative w-full h-full">
-                      <img
+                      <Image
                         src={member.image || "/placeholder.svg"}
                         alt={member.name}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
                       />
                       {Math.abs(member.position) === 1 && (
                         <div
@@ -158,8 +161,13 @@ export default function TeamCarouselSection() {
               className="w-[43.489px] cursor-pointer h-[43.489px] p-[9.745px] flex justify-center items-center flex-shrink-0 rounded-[44px] bg-white/15 transition-all duration-200 group"
               aria-label="Previous team member"
             >
-              
-              <img src="/icons/arrow.svg" className="rotate-180" />
+              <Image
+                src="/icons/arrow.svg"
+                width={24}
+                height={24}
+                className="rotate-180"
+                alt="Previous"
+              />
             </button>
 
             <button
@@ -167,7 +175,7 @@ export default function TeamCarouselSection() {
               className="w-[43.489px] h-[43.489px] p-[9.745px] flex justify-center items-center flex-shrink-0 rounded-[44px] bg-white/15 transition-all duration-200 group"
               aria-label="Next team member"
             >
-              <img src="/icons/arrow.svg" />
+              <Image src="/icons/arrow.svg" width={24} height={24} alt="Next" />
             </button>
           </div>
         </div>

@@ -1,7 +1,9 @@
-import { useState, forwardRef } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useState, forwardRef, Ref } from "react";
+import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
 
-const ContactFormSection = forwardRef((_props, ref) => {
+const ContactFormSection = forwardRef<HTMLElement>((_props, ref: Ref<HTMLElement>) => {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -12,7 +14,7 @@ const ContactFormSection = forwardRef((_props, ref) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -20,7 +22,7 @@ const ContactFormSection = forwardRef((_props, ref) => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     trackCTAClick('Book Demo', 'Contact Form Section');
     setIsSubmitting(true);
@@ -72,20 +74,25 @@ const ContactFormSection = forwardRef((_props, ref) => {
     <section ref={ref} className="relative py-16 sm:py-20 lg:py-12 xl:py-20 overflow-hidden">
       {/* Background SVG */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/svg/contactBackground.svg"
           alt=""
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
           style={{ opacity: 0.8 }}
+          priority
         />
       </div>
 
       {/* Ellipse at top center */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4 z-5">
-        <img
+        <Image
           src="/svg/ellipse.svg"
           alt=""
+          width={6000}
+          height={2800}
           className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] xl:w-[6000px] xl:h-[2800px]"
+          priority
         />
       </div>
 
@@ -95,7 +102,7 @@ const ContactFormSection = forwardRef((_props, ref) => {
             <div className="flex-1 max-w-[100px] sm:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-r from-transparent to-purple-400/60"></div>
             <div className="w-2 h-2 bg-white rounded-full"></div>
             <span className="text-[#F2F0F5] font-inter text-xs sm:text-sm font-bold leading-[16.8px] sm:leading-[19.6px] tracking-[0.8px] sm:tracking-[1px] uppercase mx-4 sm:mx-6">
-              LET'S CONNECT
+              LET&apos;S CONNECT
             </span>
             <div className="w-2 h-2 bg-white rounded-full"></div>
             <div className="flex-1 max-w-[100px] sm:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-l from-transparent to-purple-400/60"></div>
@@ -116,7 +123,7 @@ const ContactFormSection = forwardRef((_props, ref) => {
 
           {/* Subtitle */}
           <p className="self-stretch text-center font-inter text-[20px] font-medium leading-[27px] tracking-[-0.5px] max-w-[30rem] mx-auto text-[rgba(255,255,255,0.90)]">
-            Tell us about your business goals, and we'll craft your AI-powered
+            Tell us about your business goals, and we&apos;ll craft your AI-powered
             growth plan within one business day.
           </p>
         </div>

@@ -1,13 +1,19 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { ArrowUp } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
 
-export default function HeroSection({ onScrollToContact }) {
+export default function HeroSection({
+  onScrollToContact,
+}: {
+  onScrollToContact: any;
+}) {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleTextareaKeyPress = (e) => {
+  const handleTextareaKeyPress = (e: any) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleScrollToContact();
@@ -21,16 +27,16 @@ export default function HeroSection({ onScrollToContact }) {
     }
   };
 
-  const trustedCompanies = [
-    { name: "Acme Corp", logo: "/logo/acme.svg" },
-    { name: "Echo Valley", logo: "/logo/ec.svg" },
-    { name: "Quantum", logo: "/logo/quantum.png" },
-    { name: "PULSE", logo: "/logo/pulse.png" },
-    { name: "Outside", logo: "/logo/outside.png" },
-    { name: "APEX", logo: "/logo/apex.png" },
-    { name: "Celestial", logo: "/logo/celestial.png" },
-    { name: "2TWICE", logo: "/logo/twicce.png" },
-  ];
+  // const trustedCompanies = [
+  //   { name: "Acme Corp", logo: "/logo/acme.svg" },
+  //   { name: "Echo Valley", logo: "/logo/ec.svg" },
+  //   { name: "Quantum", logo: "/logo/quantum.png" },
+  //   { name: "PULSE", logo: "/logo/pulse.png" },
+  //   { name: "Outside", logo: "/logo/outside.png" },
+  //   { name: "APEX", logo: "/logo/apex.png" },
+  //   { name: "Celestial", logo: "/logo/celestial.png" },
+  //   { name: "2TWICE", logo: "/logo/twicce.png" },
+  // ];
 
   return (
     <section className="relative min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)] overflow-hidden">
@@ -40,7 +46,7 @@ export default function HeroSection({ onScrollToContact }) {
           <div className="space-y-1 sm:space-y-2">
             <h1
               className="font-inter text-white font-medium text-center leading-tight tracking-tight
-              text-[32px] leading-[38px] tracking-[-1.6px]
+              text-[32px] 
               xs:text-[40px] xs:leading-[48px] xs:tracking-[-2px]
               sm:text-[50px] sm:leading-[60px] sm:tracking-[-2.5px]
               md:text-[60px] md:leading-[72px] md:tracking-[-3px]
@@ -51,7 +57,7 @@ export default function HeroSection({ onScrollToContact }) {
             </h1>
             <h1
               className="font-inter font-medium text-center leading-tight tracking-tight
-                text-[32px] leading-[38px] tracking-[-1.6px]
+                text-[32px] 
                 xs:text-[40px] xs:leading-[48px] xs:tracking-[-2px]
                 sm:text-[50px] sm:leading-[60px] sm:tracking-[-2.5px]
                 md:text-[60px] md:leading-[72px] md:tracking-[-3px]
@@ -139,13 +145,16 @@ export default function HeroSection({ onScrollToContact }) {
                 md:px-6 md:py-4
                 lg:px-4 lg:py-4 lg:text-[19.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
               style={{
-                boxShadow: "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
+                boxShadow:
+                  "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset",
               }}
             >
               Join The Waitlist
-              <img
+              <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"
+                width={30}
+                height={30}
                 className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
               />
             </button>
@@ -160,9 +169,11 @@ export default function HeroSection({ onScrollToContact }) {
                 lg:px-4 lg:py-4 lg:text-[19.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
             >
               Join Our Growth Pods
-              <img
+              <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"
+                width={30}
+                height={30}
                 className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
               />
             </Link>
@@ -225,9 +236,11 @@ export default function HeroSection({ onScrollToContact }) {
               }}
             ></div>
 
-            <img
+            <Image
               src="/svg/circle.svg"
               alt="Hero background"
+              width={800}
+              height={800}
               className="absolute"
               style={{
                 width: "min(800px, 70vw)",
@@ -237,6 +250,7 @@ export default function HeroSection({ onScrollToContact }) {
                 zIndex: 0,
                 opacity: 1,
               }}
+              priority
             />
 
             <div className="relative z-10 w-full max-w-[900px]">
