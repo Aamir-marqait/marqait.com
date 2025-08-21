@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HowGrowthPodsWork() {
   return (
     <div id="how-growth-pods-work" className="relative overflow-hidden">
@@ -43,9 +45,11 @@ export default function HowGrowthPodsWork() {
 
           {/* Pods Working Image */}
           <div className="w-full flex justify-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
-            <img
+            <Image
               src="/pods/podsworking.svg"
               alt="How Growth Pods Work"
+              width={800}
+              height={600}
               className="w-full object-contain
               max-w-xs
               sm:max-w-sm

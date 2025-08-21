@@ -1,6 +1,7 @@
-'use client';
+"use client";
 
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 function HeroSection() {
   const router = useRouter();
@@ -19,9 +20,10 @@ function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-16 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center min-h-[80vh]">
           <div className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 order-2 lg:order-1 relative">
-            <img
+            <Image
               src="/pods/textglow.png"
               alt=""
+              fill
               className="absolute inset-0 w-full h-full object-cover z-0 -mt-3 sm:-mt-4 md:-mt-6"
             />
 
@@ -167,14 +169,17 @@ function HeroSection() {
               xl:max-w-xl
               2xl:max-w-2xl"
             >
-              <img
+              <Image
                 src="/pods/modelglow.png"
                 alt=""
+                fill
                 className="absolute inset-0 w-full h-full object-cover z-0"
               />
-              <img
+              <Image
                 src="/pods/ai.png"
                 alt="AI-Powered Growth Pods"
+                width={800}
+                height={600}
                 className="relative w-full h-auto z-10
                 -mt-8
                 sm:-mt-12

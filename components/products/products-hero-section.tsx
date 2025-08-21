@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProductsHeroSection() {
   // const statistics = [
@@ -70,18 +71,15 @@ export default function ProductsHeroSection() {
                 px-4 py-3 text-sm
                 sm:px-5 sm:py-3 sm:text-base
                 md:px-6 md:py-4
-                lg:px-4 lg:py-4 lg:text-[19.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
-                style={{
-                  boxShadow:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
-                      : "",
-                }}
+                lg:px-4 lg:py-4 lg:text-[19.8px] lg:leading-[30px] lg:tracking-[-0.4px]
+                lg:[box-shadow:0px_12px_16px_0px_rgba(111,17,242,0.25),0px_0px_6px_3px_rgba(255,255,255,0.25)_inset]"
               >
                 Get Started
-                <img
+                <Image
                   src="/icons/arrow.svg"
                   alt="arrow-right"
+                  width={32}
+                  height={32}
                   className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                 />
               </Link>
@@ -95,9 +93,11 @@ export default function ProductsHeroSection() {
                 lg:px-4 lg:py-4 lg:text-[19.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
               >
                 Learn More
-                <img
+                <Image
                   src="/icons/arrow.svg"
                   alt="arrow-right"
+                  width={32}
+                  height={32}
                   className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
                 />
               </Link>

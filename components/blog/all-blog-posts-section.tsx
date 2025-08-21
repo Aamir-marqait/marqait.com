@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "../../data/blogPosts";
 
 export default function AllBlogPostsSection() {
@@ -39,9 +40,11 @@ export default function AllBlogPostsSection() {
                     className="overflow-hidden"
                     style={{ height: "240px", alignSelf: "stretch" }}
                   >
-                    <img
+                    <Image
                       src={post.image}
                       alt={post.title}
+                      width={400}
+                      height={240}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -91,9 +94,9 @@ export default function AllBlogPostsSection() {
                         <path
                           d="M7 17L17 7M17 7H7M17 7V17"
                           stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </div>
@@ -119,9 +122,11 @@ export default function AllBlogPostsSection() {
                     </p>
 
                     <div className="flex items-center gap-3">
-                      <img
+                      <Image
                         src={post.author.avatar}
                         alt={post.author.name}
+                        width={40}
+                        height={40}
                         className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover"
                       />
                       <div className="flex gap-5 items-center">

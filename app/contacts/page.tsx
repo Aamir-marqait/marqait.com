@@ -13,7 +13,6 @@ const contactFormSchema = z.object({
   consent: z.boolean().refine(val => val === true, "You must give consent to submit the form")
 });
 
-type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

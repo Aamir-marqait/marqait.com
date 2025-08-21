@@ -4,11 +4,16 @@ export interface BlogPost {
   slug: string;
   excerpt: string;
   content: string;
-  author: string;
+  author: {
+    name: string;
+    avatar: string;
+  };
   date: string;
   readTime: string;
   image: string;
   tags: string[];
+  category: string;
+  description: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -18,11 +23,16 @@ export const blogPosts: BlogPost[] = [
     slug: "getting-started-ai-growth",
     excerpt: "Learn how to leverage artificial intelligence to accelerate your business growth and optimize operations.",
     content: "Full blog post content here...",
-    author: "Marqait Team",
+    author: {
+      name: "Marqait Team",
+      avatar: "/user.jpg"
+    },
     date: "2024-01-15",
     readTime: "5 min read",
-    image: "/blog/ai-growth.jpg",
-    tags: ["AI", "Growth", "Business"]
+    image: "/blog/blog1.jpg",
+    tags: ["AI", "Growth", "Business"],
+    category: "AI & Technology",
+    description: "Learn how to leverage artificial intelligence to accelerate your business growth and optimize operations with practical strategies and real-world examples."
   },
   {
     id: "2",
@@ -30,11 +40,16 @@ export const blogPosts: BlogPost[] = [
     slug: "future-business-automation",
     excerpt: "Explore the latest trends in business automation and how they're reshaping industries.",
     content: "Full blog post content here...",
-    author: "Marqait Team",
+    author: {
+      name: "Marqait Team",
+      avatar: "/user.jpg"
+    },
     date: "2024-01-10",
     readTime: "7 min read",
-    image: "/blog/automation.jpg",
-    tags: ["Automation", "Technology", "Future"]
+    image: "/blog/blog2.png",
+    tags: ["Automation", "Technology", "Future"],
+    category: "Automation",
+    description: "Explore the latest trends in business automation and how they're reshaping industries with cutting-edge technology solutions."
   },
   {
     id: "3",
@@ -42,11 +57,16 @@ export const blogPosts: BlogPost[] = [
     slug: "scalable-growth-strategies",
     excerpt: "Discover proven strategies for building scalable growth systems that adapt to your business needs.",
     content: "Full blog post content here...",
-    author: "Marqait Team", 
+    author: {
+      name: "Marqait Team",
+      avatar: "/user.jpg"
+    }, 
     date: "2024-01-05",
     readTime: "6 min read",
-    image: "/blog/growth-strategies.jpg",
-    tags: ["Strategy", "Growth", "Scaling"]
+    image: "/blog/blog3.jpg",
+    tags: ["Strategy", "Growth", "Scaling"],
+    category: "Growth Strategy",
+    description: "Discover proven strategies for building scalable growth systems that adapt to your business needs and drive sustainable success."
   },
   {
     id: "4",
@@ -54,11 +74,16 @@ export const blogPosts: BlogPost[] = [
     slug: "data-driven-decisions",
     excerpt: "Learn how to make better business decisions using data analytics and AI insights.",
     content: "Full blog post content here...",
-    author: "Marqait Team",
+    author: {
+      name: "Marqait Team",
+      avatar: "/user.jpg"
+    },
     date: "2023-12-28",
     readTime: "8 min read", 
-    image: "/blog/data-decisions.jpg",
-    tags: ["Data", "Analytics", "Decisions"]
+    image: "/blog/blog4.webp",
+    tags: ["Data", "Analytics", "Decisions"],
+    category: "Data & Analytics",
+    description: "Learn how to make better business decisions using data analytics and AI insights to drive measurable results."
   },
   {
     id: "5",
@@ -66,10 +91,15 @@ export const blogPosts: BlogPost[] = [
     slug: "ai-customer-experience",
     excerpt: "Discover how AI can transform your customer experience and drive loyalty.",
     content: "Full blog post content here...",
-    author: "Marqait Team",
+    author: {
+      name: "Marqait Team",
+      avatar: "/user.jpg"
+    },
     date: "2023-12-20",
     readTime: "5 min read",
-    image: "/blog/customer-ai.jpg", 
-    tags: ["AI", "Customer Experience", "CX"]
+    image: "/blog/blog5.jpeg", 
+    tags: ["AI", "Customer Experience", "CX"],
+    category: "Customer Experience",
+    description: "Discover how AI can transform your customer experience and drive loyalty through personalized interactions."
   }
 ];

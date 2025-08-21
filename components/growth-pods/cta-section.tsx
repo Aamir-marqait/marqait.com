@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
 
 export default function CTASection() {
@@ -15,9 +16,11 @@ export default function CTASection() {
       <div className="absolute inset-0 bg-black/90 z-5"></div>
 
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4 z-5">
-        <img
+        <Image
           src="/svg/ellipse.svg"
           alt=""
+          width={1400}
+          height={800}
           className="opacity-80
             w-[600px] h-[400px]
             sm:w-[800px] sm:h-[500px]
@@ -87,7 +90,7 @@ export default function CTASection() {
         <div className="text-center space-y-6 sm:space-y-8 lg:space-y-8">
           <div>
             <h2
-              className="text-center font-inter font-bold bg-gradient-to-r from-white to-[#B372CF] bg-clip-text text-transparent leading-tight tracking-tight
+              className="text-center font-inter font-bold bg-gradient-to-r from-white to-[#B372CF] bg-clip-text text-transparent
               text-2xl leading-[32px] tracking-[-0.3px]
               xs:text-3xl xs:leading-[40px] xs:tracking-[-0.35px]
               sm:text-4xl sm:leading-[48px] sm:tracking-[-0.4px]
@@ -116,7 +119,7 @@ export default function CTASection() {
           <div>
             <p
               className="text-[rgba(255,255,255,0.80)] text-center font-inter font-normal leading-[150%] mx-auto px-2 sm:px-4 lg:px-0
-              text-sm leading-[20px]
+              text-sm 
               sm:text-base sm:leading-[24px]
               md:text-lg md:leading-[27px]
               lg:text-xl lg:leading-[30px]
@@ -133,9 +136,9 @@ export default function CTASection() {
                     : "auto",
               }}
             >
-              Whether you're launching or scaling, we’ll help you build with AI
-              from day one — faster execution, leaner ops, better results. Let’s
-              design a Growth Pod around your vision.
+              Whether you&apos;re launching or scaling, we&apos;ll help you
+              build with AI from day one — faster execution, leaner ops, better
+              results. Let&apos;s design a Growth Pod around your vision.
             </p>
           </div>
 
@@ -143,7 +146,9 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 justify-center items-center pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-16">
             <Link
               href="/contacts"
-              onClick={() => trackCTAClick('Join Existing Pod', 'Growth Pods CTA')}
+              onClick={() =>
+                trackCTAClick("Join Existing Pod", "Growth Pods CTA")
+              }
               className="cursor-pointer flex items-center bg-[rgba(140,69,255,0.40)] hover:bg-[rgba(140,69,255,0.50)] border border-[rgba(255,255,255,0.25)] text-[#F2F0F5] font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px]
                 px-4 py-3 text-sm
                 sm:px-5 sm:py-3 sm:text-base
@@ -169,15 +174,19 @@ export default function CTASection() {
               }}
             >
               Join an Existing Pod
-              <img
+              <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"
+                width={32}
+                height={32}
                 className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
               />
             </Link>
             <Link
               href="/contacts"
-              onClick={() => trackCTAClick('Build Custom Pod', 'Growth Pods CTA')}
+              onClick={() =>
+                trackCTAClick("Build Custom Pod", "Growth Pods CTA")
+              }
               className="cursor-pointer flex items-center border border-[rgba(255,255,255,0.25)] hover:border-[rgba(255,255,255,0.35)] text-[#F2F0F5] font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px]
                 px-4 py-3 text-sm
                 sm:px-5 sm:py-3 sm:text-base
@@ -199,9 +208,11 @@ export default function CTASection() {
               }}
             >
               Build a Custom Pod
-              <img
+              <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"
+                width={32}
+                height={32}
                 className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-6 sm:h-7 lg:h-8"
               />
             </Link>

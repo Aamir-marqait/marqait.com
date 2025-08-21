@@ -135,7 +135,7 @@ export default function WhoItsForSection() {
                     : undefined,
               }}
             >
-              Who It's For?
+              Who It&apos;s For?
             </h2>
           </div>
           <p
@@ -177,7 +177,7 @@ export default function WhoItsForSection() {
               <div
                 className="absolute inline-flex justify-center items-center rounded-[60px] sm:rounded-[70px] lg:rounded-[90.212px] border border-white/37 transition-all duration-300
                 -top-4 -left-6 p-6 sm:p-8
-                sm:-top-6 sm:-left-8 sm:p-10
+                sm:-top-6 sm:-left-8 
                 lg:-top-8 lg:-left-10 lg:p-12"
                 style={{
                   background:

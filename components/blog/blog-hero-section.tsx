@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function BlogHeroSection() {
   return (
     <section className="relative min-h-screen bg-[#020103] overflow-hidden">
@@ -38,9 +40,11 @@ export default function BlogHeroSection() {
             <div className="space-y-2 sm:space-y-5 lg:-mt-24 relative">
               {/* BLOG background image */}
               <div className="absolute -top-14 left-4 w-72 h-32 opacity-90 z-0">
-                <img
+                <Image
                   src="/blog/BLOG.png"
                   alt="Blog background"
+                  width={288}
+                  height={128}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -61,9 +65,11 @@ export default function BlogHeroSection() {
 
               {/* HUB background image */}
               <div className="absolute top-20 left-0 sm:left-4 lg:left-[22rem] w-52 h-32 opacity-90 z-0">
-                <img
+                <Image
                   src="/blog/HUB.png"
                   alt="Hub background"
+                  width={208}
+                  height={128}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -141,23 +147,27 @@ export default function BlogHeroSection() {
               {/* Robot Image Placeholder */}
               <div className="relative w-64 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[28rem] xl:w-[28rem] xl:h-[32rem]">
                 {/* Robot Background */}
-                <img
+                <Image
                   src="/blog/background.svg"
                   alt="Robot Background"
+                  fill
                   className="absolute inset-0 w-full h-full object-cover z-10 opacity-30 -mt-14"
                 />
 
                 {/* Glow Effect */}
-                <img
+                <Image
                   src="/blog/glow.png"
                   alt="Glow Effect"
+                  fill
                   className="absolute w-full h-full object-contain opacity-100 z-20 -mt-14"
                 />
 
                 {/* Robot Image */}
-                <img
+                <Image
                   src="/blog/robot.png"
                   alt="AI Robot reading newspaper"
+                  width={800}
+                  height={600}
                   className="absolute inset-0 w-full object-contain z-30"
                   style={{ top: "-9rem", height: "140%" }}
                 />

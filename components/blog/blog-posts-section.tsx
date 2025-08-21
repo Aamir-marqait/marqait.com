@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { blogPosts } from "../../data/blogPosts";
 
 export default function BlogPostsSection() {
@@ -34,9 +35,11 @@ export default function BlogPostsSection() {
               <Link href={`/blog/${featuredPost.slug}`} className="block">
                 <div className="overflow-hidden transition-all duration-300 flex flex-col">
                   <div className="aspect-[3/1] overflow-hidden">
-                    <img
+                    <Image
                       src={featuredPost.image}
                       alt={featuredPost.title}
+                      width={800}
+                      height={267}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -89,9 +92,9 @@ export default function BlogPostsSection() {
                           <path
                             d="M7 17L17 7M17 7H7M17 7V17"
                             stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           />
                         </svg>
                       </div>
@@ -116,9 +119,11 @@ export default function BlogPostsSection() {
 
                     {/* Author and Date */}
                     <div className="flex items-center gap-3">
-                      <img
+                      <Image
                         src={featuredPost.author.avatar}
                         alt={featuredPost.author.name}
+                        width={48}
+                        height={40}
                         className="w-10 h-10 sm:w-12 sm:h-10 rounded-full object-cover"
                       />
                       <div>
@@ -168,9 +173,11 @@ export default function BlogPostsSection() {
                           className="overflow-hidden"
                           style={{ height: "200px", width: "100%" }}
                         >
-                          <img
+                          <Image
                             src={post.image}
                             alt={post.title}
+                            width={400}
+                            height={200}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                         </div>
@@ -211,9 +218,9 @@ export default function BlogPostsSection() {
                               <path
                                 d="M7 17L17 7M17 7H7M17 7V17"
                                 stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               />
                             </svg>
                           </div>
@@ -235,9 +242,11 @@ export default function BlogPostsSection() {
 
                           {/* Author and Date */}
                           <div className="flex items-center gap-3">
-                            <img
+                            <Image
                               src={post.author.avatar || "/placeholder.svg"}
                               alt={post.author.name}
+                              width={32}
+                              height={32}
                               className="w-8 h-8 rounded-full object-cover"
                             />
                             <div>
@@ -284,9 +293,11 @@ export default function BlogPostsSection() {
             <div className="overflow-hidden transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
                 <div className="aspect-[2/1] overflow-hidden lg:col-span-2">
-                  <img
+                  <Image
                     src={fullWidthPost.image}
                     alt={fullWidthPost.title}
+                    width={800}
+                    height={400}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -338,9 +349,9 @@ export default function BlogPostsSection() {
                       <path
                         d="M7 17L17 7M17 7H7M17 7V17"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
@@ -362,9 +373,11 @@ export default function BlogPostsSection() {
 
                   {/* Author and Date */}
                   <div className="flex items-center gap-4">
-                    <img
+                    <Image
                       src={fullWidthPost.author.avatar}
                       alt={fullWidthPost.author.name}
+                      width={40}
+                      height={40}
                       className="w-10 h-10 sm:w-10 sm:h-10 rounded-full object-cover"
                     />
                     <div>

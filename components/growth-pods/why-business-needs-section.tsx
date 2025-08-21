@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function WhyBusinessNeedsSection() {
   // const features = [
@@ -54,16 +55,18 @@ export default function WhyBusinessNeedsSection() {
                 }}
               >
                 Growth Pods deliver tangible benefits that traditional marketing
-                can't match
+                can&apos;t match
               </p>
             </div>
             <div className="relative order-1 lg:order-2">
               <div className="absolute -inset-4 sm:-inset-6 lg:-inset-8 bg-gradient-to-r from-purple-600/40 via-purple-500/60 to-purple-600/40 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl z-0"></div>
               <div className="absolute -inset-6 sm:-inset-8 lg:-inset-12 bg-purple-400/20 rounded-full blur-[100px] sm:blur-[150px] lg:blur-[200px] z-0"></div>
               <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-500 rounded-full blur-[40px] sm:blur-[60px] lg:blur-[80px] z-5 w-48 h-36 sm:w-64 sm:h-48 lg:w-96 lg:h-72"></div>
-              <img
+              <Image
                 src="/pods/typeprompt.svg"
                 alt="AI Chat Interface"
+                width={600}
+                height={400}
                 className="relative w-full h-auto rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl z-10"
               />
             </div>
@@ -114,7 +117,7 @@ export default function WhyBusinessNeedsSection() {
                           : undefined,
                     }}
                   >
-                    Our intelligent matching ensures you're paired with the most
+                    Our intelligent matching ensures you&apos;re paired with the most
                     compatible partners for your growth goals.
                   </p>
                 </div>
@@ -173,9 +176,11 @@ export default function WhyBusinessNeedsSection() {
               href="/contacts"
               className="relative block w-full lg:w-auto lg:flex-shrink-0 group transition-transform duration-300 hover:scale-105"
             >
-              <img
+              <Image
                 src="/pods/learnmore.png"
                 alt="Learn More AI Character"
+                width={600}
+                height={400}
                 className="w-full h-auto object-cover rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl"
               />
               <div className="absolute top-2 right-2 sm:top-4 sm:right-4 transition-transform duration-300 group-hover:scale-110">

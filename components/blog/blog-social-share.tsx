@@ -1,4 +1,10 @@
-export default function BlogSocialShare({ views = 369, url, title }) {
+interface BlogSocialShareProps {
+  views?: number;
+  url?: string;
+  title?: string;
+}
+
+export default function BlogSocialShare({ views = 369, url, title }: BlogSocialShareProps) {
   const shareUrl =
     url || typeof window !== "undefined" ? window.location.href : "";
   const shareTitle = title || "Check out this blog post";
@@ -96,8 +102,8 @@ export default function BlogSocialShare({ views = 369, url, title }) {
             fill="white"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M18.9923 16.427C18.836 16.3012 18.6529 16.2126 18.4571 16.168C18.2613 16.1234 18.0579 16.1241 17.8624 16.1699C17.5686 16.2917 17.3788 16.7519 17.189 16.982C17.149 17.0372 17.0902 17.0759 17.0236 17.0908C16.957 17.1058 16.8873 17.096 16.8274 17.0632C15.7519 16.6427 14.8504 15.8715 14.2694 14.8749C14.2198 14.8127 14.1964 14.7337 14.2039 14.6546C14.2115 14.5755 14.2496 14.5024 14.31 14.4508C14.5218 14.2415 14.6772 13.9824 14.762 13.6973C14.7808 13.3828 14.7087 13.0695 14.5541 12.7948C14.4346 12.4098 14.2072 12.0669 13.8988 11.8067C13.7397 11.7353 13.5633 11.7113 13.3909 11.7377C13.2185 11.7642 13.0574 11.8398 12.9271 11.9556C12.7009 12.1505 12.5213 12.3935 12.4016 12.6668C12.2819 12.9401 12.2252 13.2367 12.2356 13.5348C12.2363 13.7022 12.2575 13.8689 12.2989 14.0311C12.4038 14.4209 12.5652 14.7934 12.7779 15.1366C12.9314 15.3995 13.0989 15.6541 13.2796 15.8991C13.8669 16.7041 14.6052 17.3875 15.4535 17.9115C15.8792 18.1778 16.3341 18.3943 16.8094 18.5567C17.303 18.7801 17.8481 18.8659 18.3867 18.8049C18.6935 18.7585 18.9843 18.6376 19.2333 18.4527C19.4824 18.2678 19.6821 18.0246 19.8148 17.7446C19.8929 17.5754 19.9166 17.3863 19.8826 17.2031C19.8013 16.8286 19.2996 16.6075 18.9923 16.427Z"
             fill="white"
           />
@@ -131,7 +137,7 @@ export default function BlogSocialShare({ views = 369, url, title }) {
     },
   ];
 
-  const handleShare = (href, name) => {
+  const handleShare = (href: string, name: string) => {
     if (name === "Instagram") {
       navigator.clipboard?.writeText(shareUrl);
       alert("Link copied to clipboard! You can now share it on Instagram.");
