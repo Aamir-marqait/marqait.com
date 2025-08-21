@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://www.marqait.com/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "marqait.com"
+        }
+      ]
+    }
+  ]
+}
