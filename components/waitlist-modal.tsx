@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { X, Mail, ArrowRight, Check } from "lucide-react";
 import { trackCTAClick } from "../analytics";
@@ -22,7 +23,7 @@ export default function WaitlistModal({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    trackCTAClick('Join Waitlist', 'Waitlist Modal');
+    trackCTAClick("Join Waitlist", "Waitlist Modal");
     setError("");
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -60,8 +61,8 @@ export default function WaitlistModal({
       } else {
         throw new Error(data.message || "Something went wrong");
       }
-    } catch (error) {
-      setError("Failed to join waitlist. Please try again.", error);
+    } catch (error: any) {
+      setError(error);
       setIsSubmitting(false);
     }
   };
@@ -212,8 +213,8 @@ export default function WaitlistModal({
                     You&apos;re In!
                   </h3>
                   <p className="text-gray-300 text-sm sm:text-base">
-                    Welcome to the future of AI marketing. We&apos;ll notify you when
-                    early access is available.
+                    Welcome to the future of AI marketing. We&apos;ll notify you
+                    when early access is available.
                   </p>
                 </div>
                 <div className="pt-2">
