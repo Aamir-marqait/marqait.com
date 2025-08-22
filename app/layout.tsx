@@ -72,7 +72,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/meta-logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/meta-logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/meta-logo.png" />
+        <link rel="shortcut icon" href="/meta-logo.png" />
         <meta name="revisit-after" content="7 days" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
