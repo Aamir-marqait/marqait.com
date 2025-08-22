@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 
-const Toast = ({ show, onClose, message, duration = 3000 }) => {
+interface ToastProps {
+  show: boolean;
+  onClose: () => void;
+  message: string;
+  duration?: number;
+}
+
+const Toast = ({ show, onClose, message, duration = 3000 }: ToastProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

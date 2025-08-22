@@ -2,18 +2,25 @@ import { useState } from "react";
 import { X, Mail, ArrowRight, Check } from "lucide-react";
 import { trackCTAClick } from "../analytics";
 
+interface WaitlistModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  title?: string;
+  description?: string;
+}
+
 export default function WaitlistModal({
   isOpen,
   onClose,
   title = "Join the AI Revolution",
   description = "Be among the first to experience the future of AI-driven marketing. Get early access and exclusive benefits.",
-}) {
+}: WaitlistModalProps) {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     trackCTAClick('Join Waitlist', 'Waitlist Modal');
     setError("");
