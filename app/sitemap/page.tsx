@@ -1,7 +1,11 @@
-"use client";
-
 import Link from "next/link";
-import { useSEO } from "@/utils/seo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Site Map - Marqait AI",
+  description: "Use the sitemap to find our marketing automation and ai tools including free AI logo generator, social media post, campaigns generator and more.",
+  keywords: "sitemap, navigation, Marqait pages, AI marketing, marketing automation, website structure",
+};
 
 interface SitemapItem {
   title: string;
@@ -15,14 +19,6 @@ interface SitemapSection {
 }
 
 export default function Sitemap() {
-  useSEO({
-    canonical: "https://www.marqait.com/sitemap",
-    title: "Site Map - Marqait AI",
-    description:
-      "Use the sitemap to find our marketing automation and ai tools including free AI logo generator, social media post, campaigns generator and more.",
-    keywords:
-      "sitemap, navigation, Marqait pages, AI marketing, marketing automation, website structure",
-  });
 
   const sitemapSections: SitemapSection[] = [
     {

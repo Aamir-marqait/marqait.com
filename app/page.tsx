@@ -20,8 +20,8 @@ export default function Home() {
 
   useSEO({
     canonical: "https://www.marqait.com",
-    title: "Marqait - AI-Powered Growth Platform",
-    description: "Transform your business with AI-powered growth solutions. Join thousands of companies using Marqait to scale their operations.",
+    // title: "Marqait - AI-Powered Growth Platform",
+    // description: "Transform your business with AI-powered growth solutions. Join thousands of companies using Marqait to scale their operations.",
     keywords: "AI, growth platform, business automation, marqait, artificial intelligence",
     ogType: "website",
     twitterCard: "summary_large_image"
