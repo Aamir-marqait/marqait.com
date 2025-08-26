@@ -86,6 +86,7 @@ export default function Footer() {
       // { text: "News", url: "/" },
       // { text: "Articles", url: "/" },
       { text: "Contact Us", url: "/contacts" },
+      { text: "Site Map", url: "/sitemap" },
       // { text: "Lorem Ipsum", url: "/" },
     ],
     company: [
