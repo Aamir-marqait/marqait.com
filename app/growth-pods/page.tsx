@@ -10,7 +10,12 @@ import CTASection from "@/components/growth-pods/cta-section";
 
 export default function GrowthPods() {
   useSEO({
+    title: "AI-Powered Growth Pods for Business, Startups & Creators - Marqait AI",
+    description: "Marqait's AI-Powered Growth Pods: Dedicated teams that build custom AI marketing automation for startups, creators, agencies, and eCommerce brands.",
     canonical: "https://www.marqait.com/growth-pods",
+    keywords: "growth pods, AI marketing automation, custom AI solutions, startups, creators, agencies, eCommerce",
+    ogType: "website",
+    twitterCard: "summary_large_image"
   });
 
   return (

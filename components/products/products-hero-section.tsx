@@ -49,7 +49,7 @@ export default function ProductsHeroSection() {
               className="font-inter text-[32px] font-bold leading-normal lg:min-w-3xl"
               style={{ color: "#FFF" }}
             >
-              AI-Native Platform Replacing Marketing Agencies
+              Best AI Tools for Marketing Automation
             </h1>
 
             <p
