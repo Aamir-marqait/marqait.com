@@ -38,7 +38,7 @@ export default function Sitemap() {
         },
         {
           title: "Contact Us",
-          url: "/contacts",
+          url: "/contact",
           description:
             "Get in touch with our team - we're here to help you grow your business with AI marketing automation",
         },
@@ -48,10 +48,10 @@ export default function Sitemap() {
       title: "Products & Services",
       items: [
         {
-          title: "Products",
-          url: "/products",
+          title: "AI Tools",
+          url: "/ai-tools",
           description:
-            "Explore our AI-powered marketing automation products and solutions",
+            "Explore AI tools for Marketing automation at Marqait AI. Get free ai logo generator, social media post generator, campaign generator and more.",
         },
         {
           title: "Growth Pods",
@@ -65,10 +65,22 @@ export default function Sitemap() {
       title: "Resources & Content",
       items: [
         {
-          title: "Blog & Insights",
-          url: "/blog",
+          title: "AI Blog",
+          url: "/ai-blog",
           description:
-            "Latest insights, tips, and trends in AI marketing and marketing automation",
+            "Marqait AI Blog keeps you up-to-date about the latest advancements in our AI marketing automation tools and platform.",
+        },
+        {
+          title: "AI Social Media Post Generator",
+          url: "/ai-social-media-post-generator",
+          description:
+            "Generate engaging social media posts for free with a simple text prompt using Marqait's free AI social media post generator.",
+        },
+        {
+          title: "AI Logo Generator",
+          url: "/ai-logo-generator",
+          description:
+            "Generate unique logo with a text prompt using Marqait's free AI logo generator. Input simple text prompts and our AI makes logo design online for you.",
         },
       ],
     },
@@ -123,7 +135,7 @@ export default function Sitemap() {
                 lineHeight: "1.2",
               }}
             >
-              Site Map
+              Marqait AI Site Map
             </h1>
             <p
               className="text-gray-300 mx-auto max-w-3xl
@@ -237,7 +249,7 @@ export default function Sitemap() {
                 Transform your marketing with AI-powered automation. Contact our
                 team to learn how Marqait can help scale your business.
               </p>
-              <Link href="/contacts">
+              <Link href="/contact">
                 <button
                   className="cursor-pointer flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-2xl border border-[rgba(255,255,255,0.40)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold mx-auto
                   text-sm sm:text-base lg:text-[16px]"

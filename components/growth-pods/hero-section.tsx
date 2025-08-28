@@ -45,7 +45,6 @@ function HeroSection() {
                       : undefined,
                 }}
               >
-                Unlock Faster Growth With{" "}
                 <span
                   className="font-inter font-bold leading-[150%]
                   text-2xl
@@ -68,9 +67,8 @@ function HeroSection() {
                         : undefined,
                   }}
                 >
-                  AI-Augmented Pods
+                  AI-Powered Growth Pods for Business, Startups & Creators
                 </span>
-                <span className="text-white"> .</span>
               </h1>
             </div>
 
