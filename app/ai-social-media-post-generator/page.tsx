@@ -49,7 +49,7 @@ export default function AISocialMediaPostGenerator() {
               </h1>
               
               <p className="text-white/80 font-inter max-w-4xl mx-auto text-lg sm:text-xl lg:text-2xl">
-                Generate engaging social media posts for free with a simple text prompt using Marqait's AI-powered social media post generator.
+                Generate engaging social media posts for free with a simple text prompt using Marqait&apos;s AI-powered social media post generator.
               </p>
             </div>
 

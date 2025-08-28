@@ -49,7 +49,7 @@ export default function AILogoGenerator() {
               </h1>
               
               <p className="text-white/80 font-inter max-w-4xl mx-auto text-lg sm:text-xl lg:text-2xl">
-                Generate unique logos with a text prompt using Marqait's free AI logo generator. Input simple text prompts and our AI creates professional logo designs online for you.
+                Generate unique logos with a text prompt using Marqait&apos;s free AI logo generator. Input simple text prompts and our AI creates professional logo designs online for you.
               </p>
             </div>
 

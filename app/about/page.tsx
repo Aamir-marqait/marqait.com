@@ -85,7 +85,7 @@ export default function About() {
                   </div>
                   <h3 className="text-white font-semibold text-lg mb-2">Innovation</h3>
                   <p className="text-gray-400">
-                    Continuously pushing the boundaries of what's possible in marketing automation.
+                    Continuously pushing the boundaries of what&apos;s possible in marketing automation.
                   </p>
                 </div>
               </div>

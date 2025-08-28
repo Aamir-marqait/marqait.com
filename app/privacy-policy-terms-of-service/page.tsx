@@ -157,7 +157,7 @@ export default function PrivacyPolicyTermsOfService() {
                 <div>
                   <h3 className="text-white font-semibold text-lg mb-3">Service Availability</h3>
                   <p>
-                    While we strive to maintain high availability, Marqait AI services are provided "as is" without 
+                    While we strive to maintain high availability, Marqait AI services are provided &#34;as is&#34; without 
                     warranty of any kind. We do not guarantee uninterrupted or error-free operation of our services.
                   </p>
                 </div>
@@ -190,7 +190,7 @@ export default function PrivacyPolicyTermsOfService() {
               </h2>
               <p className="text-gray-300 mb-6">
                 If you have any questions about our Privacy Policy or Terms of Service, 
-                please don't hesitate to contact us.
+                please don&apos;t hesitate to contact us.
               </p>
               <a 
                 href="mailto:hello@marqait.com"

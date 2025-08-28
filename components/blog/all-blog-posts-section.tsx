@@ -1,4 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { blogPosts } from "../../data/blogPosts";
@@ -130,24 +129,28 @@ export default function AllBlogPostsSection() {
                         className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover"
                       />
                       <div className="flex gap-5 items-center">
-                        <p style={{
-                          color: '#FFF',
-                          fontFamily: 'Work Sans',
-                          fontSize: '16px',
-                          fontStyle: 'normal',
-                          fontWeight: 500,
-                          lineHeight: '24px'
-                        }}>
+                        <p
+                          style={{
+                            color: "#FFF",
+                            fontFamily: "Work Sans",
+                            fontSize: "16px",
+                            fontStyle: "normal",
+                            fontWeight: 500,
+                            lineHeight: "24px",
+                          }}
+                        >
                           {post.author.name}
                         </p>
-                        <p style={{
-                          color: 'rgba(255, 255, 255, 0.80)',
-                          fontFamily: 'Work Sans',
-                          fontSize: '16px',
-                          fontStyle: 'normal',
-                          fontWeight: 400,
-                          lineHeight: '24px'
-                        }}>
+                        <p
+                          style={{
+                            color: "rgba(255, 255, 255, 0.80)",
+                            fontFamily: "Work Sans",
+                            fontSize: "16px",
+                            fontStyle: "normal",
+                            fontWeight: 400,
+                            lineHeight: "24px",
+                          }}
+                        >
                           {post.date}
                         </p>
                       </div>
