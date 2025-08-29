@@ -45,7 +45,7 @@ export const blogPosts: BlogPost[] = [
     },
     date: "2025-01-20",
     readTime: "12 min read",
-    image: "/blog/images.jpeg",
+    image: "/blog/1.png",
     tags: ["AI", "Marketing", "Small Business", "Automation"],
     category: "AI & Marketing",
     description:

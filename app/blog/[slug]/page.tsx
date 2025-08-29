@@ -12,7 +12,7 @@ import BlogSocialShare from "../../../components/blog/blog-social-share";
 const getAdditionalImage = (blogPost: any) => {
   const imageMap: Record<string, string> = {
     "AI & Technology": "/blog/add2.png",
-    "AI & Marketing": "/blog/recent2.png",
+    "AI & Marketing": "/blog/2.png",
     "Data & Analytics": "/blog/add2.png",
     "Customer Experience": "/blog/add3.jpg",
     "Growth Strategy": "/blog/add4.png",
@@ -32,6 +32,7 @@ const getAdditionalContent = (blogPost: any) => {
       `<h2 style="font-size: 28px; margin-top: 24px; margin-bottom: 16px;"><strong>AI Marketing Tool for Small Business</strong></h2>
 
 <h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">1. Marqait AI</h2>
+
 <p style=" margin-top: 10px; margin-bottom: 10px;">Marqait AI is an all-in-one AI marketing automation platform designed specifically to help small businesses scale faster in 2025. Instead of juggling multiple tools, Marqait brings everything under one roof—making it easier for you to manage campaigns, design brand guidelines, and automate social media posts without needing a large team.</p>
 <p style=" margin-top: 10px; margin-bottom: 10px;">Marqait AI is a comprehensive marketing automation platform designed specifically for small businesses. It combines content generation, social media management, email marketing, and customer analytics in one powerful tool. The AI can create personalized marketing campaigns, schedule posts across multiple platforms, and analyze customer behavior to optimize engagement.</p>
 <p style=" margin-top: 10px; margin-bottom: 10px;">One of its standout features is the AI Campaign Generator, which creates data-backed marketing campaigns in minutes. You also get a Brand Book Creator that ensures consistent messaging across all platforms—a feature many small businesses struggle with. Additionally, Marqait’s AI-powered email workflows personalize content for your customers, helping you boost open rates and conversions.
