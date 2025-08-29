@@ -11,7 +11,8 @@ import BlogSocialShare from "../../../components/blog/blog-social-share";
 // Generate additional image based on blog post category/topic
 const getAdditionalImage = (blogPost: any) => {
   const imageMap: Record<string, string> = {
-    "AI & Technology": "/blog/add1.jpg",
+    "AI & Technology": "/blog/add2.png",
+    "AI & Marketing": "/blog/recent2.png",
     "Data & Analytics": "/blog/add2.png",
     "Customer Experience": "/blog/add3.jpg",
     "Growth Strategy": "/blog/add4.png",
@@ -25,6 +26,128 @@ const getAdditionalImage = (blogPost: any) => {
 
 // Generate additional content based on blog post category/topic
 const getAdditionalContent = (blogPost: any) => {
+  // Special content for AI marketing tools blog post
+  if (blogPost.slug === "ai-marketing-tools-for-small-business") {
+    return [
+      `<h2 style="font-size: 28px; margin-top: 24px; margin-bottom: 16px;"><strong>AI Marketing Tool for Small Business</strong></h2>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">1. Marqait AI - Complete Marketing Automation Platform</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> All-in-one AI marketing automation</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Marqait AI is a comprehensive marketing automation platform designed specifically for small businesses. It combines content generation, social media management, email marketing, and customer analytics in one powerful tool. The AI can create personalized marketing campaigns, schedule posts across multiple platforms, and analyze customer behavior to optimize engagement.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p>✔ AI-powered content generation for social media and emails<br/>
+✔ Automated customer segmentation and targeting<br/>
+✔ Multi-platform social media scheduling<br/>
+✔ Real-time analytics and performance insights<br/>
+✔ Integration with major CRM systems</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Starting at $49/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">2. HubSpot AI - Smart CRM and Marketing Hub</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> CRM integration and lead nurturing</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">HubSpot's AI features help small businesses automate lead scoring, personalize email campaigns, and predict customer behavior. The platform uses machine learning to identify the best times to contact prospects and suggests the most effective content for different audience segments.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p>✔ AI-powered lead scoring and qualification<br/>
+✔ Predictive analytics for sales forecasting<br/>
+✔ Automated email sequences and personalization<br/>
+✔ Content optimization suggestions<br/>
+✔ Smart chatbots for customer support</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Free plan available, paid plans start at $20/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">3. Mailchimp AI - Email Marketing Intelligence</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> AI-driven email campaigns</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Mailchimp's AI capabilities help small businesses create more effective email campaigns through predictive analytics, automated A/B testing, and personalized content recommendations. The platform can predict the best send times and optimize subject lines for higher open rates.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ Predictive analytics for audience insights<br/>
+✔ Automated A/B testing for campaigns<br/>
+✔ AI-generated subject line suggestions<br/>
+✔ Smart segmentation based on behavior<br/>
+✔ Personalized product recommendations</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Free plan for up to 500 contacts, paid plans start at $13/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">4. Buffer AI - Social Media Content Creation</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> Social media content generation and scheduling</p>
+<p>Buffer's AI assistant helps small businesses create engaging social media content, suggests optimal posting times, and analyzes performance across different platforms. The tool can generate captions, hashtags, and even visual content ideas based on your brand voice.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ AI-powered content creation and caption writing<br/>
+✔ Optimal posting time recommendations<br/>
+✔ Hashtag suggestions and trend analysis<br/>
+✔ Multi-platform scheduling and publishing<br/>
+✔ Performance analytics and insights</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Free plan available, paid plans start at $6/month per channel</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">5. Jasper AI - Content Marketing Powerhouse</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> Blog posts, ads, and marketing copy</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Jasper AI specializes in creating high-quality marketing content, from blog posts and social media captions to ad copy and email campaigns. The platform can maintain your brand voice across all content and adapt to different marketing channels.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ Long-form content generation for blogs and articles<br/>
+✔ Brand voice training and consistency<br/>
+✔ Multiple content templates for different use cases<br/>
+✔ Plagiarism checker and fact-checking<br/>
+✔ Team collaboration features</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Starting at $49/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">6. Canva AI - Visual Content Creation</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> AI-powered graphic design and visual content</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Canva's AI features help small businesses create professional-looking graphics, social media posts, and marketing materials without design skills. The Magic Design feature can generate entire design suites based on a simple text prompt.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ AI-powered design generation from text prompts<br/>
+✔ Brand kit integration for consistent visuals<br/>
+✔ Automated background removal and image editing<br/>
+✔ Video creation with AI-powered templates<br/>
+✔ Smart resize for different social media platforms</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Free plan available, Canva Pro starts at $15/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">7. Hootsuite AI - Social Media Management</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> Multi-platform social media management</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Hootsuite's AI capabilities include content suggestions, optimal posting times, and automated responses to customer inquiries. The platform can analyze social media trends and suggest content that's likely to perform well with your audience.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ AI-powered content suggestions and curation<br/>
+✔ Automated scheduling based on audience activity<br/>
+✔ Social listening and sentiment analysis<br/>
+✔ Chatbot integration for customer service<br/>
+✔ Performance analytics and reporting</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Starting at $99/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">8. Drift AI - Conversational Marketing</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> AI chatbots and lead qualification</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Drift's AI chatbots can engage website visitors, qualify leads, and even book meetings automatically. The platform uses natural language processing to have meaningful conversations with prospects and customers.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ AI-powered chatbots for lead qualification<br/>
+✔ Automated meeting scheduling and booking<br/>
+✔ Real-time visitor identification and targeting<br/>
+✔ Integration with CRM and marketing tools<br/>
+✔ Conversation analytics and insights</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Free plan available, paid plans start at $50/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">9. Copy.ai - Marketing Copy Generator</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> Sales copy and marketing materials</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Copy.ai helps small businesses create compelling sales copy, ad headlines, product descriptions, and marketing emails. The platform offers templates for various marketing needs and can adapt to different brand tones.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ AI-generated sales copy and ad headlines<br/>
+✔ Product description automation<br/>
+✔ Email marketing templates and sequences<br/>
+✔ Social media caption generation<br/>
+✔ Blog post outlines and content ideas</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Free plan available, paid plans start at $49/month</p>
+
+<h3 style="font-size: 20px; margin-top: 24px; margin-bottom: 16px;">10. Klaviyo AI - Email and SMS Marketing</h3>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Best for:</strong> E-commerce email marketing automation</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">Klaviyo's AI features are particularly powerful for e-commerce businesses, offering predictive analytics, automated product recommendations, and personalized email campaigns based on customer behavior and purchase history.</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"> <strong>Key Features:</strong></p>
+<p style=" margin-top: 10px; margin-bottom: 10px;">✔ Predictive analytics for customer lifetime value<br/>
+✔ Automated product recommendations in emails<br/>
+✔ Behavioral trigger campaigns<br/>
+✔ Advanced segmentation based on purchase data<br/>
+✔ A/B testing with statistical significance</p>
+<p style=" margin-top: 10px; margin-bottom: 10px;"><strong>Pricing:</strong> Free plan available, paid plans start at $20/month</p>
+
+<h2 style="font-size: 28px; margin-top: 24px; margin-bottom: 16px;"><strong>Conclusion</strong></h2>
+<p style=" margin-top: 10px; margin-bottom: 10px;">These 10 AI marketing tools represent the best options for small businesses in 2025. Whether you're looking to automate your email campaigns, create better content, or improve customer engagement, there's an AI solution that can help you achieve your marketing goals more efficiently and effectively.</p>
+
+<p style=" margin-top: 10px; margin-bottom: 10px;">The key to success with AI marketing tools is to start small, focus on one or two areas where you need the most help, and gradually expand your use of AI as you become more comfortable with the technology. Remember, AI tools are meant to enhance your marketing efforts, not replace the human creativity and strategic thinking that makes your brand unique.</p>`,
+    ];
+  }
+
   const baseContent: Record<string, string[]> = {
     "AI & Technology": [
       "Strategic AI implementation represents a fundamental shift in how businesses approach problem-solving and innovation. Organizations that successfully integrate AI into their strategic framework don't just adopt technology—they reimagine their entire value proposition. This transformation requires a comprehensive understanding of both current capabilities and future potential, coupled with a clear roadmap that aligns AI initiatives with broader business objectives. The most successful companies treat AI not as a standalone solution but as an enabler that amplifies human intelligence and creativity, creating new opportunities for growth and competitive differentiation in an increasingly digital marketplace.",
@@ -222,8 +345,8 @@ export default function BlogPost() {
               </div>
 
               {/* Content */}
-              <div className="space-y-4 sm:space-y-5 lg:space-y-6">
-                <p
+              <div className="space-y-4 sm:space-y-5 lg:space-y-6 blog-content">
+                <div
                   className="text-white font-inter font-normal leading-relaxed
                   text-sm 
                   sm:text-base sm:leading-[26px]
@@ -232,9 +355,8 @@ export default function BlogPost() {
                   style={{
                     fontFeatureSettings: "'liga' off",
                   }}
-                >
-                  {blogPost.content}
-                </p>
+                  dangerouslySetInnerHTML={{ __html: blogPost.content }}
+                />
               </div>
 
               {/* Additional Image */}
@@ -254,7 +376,7 @@ export default function BlogPost() {
               {/* Additional Content */}
               <div className="space-y-4 sm:space-y-5 lg:space-y-6">
                 {additionalContent.map((paragraph, index) => (
-                  <p
+                  <div
                     key={index}
                     className="text-white font-inter font-normal leading-relaxed
                     text-sm 
@@ -264,9 +386,8 @@ export default function BlogPost() {
                     style={{
                       fontFeatureSettings: "'liga' off",
                     }}
-                  >
-                    {paragraph}
-                  </p>
+                    dangerouslySetInnerHTML={{ __html: paragraph }}
+                  />
                 ))}
               </div>
             </article>
