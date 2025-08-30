@@ -1,14 +1,29 @@
-"use client";
-
+import type { Metadata } from "next";
 import AllBlogPostsSection from "@/components/blog/all-blog-posts-section";
 import BlogHeroSection from "@/components/blog/blog-hero-section";
 import BlogPostsSection from "@/components/blog/blog-posts-section";
-import { useSEO } from "@/utils/seo";
+
+export const metadata: Metadata = {
+  title: "Marqait AI Blogs | Artificial Intelligence Blog and Update",
+  description: "Discover the latest AI marketing strategies, tips, and insights. Stay ahead with expert content on AI-powered marketing automation and digital growth.",
+  keywords: "AI blog, artificial intelligence marketing, AI marketing strategies, marketing automation insights, digital marketing tips",
+  alternates: {
+    canonical: "https://www.marqait.com/ai-blog"
+  },
+  openGraph: {
+    title: "Marqait AI Blogs | Artificial Intelligence Blog and Update",
+    description: "Discover the latest AI marketing strategies, tips, and insights. Stay ahead with expert content on AI-powered marketing automation and digital growth.",
+    url: "https://www.marqait.com/ai-blog",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Marqait AI Blogs | Artificial Intelligence Blog and Update",
+    description: "Discover the latest AI marketing strategies, tips, and insights. Stay ahead with expert content on AI-powered marketing automation and digital growth."
+  }
+};
 
 export default function Blog() {
-  useSEO({
-    canonical: "https://www.marqait.com/ai-blog",
-  });
 
   return (
     <div className="min-h-screen bg-[#020103]">

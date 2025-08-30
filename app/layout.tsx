@@ -28,14 +28,16 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Marketing Automation Platform for Everyone - Marqait AI",
-  description: "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
-  keywords: "AI marketing, marketing automation, digital marketing platform, marketing strategy, brand development, campaign management, marketing agency alternative",
+  description:
+    "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
+  keywords:
+    "AI marketing, marketing automation, digital marketing platform, marketing strategy, brand development, campaign management, marketing agency alternative",
   authors: [{ name: "MARQAIT" }],
   robots: "index, follow",
   openGraph: {
     title: "Marketing Automation Platform for Everyone - Marqait AI",
-    description: "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
+    description:
+      "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
     type: "website",
     url: "https://marqait.com",
     images: [
@@ -52,7 +54,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Marketing Automation Platform for Everyone - Marqait AI",
-    description: "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
+    description:
+      "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
     images: ["https://marqait.com/twitter-image.jpg"],
     site: "@marqait",
     creator: "@marqait",
@@ -77,38 +80,43 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/meta-logo.png" />
         <meta name="revisit-after" content="7 days" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+
         {/* Structured Data for Organization */}
         <Script id="structured-data-org" type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Marqait",
-            "alternateName": "Marqait AI",
-            "description": "Marqait is AI-powered marketing automation platform. It provides marketing automation services to automate email campaigns, social media posts, content creation, intelligent campaign generation, and more.",
-            "url": "https://www.marqait.com/",
-            "logo": "https://www.marqait.com/logo.png",
-            "keywords": [
+            name: "Marqait",
+            alternateName: "Marqait AI",
+            description:
+              "Marqait is AI-powered marketing automation platform. It provides marketing automation services to automate email campaigns, social media posts, content creation, intelligent campaign generation, and more.",
+            url: "https://www.marqait.com/",
+            logo: "https://www.marqait.com/logo.png",
+            keywords: [
               "AI marketing",
               "marketing automation",
               "content automation",
-              "automated lead generation"
+              "automated lead generation",
             ],
-            "email": "hello@marqait.com",
-            "foundingDate": "2025-04-23",
-            "founders": [
+            email: "hello@marqait.com",
+            foundingDate: "2025-04-23",
+            founders: [
               {
                 "@type": "Person",
-                "name": "Mohammed Aamir"
-              }
+                name: "Mohammed Aamir",
+              },
             ],
-            "sameAs": [
+            sameAs: [
               "https://www.instagram.com/marqait.ai/",
               "https://www.youtube.com/@MarqaitAI",
               "https://www.linkedin.com/company/marqait-ai/",
-              "https://x.com/marqait_ai"
-            ]
+              "https://x.com/marqait_ai",
+            ],
           })}
         </Script>
 
@@ -118,12 +126,12 @@ export default function RootLayout({
             "@context": "http://schema.org",
             "@id": "https://www.marqait.com/#webpage",
             "@type": "WebPage",
-            "url": "https://www.marqait.com/",
-            "name": "Marqait"
+            url: "https://www.marqait.com/",
+            name: "Marqait",
           })}
         </Script>
       </head>
-      
+
       <body
         className={`${roboto.variable} ${sora.variable} ${inter.variable} ${workSans.variable} antialiased font-inter`}
       >
@@ -140,7 +148,7 @@ export default function RootLayout({
             gtag('config', 'G-F9REM2WQ5H');
           `}
         </Script>
-        
+
         {children}
       </body>
     </html>
