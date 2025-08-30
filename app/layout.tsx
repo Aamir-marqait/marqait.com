@@ -28,6 +28,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
+  title: "Marketing Automation Platform for Everyone - Marqait AI",
   description:
     "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
   keywords:
