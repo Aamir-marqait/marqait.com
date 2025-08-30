@@ -1,23 +1,33 @@
-"use client";
+import type { Metadata } from "next";
 import WhatGrowthPods from "@/components/growth-pods/what-growth-pod";
 import HeroSection from "@/components/growth-pods/hero-section";
-import { useSEO } from "@/utils/seo";
 import HowGrowthPodsWork from "@/components/growth-pods/how-growth-pods-works";
 import WhoItsForSection from "@/components/growth-pods/who-its-for-section";
 import WhyBusinessNeedsSection from "@/components/growth-pods/why-business-needs-section";
 import FAQSection from "@/components/growth-pods/faq-section";
 import CTASection from "@/components/growth-pods/cta-section";
 
-export default function GrowthPods() {
-  useSEO({
+export const metadata: Metadata = {
+  title: "AI-Powered Growth Pods for Business, Startups & Creators - Marqait AI",
+  description: "Marqait's AI-Powered Growth Pods: Dedicated teams that build custom AI marketing automation for startups, creators, agencies, and eCommerce brands.",
+  keywords: "growth pods, AI marketing automation, custom AI solutions, startups, creators, agencies, eCommerce",
+  alternates: {
+    canonical: "https://www.marqait.com/growth-pods"
+  },
+  openGraph: {
     title: "AI-Powered Growth Pods for Business, Startups & Creators - Marqait AI",
     description: "Marqait's AI-Powered Growth Pods: Dedicated teams that build custom AI marketing automation for startups, creators, agencies, and eCommerce brands.",
-    canonical: "https://www.marqait.com/growth-pods",
-    keywords: "growth pods, AI marketing automation, custom AI solutions, startups, creators, agencies, eCommerce",
-    ogType: "website",
-    twitterCard: "summary_large_image"
-  });
+    url: "https://www.marqait.com/growth-pods",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI-Powered Growth Pods for Business, Startups & Creators - Marqait AI",
+    description: "Marqait's AI-Powered Growth Pods: Dedicated teams that build custom AI marketing automation for startups, creators, agencies, and eCommerce brands."
+  }
+};
 
+export default function GrowthPods() {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
       <HeroSection />

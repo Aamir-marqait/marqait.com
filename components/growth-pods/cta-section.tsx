@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
@@ -96,20 +97,6 @@ export default function CTASection() {
               sm:text-4xl sm:leading-[48px] sm:tracking-[-0.4px]
               md:text-5xl md:leading-[56px] md:tracking-[-0.45px]
               lg:text-[36px] lg:leading-[65px] lg:tracking-[-0.54px]"
-              style={{
-                fontSize:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "36px"
-                    : undefined,
-                lineHeight:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "65px"
-                    : undefined,
-                letterSpacing:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "-0.54px"
-                    : undefined,
-              }}
             >
               Ready to Build Smarter, Faster?
             </h2>
@@ -125,16 +112,6 @@ export default function CTASection() {
               lg:text-xl lg:leading-[30px]
               xl:text-[20px] xl:leading-[150%]
               max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[672px]"
-              style={{
-                fontSize:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "20px"
-                    : undefined,
-                width:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "672px"
-                    : "auto",
-              }}
             >
               Whether you&apos;re launching or scaling, we&apos;ll help you
               build with AI from day one — faster execution, leaner ops, better
@@ -155,22 +132,7 @@ export default function CTASection() {
                 md:px-6 md:py-4
                 lg:px-6 lg:py-4 lg:text-[18.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
               style={{
-                boxShadow:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
-                    : "",
-                fontSize:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "18.8px"
-                    : undefined,
-                lineHeight:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "30px"
-                    : undefined,
-                letterSpacing:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "-0.4px"
-                    : undefined,
+                boxShadow: "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
               }}
             >
               Join an Existing Pod
@@ -192,20 +154,6 @@ export default function CTASection() {
                 sm:px-5 sm:py-3 sm:text-base
                 md:px-6 md:py-4
                 lg:px-4 lg:py-4 lg:text-[18.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
-              style={{
-                fontSize:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "18.8px"
-                    : undefined,
-                lineHeight:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "30px"
-                    : undefined,
-                letterSpacing:
-                  typeof window !== "undefined" && window.innerWidth >= 1024
-                    ? "-0.4px"
-                    : undefined,
-              }}
             >
               Build a Custom Pod
               <Image
