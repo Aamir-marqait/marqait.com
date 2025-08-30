@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+"use client";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -57,12 +58,6 @@ export default function FAQSection() {
                 sm:text-3xl
                 md:text-4xl
                 lg:text-[36px]"
-                style={{
-                  fontSize:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "36px"
-                      : undefined,
-                }}
               >
                 Frequently Asked Questions
               </h2>
@@ -73,12 +68,6 @@ export default function FAQSection() {
                 md:text-lg
                 lg:text-xl
                 xl:text-[24px]"
-                style={{
-                  fontSize:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "24px"
-                      : undefined,
-                }}
               >
                 Find quick answers to common questions about our services,
                 features, and support. Need more help? Contact us anytime.
@@ -92,12 +81,6 @@ export default function FAQSection() {
                 text-sm
                 sm:text-base
                 lg:text-[18px]"
-                style={{
-                  fontSize:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "18px"
-                      : undefined,
-                }}
               >
                 Still have questions?{" "}
                 <Link
@@ -106,12 +89,6 @@ export default function FAQSection() {
                   text-sm
                   sm:text-base
                   lg:text-[18px]"
-                  style={{
-                    fontSize:
-                      typeof window !== "undefined" && window.innerWidth >= 1024
-                        ? "18px"
-                        : undefined,
-                  }}
                 >
                   Contact Us
                 </Link>
@@ -180,13 +157,6 @@ export default function FAQSection() {
                     text-sm
                     sm:text-base
                     lg:text-[18px]"
-                    style={{
-                      fontSize:
-                        typeof window !== "undefined" &&
-                        window.innerWidth >= 1024
-                          ? "18px"
-                          : undefined,
-                    }}
                   >
                     {faq.question}
                   </h3>
@@ -242,13 +212,6 @@ export default function FAQSection() {
                         text-sm
                         sm:text-base
                         lg:text-[16px]"
-                        style={{
-                          fontSize:
-                            typeof window !== "undefined" &&
-                            window.innerWidth >= 1024
-                              ? "16px"
-                              : undefined,
-                        }}
                       >
                         {faq.answer}
                       </p>
