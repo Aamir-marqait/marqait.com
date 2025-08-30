@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
-
-import { useParams } from "next/navigation";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { getPostBySlug, getRecentPosts } from "../../../data/blogPosts";
@@ -223,10 +221,86 @@ The hashtag generator suggests trending and niche hashtags to boost reach, while
   );
 };
 
-export default function BlogPost() {
-  const params = useParams();
-  const slug = params?.slug as string;
+type Props = {
+  params: { slug: string }
+}
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = params.slug;
+  const blogPost = getPostBySlug(slug);
+  
+  if (!blogPost) {
+    return {
+      title: "Blog Post Not Found",
+      description: "The requested blog post could not be found."
+    };
+  }
+
+  // Special metadata for ai-marketing-tools-for-small-business
+  if (slug === "ai-marketing-tools-for-small-business") {
+    return {
+      title: "10 Best AI Marketing Tools for Small Business in 2025",
+      description: "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
+      keywords: "AI marketing tools, small business marketing, artificial intelligence marketing, marketing automation, small business growth",
+      alternates: {
+        canonical: `https://www.marqait.com/ai-blog/${slug}`
+      },
+      openGraph: {
+        title: "10 Best AI Marketing Tools for Small Business in 2025",
+        description: "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
+        url: `https://www.marqait.com/ai-blog/${slug}`,
+        type: "article",
+        images: [
+          {
+            url: blogPost.image || "https://www.marqait.com/og-image.jpg",
+            width: 1200,
+            height: 630,
+            alt: "10 Best AI Marketing Tools for Small Business in 2025"
+          }
+        ]
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "10 Best AI Marketing Tools for Small Business in 2025",
+        description: "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
+        images: [blogPost.image || "https://www.marqait.com/twitter-image.jpg"]
+      }
+    };
+  }
+
+  // Default metadata for other blog posts
+  return {
+    title: blogPost.title,
+    description: blogPost.description,
+    keywords: `${blogPost.category}, ${blogPost.title}, Marqait AI blog`,
+    alternates: {
+      canonical: `https://www.marqait.com/ai-blog/${slug}`
+    },
+    openGraph: {
+      title: blogPost.title,
+      description: blogPost.description,
+      url: `https://www.marqait.com/ai-blog/${slug}`,
+      type: "article",
+      images: [
+        {
+          url: blogPost.image || "https://www.marqait.com/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: blogPost.title
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blogPost.title,
+      description: blogPost.description,
+      images: [blogPost.image || "https://www.marqait.com/twitter-image.jpg"]
+    }
+  };
+}
+
+export default function BlogPost({ params }: Props) {
+  const slug = params.slug;
   const blogPost = getPostBySlug(slug);
 
   if (!blogPost) {

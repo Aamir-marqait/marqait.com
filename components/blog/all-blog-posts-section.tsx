@@ -29,7 +29,7 @@ export default function AllBlogPostsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
           {allPosts.map((post) => (
             <article key={post.id} className="group cursor-pointer h-full">
-              <Link href={`/blog/${post.slug}`} className="block h-full">
+              <Link href={`/ai-blog/${post.slug}`} className="block h-full">
                 <div
                   className="overflow-hidden transition-all duration-300 h-full flex flex-col"
                   style={{ minHeight: "500px" }}

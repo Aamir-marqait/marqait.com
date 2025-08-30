@@ -32,7 +32,7 @@ export default function BlogPostsSection() {
           {/* Left Side - Featured Post (Half Width) */}
           <div className="w-full cursor-pointer">
             <article className="group cursor-pointer">
-              <Link href={`/blog/${featuredPost.slug}`} className="block">
+              <Link href={`/ai-blog/${featuredPost.slug}`} className="block">
                 <div className="overflow-hidden transition-all duration-300 flex flex-col">
                   <div className="aspect-[3/1] overflow-hidden">
                     <Image
@@ -166,7 +166,7 @@ export default function BlogPostsSection() {
             <div className="flex flex-col gap-4">
               {sidebarPosts.map((post) => (
                 <article key={post.id} className="group cursor-pointer">
-                  <Link href={`/blog/${post.slug}`} className="block">
+                  <Link href={`/ai-blog/${post.slug}`} className="block">
                     <div className="overflow-hidden  transition-all duration-300">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 h-full">
                         <div
@@ -289,7 +289,7 @@ export default function BlogPostsSection() {
         </div>
 
         <article className="group cursor-pointer">
-          <Link href={`/blog/${fullWidthPost.slug}`} className="block">
+          <Link href={`/ai-blog/${fullWidthPost.slug}`} className="block">
             <div className="overflow-hidden transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
                 <div className="aspect-[2/1] overflow-hidden lg:col-span-2">

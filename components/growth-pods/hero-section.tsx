@@ -35,14 +35,8 @@ function HeroSection() {
                 md:text-4xl
                 lg:text-[48px]"
                 style={{
-                  letterSpacing:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "-1.44px"
-                      : "-0.5px",
-                  fontSize:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "48px"
-                      : undefined,
+                  letterSpacing: "-1.44px",
+                  fontSize: "48px",
                 }}
               >
                 <span
@@ -57,14 +51,8 @@ function HeroSection() {
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
-                    letterSpacing:
-                      typeof window !== "undefined" && window.innerWidth >= 1024
-                        ? "-1.44px"
-                        : "-0.5px",
-                    fontSize:
-                      typeof window !== "undefined" && window.innerWidth >= 1024
-                        ? "48px"
-                        : undefined,
+                    letterSpacing: "-1.44px",
+                    fontSize: "48px",
                   }}
                 >
                   AI-Powered Growth Pods for Business, Startups & Creators
@@ -83,22 +71,10 @@ function HeroSection() {
                 max-w-full lg:max-w-[681px]"
                 style={{
                   color: "rgba(255, 255, 255, 0.85)",
-                  letterSpacing:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "-0.75px"
-                      : "-0.3px",
-                  fontSize:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "25px"
-                      : undefined,
-                  lineHeight:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "35px"
-                      : "140%",
-                  width:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "681px"
-                      : "auto",
+                  letterSpacing: "-0.75px",
+                  fontSize: "25px",
+                  lineHeight: "35px",
+                  width: "681px",
                 }}
               >
                 Real teams. Custom solutions. Built faster with AI. We don’t
@@ -118,18 +94,9 @@ function HeroSection() {
                   background: "rgba(140, 69, 255, 0.40)",
                   boxShadow:
                     "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset",
-                  letterSpacing:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "-0.4px"
-                      : "-0.2px",
-                  fontSize:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "19.8px"
-                      : undefined,
-                  lineHeight:
-                    typeof window !== "undefined" && window.innerWidth >= 1024
-                      ? "30px"
-                      : "1.5",
+                  letterSpacing: "-0.4px",
+                  fontSize: "19.8px",
+                  lineHeight: "30px",
                 }}
               >
                 Get Started Now
