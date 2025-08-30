@@ -1,18 +1,28 @@
-"use client";
-
-import { useSEO } from "@/utils/seo";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function AISocialMediaPostGenerator() {
-  useSEO({
+export const metadata: Metadata = {
+  title: "Free AI Social Media Post Generator - Marqait AI",
+  description: "Generate engaging social media posts for free with a simple text prompt using Marqait's free AI social media post generator.",
+  keywords: "AI social media post generator, free social media generator, social media content creation, AI marketing tools",
+  alternates: {
+    canonical: "https://www.marqait.com/ai-social-media-post-generator"
+  },
+  openGraph: {
     title: "Free AI Social Media Post Generator - Marqait AI",
     description: "Generate engaging social media posts for free with a simple text prompt using Marqait's free AI social media post generator.",
-    canonical: "https://www.marqait.com/ai-social-media-post-generator",
-    keywords: "AI social media post generator, free social media generator, social media content creation, AI marketing tools",
-    ogType: "website",
-    twitterCard: "summary_large_image"
-  });
+    url: "https://www.marqait.com/ai-social-media-post-generator",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free AI Social Media Post Generator - Marqait AI",
+    description: "Generate engaging social media posts for free with a simple text prompt using Marqait's free AI social media post generator."
+  }
+};
+
+export default function AISocialMediaPostGenerator() {
 
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
