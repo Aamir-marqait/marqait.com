@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
       name: "Marqait Team",
       avatar: "/user.jpg",
     },
-    date: "2025-10-05",
+    date: "2025-09-05",
     readTime: "10 min read",
     image: "/blog/12So.png",
     tags: ["AI", "Social Media", "Marketing", "Tools"],
