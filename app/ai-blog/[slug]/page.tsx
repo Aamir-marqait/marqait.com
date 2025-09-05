@@ -24,6 +24,86 @@ const getAdditionalImage = (blogPost: any) => {
 
 // Generate additional content based on blog post category/topic
 const getAdditionalContent = (blogPost: any) => {
+  // Special content for AI social media tools blog post
+  if (blogPost.slug === "best-ai-tools-social-media-2025") {
+    return [
+      `<h2 style="font-size: 28px; margin-top: 24px; margin-bottom: 16px;"><strong>AI Tool for Social Media in 2025</strong></h2>
+
+<p style="margin-top: 24px; margin-bottom: 16px;">Social media success depends on both content creation and performance tracking. AI tools make this easier by automating posts, generating creative ideas, and providing data-backed insights. Here are some of the best AI tools for social media in 2025:</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">1. Marqait AI</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Marqait AI offers a powerful AI marketing automation tool developed in India. Offers a range of AI tools for Social media including AI social media post generator, AI logo generator, AI Photo editor, campaign generator and more. It goes beyond simple captions by integrating campaign automation, Integration with your CRM, brand book alignment, and email workflows. Perfect for small businesses looking for an all-in-one solution.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">2. Jasper</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Jasper is popular for its natural-sounding AI writing. It generates captions, tweet threads, and ad copy while maintaining your brand voice. Its templates are ideal for quickly launching campaigns across platforms.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">3. Copy.ai</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Known for ease of use and variety, Copy.ai generates social posts, ad copy, and blog snippets. It also provides brainstorming tools, making it a go-to option when you need creative inspiration fast.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">4. Hootsuite (OwlyWriter AI)</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">OwlyWriter AI inside Hootsuite creates post ideas, drafts, and optimized captions using proven formulas like AIDA. It's best for marketing teams managing multiple accounts.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">5. Predis.ai</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Predis.ai combines post generation with competitor analysis and carousel/video creation. This makes it a strong tool for staying ahead in today's competitive social landscape.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">6. ContentStudio</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">ContentStudio uses AI for content discovery, trend insights, and calendar automation. It's great for teams that want to keep their feeds active without spending hours on research.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">7. Canva</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">In 2025, Canva's AI features can auto-generate designs, resize them for multiple platforms, and create visuals from text prompts. It's perfect for businesses without dedicated designers.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">8. AdCreative.ai</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">AdCreative.ai focuses on ad creatives optimized for conversions. It generates visuals, headlines, and design templates to boost ROI from paid campaigns.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">9. Sprinklr</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Sprinklr's AI ensures brand consistency and provides advanced sentiment analysis. It's ideal for enterprises looking to monitor customer sentiment and engagement across multiple channels.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">10. Sprout Social</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Sprout Social offers AI-powered listening, sentiment analysis, and engagement tracking, helping brands respond to customers in real time.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">11. Piktochart's AI Post Generators</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Piktochart's free AI tools allow you to create engaging visuals and social posts with an easy-to-use interface.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">12. Publer</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">Publer includes a free plan with text-to-image generation and scheduling. Its AI recommendations make it a smart pick for small businesses testing automation.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">Choosing the Right AI for Social Media</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">When selecting the right AI marketing tool, consider:</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">Your team size and technical skill level<br/>
+Budget and subscription models<br/>
+Must-have features (content creation, scheduling, analytics, design)<br/>
+Integration with your CRM or existing marketing tools</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">👉 For example, Marqait AI is a strong all-in-one platform for small businesses, while tools like AdCreative.ai (ads) or Sprout Social (analytics) are better if you need specialized functions.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">AI for Social Media FAQs</h2>
+
+<p style="font-weight: bold; margin-top: 10px; margin-bottom: 10px;">Q1. What benefits do AI marketing tools bring to social media?</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">They save time, boost creativity, personalize content, and provide data-driven insights to improve engagement and conversions.</p>
+
+<p style="font-weight: bold; margin-top: 10px; margin-bottom: 10px;">Q2. Can I use AI social media post generators for free?</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">Yes. Tools like Piktochart and Publer offer free plans with AI content generation.</p>
+
+<p style="font-weight: bold; margin-top: 10px; margin-bottom: 10px;">Q3. Do I need technical skills to use these tools?</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">No. Most AI platforms are designed for business owners and marketers without coding experience.</p>
+
+<p style="font-weight: bold; margin-top: 10px; margin-bottom: 10px;">Q4. How does AI help with analytics?</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">AI analyzes audience sentiment, competitor activity, and engagement trends in real-time, giving you insights to improve campaigns.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">AI Tool for Social Media Checklist</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">✅ Define your social media goals (growth, engagement, brand awareness).<br/>
+✅ Shortlist AI tools that match your needs (content, scheduling, analytics).<br/>
+✅ Try free trials or freemium plans before committing.<br/>
+✅ Set up integrations with your current marketing tools.<br/>
+✅ Train your team to get the most from AI features.</p>
+
+<h2 style="font-weight: bold; font-size: 20px; margin-top: 24px; margin-bottom: 16px;">AI for Social Media Conclusion</h2>
+<p style="margin-top: 10px; margin-bottom: 10px;">In 2025, AI marketing tools are essential for building a smarter social media strategy. They save time, improve content quality, and help brands engage audiences more effectively.</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">Whether you want a free AI post generator or a comprehensive AI-powered manager, tools like Marqait AI, Jasper, and Hootsuite allow you to scale without adding extra workload.</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">AI and social media together unlock smarter marketing — making it easier for your business to stay creative, consistent, and competitive in a crowded digital space.</p>
+<p style="margin-top: 10px; margin-bottom: 10px;">If you want to improve efficiency through task automation, enhancing user experience, start using AI for social media right now.</p>`,
+    ];
+  }
+
   // Special content for AI marketing tools blog post
   if (blogPost.slug === "ai-marketing-tools-for-small-business") {
     return [

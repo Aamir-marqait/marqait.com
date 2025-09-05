@@ -18,6 +18,43 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "0",
+    title: "12 Best AI Tools for Social Media in 2025",
+    slug: "best-ai-tools-social-media-2025",
+    excerpt:
+      "Discover the 12 best AI tools for social media in 2025 to create posts, automate scheduling, boost engagement, and grow your business efficiently.",
+    content: `<h1>12 Best AI Tools for Social Media in 2025</h1>
+
+<p style="margin-top: 24px; margin-bottom: 16px;">Social media marketing is evolving rapidly, and AI is at the center of this transformation. From generating content to scheduling posts and engaging audiences, AI tools help businesses save time while delivering better results.</p>
+
+<p style="margin-top: 24px; margin-bottom: 16px;">If your business wants to level up its social strategy in 2025, adopting AI tools is no longer optional — it's essential. From AI social media post generators to AI-powered managers that optimize your entire presence, these tools can completely transform the way you work.</p>
+
+<p style="margin-top: 24px; margin-bottom: 16px;">Here's a clear, practical guide to the 12 best AI tools for social media in 2025.</p>
+
+<h2 style="font-size: 28px; margin-top: 24px; margin-bottom: 16px;"><strong>What is an AI tool for Social Media?</strong></h2>
+
+<p style="margin-top: 24px; margin-bottom: 16px;">AI tools use artificial intelligence technologies like natural language processing, machine learning, and generative AI to improve social media marketing. These tools can:</p>
+
+<p style="margin-top: 24px; margin-bottom: 16px;">✔ Generate social media posts automatically<br/>
+✔ Suggest hashtags and optimize posting times<br/>
+✔ Create engaging visuals and videos<br/>
+✔ Personalize interactions with followers<br/>
+✔ Analyze trends and competitive landscapes</p>
+
+<p style="margin-top: 24px; margin-bottom: 16px;">By using AI, businesses can focus on strategy and creativity while automating repetitive manual tasks — resulting in better productivity and stronger outcomes.</p>`,
+    author: {
+      name: "Marqait Team",
+      avatar: "/user.jpg",
+    },
+    date: "2025-01-25",
+    readTime: "10 min read",
+    image: "/blog/12So.png",
+    tags: ["AI", "Social Media", "Marketing", "Tools"],
+    category: "AI & Social Media",
+    description:
+      "Discover the 12 best AI tools for social media in 2025 to create posts, automate scheduling, boost engagement, and grow your business efficiently.",
+  },
+  {
     id: "1",
     title: "10 Best AI Marketing Tools for Small Business in 2025",
     slug: "ai-marketing-tools-for-small-business",
