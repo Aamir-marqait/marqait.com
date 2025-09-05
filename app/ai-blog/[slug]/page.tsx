@@ -633,7 +633,7 @@ export default function BlogPost({ params }: Props) {
                   {recentPosts.map((post) => (
                     <article key={post.id} className="group cursor-pointer">
                       <a
-                        href={`/blog/${post.slug}`}
+                        href={`/ai-blog/${post.slug}`}
                         className="flex gap-3 sm:gap-4 hover:opacity-80 transition-opacity duration-200"
                       >
                         {/* Post Thumbnail */}
