@@ -15,7 +15,7 @@ export default function DesignPattern() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url(/floating.png)",
+          backgroundImage: "url(/floating.webp), url(/floating.png)",
           backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -26,7 +26,7 @@ export default function DesignPattern() {
         <div
           className="h-[35rem] w-[35rem] transition-transform duration-500 ease-in-out hover:scale-x-[-1]"
           style={{
-            backgroundImage: "url(/flipping.png)",
+            backgroundImage: "url(/flipping.webp), url(/flipping.png)",
             backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
