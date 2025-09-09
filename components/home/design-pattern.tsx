@@ -13,6 +13,36 @@ export default function DesignPattern() {
         }}
       ></div>
       <div
+        className="absolute top-0 left-0 w-64 h-64"
+        style={{
+          backgroundImage: "url(/glowing.webp), url(/glowing.png)",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          filter: "blur(50px)",
+        }}
+      ></div>
+      <div
+        className="absolute top-0 right-0 w-64 h-64"
+        style={{
+          backgroundImage: "url(/glowing.webp), url(/glowing.png)",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          filter: "blur(50px)",
+        }}
+      ></div>
+      <div
+        className="absolute bottom-0 right-0 w-64 h-64"
+        style={{
+          backgroundImage: "url(/glowing.webp), url(/glowing.png)",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          filter: "blur(50px)",
+        }}
+      ></div>
+      <div
         className="absolute inset-0"
         style={{
           backgroundImage: "url(/floating.webp), url(/floating.png)",
