@@ -4,7 +4,7 @@ export default function DesignPattern() {
   return (
     <div className="w-screen h-screen mt-10 pointer-events-none  relative">
       <div
-        className="absolute inset-0 opacity-100"
+        className="absolute inset-0 opacity-50"
         style={{
           backgroundImage: "url(/svg/background-pattern.svg)",
           backgroundSize: "cover",
@@ -22,9 +22,9 @@ export default function DesignPattern() {
           animation: "floatingOut 4s ease-in-out infinite",
         }}
       ></div>
-      <div className="absolute inset-0 flex mt-14 justify-center">
+      <div className="absolute inset-0 flex mt-14 justify-center pointer-events-auto">
         <div
-          className="h-[35rem] w-[35rem]"
+          className="h-[35rem] w-[35rem] transition-transform duration-500 ease-in-out hover:scale-x-[-1]"
           style={{
             backgroundImage: "url(/flipping.png)",
             backgroundSize: "contain",
