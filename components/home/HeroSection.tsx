@@ -37,8 +37,10 @@ export default function HeroSection({
   //   { name: "2TWICE", logo: "/logo/twicce.png" },
   // ];
 
+  // min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)]
+
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)] overflow-hidden">
+    <section className="relative  overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-1 sm:pt-1 md:pt-1 lg:pt-1">
         <div className="text-center space-y-6 sm:space-y-8 lg:space-y-6">
           {/* Main Heading */}

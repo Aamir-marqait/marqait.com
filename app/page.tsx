@@ -12,6 +12,7 @@ import VideoOverlay from "../components/home/VideoOverlay";
 import Toast from "../components/ui/Toast";
 import WaitlistModal from "../components/waitlist-modal";
 import FAQSection from "../components/home/FAQSection";
+import DesignPattern from "@/components/home/design-pattern";
 
 export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
@@ -88,6 +89,7 @@ export default function Home() {
       </Script>
       <div className="w-full max-w-none">
         <HeroSection onScrollToContact={openWaitlistModal} />
+        <DesignPattern />
         <CopilotSection onScrollToContact={openWaitlistModal} />
         <ServicesSection />
         <StatisticsSection />
