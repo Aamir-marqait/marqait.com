@@ -6,18 +6,28 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+     
+    "studio": "sanity start",
+    "studio:build": "sanity build",
+    "studio:deploy": "sanity deploy"
   },
   "dependencies": {
     "@barba/core": "^2.10.3",
     "@hookform/resolvers": "^5.2.1",
+    "@sanity/client": "^7.11.0",
+    "@sanity/code-input": "^6.0.1",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.6.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.540.0",
     "next": "15.5.0",
+    "next-sanity": "^10.1.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hook-form": "^7.62.0",
+    "sanity": "^4.6.1",
     "tailwind-merge": "^3.3.1",
     "zod": "^4.0.17"
   },
