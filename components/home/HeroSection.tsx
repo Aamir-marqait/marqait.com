@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { trackCTAClick } from "../../analytics";
 
 export default function HeroSection({
@@ -71,7 +72,7 @@ export default function HeroSection({
 
             {/* AI-Powered Marketing Automation text */}
             <div className="relative z-10">
-              <h1
+              <motion.h1
                 className="font-inter text-white font-medium text-center leading-tight tracking-tight
                 text-[32px] 
                 xs:text-[20px] xs:leading-[48px] xs:tracking-[-2px]
@@ -79,10 +80,13 @@ export default function HeroSection({
                 md:text-[40px] md:leading-[72px] md:tracking-[-3px]
                 lg:text-[52px] lg:leading-[84px] lg:tracking-[-3.5px]
                 xl:text-[64px] xl:leading-[100px] xl:tracking-[-4.149px]"
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
               >
                 AI-Powered
-              </h1>
-              <h1
+              </motion.h1>
+              <motion.h1
                 className="font-inter font-medium text-center leading-tight tracking-tight
                   text-[32px] 
                   xs:text-[20px] xs:leading-[48px] xs:tracking-[-2px]
@@ -96,9 +100,12 @@ export default function HeroSection({
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               >
                 Marketing Automation
-              </h1>
+              </motion.h1>
             </div>
           </div>
 
