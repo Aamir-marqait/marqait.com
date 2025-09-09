@@ -40,29 +40,29 @@ export default function HeroSection({
 
   return (
     <section className="relative min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-5rem)] xl:min-h-[calc(100vh-6rem)] overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-6 sm:pt-8 md:pt-12 lg:pt-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-1 sm:pt-1 md:pt-1 lg:pt-1">
         <div className="text-center space-y-6 sm:space-y-8 lg:space-y-6">
           {/* Main Heading */}
-          <div className="space-y-1 sm:space-y-2">
+          <div className="">
             <h1
               className="font-inter text-white font-medium text-center leading-tight tracking-tight
               text-[32px] 
-              xs:text-[40px] xs:leading-[48px] xs:tracking-[-2px]
-              sm:text-[50px] sm:leading-[60px] sm:tracking-[-2.5px]
-              md:text-[60px] md:leading-[72px] md:tracking-[-3px]
-              lg:text-[70px] lg:leading-[84px] lg:tracking-[-3.5px]
-              xl:text-[82px] xl:leading-[100px] xl:tracking-[-4.149px]"
+              xs:text-[20px] xs:leading-[48px] xs:tracking-[-2px]
+              sm:text-[30px] sm:leading-[60px] sm:tracking-[-2.5px]
+              md:text-[40px] md:leading-[72px] md:tracking-[-3px]
+              lg:text-[52px] lg:leading-[84px] lg:tracking-[-3.5px]
+              xl:text-[64px] xl:leading-[100px] xl:tracking-[-4.149px]"
             >
               AI-Powered
             </h1>
             <h1
               className="font-inter font-medium text-center leading-tight tracking-tight
                 text-[32px] 
-                xs:text-[40px] xs:leading-[48px] xs:tracking-[-2px]
-                sm:text-[50px] sm:leading-[60px] sm:tracking-[-2.5px]
-                md:text-[60px] md:leading-[72px] md:tracking-[-3px]
-                lg:text-[70px] lg:leading-[84px] lg:tracking-[-3.5px]
-                xl:text-[82px] xl:leading-[100px] xl:tracking-[-4.149px]"
+                xs:text-[20px] xs:leading-[48px] xs:tracking-[-2px]
+                sm:text-[30px] sm:leading-[60px] sm:tracking-[-2.5px]
+                md:text-[40px] md:leading-[72px] md:tracking-[-3px]
+                lg:text-[50px] lg:leading-[84px] lg:tracking-[-3.5px]
+                xl:text-[64px] xl:leading-[100px] xl:tracking-[-4.149px]"
               style={{
                 background: "linear-gradient(180deg, #FFF 0%, #B372CF 80%)",
                 backgroundClip: "text",
