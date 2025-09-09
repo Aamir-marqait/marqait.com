@@ -1,8 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { ArrowUp } from "lucide-react";
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
 
