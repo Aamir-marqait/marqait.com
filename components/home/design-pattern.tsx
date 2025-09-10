@@ -4,7 +4,7 @@ export default function DesignPattern() {
   return (
     <div className="w-screen h-screen mt-10 pointer-events-none  relative">
       <div
-        className="absolute inset-0 opacity-50"
+        className="absolute inset-0 opacity-70"
         style={{
           backgroundImage: "url(/svg/background-pattern.svg)",
           backgroundSize: "cover",
