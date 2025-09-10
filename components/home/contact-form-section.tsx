@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, forwardRef, Ref } from "react";
 import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
