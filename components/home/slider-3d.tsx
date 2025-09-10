@@ -18,7 +18,7 @@ const slides: SlideData[] = [
     title: "Logo Generator",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
-    image: "/copilot/logo.png",
+    image: "/copilot/LogoGenerator.png",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const slides: SlideData[] = [
     title: "Brand Book Creator",
     description:
       "Build your brand identity with Marqait AI Brand Book Generator. Our AI organizes your logos, colors, fonts, and guidelines into a professional brand book. It helps you create stunning, interactive digital brand books with ease.",
-    image: "/copilot/brand.png",
+    image: "/copilot/Branding.png",
   },
   {
     id: 4,
