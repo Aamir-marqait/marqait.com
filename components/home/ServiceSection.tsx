@@ -43,7 +43,7 @@ export default function ServicesSection() {
   return (
     <section
       id="products"
-      className="relative bg-black py-16 sm:py-20 lg:py-24 xl:py-32 overflow-hidden"
+      className="relative bg-black py-16 sm:py-20 lg:py-16 xl:py-20 overflow-hidden"
     >
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">

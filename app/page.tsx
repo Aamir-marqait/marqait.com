@@ -15,6 +15,7 @@ import FAQSection from "../components/home/FAQSection";
 
 
 import DesignPattern from "@/components/home/design-pattern";
+import UI from "@/components/home/UI";
 
 
 export default function Home() {
@@ -96,7 +97,8 @@ export default function Home() {
       <div className="w-full max-w-none">
         <HeroSection onScrollToContact={openWaitlistModal} />
         <DesignPattern />
-        <CopilotSection onScrollToContact={openWaitlistModal} />
+        <CopilotSection />
+        <UI />
         <ServicesSection />
         <StatisticsSection />
         <VideoOverlay />
