@@ -9,7 +9,16 @@ export default function FreeTierAgents() {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <h2 className="text-[43.8px] leading-[62.4px] font-semibold text-center mb-16 text-white font-inter">
-          Featured <span className="text-purple-500">Free</span> Tier Agents
+          Featured{" "}
+          <span
+            className="text-purple-500 px-4 py-2 mx-2 border-l-[4px] border-[#8654fb]"
+            style={{
+              background: "linear-gradient(90deg, #6d32f6 -40%, #000000 100%)",
+            }}
+          >
+            Free
+          </span>{" "}
+          Tier Agents
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
