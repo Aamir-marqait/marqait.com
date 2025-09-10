@@ -4,27 +4,26 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import { getAISolution, getAllAISolutionSlugs } from "../../../lib/sanity";
 import AISolutionPageClient from "./AISolutionPageClient";
-import { 
-  generateFAQStructuredData, 
-  generateServiceStructuredData, 
+import {
+  generateFAQStructuredData,
+  generateServiceStructuredData,
   generateBreadcrumbStructuredData,
-  extractFAQsFromContent 
+  extractFAQsFromContent,
 } from "../../../utils/structuredData";
 
-interface AISolutionPageProps {
-  params: {
-    slug: string;
-  };
-}
+type RouteParams = { slug: string };
 
 // Generate metadata for SEO
-export async function generateMetadata({ params }: AISolutionPageProps): Promise<Metadata> {
-  const solution = await getAISolution(params.slug);
+export async function generateMetadata(
+  { params }: { params: Promise<RouteParams> }
+): Promise<Metadata> {
+  const { slug } = await params;
+  const solution = await getAISolution(slug);
 
   if (!solution) {
     return {
-      title: 'Page Not Found',
-      description: 'The requested page could not be found.',
+      title: "Page Not Found",
+      description: "The requested page could not be found.",
     };
   }
 
@@ -33,42 +32,46 @@ export async function generateMetadata({ params }: AISolutionPageProps): Promise
     description: solution.seoDescription,
     keywords: solution.seoKeywords,
     alternates: {
-      canonical: solution.canonicalUrl
+      canonical: solution.canonicalUrl,
     },
     openGraph: {
       title: solution.seoTitle,
       description: solution.seoDescription,
       url: solution.canonicalUrl,
       type: "website",
-      images: solution.heroSection?.heroImage ? [
-        {
-          url: solution.heroSection.heroImage.asset.url,
-          width: 1200,
-          height: 630,
-          alt: solution.heroSection.heroImage.alt || solution.title,
-        }
-      ] : []
+      images: solution.heroSection?.heroImage
+        ? [
+            {
+              url: solution.heroSection.heroImage.asset.url,
+              width: 1200,
+              height: 630,
+              alt: solution.heroSection.heroImage.alt || solution.title,
+            },
+          ]
+        : [],
     },
     twitter: {
       card: "summary_large_image",
       title: solution.seoTitle,
       description: solution.seoDescription,
-      images: solution.heroSection?.heroImage ? [solution.heroSection.heroImage.asset.url] : []
-    }
+      images: solution.heroSection?.heroImage
+        ? [solution.heroSection.heroImage.asset.url]
+        : [],
+    },
   };
 }
 
 // Generate static params for all AI solutions at build time
 export async function generateStaticParams() {
   const slugs = await getAllAISolutionSlugs();
-  
-  return slugs.map((slug: string) => ({
-    slug: slug,
-  }));
+  return slugs.map((slug: string) => ({ slug }));
 }
 
-export default async function AISolutionPage({ params }: AISolutionPageProps) {
-  const solution = await getAISolution(params.slug);
+export default async function AISolutionPage(
+  { params }: { params: Promise<RouteParams> }
+) {
+  const { slug } = await params;
+  const solution = await getAISolution(slug);
 
   if (!solution) {
     notFound();
@@ -81,28 +84,28 @@ export default async function AISolutionPage({ params }: AISolutionPageProps) {
     <>
       {/* Structured Data Scripts */}
       {faqs.length > 0 && (
-        <Script 
-          id="faq-structured-data" 
+        <Script
+          id="faq-structured-data"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateFAQStructuredData(faqs))
+            __html: JSON.stringify(generateFAQStructuredData(faqs)),
           }}
         />
       )}
-      
-      <Script 
-        id="service-structured-data" 
+
+      <Script
+        id="service-structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateServiceStructuredData(solution))
+          __html: JSON.stringify(generateServiceStructuredData(solution)),
         }}
       />
-      
-      <Script 
-        id="breadcrumb-structured-data" 
+
+      <Script
+        id="breadcrumb-structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateBreadcrumbStructuredData(solution))
+          __html: JSON.stringify(generateBreadcrumbStructuredData(solution)),
         }}
       />
 
