@@ -1,9 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts } from "../../data/blogPosts";
+import { TransformedBlogPost } from "../../data/blogService";
 
-export default function AllBlogPostsSection() {
+interface AllBlogPostsSectionProps {
+  blogPosts: TransformedBlogPost[];
+}
+
+export default function AllBlogPostsSection({ blogPosts }: AllBlogPostsSectionProps) {
+  // Skip the first 4 posts (already shown in BlogPostsSection)
   const allPosts = blogPosts.slice(4);
+
+  // If no additional posts, don't render this section
+  if (!allPosts || allPosts.length === 0) {
+    return null;
+  }
 
   return (
     <section className="relative bg-[#020103] py-16 sm:py-20 lg:py-10 xl:py-20">
