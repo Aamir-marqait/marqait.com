@@ -15,6 +15,7 @@ import UI from "@/components/home/UI";
 import ClientTestimonialsSection from "@/components/home/client-testimonials-section";
 import FreeTierAgents from "@/components/home/featured-agents-free-tier";
 import ProTierAgents from "@/components/home/featured-agents-pro-tier";
+import UniqueFeatured from "@/components/home/featured-unique";
 
 export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
@@ -96,6 +97,7 @@ export default function Home() {
         <UI />
         <FreeTierAgents />
         <ProTierAgents/>
+        <UniqueFeatured/>
         <ClientTestimonialsSection />
         <ContactFormSection ref={contactFormRef} />
         <FAQSection />
