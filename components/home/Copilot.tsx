@@ -4,7 +4,7 @@ export default function CopilotSection() {
   return (
     <section
       id="copilot"
-      className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32"
+      className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-10 xl:py-10"
     >
       <div className="relative  mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">

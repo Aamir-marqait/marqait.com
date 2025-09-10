@@ -108,11 +108,11 @@ export function Slider3D() {
               </div>
 
               {/* Content */}
-              <div className="text-center px-4">
-                <h3 className="text-white text-2xl font-bold mb-4 text-balance">
+              <div className="px-4">
+                <h3 className="text-white text-2xl font-bold  leading-none tracking-normal mb-4 text-balance">
                   {slide.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed text-pretty">
+                <p className="text-white/87 text-xl font-normal leading-[150%] tracking-normal text-pretty">
                   {slide.description}
                 </p>
               </div>
