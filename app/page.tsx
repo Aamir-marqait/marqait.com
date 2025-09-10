@@ -13,6 +13,7 @@ import Toast from "../components/ui/Toast";
 import WaitlistModal from "../components/waitlist-modal";
 import FAQSection from "../components/home/FAQSection";
 import DesignPattern from "@/components/home/design-pattern";
+import UI from "@/components/home/UI";
 
 export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
@@ -91,6 +92,7 @@ export default function Home() {
         <HeroSection onScrollToContact={openWaitlistModal} />
         <DesignPattern />
         <CopilotSection />
+        <UI />
         <ServicesSection />
         <StatisticsSection />
         <VideoOverlay />
