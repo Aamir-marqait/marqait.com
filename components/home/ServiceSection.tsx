@@ -1,25 +1,19 @@
 'use client';
-
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
-
 export default function ServicesSection() {
   const router = useRouter();
   const [isLargeScreen, setIsLargeScreen] = useState(false);
-
   useEffect(() => {
     const checkScreenSize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
     };
-
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
-
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
-
   const services = [
     {
       icon: "/svg/avatar.svg",
@@ -46,7 +40,6 @@ export default function ServicesSection() {
         "We manage the entire funnel: launch, optimize, and scale — across platforms and channels.",
     },
   ];
-
   return (
     <section
       id="products"
@@ -63,7 +56,6 @@ export default function ServicesSection() {
             <div className="w-2 h-2 bg-white rounded-full"></div>
             <div className="flex-1 max-w-[100px] sm:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-l from-transparent to-gray-600"></div>
           </div>
-
           {/* Main Heading */}
           <h2 className="font-inter text-2xl sm:text-3xl lg:text-[50px] font-semibold leading-tight sm:leading-[62.4px] mb-5">
             <span className="bg-gradient-to-b from-white via-white to-[#B372CF] bg-clip-text text-transparent">
@@ -71,14 +63,12 @@ export default function ServicesSection() {
             </span>{" "}
             <span className="text-white">AI Marketing Automation?</span>
           </h2>
-
           {/* Subheading */}
           <p className="text-white/90 text-center font-inter text-xl font-medium leading-[27px] tracking-[-0.5px] self-stretch">
             AI-enhanced teams building custom marketing automation solutions for
             your business.
           </p>
         </div>
-
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-3xl mx-auto mb-[80px]">
           {services.map((service, index) => {
@@ -106,7 +96,6 @@ export default function ServicesSection() {
             );
           })}
         </div>
-
         {/* Bottom Description */}
         <div className="text-center mb-[24px]">
           <p className="w-[916px] h-[89px] text-white text-center font-inter text-[20px] font-normal leading-[150%] mx-auto">
@@ -119,7 +108,6 @@ export default function ServicesSection() {
             reporting - all handled by our expert AI-augmented pods.
           </p> */}
         </div>
-
         {/* CTA Button */}
         <div className="flex justify-center items-center">
           <button
