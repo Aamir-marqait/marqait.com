@@ -94,6 +94,23 @@ export async function generateMetadata(
   };
 }
 
+// Helper to tag the TOC UL as a card without editing source HTML
+function enhanceBlogHtml(html: string) {
+  // Mark the first UL after "Table of Contents" as .toc (no DOM changes needed elsewhere)
+  let out = html.replace(
+    /(<h2[^>]*>\s*Table of Contents\s*<\/h2>\s*)<ul(?![^>]*class=)/i,
+    '$1<ul class="toc"'
+  );
+  out = out.replace(
+    /(<h2[^>]*>\s*Table of Contents\s*<\/h2>\s*)<ul([^>]*class=(['"])([^'"]*)\3)/i,
+    (_m, h2, clsAttr, _q, classes) => `${h2}<ul ${clsAttr.replace(classes, `${classes} toc`)}`
+  );
+  return out;
+}
+
+
+
+
 // Make the page async and await params
 export default async function BlogPost(
   { params }: { params: Promise<RouteParams> }
@@ -108,6 +125,8 @@ export default async function BlogPost(
   const recentPosts = await getRecentPosts(blogPost?.id);
   const additionalContent = blogPost ? getAdditionalContent(blogPost) : [];
   const additionalImage = blogPost ? getAdditionalImage(blogPost.category) : "/blog/post.jpg";
+
+  console.log("Rendering blog post:", blogPost);
 
   return (
     <section className="relative bg-[#020103] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
@@ -265,19 +284,17 @@ export default async function BlogPost(
               </div>
 
               {/* Content */}
-              <div className="space-y-4 sm:space-y-5 lg:space-y-6 blog-content">
-                <div
-                  className="text-white font-inter font-normal leading-relaxed
-                  text-sm 
-                  sm:text-base sm:leading-[26px]
-                  md:text-lg md:leading-[28px]
-                  lg:text-[18px] lg:leading-[30px]"
-                  style={{
-                    fontFeatureSettings: "'liga' off",
-                  }}
-                  dangerouslySetInnerHTML={{ __html: blogPost.content }}
-                />
-              </div>
+             <div className="blog-content">
+  <article
+    className="
+      prose prose-invert prose-lg max-w-none
+      prose-headings:font-inter prose-p:font-inter prose-li:font-inter
+      prose-h2:mt-10 prose-h2:mb-3
+      prose-h3:mt-8 prose-h3:mb-2
+    "
+    dangerouslySetInnerHTML={{ __html: enhanceBlogHtml(blogPost.content) }}
+  />
+</div>
 
               {/* Additional Image */}
               <div
