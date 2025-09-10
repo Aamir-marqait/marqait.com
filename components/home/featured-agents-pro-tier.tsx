@@ -8,7 +8,10 @@ export default function ProTierAgents() {
     <section className="py-16 px-4 bg-black">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-[43.8px] leading-[62.4px] font-semibold text-center mb-16 text-white font-inter">
-          Featured <span className="text-purple-500">Pro</span> Tier Agents
+          Featured <span 
+            className="text-purple-500 px-4 py-2 mx-2 border-l-[4px] border-[#8654fb]"
+            style={{background: 'linear-gradient(90deg, #6d32f6 -40%, #000000 100%)'}}
+          >Pro</span> Tier Agents
         </h2>
 
         <motion.div
