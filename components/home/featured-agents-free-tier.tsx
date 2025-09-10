@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default function FreeTierAgents() {
@@ -12,15 +11,21 @@ export default function FreeTierAgents() {
           Featured <span className="text-purple-500">Free</span> Tier Agents
         </h2>
 
-        {/* Agent Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
-          {/* BrandMark AI Card */}
-          <div className="w-full h-auto rounded-[16px] p-[32px] flex flex-col gap-[32px]" style={{background: 'linear-gradient(180deg, #05000a 0%, #1b1125 100%)'}}>
-            <div className="w-[546px] h-[405px] flex items-center justify-center rounded-[20px] overflow-hidden gap-[10px] opacity-100" style={{background: '#0000000A'}}>
+          <div
+            className="w-full h-auto rounded-[16px] p-[32px] flex flex-col gap-[32px]"
+            style={{
+              background: "linear-gradient(180deg, #05000a 0%, #1b1125 100%)",
+            }}
+          >
+            <div
+              className=" flex items-center justify-center rounded-[20px] overflow-hidden gap-[10px] opacity-100"
+              style={{ background: "#0000000A" }}
+            >
               <Image
-                src="/free/BrandBook.png"
+                src="/free/LogoGenerator.png"
                 alt="BrandMark AI Character"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-contain rounded-lg"
                 width={546}
                 height={300}
                 priority
@@ -31,22 +36,51 @@ export default function FreeTierAgents() {
               <h3 className="text-[36px] leading-[100%] font-semibold text-white mb-4 font-roboto">
                 BrandMark AI: Instantly create unique logos
               </h3>
-              <p className="text-[24px] leading-[150%] font-normal mb-8 font-inter line-clamp-3" style={{color: '#FFFFFFDE'}}>
+              <p
+                className="text-[24px] leading-[150%] font-normal mb-8 font-inter line-clamp-3"
+                style={{ color: "#FFFFFFDE" }}
+              >
                 Design your brand identity with AI-powered logo generation.
                 Simple, fast, and professional.
               </p>
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200 flex items-center gap-2">
+              <button
+                className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
+                w-full sm:w-auto
+                px-3 py-2 text-xs  h-[45px] leading-[20px]
+                sm:px-4 sm:py-2.5 sm:text-sm  sm:h-[50px] sm:leading-[24px]
+                md:px-5 md:py-3 md:text-base  md:h-[55px] md:leading-[28px]
+                 lg:h-[58px] lg:text-[17.6px] lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
+                style={{
+                  background:
+                    "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
+                  borderRadius: "16px",
+                }}
+              >
                 Try BrandMark AI
-                <ArrowRight className="w-4 h-4" />
+                <Image
+                  src="/icons/arrow.svg"
+                  alt="arrow-right"
+                  width={30}
+                  height={24}
+                  className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
+                />
               </button>
             </div>
           </div>
 
           {/* ContentSpark AI Card */}
-          <div className="w-full h-auto rounded-[16px] p-[32px] flex flex-col gap-[32px]" style={{background: 'linear-gradient(180deg, #05000a 0%, #1b1125 100%)'}}>
-            <div className="w-[546px] h-[405px] flex items-center justify-center rounded-[20px] overflow-hidden gap-[10px] opacity-100" style={{background: '#0000000A'}}>
+          <div
+            className="w-full h-auto rounded-[16px] p-[32px] flex flex-col gap-[32px]"
+            style={{
+              background: "linear-gradient(180deg, #05000a 0%, #1b1125 100%)",
+            }}
+          >
+            <div
+              className="flex items-center justify-center rounded-[20px] overflow-hidden gap-[10px] opacity-100"
+              style={{ background: "#0000000A" }}
+            >
               <Image
-                src="/free/LogoGenerator.png"
+                src="/free/Social.png"
                 alt="ContentSpark AI Character"
                 className="w-full h-full object-cover rounded-lg"
                 width={546}
@@ -58,19 +92,39 @@ export default function FreeTierAgents() {
               <h3 className="text-[36px] leading-[100%] font-semibold text-white mb-4 font-roboto">
                 ContentSpark AI: Generate engaging social media posts
               </h3>
-              <p className="text-[24px] leading-[150%] font-normal mb-8 font-inter line-clamp-3" style={{color: '#FFFFFFDE'}}>
+              <p
+                className="text-[24px] leading-[150%] font-normal mb-8 font-inter line-clamp-3"
+                style={{ color: "#FFFFFFDE" }}
+              >
                 Boost your social presence with AI-driven content creation.
                 Tailored posts for every platform
               </p>
-              <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full font-medium transition-colors duration-200 flex items-center gap-2">
+              <button
+                className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
+                w-full sm:w-auto
+                px-3 py-2 text-xs  h-[45px] leading-[20px]
+                sm:px-4 sm:py-2.5 sm:text-sm  sm:h-[50px] sm:leading-[24px]
+                md:px-5 md:py-3 md:text-base  md:h-[55px] md:leading-[28px]
+                 lg:h-[58px] lg:text-[17.6px] lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
+                style={{
+                  background:
+                    "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
+                  borderRadius: "16px",
+                }}
+              >
                 Try ContentSpark AI
-                <ArrowRight className="w-4 h-4" />
+                <Image
+                  src="/icons/arrow.svg"
+                  alt="arrow-right"
+                  width={30}
+                  height={24}
+                  className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
+                />
               </button>
             </div>
           </div>
         </div>
       </div>
-
     </section>
   );
 }
