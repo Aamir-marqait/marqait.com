@@ -1,30 +1,23 @@
 "use client";
 
-import { useRef, useState} from "react";
+import { useRef, useState } from "react";
 import Script from "next/script";
 import { useSEO } from "../utils/seo";
 import ContactFormSection from "../components/home/contact-form-section";
 import CopilotSection from "../components/home/Copilot";
 import HeroSection from "../components/home/HeroSection";
-import ServicesSection from "../components/home/ServiceSection";
-import StatisticsSection from "../components/home/StatisticsSection";
-import VideoOverlay from "../components/home/VideoOverlay";
 import Toast from "../components/ui/Toast";
 import WaitlistModal from "../components/waitlist-modal";
 import FAQSection from "../components/home/FAQSection";
 
-
 import DesignPattern from "@/components/home/design-pattern";
 import UI from "@/components/home/UI";
-
+import ClientTestimonialsSection from "@/components/home/client-testimonials-section";
 
 export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
   const [showToast, setShowToast] = useState(false);
   const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
- 
-
-  
 
   useSEO({
     canonical: "https://www.marqait.com",
@@ -99,12 +92,7 @@ export default function Home() {
         <DesignPattern />
         <CopilotSection />
         <UI />
-        <ServicesSection />
-        <StatisticsSection />
-        <VideoOverlay />
-        {/* <AboutUsSection /> */}
-        {/* <TeamCarouselSection /> */}
-        {/* <ClientTestimonialsSection /> */}
+        <ClientTestimonialsSection />
         <ContactFormSection ref={contactFormRef} />
         <FAQSection />
         <Toast
