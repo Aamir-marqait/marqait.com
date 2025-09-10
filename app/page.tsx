@@ -13,6 +13,7 @@ import FAQSection from "../components/home/FAQSection";
 import DesignPattern from "@/components/home/design-pattern";
 import UI from "@/components/home/UI";
 import ClientTestimonialsSection from "@/components/home/client-testimonials-section";
+import FreeTierAgents from "@/components/home/featured-agents-free-tier";
 
 export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
@@ -92,6 +93,7 @@ export default function Home() {
         <DesignPattern />
         <CopilotSection />
         <UI />
+        <FreeTierAgents />
         <ClientTestimonialsSection />
         <ContactFormSection ref={contactFormRef} />
         <FAQSection />

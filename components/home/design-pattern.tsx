@@ -11,13 +11,13 @@ interface LazyImageProps {
   priority?: boolean;
 }
 
-const LazyImage: React.FC<LazyImageProps> = ({ 
-  className, 
-  imageUrls, 
-  style = {}, 
-  children, 
-  delay = 0, 
-  priority = false 
+const LazyImage: React.FC<LazyImageProps> = ({
+  className,
+  imageUrls,
+  style = {},
+  children,
+  delay = 0,
+  priority = false,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -30,13 +30,13 @@ const LazyImage: React.FC<LazyImageProps> = ({
       // Preload only the first (preferred) image format
       const primaryImage = imageUrls[0];
       if (primaryImage) {
-        const img = document.createElement('img');
+        const img = document.createElement("img");
         img.onload = () => setIsLoaded(true);
         img.onerror = () => {
           setImageError(true);
           // Try fallback image if available
           if (imageUrls[1]) {
-            const fallbackImg = document.createElement('img');
+            const fallbackImg = document.createElement("img");
             fallbackImg.onload = () => setIsLoaded(true);
             fallbackImg.onerror = () => setIsLoaded(true); // Show even if failed
             fallbackImg.src = imageUrls[1];
@@ -56,11 +56,12 @@ const LazyImage: React.FC<LazyImageProps> = ({
   }, [controls, inView, isLoaded]);
 
   // Use only the first image that works, prioritize webp
-  const backgroundImage = isLoaded && !imageError 
-    ? `url(${imageUrls[0]})` 
-    : isLoaded && imageUrls[1] 
-    ? `url(${imageUrls[1]})` 
-    : 'none';
+  const backgroundImage =
+    isLoaded && !imageError
+      ? `url(${imageUrls[0]})`
+      : isLoaded && imageUrls[1]
+      ? `url(${imageUrls[1]})`
+      : "none";
 
   return (
     <motion.div
@@ -97,7 +98,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
 
 export default function DesignPattern() {
   return (
-    <motion.div 
+    <motion.div
       className="w-screen h-screen mt-10 pointer-events-none relative overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -116,44 +117,63 @@ export default function DesignPattern() {
         animate={{ opacity: 0.7 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       />
-      
+
       {/* Priority: Main interactive element first */}
       <div className="absolute inset-0 flex mt-14 justify-center pointer-events-auto">
+        <motion.div
+          className="h-[35rem] w-[35rem] cursor-pointer"
+          whileHover={{
+            scale: 1.05,
+            rotateY: 180,
+            transition: { duration: 0.6, ease: "easeInOut" },
+          }}
+          whileTap={{ scale: 0.95 }}
+          style={{ transformStyle: "preserve-3d" }}
+        >
+          <LazyImage
+            className="h-full w-full"
+            imageUrls={["/flipping.webp", "/flipping.png"]}
+            delay={0.2}
+            priority={true}
+            style={{
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          />
+        </motion.div>
+      </div>
+
+      <motion.div
+        className="absolute inset-0"
+        animate={{
+          y: [0, -20, 0],
+          rotateX: [-2, 2, -2],
+          rotateY: [-3, 3, -3],
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        style={{ 
+          transformStyle: "preserve-3d",
+          perspective: "1000px"
+        }}
+      >
         <LazyImage
-          className="h-[35rem] w-[35rem]"
-          imageUrls={["/flipping.webp", "/flipping.png"]}
-          delay={0.2}
-          priority={true}
+          className="absolute inset-0"
+          imageUrls={["/floating.webp", "/floating.png"]}
+          delay={0.6}
           style={{
             backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
-        >
-          <motion.div
-            className="w-full h-full cursor-pointer"
-            whileHover={{ 
-              scale: 1.05,
-              transition: { duration: 0.3 }
-            }}
-            whileTap={{ scale: 0.95 }}
-          />
-        </LazyImage>
-      </div>
-      
-      {/* Secondary: Floating element */}
-      <LazyImage
-        className="absolute inset-0"
-        imageUrls={["/floating.webp", "/floating.png"]}
-        delay={0.6}
-        style={{
-          backgroundSize: "contain",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
-      
-      {/* Tertiary: Glowing elements (lower priority) */}
+        />
+      </motion.div>
+
       <LazyImage
         className="absolute top-0 left-0 w-48 h-48 lg:w-64 lg:h-64"
         imageUrls={["/glowing.webp", "/glowing.png"]}
@@ -165,7 +185,7 @@ export default function DesignPattern() {
           filter: "blur(40px)",
         }}
       />
-      
+
       <LazyImage
         className="absolute top-0 right-0 w-48 h-48 lg:w-64 lg:h-64"
         imageUrls={["/glowing.webp", "/glowing.png"]}
@@ -177,7 +197,7 @@ export default function DesignPattern() {
           filter: "blur(40px)",
         }}
       />
-      
+
       <LazyImage
         className="absolute bottom-0 right-0 w-48 h-48 lg:w-64 lg:h-64"
         imageUrls={["/glowing.webp", "/glowing.png"]}
@@ -189,7 +209,7 @@ export default function DesignPattern() {
           filter: "blur(40px)",
         }}
       />
-      
+
       {/* Minimal particles for better performance */}
       {[...Array(3)].map((_, i) => (
         <motion.div
