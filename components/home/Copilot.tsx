@@ -6,7 +6,7 @@ export default function CopilotSection() {
       id="copilot"
       className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32"
     >
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+      <div className="relative  mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
           <div className="flex items-center justify-center mb-4 sm:mb-5">
             <div className="flex-1 max-w-[60px] xs:max-w-[80px] sm:max-w-[100px] md:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-r from-transparent to-gray-600"></div>
@@ -40,7 +40,7 @@ export default function CopilotSection() {
             <span className="text-white">marketing automation platform.</span>
           </h2>
         </div>
-        <div className="w-full max-w-7xl">
+        <div className="w-full ">
           <Slider3D />
         </div>
       </div>

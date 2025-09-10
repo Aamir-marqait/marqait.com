@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { MoveLeft, MoveRight } from "lucide-react";
+import Image from "next/image";
 
 interface SlideData {
   id: number;
   title: string;
   description: string;
   image: string;
-  bgColor: string;
 }
 
 const slides: SlideData[] = [
@@ -18,7 +18,6 @@ const slides: SlideData[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: "/copilot/logo.png",
-    bgColor: "bg-red-600",
   },
   {
     id: 2,
@@ -26,7 +25,6 @@ const slides: SlideData[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: "/copilot/strategy.png",
-    bgColor: "bg-gray-800",
   },
   {
     id: 3,
@@ -34,7 +32,6 @@ const slides: SlideData[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: "/copilot/brand.png",
-    bgColor: "bg-blue-600",
   },
   {
     id: 4,
@@ -42,15 +39,13 @@ const slides: SlideData[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: "/copilot/Campaign.png",
-    bgColor: "bg-purple-600",
   },
   {
     id: 5,
     title: "Image Generation",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image:"/copilot/ImageGen.png",
-    bgColor: "bg-green-600",
+    image: "/copilot/ImageGen.png",
   },
   {
     id: 6,
@@ -58,7 +53,6 @@ const slides: SlideData[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: "/copilot/Social.png",
-    bgColor: "bg-orange-600",
   },
 ];
 
@@ -73,52 +67,44 @@ export function Slider3D() {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  const getVisibleSlides = () => {
-    const visibleSlides = [];
-    for (let i = 0; i < 3; i++) {
-      const index = (currentIndex + i) % slides.length;
-      visibleSlides.push(slides[index]);
-    }
-    return visibleSlides;
-  };
-
   return (
-    <div className="relative w-full max-w-6xl mx-auto">
+    <div className="relative w-full max-w-[85rem] mx-auto">
       {/* Navigation Buttons */}
       <button
-        variant="ghost"
-        size="icon"
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 text-white border-0 rounded-full w-12 h-12"
+        className="cursor-pointer absolute left-[30px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px]   shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <MoveLeft className="w-6 h-6" />
       </button>
 
       <button
-        variant="ghost"
-        size="icon"
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/20 hover:bg-black/40 text-white border-0 rounded-full w-12 h-12"
+        className="cursor-pointer absolute -right-[20px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px]   shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
       >
-        <ChevronRight className="w-6 h-6" />
+        <MoveRight className="w-6 h-6" />
       </button>
 
       {/* Slider Container */}
       <div className="overflow-hidden px-16">
         <div
           className="flex transition-transform duration-500 ease-in-out gap-6"
-          style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
+          style={{
+            transform: `translateX(-${
+              Math.min(currentIndex, slides.length - 3) * (100 / 2.5)
+            }%)`,
+          }}
         >
-          {slides.map((slide, index) => (
+          {slides.map((slide) => (
             <div key={slide.id} className="flex-shrink-0 w-1/3">
               {/* Card */}
               <div
-                className={`${slide.bgColor} rounded-3xl p-8 h-96 flex items-center justify-center mb-8 relative overflow-hidden`}
+                className={` rounded-3xl p-8 h-96 flex items-center justify-center mb-8 relative overflow-hidden`}
               >
-                <img
+                <Image
                   src={slide.image || "/placeholder.svg"}
                   alt={slide.title}
-                  className="w-full h-full object-cover rounded-2xl"
+                  fill
+                  className="object-cover rounded-2xl"
                 />
               </div>
 
@@ -134,19 +120,6 @@ export function Slider3D() {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Dots Indicator */}
-      <div className="flex justify-center mt-8 gap-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-              index === currentIndex ? "bg-white" : "bg-gray-600"
-            }`}
-          />
-        ))}
       </div>
     </div>
   );
