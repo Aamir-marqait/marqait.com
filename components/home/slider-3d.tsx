@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { MoveLeft, MoveRight } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface SlideData {
   id: number;
@@ -71,27 +72,38 @@ export function Slider3D() {
   return (
     <div className="relative w-full max-w-[85rem] mx-auto">
       {/* Navigation Buttons */}
-      <button
+      <motion.button
         onClick={prevSlide}
         className="cursor-pointer absolute left-[30px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px] shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
         <MoveLeft className="w-6 h-6" />
-      </button>
+      </motion.button>
 
-      <button
+      <motion.button
         onClick={nextSlide}
         className="cursor-pointer absolute -right-[20px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px] shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
         <MoveRight className="w-6 h-6" />
-      </button>
+      </motion.button>
 
       {/* Slider Container */}
       <div className="overflow-hidden px-16">
-        <div
-          className="flex transition-transform duration-500 ease-in-out gap-6"
-          style={{
+        <motion.div
+          className="flex gap-6"
+          animate={{
             transform: `translateX(-${currentGroup * 106}%)`,
           }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           {slides.map((slide) => (
             <div key={slide.id} className="flex-shrink-0 w-1/3">
@@ -118,7 +130,7 @@ export function Slider3D() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
