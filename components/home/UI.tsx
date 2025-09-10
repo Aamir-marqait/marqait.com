@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function UI() {
   return (
@@ -25,8 +26,14 @@ function UI() {
         />
 
         {/* Text overlaid on Dashboard image */}
-        <div className="absolute bottom-24 left-0 right-0 text-center z-20 ">
-          <h1
+        <motion.div 
+          className="absolute bottom-24 left-0 right-0 text-center z-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.h1
             className="text-white"
             style={{
               fontFamily: "Inter",
@@ -37,14 +44,24 @@ function UI() {
               textAlign: "center",
               verticalAlign: "middle",
             }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             Integrate and Manage
             <br />
             all your marketing efforts with one platform.
-          </h1>
+          </motion.h1>
 
           {/* Description text */}
-          <div className="flex justify-center mt-4">
+          <motion.div 
+            className="flex justify-center mt-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <p
               className="text-white w-1/2 text-center"
               style={{
@@ -62,8 +79,8 @@ function UI() {
               to boost efficiency, strengthen campaigns, and deliver consistent
               results across every channel.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

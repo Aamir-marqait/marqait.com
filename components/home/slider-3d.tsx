@@ -17,42 +17,42 @@ const slides: SlideData[] = [
     id: 1,
     title: "Logo Generator",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
     image: "/copilot/logo.png",
   },
   {
     id: 2,
     title: "Strategy Generator",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Plan smarter with our Strategy Generator. Enter your business goals, and our AI creates clear, tailored strategies that help you organize campaigns, align efforts, and stay consistent with your marketing and growth plans.",
     image: "/copilot/strategy.png",
   },
   {
     id: 3,
     title: "Brand Book Creator",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Build your brand identity with Marqait AI Brand Book Generator. Our AI organizes your logos, colors, fonts, and guidelines into a professional brand book. It helps you create stunning, interactive digital brand books with ease.",
     image: "/copilot/brand.png",
   },
   {
     id: 4,
     title: "Campaign Generation ",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Create powerful campaigns in minutes with Marqait AI Campaign Generator. Our AI helps you generate marketing campaigns, ad campaigns, and social media campaigns that boost engagement, maximize ROI, and save time.",
     image: "/copilot/Campaign.png",
   },
   {
     id: 5,
     title: "Image Generation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Create stunning pictures with our AI Image Generator. Type a simple text prompt, and our AI photo generator and text-to-image AI instantly produce high-quality images for your campaigns, ads, or social media.",
     image: "/copilot/ImageGen.png",
   },
   {
     id: 6,
     title: "Social Media Post Generation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Create social media posts with Marqait AI Social Media Post Generator. Type your idea, and our AI instantly generates the best social media posts that help you save time and stay consistent across all your platforms.",
     image: "/copilot/Social.png",
   },
 ];
