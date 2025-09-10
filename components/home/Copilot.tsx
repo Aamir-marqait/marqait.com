@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -21,9 +20,9 @@ export default function CopilotSection() {
   };
 
   const itemVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: -30 
+    hidden: {
+      opacity: 0,
+      y: -30,
     },
     visible: {
       opacity: 1,
@@ -35,9 +34,9 @@ export default function CopilotSection() {
   };
 
   const slideLeftVariants = {
-    hidden: { 
-      opacity: 0, 
-      x: -50 
+    hidden: {
+      opacity: 0,
+      x: -50,
     },
     visible: {
       opacity: 1,
@@ -49,9 +48,9 @@ export default function CopilotSection() {
   };
 
   const slideRightVariants = {
-    hidden: { 
-      opacity: 0, 
-      x: 50 
+    hidden: {
+      opacity: 0,
+      x: 50,
     },
     visible: {
       opacity: 1,
@@ -63,9 +62,9 @@ export default function CopilotSection() {
   };
 
   const slideBothSidesVariants = {
-    hidden: { 
-      opacity: 0, 
-      scale: 0.8 
+    hidden: {
+      opacity: 0,
+      scale: 0.8,
     },
     visible: {
       opacity: 1,
@@ -82,14 +81,14 @@ export default function CopilotSection() {
       className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-10 xl:py-10"
       ref={ref}
     >
-      <motion.div 
+      <motion.div
         className="relative mx-auto px-4 sm:px-6 lg:px-8 xl:px-12"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
-          <motion.div 
+          <motion.div
             className="flex items-center justify-center mb-4 sm:mb-5"
             variants={itemVariants}
           >
@@ -118,25 +117,16 @@ export default function CopilotSection() {
             xl:text-[43.8px] xl:leading-[62.4px]"
             variants={itemVariants}
           >
-            <motion.span 
-              className="text-white"
-              variants={slideLeftVariants}
-            >
+            <motion.span className="text-white" variants={slideLeftVariants}>
               Manage all your efforts with a smart
             </motion.span>
             <br />
-            <motion.span 
-              className="text-white"
-              variants={slideRightVariants}
-            >
+            <motion.span className="text-white" variants={slideRightVariants}>
               marketing automation platform.
             </motion.span>
           </motion.h2>
         </div>
-        <motion.div 
-          className="w-full"
-          variants={slideBothSidesVariants}
-        >
+        <motion.div className="w-full" variants={slideBothSidesVariants}>
           <Slider3D />
         </motion.div>
       </motion.div>
