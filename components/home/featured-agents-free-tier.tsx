@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function FreeTierAgents() {
   return (
@@ -12,11 +13,15 @@ export default function FreeTierAgents() {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
-          <div
+          <motion.div
             className="w-full h-auto rounded-[16px] p-[32px] flex flex-col gap-[32px]"
             style={{
               background: "linear-gradient(180deg, #05000a 0%, #1b1125 100%)",
             }}
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <div
               className=" flex items-center justify-center rounded-[20px] overflow-hidden gap-[10px] opacity-100"
@@ -66,14 +71,18 @@ export default function FreeTierAgents() {
                 />
               </button>
             </div>
-          </div>
+          </motion.div>
 
           {/* ContentSpark AI Card */}
-          <div
+          <motion.div
             className="w-full h-auto rounded-[16px] p-[32px] flex flex-col gap-[32px]"
             style={{
               background: "linear-gradient(180deg, #05000a 0%, #1b1125 100%)",
             }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <div
               className="flex items-center justify-center rounded-[20px] overflow-hidden gap-[10px] opacity-100"
@@ -122,7 +131,7 @@ export default function FreeTierAgents() {
                 />
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
