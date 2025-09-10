@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import AllBlogPostsSection from "@/components/blog/all-blog-posts-section";
 import BlogHeroSection from "@/components/blog/blog-hero-section";
 import BlogPostsSection from "@/components/blog/blog-posts-section";
+import { getAllPublishedPosts } from "@/data/blogService";
 
 export const metadata: Metadata = {
   title: "Marqait AI Blogs | Artificial Intelligence Blog and Update",
@@ -23,13 +24,15 @@ export const metadata: Metadata = {
   }
 };
 
-export default function Blog() {
+export default async function Blog() {
+  // Fetch all published blog posts
+  const blogPosts = await getAllPublishedPosts();
 
   return (
     <div className="min-h-screen bg-[#020103]">
       <BlogHeroSection />
-      <BlogPostsSection />
-      <AllBlogPostsSection />
+      <BlogPostsSection blogPosts={blogPosts} />
+      <AllBlogPostsSection blogPosts={blogPosts} />
     </div>
   );
 }
