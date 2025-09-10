@@ -90,7 +90,7 @@ export default function Home() {
       <div className="w-full max-w-none">
         <HeroSection onScrollToContact={openWaitlistModal} />
         <DesignPattern />
-        <CopilotSection onScrollToContact={openWaitlistModal} />
+        <CopilotSection />
         <ServicesSection />
         <StatisticsSection />
         <VideoOverlay />
