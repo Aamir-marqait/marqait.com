@@ -11,11 +11,15 @@ export default function ProTierAgents() {
           Featured <span className="text-purple-500">Pro</span> Tier Agents
         </h2>
 
-        <div
+        <motion.div
           className="hero-card mb-12 flex flex-col lg:flex-row items-center gap-8 p-8 rounded-[16px]"
           style={{
             background: "linear-gradient(180deg, #05000a 0%, #1b1125 100%)",
           }}
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <div className="hero-content flex-1">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -58,7 +62,7 @@ export default function ProTierAgents() {
               height={300}
             />
           </div>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto">
           <motion.div
