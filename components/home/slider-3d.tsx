@@ -57,14 +57,15 @@ const slides: SlideData[] = [
 ];
 
 export function Slider3D() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentGroup, setCurrentGroup] = useState(0);
+  const totalGroups = Math.ceil(slides.length / 3);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % slides.length);
+    setCurrentGroup((prev) => (prev + 1) % totalGroups);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentGroup((prev) => (prev - 1 + totalGroups) % totalGroups);
   };
 
   return (
@@ -72,14 +73,14 @@ export function Slider3D() {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="cursor-pointer absolute left-[30px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px]   shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
+        className="cursor-pointer absolute left-[30px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px] shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
       >
         <MoveLeft className="w-6 h-6" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="cursor-pointer absolute -right-[20px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px]   shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
+        className="cursor-pointer absolute -right-[20px] top-[170px] z-10 w-16 h-16 rounded-[44px] bg-[#F2F0F526] backdrop-blur-[200px] shadow-[0px_4px_4px_0px_#00000040] text-white border-0 opacity-100 flex items-center justify-center"
       >
         <MoveRight className="w-6 h-6" />
       </button>
@@ -89,9 +90,7 @@ export function Slider3D() {
         <div
           className="flex transition-transform duration-500 ease-in-out gap-6"
           style={{
-            transform: `translateX(-${
-              Math.min(currentIndex, slides.length - 3) * (100 / 2.5)
-            }%)`,
+            transform: `translateX(-${currentGroup * 106}%)`,
           }}
         >
           {slides.map((slide) => (
