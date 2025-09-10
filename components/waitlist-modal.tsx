@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { X, Mail, ArrowRight, Check } from "lucide-react";
 import { trackCTAClick } from "../analytics";

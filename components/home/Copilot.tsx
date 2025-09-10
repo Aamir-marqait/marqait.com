@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import CopilotFeatureBoxes from "./copilot-feature-boxes";
 import Image from "next/image";
 import { trackCTAClick } from "../../analytics";

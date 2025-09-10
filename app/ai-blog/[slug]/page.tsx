@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -301,14 +300,16 @@ The hashtag generator suggests trending and niche hashtags to boost reach, while
   );
 };
 
-type Props = {
-  params: { slug: string }
-}
+type RouteParams = { slug: string };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.slug;
+
+// Next.js 15: params is a Promise now
+export async function generateMetadata(
+  { params }: { params: Promise<RouteParams> }
+): Promise<Metadata> {
+  const { slug } = await params;
   const blogPost = getPostBySlug(slug);
-  
+
   if (!blogPost) {
     return {
       title: "Blog Post Not Found",
@@ -316,18 +317,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  // Special metadata for ai-marketing-tools-for-small-business
   if (slug === "ai-marketing-tools-for-small-business") {
     return {
       title: "10 Best AI Marketing Tools for Small Business in 2025",
-      description: "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
-      keywords: "AI marketing tools, small business marketing, artificial intelligence marketing, marketing automation, small business growth",
+      description:
+        "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
+      keywords: [
+        "AI marketing tools",
+        "small business marketing",
+        "artificial intelligence marketing",
+        "marketing automation",
+        "small business growth",
+      ],
       alternates: {
-        canonical: `https://www.marqait.com/ai-blog/${slug}`
+        canonical: `https://www.marqait.com/ai-blog/${slug}`,
       },
       openGraph: {
         title: "10 Best AI Marketing Tools for Small Business in 2025",
-        description: "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
+        description:
+          "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
         url: `https://www.marqait.com/ai-blog/${slug}`,
         type: "article",
         images: [
@@ -335,26 +343,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             url: blogPost.image || "https://www.marqait.com/og-image.jpg",
             width: 1200,
             height: 630,
-            alt: "10 Best AI Marketing Tools for Small Business in 2025"
-          }
-        ]
+            alt: "10 Best AI Marketing Tools for Small Business in 2025",
+          },
+        ],
       },
       twitter: {
         card: "summary_large_image",
         title: "10 Best AI Marketing Tools for Small Business in 2025",
-        description: "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
-        images: [blogPost.image || "https://www.marqait.com/twitter-image.jpg"]
-      }
+        description:
+          "Discover the 10 best AI marketing tools some of the business owners use to grow their small businesses. Learn how artificial intelligence helps.",
+        images: [blogPost.image || "https://www.marqait.com/twitter-image.jpg"],
+      },
     };
   }
 
-  // Default metadata for other blog posts
   return {
     title: blogPost.title,
     description: blogPost.description,
-    keywords: `${blogPost.category}, ${blogPost.title}, Marqait AI blog`,
+    keywords: [blogPost.category, blogPost.title, "Marqait AI blog"],
     alternates: {
-      canonical: `https://www.marqait.com/ai-blog/${slug}`
+      canonical: `https://www.marqait.com/ai-blog/${slug}`,
     },
     openGraph: {
       title: blogPost.title,
@@ -366,21 +374,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: blogPost.image || "https://www.marqait.com/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: blogPost.title
-        }
-      ]
+          alt: blogPost.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: blogPost.title,
       description: blogPost.description,
-      images: [blogPost.image || "https://www.marqait.com/twitter-image.jpg"]
-    }
+      images: [blogPost.image || "https://www.marqait.com/twitter-image.jpg"],
+    },
   };
 }
 
-export default function BlogPost({ params }: Props) {
-  const slug = params.slug;
+
+// Make the page async and await params
+export default async function BlogPost(
+  { params }: { params: Promise<RouteParams> }
+) {
+  const { slug } = await params;
   const blogPost = getPostBySlug(slug);
 
   if (!blogPost) {
@@ -389,9 +401,7 @@ export default function BlogPost({ params }: Props) {
 
   const recentPosts = getRecentPosts(blogPost?.id);
   const additionalContent = blogPost ? getAdditionalContent(blogPost) : [];
-  const additionalImage = blogPost
-    ? getAdditionalImage(blogPost)
-    : "/blog/post.jpg";
+  const additionalImage = blogPost ? getAdditionalImage(blogPost) : "/blog/post.jpg";
 
   return (
     <section className="relative bg-[#020103] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState} from "react";
 import Script from "next/script";
 import { useSEO } from "../utils/seo";
 import ContactFormSection from "../components/home/contact-form-section";
@@ -13,7 +13,6 @@ import Toast from "../components/ui/Toast";
 import WaitlistModal from "../components/waitlist-modal";
 import FAQSection from "../components/home/FAQSection";
 
-import { getServices } from "../lib/sanity";
 
 import DesignPattern from "@/components/home/design-pattern";
 
@@ -22,22 +21,9 @@ export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
   const [showToast, setShowToast] = useState(false);
   const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
-  const [servicesData, setServicesData] = useState(null);
+ 
 
-  // Fetch services data from Sanity
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const data = await getServices();
-        setServicesData(data);
-      } catch (error) {
-        console.error('Error fetching services data:', error);
-        // Component will use fallback data
-      }
-    }
-    
-    fetchData();
-  }, []);
+  
 
   useSEO({
     canonical: "https://www.marqait.com",
@@ -111,7 +97,7 @@ export default function Home() {
         <HeroSection onScrollToContact={openWaitlistModal} />
         <DesignPattern />
         <CopilotSection onScrollToContact={openWaitlistModal} />
-        <ServicesSection servicesData={servicesData} />
+        <ServicesSection />
         <StatisticsSection />
         <VideoOverlay />
         {/* <AboutUsSection /> */}
