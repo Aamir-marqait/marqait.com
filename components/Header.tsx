@@ -217,12 +217,17 @@ export default function Header() {
           <Link className="hidden lg:block" href={"/"}>
             <button
               onClick={() => trackCTAClick("Contact Us", "Header")}
-              className="cursor-pointer flex items-center gap-2 px-4 py-1.5 rounded-2xl border border-[rgba(255,255,255,0.40)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold leading-6"
-              style={{
-                boxShadow: "0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset",
-                color: "#F2F0F5",
-                fontSize: "15.9px",
-              }}
+              className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
+                w-full
+                px-3 py-2 text-xs  h-[45px] leading-[20px]
+                sm:px-4 sm:py-2.5 sm:text-sm  sm:h-[50px] sm:leading-[24px]
+                md:px-4 md:py-2 md:text-base  md:h-[55px] md:leading-[28px]
+                 lg:h-auto lg:text-[15.6px] lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
+                  style={{
+                    background:
+                      "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
+                    borderRadius: "16px",
+                  }}
             >
               Get Started
               <Image

@@ -115,7 +115,7 @@ export default function MarketingTransforms() {
       </motion.div>
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="font-inter font-semibold text-[#FFFFFF] text-center mb-16 text-balance text-[43.8px] leading-[62.4px]">
+        <h2 className="font-inter font-semibold text-[#FFFFFF] text-center mb-16 text-balance text-[37.8px] leading-[62.4px]">
           How Marqait AI Transforms Your Marketing
         </h2>
 
@@ -139,22 +139,22 @@ export default function MarketingTransforms() {
                 <div className="absolute -right-6 lg:-right-8 top-0 w-px h-[251px] hidden lg:block bg-gradient-to-b from-transparent via-white/50 to-transparent" />
               )}
               {/* Icon Circle */}
-              <div className="w-16 h-16 bg-[#F2F0F526] rounded-full flex items-center justify-center mb-6 p-2.5">
-                <feature.icon className="w-8 h-8 text-white" />
+              <div className="w-14 h-14 bg-[#F2F0F526] rounded-full flex items-center justify-center mb-6 p-2.5">
+                <feature.icon className="w-6 h-6 text-white" />
               </div>
 
               {/* Title */}
-              <h3 className="w-full font-inter font-semibold text-2xl leading-[150%] text-white mb-4 text-balance">
+              <h3 className="w-full font-inter font-semibold text-xl leading-[150%] text-white mb-4 text-balance">
                 {feature.title}
               </h3>
 
               {/* Description */}
-              <p className="font-inter font-normal text-base leading-[150%] text-white/90 mb-6 text-pretty flex-grow">
+              <p className="font-inter font-normal text-sm leading-[150%] text-white/90 mb-6 text-pretty flex-grow">
                 {feature.description}
               </p>
 
               {/* Learn More Link */}
-              <button className="inline-flex items-center gap-2 font-inter font-medium text-base leading-[150%] text-[#D26DFE] hover:text-purple-300 transition-colors group">
+              <button className="inline-flex items-center gap-2 font-inter font-medium text-sm leading-[150%] text-[#D26DFE] hover:text-purple-300 transition-colors group">
                 <span>Learn more</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
