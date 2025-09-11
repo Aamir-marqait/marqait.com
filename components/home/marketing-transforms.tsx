@@ -120,26 +120,32 @@ export default function MarketingTransforms() {
         </h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12">
           {features.map((feature, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="flex flex-col items-start text-left relative pl-6 lg:pl-8 h-full">
+              {/* Vertical divider line - only show between items, not after last */}
+              {index < features.length - 1 && (
+                <div 
+                  className="absolute -right-6 lg:-right-8 top-0 w-px h-[251px] hidden lg:block bg-gradient-to-b from-transparent via-white/50 to-transparent"
+                />
+              )}
               {/* Icon Circle */}
-              <div className="w-16 h-16 bg-[#F2F0F526] rounded-full flex items-center justify-center mx-auto mb-6 p-2.5">
+              <div className="w-16 h-16 bg-[#F2F0F526] rounded-full flex items-center justify-center mb-6 p-2.5">
                 <feature.icon className="w-8 h-8 text-white" />
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold text-white mb-4 text-balance">
+              <h3 className="w-full font-inter font-semibold text-2xl leading-[150%] text-white mb-4 text-balance">
                 {feature.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-400 mb-6 leading-relaxed text-pretty">
+              <p className="font-inter font-normal text-base leading-[150%] text-white/90 mb-6 text-pretty flex-grow">
                 {feature.description}
               </p>
 
               {/* Learn More Link */}
-              <button className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors group">
+              <button className="inline-flex items-center gap-2 font-inter font-medium text-base leading-[150%] text-[#D26DFE] hover:text-purple-300 transition-colors group">
                 <span>Learn more</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
