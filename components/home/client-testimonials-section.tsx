@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function ClientTestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -111,33 +112,37 @@ export default function ClientTestimonialsSection() {
                   {/* Decorative Lines - Now visible on all devices */}
                   <div className="hidden sm:block">
                     {/* Right vertical line */}
-                    <div
+                    <motion.div
                       className="absolute transform translate-x-full
                         -top-16 md:-top-12 lg:-top-24 md:h-[300px] h-[240px]
                         right-0"
                       style={{
                         width: "1px",
-                        // height: "240px",
                         opacity: 0.6,
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "bottom" }}
+                      animate={{ scaleY: 1 }}
+                      transition={{ duration: 1, delay: 0.7 }}
                     />
                     {/* Left vertical line */}
-                    <div
+                    <motion.div
                       className="absolute transform -translate-x-full
                         -top-16 md:-top-12 lg:-top-24 md:h-[300px] h-[240px]
                         left-0"
                       style={{
                         width: "1px",
-                        // height: "240px",
                         opacity: 0.6,
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "top" }}
+                      animate={{ scaleY: 1 }}
+                      transition={{ duration: 1, delay: 0.5 }}
                     />
                     {/* Top horizontal line */}
-                    <div
+                    <motion.div
                       className="absolute transform -translate-y-full
                         -top-2
                         -right-[20rem] md:-right-[10rem] lg:-right-[30rem]"
@@ -148,9 +153,12 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "left" }}
+                      animate={{ scaleX: 1 }}
+                      transition={{ duration: 1, delay: 0.9 }}
                     />
                     {/* Bottom horizontal line */}
-                    <div
+                    <motion.div
                       className="absolute transform translate-y-full
                         -bottom-2
                         -right-[20rem] md:-right-[10rem] lg:-right-[30rem]"
@@ -161,13 +169,16 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "right" }}
+                      animate={{ scaleX: 1 }}
+                      transition={{ duration: 1, delay: 1.1 }}
                     />
                   </div>
 
                   {/* Additional responsive decorative lines for larger screens */}
                   <div className="hidden xl:block">
                     {/* Extended lines for XL screens */}
-                    <div
+                    <motion.div
                       className="absolute -top-24 right-0 transform translate-x-full"
                       style={{
                         width: "1px",
@@ -176,8 +187,11 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "bottom" }}
+                      animate={{ scaleY: 1 }}
+                      transition={{ duration: 1, delay: 0.7 }}
                     />
-                    <div
+                    <motion.div
                       className="absolute -top-24 left-0 transform -translate-x-full"
                       style={{
                         width: "1px",
@@ -186,8 +200,11 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "top" }}
+                      animate={{ scaleY: 1 }}
+                      transition={{ duration: 1, delay: 0.5 }}
                     />
-                    <div
+                    <motion.div
                       className="absolute -top-2 -right-[30rem] transform -translate-y-full"
                       style={{
                         width: "1001px",
@@ -196,8 +213,11 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "left" }}
+                      animate={{ scaleX: 1 }}
+                      transition={{ duration: 1, delay: 0.9 }}
                     />
-                    <div
+                    <motion.div
                       className="absolute -bottom-2 -right-[30rem] transform translate-y-full"
                       style={{
                         width: "1001px",
@@ -206,6 +226,9 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "right" }}
+                      animate={{ scaleX: 1 }}
+                      transition={{ duration: 1, delay: 1.1 }}
                     />
                   </div>
                 </div>
