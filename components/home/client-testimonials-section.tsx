@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 export default function ClientTestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const testimonials = [
     {
@@ -47,7 +49,10 @@ export default function ClientTestimonialsSection() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28">
+    <section
+      ref={ref}
+      className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28"
+    >
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
@@ -123,7 +128,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleY: 0, transformOrigin: "bottom" }}
-                      animate={{ scaleY: 1 }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
                       transition={{ duration: 1, delay: 0.7 }}
                     />
                     {/* Left vertical line */}
@@ -138,7 +143,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleY: 0, transformOrigin: "top" }}
-                      animate={{ scaleY: 1 }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
                       transition={{ duration: 1, delay: 0.5 }}
                     />
                     {/* Top horizontal line */}
@@ -154,7 +159,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleX: 0, transformOrigin: "left" }}
-                      animate={{ scaleX: 1 }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
                       transition={{ duration: 1, delay: 0.9 }}
                     />
                     {/* Bottom horizontal line */}
@@ -170,7 +175,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleX: 0, transformOrigin: "right" }}
-                      animate={{ scaleX: 1 }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
                       transition={{ duration: 1, delay: 1.1 }}
                     />
                   </div>
@@ -188,7 +193,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleY: 0, transformOrigin: "bottom" }}
-                      animate={{ scaleY: 1 }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
                       transition={{ duration: 1, delay: 0.7 }}
                     />
                     <motion.div
@@ -201,7 +206,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleY: 0, transformOrigin: "top" }}
-                      animate={{ scaleY: 1 }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
                       transition={{ duration: 1, delay: 0.5 }}
                     />
                     <motion.div
@@ -214,7 +219,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleX: 0, transformOrigin: "left" }}
-                      animate={{ scaleX: 1 }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
                       transition={{ duration: 1, delay: 0.9 }}
                     />
                     <motion.div
@@ -227,7 +232,7 @@ export default function ClientTestimonialsSection() {
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
                       initial={{ scaleX: 0, transformOrigin: "right" }}
-                      animate={{ scaleX: 1 }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
                       transition={{ duration: 1, delay: 1.1 }}
                     />
                   </div>
