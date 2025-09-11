@@ -55,69 +55,69 @@ export default function Header() {
           name: "AI Logo Generator",
           path: "/products/ai-logo",
           description: "Create logo in seconds",
-          icon: "🎨",
+          icon: "/copilot/LogoGenerator.png",
         },
         {
           name: "AI Campaign Generator",
           path: "/products/ai-campaign",
           description: "Generates campaigns",
-          icon: "📢",
+          icon: "/copilot/Campaign.png",
         },
         {
           name: "AI Strategy Generator",
           path: "/products/ai-strategy",
           description: "Generates strategy",
-          icon: "📊",
+          icon: "/copilot/strategy.png",
         },
         {
           name: "AI Social Media Post Creator",
           path: "/products/ai-social",
           description: "Generates social media post",
-          icon: "📱",
+          icon: "/copilot/Social.png",
         },
         {
           name: "AI Brand Book Creator",
           path: "/products/ai-brand",
           description: "Generates brand book",
-          icon: "📖",
+          icon: "/copilot/Branding.png",
         },
         {
           name: "Reel Generator",
           path: "/products/reel-generator",
           description: "Generates engaging reels",
-          icon: "🎬",
+          icon: "/copilot/ImageGen.png",
         },
       ],
     },
     {
       name: "AI Solutions",
       path: "/growth-pods",
-      dropdown: [
-        {
-          name: "Marketing Pod",
-          path: "/growth-pods/marketing",
-          description: "Complete marketing automation",
-          icon: "🚀",
-        },
-        {
-          name: "Sales Pod",
-          path: "/growth-pods/sales",
-          description: "Sales funnel optimization",
-          icon: "💰",
-        },
-        {
-          name: "Customer Success Pod",
-          path: "/growth-pods/customer-success",
-          description: "Customer retention tools",
-          icon: "🎯",
-        },
-        {
-          name: "Analytics Pod",
-          path: "/growth-pods/analytics",
-          description: "Data-driven insights",
-          icon: "📈",
-        },
-      ],
+      // dropdown: [
+      //   {
+      //     name: "Marketing Pod",
+      //     path: "/growth-pods/marketing",
+      //     description: "Complete marketing automation",
+      //     icon: "🚀",
+      //   },
+      //   {
+      //     name: "Sales Pod",
+      //     path: "/growth-pods/sales",
+      //     description: "Sales funnel optimization",
+      //     icon: "💰",
+      //   },
+      //   {
+      //     name: "Customer Success Pod",
+      //     path: "/growth-pods/customer-success",
+      //     description: "Customer retention tools",
+      //     icon: "🎯",
+      //   },
+      //   {
+      //     name: "Analytics Pod",
+      //     path: "/growth-pods/analytics",
+      //     description: "Data-driven insights",
+      //     icon: "📈",
+      //   },
+      // ],
     },
     { name: "Insights", path: "/blog" },
     { name: "Contact", path: "/contacts" },
@@ -165,24 +165,34 @@ export default function Header() {
                   </button>
 
                   {openDropdown === item.name && (
-                    <div className="absolute top-full left-0 mt-2 w-96 bg-white rounded-2xl shadow-2xl z-50 border border-gray-100">
+                    <div className="absolute top-full -left-32 mt-2 min-w-96 w-max bg-white rounded-2xl shadow-2xl z-50 border border-gray-100">
+                      {/* Invisible bridge to prevent dropdown from closing */}
+                      <div className="absolute -top-2 left-0 right-0 h-2 bg-transparent"></div>
+                      {/* Arrow pointing up */}
+                      <div className="absolute -top-2 left-40 w-4 h-4 bg-white border-l border-t border-gray-100 transform rotate-45"></div>
                       <div className="p-4">
                         <div className="grid grid-cols-2 gap-3">
                           {item.dropdown.map((dropdownItem) => (
                             <Link
                               key={dropdownItem.name}
                               href={dropdownItem.path}
-                              className="flex items-start space-x-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-200 group"
+                              className="flex items-center space-x-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-200 group"
                               onClick={() => setOpenDropdown(null)}
                             >
-                              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center text-xl group-hover:scale-105 transition-transform duration-200">
-                                {dropdownItem.icon}
+                              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-200 overflow-hidden">
+                                <Image
+                                  src={dropdownItem.icon}
+                                  alt={dropdownItem.name}
+                                  width={48}
+                                  height={48}
+                                  className="object-cover rounded-full"
+                                />
                               </div>
                               <div className="flex-1 min-w-0">
-                                <h3 className="text-sm font-semibold text-gray-900 leading-tight mb-1">
+                                <h3 className="font-inter font-medium text-[15px] text-[#101828] leading-none tracking-[-0.01em] align-middle mb-1">
                                   {dropdownItem.name}
                                 </h3>
-                                <p className="text-xs text-gray-600 leading-tight">
+                                <p className="font-inter font-normal text-[12px] text-[#1F2937] leading-none tracking-[-0.01em] align-middle">
                                   {dropdownItem.description}
                                 </p>
                               </div>
@@ -303,8 +313,14 @@ export default function Header() {
                               setOpenDropdown(null);
                             }}
                           >
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center text-lg">
-                              {dropdownItem.icon}
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center overflow-hidden">
+                              <Image
+                                src={dropdownItem.icon}
+                                alt={dropdownItem.name}
+                                width={40}
+                                height={40}
+                                className="object-cover rounded-md"
+                              />
                             </div>
                             <div className="flex-1 min-w-0">
                               <h3 className="text-sm font-semibold text-white leading-tight mb-1">
