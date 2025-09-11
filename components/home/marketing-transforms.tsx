@@ -1,4 +1,4 @@
-import { ArrowRight, Percent, Clock, Globe, Network } from "lucide-react";
+import { ArrowRight, Clock, Brain, Workflow, ChartNetwork } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -61,7 +61,7 @@ export default function MarketingTransforms() {
 
   const features = [
     {
-      icon: Percent,
+      icon: Workflow,
       title: "Automated Efficiency",
       description: "Automate tasks, save time, and focus on strategy",
     },
@@ -71,13 +71,13 @@ export default function MarketingTransforms() {
       description: "Your AI team works tirelessly, around the clock",
     },
     {
-      icon: Globe,
+      icon: Brain,
       title: "Intelligent Adaptation",
       description:
         "Our AI agents learn your brand, style, and goals for personalized results",
     },
     {
-      icon: Network,
+      icon: ChartNetwork,
       title: "Seamless Integration",
       description: "Connect with your favorite marketing tools and platforms",
     },
@@ -120,14 +120,23 @@ export default function MarketingTransforms() {
         </h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-start text-left relative pl-6 lg:pl-8 h-full">
+            <motion.div
+              key={index}
+              className="flex flex-col items-start text-left relative pl-6 lg:pl-8 h-full"
+              variants={
+                index % 2 === 0 ? slideLeftVariants : slideRightVariants
+              }
+            >
               {/* Vertical divider line - only show between items, not after last */}
               {index < features.length - 1 && (
-                <div 
-                  className="absolute -right-6 lg:-right-8 top-0 w-px h-[251px] hidden lg:block bg-gradient-to-b from-transparent via-white/50 to-transparent"
-                />
+                <div className="absolute -right-6 lg:-right-8 top-0 w-px h-[251px] hidden lg:block bg-gradient-to-b from-transparent via-white/50 to-transparent" />
               )}
               {/* Icon Circle */}
               <div className="w-16 h-16 bg-[#F2F0F526] rounded-full flex items-center justify-center mb-6 p-2.5">
@@ -149,9 +158,9 @@ export default function MarketingTransforms() {
                 <span>Learn more</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
