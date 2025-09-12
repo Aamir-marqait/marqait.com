@@ -343,7 +343,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
 export default function DesignPattern() {
   return (
     <motion.div
-      className="w-full min-h-screen mt-4 sm:mt-6 md:mt-8 lg:mt-10 pointer-events-none relative overflow-hidden px-4 sm:px-6 md:px-8"
+      className="w-full min-h-screen mt-4 sm:mt-6 md:mt-8 lg:mt-10 pointer-events-none relative overflow-hidden "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -352,7 +352,7 @@ export default function DesignPattern() {
         className="absolute inset-0 opacity-70"
         style={{
           backgroundImage: "url(/svg/background-pattern.svg)",
-          backgroundSize: "cover",
+          backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
@@ -361,7 +361,7 @@ export default function DesignPattern() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       />
 
-      <div className="absolute inset-0 flex mt-[15rem] sm:mt-[12rem] md:mt-[10rem] lg:mt-20  2xl:mt-28 justify-center pointer-events-auto">
+      <div className="w-screen flex justify-center items-center h-[87vh]">
         <motion.div
           className="h-48 w-48 sm:h-64 sm:w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 xl:h-[32rem] xl:w-[32rem] 2xl:h-[34rem] 2xl:w-[34rem] cursor-pointer touch-manipulation"
           whileHover={{
