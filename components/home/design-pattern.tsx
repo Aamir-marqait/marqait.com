@@ -304,8 +304,8 @@ const LazyImage: React.FC<LazyImageProps> = ({
     isLoaded && !imageError
       ? `url(${imageUrls[0]})`
       : isLoaded && imageUrls[1]
-      ? `url(${imageUrls[1]})`
-      : "none";
+        ? `url(${imageUrls[1]})`
+        : "none";
 
   return (
     <motion.div
