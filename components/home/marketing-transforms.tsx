@@ -1,7 +1,8 @@
-import { ArrowRight, Clock, Brain, Workflow, ChartNetwork } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function MarketingTransforms() {
   const ref = useRef(null);
@@ -61,23 +62,23 @@ export default function MarketingTransforms() {
 
   const features = [
     {
-      icon: Workflow,
+      icon: "/1.svg",
       title: "Automated Efficiency",
       description: "Automate tasks, save time, and focus on strategy",
     },
     {
-      icon: Clock,
+      icon: "/2.svg",
       title: "24/7 Availability",
       description: "Your AI team works tirelessly, around the clock",
     },
     {
-      icon: Brain,
+      icon: "/3.svg",
       title: "Intelligent Adaptation",
       description:
         "Our AI agents learn your brand, style, and goals for personalized results",
     },
     {
-      icon: ChartNetwork,
+      icon: "/4.svg",
       title: "Seamless Integration",
       description: "Connect with your favorite marketing tools and platforms",
     },
@@ -140,7 +141,13 @@ export default function MarketingTransforms() {
               )}
               {/* Icon Circle */}
               <div className="w-14 h-14 bg-[#B812FFE5] rounded-full flex items-center justify-center mb-6 p-2.5">
-                <feature.icon className="w-6 h-6 text-white" />
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={24}
+                  height={24}
+                  className="w-7 h-7"
+                />
               </div>
 
               {/* Title */}
