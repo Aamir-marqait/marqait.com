@@ -69,7 +69,7 @@ export default function HeroSection({
                   sm:text-[30px] sm:leading-[36px] sm:tracking-[-2.5px] sm:-mt-2
                   md:text-[40px] md:leading-[48px] md:tracking-[-3px] md:-mt-3
                   lg:text-[50px] lg:leading-[62px] lg:tracking-[-3.5px] lg:-mt-4
-                  xl:text-[48px] xl:leading-[58px] xl:tracking-[-4.149px] xl:-mt-4"
+                  xl:text-[48px] xl:leading-[65px] xl:tracking-[-4.149px] xl:-mt-4"
                 style={{
                   background: "linear-gradient(180deg, #FFF 0%, #B372CF 80%)",
                   backgroundClip: "text",
@@ -86,23 +86,15 @@ export default function HeroSection({
           </div>
 
           {/* Subtitle */}
-          <div className="max-w-3xl lg:max-w-[528px] mx-auto space-y-1 sm:space-y-2 text-white px-2 sm:px-0">
+          <div className="max-w-3xl lg:max-w-[600px] mx-auto space-y-1 sm:space-y-2 text-white px-2 sm:px-0">
             <p
               className="font-medium lg:font-normal text-center
               text-[14px] leading-[21px] tracking-[-0.3px]
               sm:text-[16px] sm:leading-[24px] sm:tracking-[-0.4px]
-              lg:text-[17px] lg:leading-[27px] lg:tracking-[-0.5px]
+              lg:text-[24px] lg:leading-[150%] lg:tracking-[-0.5px]
               text-white lg:text-[rgba(255,255,255,0.90)]"
             >
               From chai-wala to creator, run campaigns with Fortune precision.
-            </p>
-            <p
-              className="font-medium lg:font-normal text-center
-              text-[14px] leading-[21px] tracking-[-0.3px]
-              sm:text-[16px] sm:leading-[24px] sm:tracking-[-0.4px]
-              lg:text-[17px] lg:leading-[27px] lg:tracking-[-0.5px]
-              text-white lg:text-[rgba(255,255,255,0.90)]"
-            >
               No agencies, no complexity, just results.
             </p>
           </div>

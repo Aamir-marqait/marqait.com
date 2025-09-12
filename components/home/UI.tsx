@@ -7,8 +7,8 @@ function UI() {
     <div className="relative w-full min-h-screen overflow-hidden">
       {/* Background images */}
       <div
-        className="absolute left-0 top-0 w-full sm:w-1/4 h-screen bg-no-repeat blur-3xl bg-cover bg-center opacity-30 sm:opacity-50"
-        style={{ backgroundImage: "url(/ellipse.svg)" }}
+        className="absolute left-0 top-0 w-full sm:w-1/3 h-screen bg-no-repeat bg-cover bg-center "
+        style={{ backgroundImage: "url(/1250.png)" }}
       />
       <div
         className="absolute right-0 top-0 w-full sm:w-1/2 h-screen bg-no-repeat bg-cover bg-center opacity-20 sm:opacity-100"
@@ -28,14 +28,14 @@ function UI() {
 
         {/* Text overlaid on Dashboard image */}
         <motion.div
-          className="absolute -bottom-10 sm:bottom-12 md:bottom-0 lg:bottom-20 left-0 right-0 text-center z-20 px-4"
+          className="absolute -bottom-10 sm:bottom-12 md:bottom-0 lg:bottom-3 left-0 right-0 text-center z-20 px-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.h1
-            className="text-white font-semibold text-xl sm:text-3xl md:text-xl lg:text-5xl xl:text-[36px] leading-tight sm:leading-snug md:leading-relaxed lg:leading-[62.4px] text-balance"
+            className="text-white font-semibold text-xl sm:text-3xl md:text-xl lg:text-5xl xl:text-[34px] leading-tight sm:leading-snug md:leading-relaxed lg:leading-[150%] text-balance"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -43,7 +43,7 @@ function UI() {
           >
             Integrate and Manage
             <br />
-            all your marketing efforts with one platform.
+            all your marketing efforts with one platform
           </motion.h1>
 
           {/* Description text */}
@@ -58,7 +58,7 @@ function UI() {
               Integrate and manage all your marketing efforts with one powerful
               platform. Simplify workflows, monitor performance, and unify tools
               to boost efficiency, strengthen campaigns, and deliver consistent
-              results across every channel.
+              results across every channel
             </p>
           </motion.div>
         </motion.div>
