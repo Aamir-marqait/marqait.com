@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function UI() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full min-h-screen overflow-hidden mb-8">
       {/* Background images */}
       <div
         className="absolute left-0 top-0 w-full sm:w-1/3 h-screen bg-no-repeat bg-cover bg-center "
@@ -54,7 +54,7 @@ function UI() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <p className="text-white w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1.5/2 text-center text-sm sm:text-base md:text-base lg:text-lg leading-relaxed tracking-tight text-pretty">
+            <p className="text-white w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1.5/2 text-center text-sm sm:text-base md:text-base lg:text-lg leading-relaxed tracking-tight text-pretty opacity-[90%]">
               Integrate and manage all your marketing efforts with one powerful
               platform. Simplify workflows, monitor performance, and unify tools
               to boost efficiency, strengthen campaigns, and deliver consistent
