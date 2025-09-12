@@ -102,7 +102,7 @@ const ContactFormSection = forwardRef<HTMLElement>(
           />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="relative z-10 max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <div className="flex items-center justify-center mb-8 sm:mb-12">
               <div className="flex-1 max-w-[100px] sm:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-r from-transparent to-purple-400/60"></div>
@@ -116,7 +116,7 @@ const ContactFormSection = forwardRef<HTMLElement>(
 
             {/* Main Heading */}
             <h2
-              className="self-stretch text-center font-inter text-[43.8px] font-semibold leading-[62.4px] max-w-md mx-auto mb-6 sm:mb-8"
+              className="self-stretch text-center font-inter text-[42px] font-semibold leading-[150%] max-w-md mx-auto mb-6 sm:mb-5"
               style={{
                 background:
                   "linear-gradient(183deg, #FFF 2.18%, #B372CF 97.82%)",
