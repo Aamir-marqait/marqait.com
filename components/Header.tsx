@@ -133,13 +133,6 @@ export default function Header() {
               className="flex items-center space-x-3 cursor-pointer"
             >
               <Image
-                src="/logo/logo.svg"
-                alt="Marqait AI Logo"
-                width={32}
-                height={32}
-                className="object-contain"
-              />
-              <Image
                 src="/logo/mainlogo.svg"
                 alt="Marqait AI Logo"
                 width={180}
@@ -233,18 +226,18 @@ export default function Header() {
                 sm:px-4 sm:py-2.5 sm:text-sm  sm:h-[50px] sm:leading-[24px]
                 md:px-4 md:py-2 md:text-base  md:h-[55px] md:leading-[28px]
                  lg:h-auto lg:text-[15.6px] lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
-                    borderRadius: "16px",
-                  }}
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
+                borderRadius: "16px",
+              }}
             >
               Get Started
               <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"
-                width={32}
-                height={32}
+                width={28}
+                height={28}
                 className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2"
               />
             </button>
