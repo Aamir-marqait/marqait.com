@@ -220,25 +220,37 @@ export default function Header() {
           <Link className="hidden lg:block" href={"/"}>
             <button
               onClick={() => trackCTAClick("Contact Us", "Header")}
-              className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
-                w-full
-                px-3 py-2 text-xs  h-[45px] leading-[20px]
-                sm:px-4 sm:py-2.5 sm:text-sm  sm:h-[50px] sm:leading-[24px]
-                md:px-4 md:py-2 md:text-base  md:h-[55px] md:leading-[28px]
-                 lg:h-auto lg:text-[15.6px] lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
+              className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
               style={{
-                background:
-                  "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
-                borderRadius: "16px",
+                borderRadius: "15px",
+                borderWidth: "1px",
+                paddingTop: "6px",
+                paddingRight: "10px",
+                paddingBottom: "6px",
+                paddingLeft: "10px",
+                background: "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
+                border: "1px solid #E6D4FF99",
+                fontFamily: "Inter",
+                fontWeight: 600,
+                fontSize: "16px",
+                lineHeight: "30px",
+                letterSpacing: "0px",
+                verticalAlign: "middle",
+                color: "#F2F0F5",
               }}
             >
               Get Started
               <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"
-                width={32}
-                height={32}
-                className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2"
+                width={21}
+                height={21}
+                style={{
+                  borderRadius: "24px",
+                  background: "#F2F0F540",
+                  opacity: 1,
+                  padding: "3px"
+                }}
               />
             </button>
             {/* <button
