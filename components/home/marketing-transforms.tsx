@@ -115,7 +115,7 @@ export default function MarketingTransforms() {
       </motion.div>
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="font-inter font-semibold text-[#FFFFFF] text-center mb-16 text-balance text-[37.8px] leading-[62.4px]">
+        <h2 className="font-inter font-semibold text-[#FFFFFF] text-center mb-16 text-balance text-[36px] leading-[62.4px]">
           How Marqait AI Transforms Your Marketing
         </h2>
 

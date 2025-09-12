@@ -8,7 +8,7 @@ export default function FreeTierAgents() {
     <section className="py-8 sm:py-12 lg:py-16 max-w-[80rem] mx-auto px-4 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-2xl sm:text-3xl lg:text-[37.8px] leading-tight sm:leading-[1.4] lg:leading-[62.4px] font-semibold text-center mb-8 sm:mb-12 lg:mb-16 text-white font-inter">
+        <h2 className="text-2xl sm:text-3xl lg:text-[36px] leading-tight sm:leading-[1.4] lg:leading-[62.4px] font-semibold text-center mb-8 sm:mb-12 lg:mb-16 text-white font-inter">
           Featured{" "}
           <span
             className="text-purple-500 px-2 sm:px-3 lg:px-4 py-1 sm:py-1.5 lg:py-2 mx-1 sm:mx-2 border-l-2 sm:border-l-[3px] lg:border-l-[4px] border-[#8654fb]"
@@ -21,7 +21,7 @@ export default function FreeTierAgents() {
           Tier Agents
         </h2>
 
-        <div className="max-w-[75rem] grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mx-auto">
+        <div className="max-w-[65rem] grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mx-auto">
           <motion.div
             className="w-full h-auto rounded-[16px] p-4 sm:p-6 lg:p-[32px] flex flex-col gap-4 sm:gap-6 lg:gap-[32px]"
             style={{
@@ -47,11 +47,11 @@ export default function FreeTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[30px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 BrandMark AI: Instantly create unique logos
               </h3>
               <p
-                className="text-base sm:text-lg lg:text-[20px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
+                className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
                 style={{ color: "#FFFFFFDE" }}
               >
                 Design your brand identity with AI-powered logo generation.
@@ -107,11 +107,11 @@ export default function FreeTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[30px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 ContentSpark AI: Generate engaging social media posts
               </h3>
               <p
-                className="text-base sm:text-lg lg:text-[20px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
+                className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
                 style={{ color: "#FFFFFFDE" }}
               >
                 Boost your social presence with AI-driven content creation.
