@@ -92,7 +92,7 @@ export default function MarketingTransforms() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10">
+        <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-1">
           <motion.div
             className="flex items-center justify-center mb-4 sm:mb-5"
             variants={itemVariants}
@@ -121,7 +121,7 @@ export default function MarketingTransforms() {
 
         {/* Features Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12 max-w-[70rem] mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -139,12 +139,12 @@ export default function MarketingTransforms() {
                 <div className="absolute -right-6 lg:-right-8 top-0 w-px h-[251px] hidden lg:block bg-gradient-to-b from-transparent via-white/50 to-transparent" />
               )}
               {/* Icon Circle */}
-              <div className="w-14 h-14 bg-[#F2F0F526] rounded-full flex items-center justify-center mb-6 p-2.5">
+              <div className="w-14 h-14 bg-[#B812FFE5] rounded-full flex items-center justify-center mb-6 p-2.5">
                 <feature.icon className="w-6 h-6 text-white" />
               </div>
 
               {/* Title */}
-              <h3 className="w-full font-inter font-semibold text-xl leading-[150%] text-white mb-4 text-balance">
+              <h3 className="w-full font-inter font-semibold text-xl leading-[150%] text-white mb-2 text-balance">
                 {feature.title}
               </h3>
 
