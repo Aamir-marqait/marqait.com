@@ -22,38 +22,40 @@ export default function HeroSection({
           <div className="relative">
             {/* Background blur elements */}
             <div
-              className="absolute rounded-full bg-[#850DB8] opacity-100"
+              className="absolute rounded-full opacity-100"
               style={{
                 width: "300px",
                 height: "298.3px",
-                top: "123.59px",
+                top: "0px",
                 left: "11.54px",
                 transform: "rotate(1.45deg)",
-                filter: "blur(250px)",
+                filter: "blur(150px)",
+                background: "linear-gradient(180deg, #850DB8 10%, #05000a 50%)",
               }}
             />
             <div
-              className="absolute rounded-full bg-[#850DB8] opacity-100"
+              className="absolute rounded-full opacity-100"
               style={{
                 width: "300px",
                 height: "298.3px",
-                top: "123.59px",
+                top: "0",
                 right: "11.54px",
                 transform: "rotate(-1.45deg)",
-                filter: "blur(250px)",
+                filter: "blur(150px)",
+                background: "linear-gradient(180deg, #850DB8 10%, #05000a 50%)",
               }}
             />
 
             {/* AI-Powered Marketing Automation text */}
-            <div className="relative z-10">
+            <div className="relative z-10 mt-10">
               <motion.h1
-                className="font-inter text-white font-medium text-center leading-tight tracking-tight
-                text-[32px] 
-                xs:text-[20px] xs:leading-[48px] xs:tracking-[-2px]
-                sm:text-[30px] sm:leading-[60px] sm:tracking-[-2.5px]
-                md:text-[40px] md:leading-[72px] md:tracking-[-3px]
-                lg:text-[52px] lg:leading-[84px] lg:tracking-[-3.5px]
-                xl:text-[64px] xl:leading-[100px] xl:tracking-[-4.149px]"
+                className="font-inter text-white font-medium text-center tracking-tight
+                text-[32px] leading-[38px]
+                xs:text-[20px] xs:leading-[24px] xs:tracking-[-2px]
+                sm:text-[30px] sm:leading-[36px] sm:tracking-[-2.5px]
+                md:text-[40px] md:leading-[48px] md:tracking-[-3px]
+                lg:text-[52px] lg:leading-[62px] lg:tracking-[-3.5px]
+                xl:text-[48px] xl:leading-[100px] xl:tracking-[-4.149px]"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
@@ -61,13 +63,13 @@ export default function HeroSection({
                 AI-Powered
               </motion.h1>
               <motion.h1
-                className="font-inter font-medium text-center leading-tight tracking-tight
-                  text-[32px] 
-                  xs:text-[20px] xs:leading-[48px] xs:tracking-[-2px]
-                  sm:text-[30px] sm:leading-[60px] sm:tracking-[-2.5px]
-                  md:text-[40px] md:leading-[72px] md:tracking-[-3px]
-                  lg:text-[50px] lg:leading-[84px] lg:tracking-[-3.5px]
-                  xl:text-[64px] xl:leading-[100px] xl:tracking-[-4.149px]"
+                className="font-inter font-medium text-center tracking-tight -mt-3
+                  text-[32px] leading-[38px]
+                  xs:text-[20px] xs:leading-[24px] xs:tracking-[-2px] xs:-mt-2
+                  sm:text-[30px] sm:leading-[36px] sm:tracking-[-2.5px] sm:-mt-2
+                  md:text-[40px] md:leading-[48px] md:tracking-[-3px] md:-mt-3
+                  lg:text-[50px] lg:leading-[62px] lg:tracking-[-3.5px] lg:-mt-4
+                  xl:text-[48px] xl:leading-[65px] xl:tracking-[-4.149px] xl:-mt-4"
                 style={{
                   background: "linear-gradient(180deg, #FFF 0%, #B372CF 80%)",
                   backgroundClip: "text",
@@ -84,23 +86,15 @@ export default function HeroSection({
           </div>
 
           {/* Subtitle */}
-          <div className="max-w-3xl lg:max-w-[528px] mx-auto space-y-1 sm:space-y-2 text-white px-2 sm:px-0">
+          <div className="max-w-3xl lg:max-w-[600px] mx-auto space-y-1 sm:space-y-2 text-white px-2 sm:px-0">
             <p
               className="font-medium lg:font-normal text-center
               text-[14px] leading-[21px] tracking-[-0.3px]
               sm:text-[16px] sm:leading-[24px] sm:tracking-[-0.4px]
-              lg:text-[17px] lg:leading-[27px] lg:tracking-[-0.5px]
+              lg:text-[24px] lg:leading-[150%] lg:tracking-[-0.5px]
               text-white lg:text-[rgba(255,255,255,0.90)]"
             >
               From chai-wala to creator, run campaigns with Fortune precision.
-            </p>
-            <p
-              className="font-medium lg:font-normal text-center
-              text-[14px] leading-[21px] tracking-[-0.3px]
-              sm:text-[16px] sm:leading-[24px] sm:tracking-[-0.4px]
-              lg:text-[17px] lg:leading-[27px] lg:tracking-[-0.5px]
-              text-white lg:text-[rgba(255,255,255,0.90)]"
-            >
               No agencies, no complexity, just results.
             </p>
           </div>

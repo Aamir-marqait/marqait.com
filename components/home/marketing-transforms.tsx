@@ -1,7 +1,8 @@
-import { ArrowRight, Clock, Brain, Workflow, ChartNetwork } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function MarketingTransforms() {
   const ref = useRef(null);
@@ -61,23 +62,23 @@ export default function MarketingTransforms() {
 
   const features = [
     {
-      icon: Workflow,
+      icon: "/1.svg",
       title: "Automated Efficiency",
       description: "Automate tasks, save time, and focus on strategy",
     },
     {
-      icon: Clock,
+      icon: "/2.svg",
       title: "24/7 Availability",
       description: "Your AI team works tirelessly, around the clock",
     },
     {
-      icon: Brain,
+      icon: "/3.svg",
       title: "Intelligent Adaptation",
       description:
         "Our AI agents learn your brand, style, and goals for personalized results",
     },
     {
-      icon: ChartNetwork,
+      icon: "/4.svg",
       title: "Seamless Integration",
       description: "Connect with your favorite marketing tools and platforms",
     },
@@ -92,7 +93,7 @@ export default function MarketingTransforms() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10">
+        <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-1">
           <motion.div
             className="flex items-center justify-center mb-4 sm:mb-5"
             variants={itemVariants}
@@ -121,7 +122,7 @@ export default function MarketingTransforms() {
 
         {/* Features Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12 max-w-[70rem] mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -139,12 +140,18 @@ export default function MarketingTransforms() {
                 <div className="absolute -right-6 lg:-right-8 top-0 w-px h-[251px] hidden lg:block bg-gradient-to-b from-transparent via-white/50 to-transparent" />
               )}
               {/* Icon Circle */}
-              <div className="w-14 h-14 bg-[#F2F0F526] rounded-full flex items-center justify-center mb-6 p-2.5">
-                <feature.icon className="w-6 h-6 text-white" />
+              <div className="w-14 h-14 bg-[#B812FFE5] rounded-full flex items-center justify-center mb-6 p-2.5">
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={24}
+                  height={24}
+                  className="w-7 h-7"
+                />
               </div>
 
               {/* Title */}
-              <h3 className="w-full font-inter font-semibold text-xl leading-[150%] text-white mb-4 text-balance">
+              <h3 className="w-full font-inter font-semibold text-xl leading-[150%] text-white mb-2 text-balance">
                 {feature.title}
               </h3>
 

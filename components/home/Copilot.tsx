@@ -78,7 +78,7 @@ export default function CopilotSection() {
   return (
     <section
       id="copilot"
-      className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-10 xl:py-10"
+      className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-10 xl:py-0"
       ref={ref}
     >
       <motion.div
