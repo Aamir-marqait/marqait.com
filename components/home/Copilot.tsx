@@ -109,12 +109,12 @@ export default function CopilotSection() {
 
           <motion.h2
             className="text-center font-inter font-semibold max-w-4xl mx-auto px-2
-            text-[24px] leading-[32px]
-            xs:text-[28px] xs:leading-[36px]
-            sm:text-[32px] sm:leading-[42px]
-            md:text-[36px] md:leading-[48px]
-            lg:text-[40px] lg:leading-[54px]
-            xl:text-[43.8px] xl:leading-[62.4px]"
+            text-[20px] leading-[32px]
+            xs:text-[24px] xs:leading-[36px]
+            sm:text-[27px] sm:leading-[42px]
+            md:text-[31px] md:leading-[48px]
+            lg:text-[35px] lg:leading-[54px]
+            xl:text-[36px] xl:leading-[62.4px] 2xl:text-[40px]"
             variants={itemVariants}
           >
             <motion.span className="text-white" variants={slideLeftVariants}>
@@ -122,7 +122,7 @@ export default function CopilotSection() {
             </motion.span>
             <br />
             <motion.span className="text-white" variants={slideRightVariants}>
-              marketing automation platform.
+              marketing automation platform
             </motion.span>
           </motion.h2>
         </div>
