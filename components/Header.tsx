@@ -124,7 +124,10 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-[#020103] z-50 border-b" style={{borderColor: '#FFFFFF26'}}>
+    <header
+      className="fixed top-0 left-0 right-0 w-full bg-[#020103] z-50 border-b"
+      style={{ borderColor: "#FFFFFF26" }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <div className="flex items-center space-x-8">
@@ -140,9 +143,10 @@ export default function Header() {
                 className="object-contain"
               />
             </Link>
-            
+
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center justify-center space-x-8 xl:space-x-12">
+          </div>
+          <nav className="hidden lg:flex items-center justify-center space-x-8 xl:space-x-12">
             {navigationItems.map((item) =>
               item.dropdown ? (
                 <div
@@ -214,7 +218,6 @@ export default function Header() {
               )
             )}
             </nav>
-          </div>
 
           {/* Desktop Get Started Button */}
           <Link className="hidden lg:block" href={"/"}>
@@ -228,7 +231,8 @@ export default function Header() {
                 paddingRight: "11px",
                 paddingBottom: "6px",
                 paddingLeft: "11px",
-                background: "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
+                background:
+                  "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
                 border: "1px solid #E6D4FF99",
                 fontFamily: "Inter",
                 fontWeight: 600,
@@ -249,7 +253,7 @@ export default function Header() {
                   borderRadius: "24px",
                   background: "#F2F0F540",
                   opacity: 1,
-                  padding: "3px"
+                  padding: "3px",
                 }}
               />
             </button>
