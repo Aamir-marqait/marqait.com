@@ -1,10 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 
 export default function ClientTestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const testimonials = [
     {
@@ -46,27 +49,30 @@ export default function ClientTestimonialsSection() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32">
+    <section
+      ref={ref}
+      className="relative bg-[#05000A] overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28"
+    >
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
           <h2
-            className="text-white text-center font-inter font-medium mx-auto mb-4 sm:mb-6 lg:mb-8 px-2
-            text-[28px] leading-[36px] tracking-[-0.4px]
-            xs:text-[32px] xs:leading-[42px] xs:tracking-[-0.5px]
-            sm:text-[36px] sm:leading-[48px] sm:tracking-[-0.55px]
-            md:text-[38px] md:leading-[52px] md:tracking-[-0.6px]
-            lg:text-[40px] lg:leading-[56px] lg:tracking-[-0.62px]
-            xl:text-[43.8px] xl:leading-[62.4px] xl:tracking-[-0.657px]"
+            className="text-white text-center font-inter font-semibold max-w-4xl mx-auto px-2 mb-2
+            text-[20px] leading-[32px]
+            xs:text-[24px] xs:leading-[36px]
+            sm:text-[27px] sm:leading-[42px]
+            md:text-[31px] md:leading-[48px]
+            lg:text-[35px] lg:leading-[54px]
+            xl:text-[36px] xl:leading-[62.4px] 2xl:text-[40px]"
           >
-            Our clients
+            Our Clients
           </h2>
           <p
-            className="text-white text-center font-inter font-normal mx-auto max-w-[403px] px-2
+            className="text-white text-center font-inter font-normal mx-auto max-w-[500px] px-2
             text-[14px] leading-[22px] tracking-[-0.001px]
             sm:text-[16px] sm:leading-[25px] sm:tracking-[-0.0015px]
             md:text-[18px] md:leading-[28px] md:tracking-[-0.002px]
-            lg:text-[20px] lg:leading-[31px] lg:tracking-[-0.002px]"
+            lg:text-[18px] lg:leading-[31px] lg:tracking-[-0.002px]"
           >
             Hear firsthand how our solutions have boosted online success for
             users like you.
@@ -111,33 +117,37 @@ export default function ClientTestimonialsSection() {
                   {/* Decorative Lines - Now visible on all devices */}
                   <div className="hidden sm:block">
                     {/* Right vertical line */}
-                    <div
+                    <motion.div
                       className="absolute transform translate-x-full
                         -top-16 md:-top-12 lg:-top-24 md:h-[300px] h-[240px]
                         right-0"
                       style={{
                         width: "1px",
-                        // height: "240px",
                         opacity: 0.6,
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "bottom" }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
+                      transition={{ duration: 1, delay: 0.7 }}
                     />
                     {/* Left vertical line */}
-                    <div
+                    <motion.div
                       className="absolute transform -translate-x-full
                         -top-16 md:-top-12 lg:-top-24 md:h-[300px] h-[240px]
                         left-0"
                       style={{
                         width: "1px",
-                        // height: "240px",
                         opacity: 0.6,
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "top" }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
+                      transition={{ duration: 1, delay: 0.5 }}
                     />
                     {/* Top horizontal line */}
-                    <div
+                    <motion.div
                       className="absolute transform -translate-y-full
                         -top-2
                         -right-[20rem] md:-right-[10rem] lg:-right-[30rem]"
@@ -148,9 +158,12 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "left" }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
+                      transition={{ duration: 1, delay: 0.9 }}
                     />
                     {/* Bottom horizontal line */}
-                    <div
+                    <motion.div
                       className="absolute transform translate-y-full
                         -bottom-2
                         -right-[20rem] md:-right-[10rem] lg:-right-[30rem]"
@@ -161,13 +174,16 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "right" }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
+                      transition={{ duration: 1, delay: 1.1 }}
                     />
                   </div>
 
                   {/* Additional responsive decorative lines for larger screens */}
                   <div className="hidden xl:block">
                     {/* Extended lines for XL screens */}
-                    <div
+                    <motion.div
                       className="absolute -top-24 right-0 transform translate-x-full"
                       style={{
                         width: "1px",
@@ -176,8 +192,11 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "bottom" }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
+                      transition={{ duration: 1, delay: 0.7 }}
                     />
-                    <div
+                    <motion.div
                       className="absolute -top-24 left-0 transform -translate-x-full"
                       style={{
                         width: "1px",
@@ -186,8 +205,11 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(180deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleY: 0, transformOrigin: "top" }}
+                      animate={isInView ? { scaleY: 1 } : { scaleY: 0 }}
+                      transition={{ duration: 1, delay: 0.5 }}
                     />
-                    <div
+                    <motion.div
                       className="absolute -top-2 -right-[30rem] transform -translate-y-full"
                       style={{
                         width: "1001px",
@@ -196,8 +218,11 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "left" }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
+                      transition={{ duration: 1, delay: 0.9 }}
                     />
-                    <div
+                    <motion.div
                       className="absolute -bottom-2 -right-[30rem] transform translate-y-full"
                       style={{
                         width: "1001px",
@@ -206,6 +231,9 @@ export default function ClientTestimonialsSection() {
                         background:
                           "linear-gradient(90deg, transparent 0%, #FFF 20%, #EAEAEA 80%, transparent 100%)",
                       }}
+                      initial={{ scaleX: 0, transformOrigin: "right" }}
+                      animate={isInView ? { scaleX: 1 } : { scaleX: 0 }}
+                      transition={{ duration: 1, delay: 1.1 }}
                     />
                   </div>
                 </div>
