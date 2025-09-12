@@ -32,7 +32,7 @@ export default function UniqueFeatured() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="hero-content flex-1">
-            <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+            <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
               Unleash Your Creativity: AI-Powered Editing, Just by Talking
             </h3>
             <p
