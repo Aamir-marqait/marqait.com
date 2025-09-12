@@ -22,25 +22,27 @@ export default function HeroSection({
           <div className="relative">
             {/* Background blur elements */}
             <div
-              className="absolute rounded-full bg-[#850DB8] opacity-100"
+              className="absolute rounded-full opacity-100"
               style={{
                 width: "300px",
                 height: "298.3px",
                 top: "123.59px",
                 left: "11.54px",
                 transform: "rotate(1.45deg)",
-                filter: "blur(250px)",
+                filter: "blur(150px)",
+                background: "linear-gradient(180deg, #850DB8 10%, #05000a 50%)",
               }}
             />
             <div
-              className="absolute rounded-full bg-[#850DB8] opacity-100"
+              className="absolute rounded-full opacity-100"
               style={{
                 width: "300px",
                 height: "298.3px",
                 top: "123.59px",
                 right: "11.54px",
                 transform: "rotate(-1.45deg)",
-                filter: "blur(250px)",
+                filter: "blur(150px)",
+                background: "linear-gradient(180deg, #850DB8 10%, #05000a 50%)",
               }}
             />
 
