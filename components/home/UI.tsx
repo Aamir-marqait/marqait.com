@@ -17,7 +17,7 @@ function UI() {
        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#05000A] via-[#05000A]/80 to-transparent z-5" />
 
       {/* Dashboard image with responsive margins and overlaid text */}
-      <div className="relative z-10 mt-16 sm:mt-32 md:mt-48 lg:mt-[16.5rem] mx-4 sm:mx-6 md:mx-8">
+      <div className="relative  max-w-[70rem] mx-auto z-10 mt-16 sm:mt-32 md:mt-48 lg:mt-[16.5rem] ">
         <Image
           src="/Dashboard.png"
           alt="Dashboard showcasing marketing platform interface"

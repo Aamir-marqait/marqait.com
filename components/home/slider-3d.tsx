@@ -92,7 +92,7 @@ export function Slider3D() {
   };
 
   return (
-    <div className="relative w-full max-w-[80rem] mx-auto">
+    <div className="relative w-full max-w-[70rem] mx-auto">
       {/* Navigation Buttons */}
       <motion.button
         onClick={prevSlide}
@@ -138,7 +138,7 @@ export function Slider3D() {
               style={{ width: `${100 / cardsPerView}%` }}
             >
               {/* Card */}
-              <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 h-64 sm:h-80 lg:h-96 flex items-center justify-center mb-4 sm:mb-6 lg:mb-8 relative overflow-hidden">
+              <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 h-64 sm:h-80 lg:h-[26rem] flex items-center justify-center mb-4 sm:mb-6 lg:mb-8 relative overflow-hidden">
                 <Image
                   src={
                     slide.image ||
