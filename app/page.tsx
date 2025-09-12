@@ -8,7 +8,7 @@ import CopilotSection from "../components/home/Copilot";
 import HeroSection from "../components/home/HeroSection";
 import Toast from "../components/ui/Toast";
 import WaitlistModal from "../components/waitlist-modal";
-import FAQSection from "../components/home/FAQSection";
+// import FAQSection from "../components/home/FAQSection";
 
 import DesignPattern from "@/components/home/design-pattern";
 import UI from "@/components/home/UI";
@@ -102,7 +102,7 @@ export default function Home() {
         <MarketingTransforms/>
         <ClientTestimonialsSection />
         <ContactFormSection ref={contactFormRef} />
-        <FAQSection />
+        {/* <FAQSection /> */}
         <Toast
           show={showToast}
           onClose={() => setShowToast(false)}
