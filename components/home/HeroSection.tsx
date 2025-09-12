@@ -26,7 +26,7 @@ export default function HeroSection({
               style={{
                 width: "300px",
                 height: "298.3px",
-                top: "123.59px",
+                top: "0px",
                 left: "11.54px",
                 transform: "rotate(1.45deg)",
                 filter: "blur(150px)",
@@ -38,7 +38,7 @@ export default function HeroSection({
               style={{
                 width: "300px",
                 height: "298.3px",
-                top: "123.59px",
+                top: "0",
                 right: "11.54px",
                 transform: "rotate(-1.45deg)",
                 filter: "blur(150px)",
