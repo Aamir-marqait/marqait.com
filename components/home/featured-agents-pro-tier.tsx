@@ -31,7 +31,7 @@ export default function ProTierAgents() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="hero-content flex-1">
-            <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+            <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
               BrandBlueprint AI: Define your brand's essence
             </h3>
             <p
@@ -102,7 +102,7 @@ export default function ProTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 ReelCraft AI: Produce dynamic short-form videos
               </h3>
               <p
@@ -162,7 +162,7 @@ export default function ProTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 AdPilot AI: Launch and optimize ad campaigns
               </h3>
               <p
