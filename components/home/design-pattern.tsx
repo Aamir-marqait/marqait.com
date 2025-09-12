@@ -304,8 +304,8 @@ const LazyImage: React.FC<LazyImageProps> = ({
     isLoaded && !imageError
       ? `url(${imageUrls[0]})`
       : isLoaded && imageUrls[1]
-      ? `url(${imageUrls[1]})`
-      : "none";
+        ? `url(${imageUrls[1]})`
+        : "none";
 
   return (
     <motion.div
@@ -425,7 +425,7 @@ export default function DesignPattern() {
         />
       </motion.div>
 
-      <LazyImage
+      {/* <LazyImage
         className="absolute top-2 left-2 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-64 xl:h-64"
         imageUrls={["/glowing.webp", "/glowing.png"]}
         delay={1}
@@ -459,7 +459,7 @@ export default function DesignPattern() {
           backgroundRepeat: "no-repeat",
           filter: "blur(20px) sm:blur(30px) lg:blur(40px)",
         }}
-      />
+      /> */}
 
       {[...Array(3)].map((_, i) => (
         <motion.div
