@@ -47,7 +47,7 @@ export default function FreeTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 BrandMark AI: Instantly create unique logos
               </h3>
               <p
@@ -107,7 +107,7 @@ export default function FreeTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 ContentSpark AI: Generate engaging social media posts
               </h3>
               <p
