@@ -45,7 +45,7 @@ export default function HeroSection({
             />
 
             {/* AI-Powered Marketing Automation text */}
-            <div className="relative z-10">
+            <div className="relative z-10 mt-10">
               <motion.h1
                 className="font-inter text-white font-medium text-center tracking-tight
                 text-[32px] leading-[38px]

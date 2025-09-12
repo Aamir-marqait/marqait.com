@@ -124,26 +124,25 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full bg-[#020103] z-50">
+    <header className="fixed top-0 left-0 right-0 w-full bg-[#020103] z-50 border-b" style={{borderColor: '#FFFFFF26'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          <div className="flex items-center space-x-3">
+        <div className="flex items-center justify-between h-20 lg:h-24">
+          <div className="flex items-center space-x-8">
             <Link
               href="/"
-              className="flex items-center space-x-3 cursor-pointer"
+              className="flex items-center justify-center space-x-3 cursor-pointer"
             >
               <Image
                 src="/logo/mainlogo.svg"
                 alt="Marqait AI Logo"
-                width={180}
+                width={200}
                 height={32}
                 className="object-contain"
               />
             </Link>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12">
+            
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center justify-center space-x-8 xl:space-x-12">
             {navigationItems.map((item) =>
               item.dropdown ? (
                 <div
@@ -214,9 +213,10 @@ export default function Header() {
                 </Link>
               )
             )}
-          </nav>
+            </nav>
+          </div>
 
-          {/* Desktop Sign Up Button */}
+          {/* Desktop Get Started Button */}
           <Link className="hidden lg:block" href={"/"}>
             <button
               onClick={() => trackCTAClick("Contact Us", "Header")}
@@ -236,8 +236,8 @@ export default function Header() {
               <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"
-                width={28}
-                height={28}
+                width={32}
+                height={32}
                 className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2"
               />
             </button>
