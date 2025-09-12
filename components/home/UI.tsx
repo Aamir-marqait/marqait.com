@@ -7,13 +7,14 @@ function UI() {
     <div className="relative w-full min-h-screen overflow-hidden">
       {/* Background images */}
       <div
-        className="absolute left-0 top-0 w-full sm:w-1/2 h-screen bg-no-repeat bg-cover bg-center opacity-30 sm:opacity-50"
+        className="absolute left-0 top-0 w-full sm:w-1/4 h-screen bg-no-repeat blur-3xl bg-cover bg-center opacity-30 sm:opacity-50"
         style={{ backgroundImage: "url(/ellipse.svg)" }}
       />
       <div
         className="absolute right-0 top-0 w-full sm:w-1/2 h-screen bg-no-repeat bg-cover bg-center opacity-20 sm:opacity-100"
         style={{ backgroundImage: "url(/ui.png)" }}
       />
+       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#05000A] via-[#05000A]/80 to-transparent z-5" />
 
       {/* Dashboard image with responsive margins and overlaid text */}
       <div className="relative z-10 mt-16 sm:mt-32 md:mt-48 lg:mt-[24rem] mx-4 sm:mx-6 md:mx-8">
