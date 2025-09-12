@@ -7,7 +7,7 @@ export default function ProTierAgents() {
   return (
     <section className="py-8 sm:py-12 lg:py-16 max-w-[80rem] mx-auto px-4 bg-black">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[37.8px] leading-[62.4px] font-semibold text-center mb-10 text-white font-inter">
+        <h2 className="text-[36px] leading-[62.4px] font-semibold text-center mb-10 text-white font-inter">
           Featured{" "}
           <span
             className="text-purple-500 px-4 py-2 mx-2 border-l-[4px] border-[#8654fb]"
@@ -21,7 +21,7 @@ export default function ProTierAgents() {
         </h2>
 
         <motion.div
-          className="max-w-[75rem] mx-auto hero-card mb-10 flex flex-col lg:flex-row items-center gap-8 px-8 py-5 rounded-[16px]"
+          className="max-w-[65rem] mx-auto hero-card mb-10 flex flex-col lg:flex-row items-center gap-8 px-8 py-5 rounded-[16px]"
           style={{
             background: "linear-gradient(180deg, #05000a 0%, #1b1125 100%)",
           }}
@@ -31,11 +31,11 @@ export default function ProTierAgents() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="hero-content flex-1">
-            <h3 className="text-xl sm:text-2xl lg:text-[30px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+            <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
               BrandBlueprint AI: Define your brand's essence
             </h3>
             <p
-              className="text-base sm:text-lg lg:text-[20px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3 "
+              className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3 "
               style={{ color: "#FFFFFFDE" }}
             >
               Develop a complete, consistent brand identity with AI-generated
@@ -76,7 +76,7 @@ export default function ProTierAgents() {
           </div>
         </motion.div>
 
-        <div className="max-w-[75rem] grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mx-auto">
+        <div className="max-w-[65rem] grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mx-auto">
           <motion.div
             className="w-full h-auto rounded-[16px] p-4 sm:p-6 lg:p-[32px] flex flex-col gap-4 sm:gap-6 lg:gap-[32px]"
             style={{
@@ -102,11 +102,11 @@ export default function ProTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[30px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 ReelCraft AI: Produce dynamic short-form videos
               </h3>
               <p
-                className="text-base sm:text-lg lg:text-[20px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
+                className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
                 style={{ color: "#FFFFFFDE" }}
               >
                 Create captivating reels and videos optimized for social media
@@ -162,11 +162,11 @@ export default function ProTierAgents() {
             </div>
 
             <div className="flex-shrink-0 mt-auto">
-              <h3 className="text-xl sm:text-2xl lg:text-[30px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+              <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
                 AdPilot AI: Launch and optimize ad campaigns
               </h3>
               <p
-                className="text-base sm:text-lg lg:text-[20px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
+                className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
                 style={{ color: "#FFFFFFDE" }}
               >
                 Drive conversions with AI-driven precision across Meta and

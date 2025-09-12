@@ -114,7 +114,7 @@ export default function CopilotSection() {
             sm:text-[27px] sm:leading-[42px]
             md:text-[31px] md:leading-[48px]
             lg:text-[35px] lg:leading-[54px]
-            xl:text-[37.8px] xl:leading-[62.4px] 2xl:text-[40px]"
+            xl:text-[36px] xl:leading-[62.4px] 2xl:text-[40px]"
             variants={itemVariants}
           >
             <motion.span className="text-white" variants={slideLeftVariants}>
@@ -122,7 +122,7 @@ export default function CopilotSection() {
             </motion.span>
             <br />
             <motion.span className="text-white" variants={slideRightVariants}>
-              marketing automation platform.
+              marketing automation platform
             </motion.span>
           </motion.h2>
         </div>

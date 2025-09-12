@@ -34,7 +34,7 @@ function UI() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.h1
-            className="text-white font-semibold text-xl sm:text-3xl md:text-xl lg:text-5xl xl:text-[40.8px] leading-tight sm:leading-snug md:leading-relaxed lg:leading-[62.4px] text-balance"
+            className="text-white font-semibold text-xl sm:text-3xl md:text-xl lg:text-5xl xl:text-[36px] leading-tight sm:leading-snug md:leading-relaxed lg:leading-[62.4px] text-balance"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}

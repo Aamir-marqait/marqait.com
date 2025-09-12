@@ -63,7 +63,7 @@ export default function ClientTestimonialsSection() {
             sm:text-[27px] sm:leading-[42px]
             md:text-[31px] md:leading-[48px]
             lg:text-[35px] lg:leading-[54px]
-            xl:text-[37.8px] xl:leading-[62.4px] 2xl:text-[40px]"
+            xl:text-[36px] xl:leading-[62.4px] 2xl:text-[40px]"
           >
             Our Clients
           </h2>

@@ -7,7 +7,7 @@ export default function UniqueFeatured() {
   return (
     <section className="py-8 sm:py-12 lg:py-16 max-w-[80rem] mx-auto px-4 bg-black">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-[37.8px] leading-[62.4px] font-semibold text-center mb-10 text-white font-inter">
+        <h2 className="text-[36px] leading-[62.4px] font-semibold text-center mb-10 text-white font-inter">
           Featured{" "}
           <span
             className="text-purple-500 px-4 py-2 mx-2 border-l-[4px] border-[#8654fb]"
@@ -22,7 +22,7 @@ export default function UniqueFeatured() {
         </h2>
 
         <motion.div
-          className="max-w-[75rem] mx-auto hero-card mb-12 flex flex-col lg:flex-row items-center gap-8 px-8 py-5 rounded-[16px]"
+          className="max-w-[65rem] mx-auto hero-card mb-12 flex flex-col lg:flex-row items-center gap-8 px-8 py-5 rounded-[16px]"
           style={{
             background: "linear-gradient(180deg, #05000a 0%, #1b1125 100%)",
           }}
@@ -32,11 +32,11 @@ export default function UniqueFeatured() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="hero-content flex-1">
-            <h3 className="text-xl sm:text-2xl lg:text-[30px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
+            <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[100%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
               Unleash Your Creativity: AI-Powered Editing, Just by Talking
             </h3>
             <p
-              className="text-base sm:text-lg lg:text-[20px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3 "
+              className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3 "
               style={{ color: "#FFFFFFDE" }}
             >
               The best part about us is that anything generated—whether it's an
