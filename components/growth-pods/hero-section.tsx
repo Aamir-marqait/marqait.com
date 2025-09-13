@@ -18,9 +18,9 @@ function HeroSection() {
     >
       <div className="absolute inset-0 bg-black/60 z-5"></div>
       <div className=" relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-1 items-center min-h-[80vh]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-0  items-center min-h-[80vh]">
           <div className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 order-2 lg:order-1 relative">
-            <div className="space-y-3 sm:space-y-4 lg:space-y-6 relative z-10">
+            <div className="space-y-3 sm:space-y-4 lg:space-y-6  mx-auto relative z-10">
               <h1
                 className="self-stretch max-w-lg text-white font-inter font-bold leading-[150%]
                 text-2xl
@@ -50,7 +50,7 @@ function HeroSection() {
                   letterSpacing: "-0.75px",
                   fontSize: "25px",
                   lineHeight: "35px",
-                  width: "681px",
+                  // width: "681px",
                 }}
               >
                 We provide AI solutions and automation services. Get
