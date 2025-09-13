@@ -91,7 +91,7 @@ export default function Header() {
     },
     {
       name: "AI Solutions",
-      path: "/growth-pods",
+      path: "/ai-solutions",
       dropdown: [
         {
           name: "Custom AI Solutions",
