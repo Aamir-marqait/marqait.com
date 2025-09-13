@@ -265,3 +265,20 @@
 
 
 
+.arrow-box {
+  position: relative;
+  background: rgba(28, 27, 51, 0.5);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+  backdrop-filter: blur(20px);
+}
+
+.arrow-box::before {
+  content: "";
+  position: absolute;
+  inset: -3px; /* border thickness */
+  background: transparent;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+  border: 3px solid #ffffff26; /* border color */
+  border-radius: 24px;
+  z-index: -1; /* border ko peeche rakhna */
+}

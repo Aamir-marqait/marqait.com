@@ -40,7 +40,7 @@ export default function ProcessPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen  bg-black text-white">
       {/* Header Section */}
       <div className=" mx-auto px-4 py-16 text-center">
         <h1
@@ -74,7 +74,7 @@ export default function ProcessPage() {
       </div>
 
       {/* Process Timeline */}
-      <div className=" mx-auto px-4 pb-16">
+      <div className=" mx-auto pb-16">
         <div className="relative mx-auto">
           <div className="flex items-start justify-center">
             {/* Central Timeline Image */}
@@ -91,56 +91,63 @@ export default function ProcessPage() {
             {/* Content Boxes positioned around the timeline */}
             <div className="absolute inset-0">
               {processSteps.map((step, index) => {
-                const topPositions = ['2%', '24%', '42%', '64%', '82%'];
+                const topPositions = ["2%", "24%", "42%", "64%", "82%"];
                 return (
                   <div
                     key={index}
                     className={`absolute flex ${step.position === "right" ? "justify-end pr-4" : "justify-start pl-4"} items-center`}
-                    style={{ top: topPositions[index], width: '100%' }}
+                    style={{ top: topPositions[index], width: "100%" }}
                   >
-                
-                  <div
-                    className={`${step.position === "right" ? "mr-32" : "ml-32"}`}
-                    style={{ width: '425px' }}
-                  >
-                    <div 
-                      className="p-6 hover:border-purple-500/50 transition-all duration-300"
-                      style={{
-                        borderRadius: '24px',
-                        borderWidth: '3px',
-                        background: `linear-gradient(180deg, rgba(46, 51, 90, 0) 0%, rgba(28, 27, 51, 0.1) 100%), radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 99.59%)`,
-                        border: '3px solid #FFFFFF26',
-                        boxShadow: `0px 0px 100px 0px #CCD7FF26 inset, 0px 30px 60px 0px #0000001A, 0px 15px 30px 0px #0000000D, 0px 5px 10px 0px #0000000D`,
-                        backdropFilter: 'blur(20px)'
-                      }}
+                    <div
+                      className={`${step.position === "right" ? "mr-36" : "ml-24"}`}
+                      style={{ width: "485px" }}
                     >
-                      <h3 
-                        className="mb-3 capitalize"
+                      <div
+                        className="py-4 px-6 hover:border-purple-500/50 transition-all duration-300"
                         style={{
-                          fontFamily: 'Inter',
-                          fontWeight: 600,
-                          fontSize: '18px',
-                          lineHeight: '100%',
-                          letterSpacing: '-3%',
-                          color: '#D9D9D9'
+                          borderRadius:
+                            step.position === "right"
+                              ? "0px 24px 20px 0px"
+                              : "24px 0px 0px 24px",
+                          borderWidth: "3px",
+                          background: `linear-gradient(180deg, rgba(46, 51, 90, 0) 0%, rgba(28, 27, 51, 0.1) 100%), radial-gradient(146.13% 118.42% at 50% -15.5%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 99.59%)`,
+                          border: "2px solid #FFFFFF26",
+                          boxShadow: `0px 0px 100px 0px #CCD7FF26 inset, 0px 30px 60px 0px #0000001A, 0px 15px 30px 0px #0000000D, 0px 5px 10px 0px #0000000D`,
+                          backdropFilter: "blur(20px)",
+                          clipPath:
+                            step.position === "right"
+                              ? "polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%)"
+                              : "polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%)",
+                          position: "relative",
                         }}
                       >
-                        {step.title}
-                      </h3>
-                      <p 
-                        style={{
-                          fontFamily: 'Inter',
-                          fontWeight: 400,
-                          fontSize: '14px',
-                          lineHeight: '22px',
-                          
-                          textAlign: 'justify',
-                          color: '#FFFFFF'
-                        }}
-                      >
-                        {step.description}
-                      </p>
-                    </div>
+                        <h3
+                          className={`mb-3  capitalize ${step.position === "right" ? "ml-12" : ""}`}
+                          style={{
+                            fontFamily: "Inter",
+                            fontWeight: 600,
+                            fontSize: "18px",
+                            lineHeight: "100%",
+                            letterSpacing: "-3%",
+                            color: "#D9D9D9",
+                          }}
+                        >
+                          {step.title}
+                        </h3>
+                        <p
+                          className={`${step.position === "right" ? "ml-12" : "mr-12"}`}
+                          style={{
+                            fontFamily: "Inter",
+                            fontWeight: 400,
+                            fontSize: "14px",
+                            lineHeight: "22px",
+                            // textAlign: "justify",
+                            color: "#FFFFFF",
+                          }}
+                        >
+                          {step.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 );
