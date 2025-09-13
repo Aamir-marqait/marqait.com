@@ -92,32 +92,56 @@ export default function Header() {
     {
       name: "AI Solutions",
       path: "/growth-pods",
-      // dropdown: [
-      //   {
-      //     name: "Marketing Pod",
-      //     path: "/growth-pods/marketing",
-      //     description: "Complete marketing automation",
-      //     icon: "🚀",
-      //   },
-      //   {
-      //     name: "Sales Pod",
-      //     path: "/growth-pods/sales",
-      //     description: "Sales funnel optimization",
-      //     icon: "💰",
-      //   },
-      //   {
-      //     name: "Customer Success Pod",
-      //     path: "/growth-pods/customer-success",
-      //     description: "Customer retention tools",
-      //     icon: "🎯",
-      //   },
-      //   {
-      //     name: "Analytics Pod",
-      //     path: "/growth-pods/analytics",
-      //     description: "Data-driven insights",
-      //     icon: "📈",
-      //   },
-      // ],
+      dropdown: [
+        {
+          name: "Custom AI Solutions",
+          path: "/growth-pods/marketing",
+          description: "",
+          icon: "/ai-solutions/1.png",
+        },
+        {
+          name: "AI For Healthcare",
+          path: "/growth-pods/marketing",
+          description: "",
+          icon: "/ai-solutions/2.png",
+        },
+        {
+          name: "AI For Startups",
+          path: "/growth-pods/sales",
+          description: "",
+          icon: "/ai-solutions/3.png",
+        },
+        {
+          name: "AI For Customer Service",
+          path: "/growth-pods/marketing",
+          description: "",
+          icon: "/ai-solutions/4.png",
+        },
+        {
+          name: "AI For Retails",
+          path: "/growth-pods/customer-success",
+          description: "",
+          icon: "/ai-solutions/5.png",
+        },
+        {
+          name: "AI Agent Development",
+          path: "/growth-pods/marketing",
+          description: "",
+          icon: "/ai-solutions/6.png",
+        },
+        {
+          name: "AI For SEO",
+          path: "/growth-pods/analytics",
+          description: "",
+          icon: "/ai-solutions/7.png",
+        },
+        {
+          name: "AI For E-Commerce",
+          path: "/growth-pods/marketing",
+          description: "",
+          icon: "/ai-solutions/8.png",
+        },
+      ],
     },
     { name: "Insights", path: "/blog" },
     { name: "Contact", path: "/contacts" },
@@ -155,10 +179,13 @@ export default function Header() {
                   onMouseEnter={() => setOpenDropdown(item.name)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <button className="flex cursor-pointer items-center space-x-1 text-white hover:text-gray-300 transition-colors duration-200 text-base font-medium">
+                  <Link
+                    href={item.path}
+                    className="flex cursor-pointer items-center space-x-1 text-white hover:text-gray-300 transition-colors duration-200 text-base font-medium"
+                  >
                     <span>{item.name}</span>
                     <ChevronDown className="w-4 h-4" />
-                  </button>
+                  </Link>
 
                   {openDropdown === item.name && (
                     <div className="absolute top-full -left-32 mt-2 min-w-96 w-max bg-white rounded-2xl shadow-2xl z-50 border border-gray-100">
@@ -181,7 +208,7 @@ export default function Header() {
                                   alt={dropdownItem.name}
                                   width={48}
                                   height={48}
-                                  className="object-cover rounded-full"
+                                  className="object-contain rounded-full"
                                 />
                               </div>
                               <div className="flex-1 min-w-0">
@@ -217,7 +244,7 @@ export default function Header() {
                 </Link>
               )
             )}
-            </nav>
+          </nav>
 
           {/* Desktop Get Started Button */}
           <Link className="hidden lg:block" href={"/"}>
