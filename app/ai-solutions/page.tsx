@@ -7,6 +7,7 @@ import FAQSection from "@/components/growth-pods/faq-section";
 import CTASection from "@/components/growth-pods/cta-section";
 import EveryIndustry from "@/components/ai-solutions/ai-sol-every-industry";
 import Why from "@/components/ai-solutions/why";
+import CaseStudies from "@/components/ai-solutions/case-studies";
 
 export const metadata: Metadata = {
   title:
@@ -41,6 +42,7 @@ export default function GrowthPods() {
       <HeroSection />
       <EveryIndustry />
       <Why />
+      <CaseStudies />
       <HowGrowthPodsWork />
       <WhoItsForSection />
       <WhyBusinessNeedsSection />
