@@ -202,7 +202,7 @@ export default function Header() {
                               className="flex items-center space-x-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-200 group"
                               onClick={() => setOpenDropdown(null)}
                             >
-                              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-200 overflow-hidden">
+                              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-200 overflow-hidden">
                                 <Image
                                   src={dropdownItem.icon}
                                   alt={dropdownItem.name}
