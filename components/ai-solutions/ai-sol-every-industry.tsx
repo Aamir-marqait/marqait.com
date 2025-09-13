@@ -92,7 +92,7 @@ export default function EveryIndustry() {
 
         {/* Services Grid */}
         <div
-          className="p-10 rounded-[48px] backdrop-blur-[20px] max-w-[70rem] mx-auto relative"
+          className="p-10 rounded-[48px] backdrop-blur-[20px] max-w-[75rem] mx-auto relative"
           style={{
             background: "rgba(255, 255, 255, 0.02)",
           }}
@@ -110,14 +110,50 @@ export default function EveryIndustry() {
                 }}
               >
                 <div className="p-6 h-full flex flex-col">
-                  <div className="text-3xl mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold mb-4 text-white group-hover:text-purple-300 transition-colors">
+                  <div className="mb-4">
+                    <Image
+                      src={`/ai-solutions/${index + 1}.png`}
+                      alt={service.title}
+                      width={64}
+                      height={64}
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <h3
+                    className="mb-4 text-white group-hover:text-purple-300 transition-colors"
+                    style={{
+                      fontFamily: "Inter",
+                      fontWeight: 700,
+                      fontSize: "24px",
+                      lineHeight: "32px",
+                      letterSpacing: "-2%",
+                    }}
+                  >
                     {service.title}
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-6 flex-grow">
+                  <p
+                    className="text-white mb-6 flex-grow"
+                    style={{
+                      fontFamily: "Inter",
+                      fontWeight: 400,
+                      fontSize: "16px",
+                      lineHeight: "150%",
+                      letterSpacing: "0%",
+                    }}
+                  >
                     {service.description}
                   </p>
-                  <button className="text-purple-400 hover:text-purple-300 hover:bg-purple-900/20 p-0 h-auto font-medium text-left transition-colors">
+                  <button
+                    className="hover:bg-purple-900/20 p-0 h-auto text-left transition-colors"
+                    style={{
+                      fontWeight: 700,
+                      fontSize: "14px",
+                      lineHeight: "100%",
+                      letterSpacing: "0%",
+                      textTransform: "uppercase",
+                      color: "#D26DFE",
+                    }}
+                  >
                     LEARN MORE
                   </button>
                 </div>
