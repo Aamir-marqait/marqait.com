@@ -1,12 +1,12 @@
-"use client";
-import Link from "next/link";
-import Image from "next/image";
-import { trackCTAClick } from "../../analytics";
+"use client"
+import Link from "next/link"
+import Image from "next/image"
+import { trackCTAClick } from "../../analytics"
 
 export default function CTASection() {
   return (
     <div
-      className="relative overflow-hidden flex items-center justify-center py-12 sm:py-16 md:py-20 lg:py-12 xl:py-20"
+      className="relative overflow-hidden flex items-center justify-center py-8 sm:py-12 md:py-16 lg:py-12 xl:py-20"
       style={{
         backgroundImage: "url('/pods/pattern.png')",
         backgroundSize: "cover",
@@ -23,12 +23,12 @@ export default function CTASection() {
           width={1400}
           height={800}
           className="opacity-80
-            w-[600px] h-[400px]
-            sm:w-[800px] sm:h-[500px]
-            md:w-[1000px] md:h-[600px]
-            lg:w-[1200px] lg:h-[700px]
-            xl:w-[1400px] xl:h-[800px]
-            2xl:w-[6000px] 2xl:h-[1000px]"
+            w-[400px] h-[300px]
+            sm:w-[600px] sm:h-[400px]
+            md:w-[800px] md:h-[500px]
+            lg:w-[1000px] lg:h-[600px]
+            xl:w-[1200px] xl:h-[700px]
+            2xl:w-[1400px] 2xl:h-[800px]"
         />
       </div>
 
@@ -88,14 +88,14 @@ export default function CTASection() {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-6xl">
-        <div className="text-center space-y-6 sm:space-y-8 lg:space-y-8">
+        <div className="text-center space-y-4 sm:space-y-6 lg:space-y-8">
           <div>
             <h2
               className="text-center font-inter font-bold bg-gradient-to-r from-white to-[#B372CF] bg-clip-text text-transparent
-              text-2xl leading-[32px] tracking-[-0.3px]
-              xs:text-3xl xs:leading-[40px] xs:tracking-[-0.35px]
-              sm:text-4xl sm:leading-[48px] sm:tracking-[-0.4px]
-              md:text-5xl md:leading-[56px] md:tracking-[-0.45px]
+              text-xl leading-[28px] tracking-[-0.2px]
+              xs:text-2xl xs:leading-[32px] xs:tracking-[-0.3px]
+              sm:text-3xl sm:leading-[40px] sm:tracking-[-0.35px]
+              md:text-4xl md:leading-[48px] md:tracking-[-0.4px]
               lg:text-[36px] lg:leading-[65px] lg:tracking-[-0.54px]"
             >
               Ready to Build Smarter, Faster?
@@ -106,36 +106,32 @@ export default function CTASection() {
           <div>
             <p
               className="text-[rgba(255,255,255,0.80)] text-center font-inter font-normal leading-[150%] mx-auto px-2 sm:px-4 lg:px-0
-              text-sm 
+              text-sm leading-[20px]
               sm:text-base sm:leading-[24px]
               md:text-lg md:leading-[27px]
               lg:text-xl lg:leading-[30px]
               xl:text-[20px] xl:leading-[150%]
               max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[672px]"
             >
-              Whether you&apos;re launching or scaling, we&apos;ll help you
-              build with AI from day one — faster execution, leaner ops, better
-              results. Let&apos;s design a Growth Pod around your vision.
+              Whether you&apos;re launching or scaling, we&apos;ll help you build with AI from day one — faster
+              execution, leaner ops, better results. Let&apos;s design a Growth Pod around your vision.
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 justify-center items-center pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-16">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center pt-6 sm:pt-8 md:pt-10 lg:pt-12 xl:pt-16">
             <Link
               href="/contacts"
-              onClick={() =>
-                trackCTAClick("Join Existing Pod", "Growth Pods CTA")
-              }
-              className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+              onClick={() => trackCTAClick("Join Existing Pod", "Growth Pods CTA")}
+              className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2 w-full sm:w-auto"
               style={{
                 borderRadius: "15px",
                 borderWidth: "1px",
-                paddingTop: "10px",
-                paddingRight: "11px",
-                paddingBottom: "10px",
-                paddingLeft: "11px",
-                background:
-                  "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
+                paddingTop: "12px",
+                paddingRight: "16px",
+                paddingBottom: "12px",
+                paddingLeft: "16px",
+                background: "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
                 border: "1px solid #E6D4FF99",
                 fontFamily: "Inter",
                 fontWeight: 600,
@@ -157,17 +153,14 @@ export default function CTASection() {
             </Link>
             <Link
               href="/contacts"
-              onClick={() =>
-                trackCTAClick("Build Custom Pod", "Growth Pods CTA")
-              }
+              onClick={() => trackCTAClick("Build Custom Pod", "Growth Pods CTA")}
               style={{
                 borderRadius: "15px",
                 borderWidth: "1px",
-                paddingTop: "10px",
-                paddingRight: "11px",
-                paddingBottom: "10px",
-                paddingLeft: "11px",
-
+                paddingTop: "12px",
+                paddingRight: "16px",
+                paddingBottom: "12px",
+                paddingLeft: "16px",
                 fontFamily: "Inter",
                 fontWeight: 600,
                 fontSize: "14px",
@@ -176,11 +169,7 @@ export default function CTASection() {
                 verticalAlign: "middle",
                 color: "#F2F0F5",
               }}
-              className="cursor-pointer flex items-center border border-[rgba(255,255,255,0.25)] hover:border-[rgba(255,255,255,0.35)] text-[#F2F0F5] font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px]
-                px-4 py-3 text-sm
-                sm:px-5 sm:py-3 sm:text-base
-                md:px-6 md:py-4
-                lg:px-4 lg:py-4 lg:text-[18.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
+              className="cursor-pointer flex items-center border border-[rgba(255,255,255,0.25)] hover:border-[rgba(255,255,255,0.35)] text-[#F2F0F5] font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px]"
             >
               Build a Custom Pod
               <Image
@@ -195,5 +184,5 @@ export default function CTASection() {
         </div>
       </div>
     </div>
-  );
+  )
 }
