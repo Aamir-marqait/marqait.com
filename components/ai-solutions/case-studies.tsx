@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 function CaseStudies() {
   return (
-    <div className="mt-32 max-w-[70rem] mx-auto">
+    <div className="mt-32 max-w-[70rem] mx-auto mb-20">
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-white/90 font-bold text-4xl leading-[150%]">
           Case Studies

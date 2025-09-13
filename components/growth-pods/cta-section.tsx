@@ -6,7 +6,7 @@ import { trackCTAClick } from "../../analytics";
 export default function CTASection() {
   return (
     <div
-      className="relative overflow-hidden flex items-center justify-center py-12 sm:py-16 md:py-20 lg:py-12 xl:py-12"
+      className="relative overflow-hidden flex items-center justify-center py-12 sm:py-16 md:py-20 lg:py-12 xl:py-20"
       style={{
         backgroundImage: "url('/pods/pattern.png')",
         backgroundSize: "cover",
@@ -126,13 +126,24 @@ export default function CTASection() {
               onClick={() =>
                 trackCTAClick("Join Existing Pod", "Growth Pods CTA")
               }
-              className="cursor-pointer flex items-center bg-[rgba(140,69,255,0.40)] hover:bg-[rgba(140,69,255,0.50)] border border-[rgba(255,255,255,0.25)] text-[#F2F0F5] font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px]
-                px-4 py-3 text-sm
-                sm:px-5 sm:py-3 sm:text-base
-                md:px-6 md:py-4
-                lg:px-6 lg:py-4 lg:text-[18.8px] lg:leading-[30px] lg:tracking-[-0.4px]"
+              className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
               style={{
-                boxShadow: "0px 12px 16px 0px rgba(111, 17, 242, 0.25), 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset"
+                borderRadius: "15px",
+                borderWidth: "1px",
+                paddingTop: "10px",
+                paddingRight: "11px",
+                paddingBottom: "10px",
+                paddingLeft: "11px",
+                background:
+                  "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
+                border: "1px solid #E6D4FF99",
+                fontFamily: "Inter",
+                fontWeight: 600,
+                fontSize: "14px",
+                lineHeight: "30px",
+                letterSpacing: "0px",
+                verticalAlign: "middle",
+                color: "#F2F0F5",
               }}
             >
               Join an Existing Pod
@@ -149,6 +160,22 @@ export default function CTASection() {
               onClick={() =>
                 trackCTAClick("Build Custom Pod", "Growth Pods CTA")
               }
+              style={{
+                borderRadius: "15px",
+                borderWidth: "1px",
+                paddingTop: "10px",
+                paddingRight: "11px",
+                paddingBottom: "10px",
+                paddingLeft: "11px",
+
+                fontFamily: "Inter",
+                fontWeight: 600,
+                fontSize: "14px",
+                lineHeight: "30px",
+                letterSpacing: "0px",
+                verticalAlign: "middle",
+                color: "#F2F0F5",
+              }}
               className="cursor-pointer flex items-center border border-[rgba(255,255,255,0.25)] hover:border-[rgba(255,255,255,0.35)] text-[#F2F0F5] font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 w-full sm:w-auto sm:min-w-[180px] lg:min-w-[200px]
                 px-4 py-3 text-sm
                 sm:px-5 sm:py-3 sm:text-base

@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/growth-pods/hero-section";
-import HowGrowthPodsWork from "@/components/growth-pods/how-growth-pods-works";
-import WhoItsForSection from "@/components/growth-pods/who-its-for-section";
-import WhyBusinessNeedsSection from "@/components/growth-pods/why-business-needs-section";
-import FAQSection from "@/components/growth-pods/faq-section";
 import CTASection from "@/components/growth-pods/cta-section";
 import EveryIndustry from "@/components/ai-solutions/ai-sol-every-industry";
 import Why from "@/components/ai-solutions/why";
@@ -43,10 +39,6 @@ export default function GrowthPods() {
       <EveryIndustry />
       <Why />
       <CaseStudies />
-      <HowGrowthPodsWork />
-      <WhoItsForSection />
-      <WhyBusinessNeedsSection />
-      <FAQSection />
       <CTASection />
     </div>
   );
