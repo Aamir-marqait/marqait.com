@@ -80,14 +80,14 @@ export default function EveryIndustry() {
           alt=""
           width={200}
           height={300}
-          className="absolute left-0 top-[38%] transform -translate-y-1/2 -translate-x-1/2 z-0"
+          className="absolute hidden md:block left-0 top-[38%] transform -translate-y-1/2 -translate-x-1/2 z-0"
         />
         <Image
           src="/right.png"
           alt=""
           width={200}
           height={200}
-          className="absolute right-0 top-[38%] transform -translate-y-1/2 translate-x-1/2 z-0"
+          className="absolute hidden md:block right-0 top-[38%] transform -translate-y-1/2 translate-x-1/2 z-0"
         />
 
         {/* Services Grid */}
