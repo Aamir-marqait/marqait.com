@@ -144,7 +144,7 @@ export default function EveryIndustry() {
                     {service.description}
                   </p>
                   <button
-                    className="hover:bg-purple-900/20 p-0 h-auto text-left transition-colors"
+                    className="cursor-pointer p-0 h-auto text-left transition-colors"
                     style={{
                       fontWeight: 700,
                       fontSize: "14px",
