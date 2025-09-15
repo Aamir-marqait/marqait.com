@@ -30,7 +30,12 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="min-h-screen flex flex-row">
+    <section 
+      className="min-h-screen flex flex-row"
+      style={{
+        background: "linear-gradient(180deg, rgba(2, 1, 3, 0.7) 0%, rgba(96, 42, 154, 0.7) 261.16%)"
+      }}
+    >
       <div className="sm:px-8 md:px-16 lg:px-44 w-1/2 ">
         <div className="flex items-center justify-center mb-4 sm:mb-5 min-w-lg">
           <div className="flex-1 max-w-[60px] xs:max-w-[80px] sm:max-w-[100px] md:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-r from-transparent to-gray-600"></div>
