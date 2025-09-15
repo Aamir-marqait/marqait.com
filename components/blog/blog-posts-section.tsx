@@ -1,9 +1,48 @@
+'use client';
 import Link from "next/link";
 import Image from "next/image";
 import { TransformedBlogPost } from "../../data/blogService";
+import { useState } from "react";
 
 interface BlogPostsSectionProps {
   blogPosts: TransformedBlogPost[];
+}
+
+// Helper component for images with error handling
+function BlogImage({ 
+  src, 
+  alt, 
+  width, 
+  height, 
+  className 
+}: {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  className: string;
+}) {
+  const [imageSrc, setImageSrc] = useState(src);
+  const [hasError, setHasError] = useState(false);
+
+  const handleError = () => {
+    if (!hasError) {
+      setHasError(true);
+      setImageSrc('/blog/default-post.jpg'); // Fallback image
+    }
+  };
+
+  return (
+    <Image
+      src={imageSrc}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+      onError={handleError}
+      priority={false}
+    />
+  );
 }
 
 export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
@@ -69,7 +108,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
                 <Link href={`/ai-blog/${featuredPost.slug}`} className="block">
                   <div className="overflow-hidden transition-all duration-300 flex flex-col">
                     <div className="aspect-[3/1] overflow-hidden">
-                      <Image
+                      <BlogImage
                         src={featuredPost.image}
                         alt={featuredPost.title}
                         width={800}
@@ -153,7 +192,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
 
                       {/* Author and Date */}
                       <div className="flex items-center gap-3">
-                        <Image
+                        <BlogImage
                           src={featuredPost.author.avatar}
                           alt={featuredPost.author.name}
                           width={48}
@@ -209,7 +248,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
                             className="overflow-hidden"
                             style={{ height: "200px", width: "100%" }}
                           >
-                            <Image
+                            <BlogImage
                               src={post.image}
                               alt={post.title}
                               width={400}
@@ -277,8 +316,8 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
 
                             {/* Author and Date */}
                             <div className="flex items-center gap-3">
-                              <Image
-                                src={post.author.avatar || "/placeholder.svg"}
+                              <BlogImage
+                                src={post.author.avatar || "/user.jpg"}
                                 alt={post.author.name}
                                 width={32}
                                 height={32}
@@ -331,7 +370,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
               <div className="overflow-hidden transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
                   <div className="aspect-[2/1] overflow-hidden lg:col-span-2">
-                    <Image
+                    <BlogImage
                       src={fullWidthPost.image}
                       alt={fullWidthPost.title}
                       width={800}
@@ -411,7 +450,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
 
                     {/* Author and Date */}
                     <div className="flex items-center gap-4">
-                      <Image
+                      <BlogImage
                         src={fullWidthPost.author.avatar}
                         alt={fullWidthPost.author.name}
                         width={40}
