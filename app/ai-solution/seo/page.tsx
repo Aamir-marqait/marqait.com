@@ -6,6 +6,7 @@ import WhatIsAiSeo from "./what-is-seo";
 import WhyBusinessesNeedAiSeo from "./why-businesses-need-ai-seo";
 import OurSeoServices from "./our-seo-services";
 import BenefitsSection from "./benefits-section";
+import FaqSection from "./faq-section";
 
 function page() {
   return (
@@ -24,6 +25,7 @@ function page() {
       <WhyBusinessesNeedAiSeo />
       <OurSeoServices />
       <BenefitsSection />
+      <FaqSection />
     </div>
   );
 }
