@@ -181,25 +181,30 @@ export default function Header() {
                 >
                   <Link
                     href={item.path}
-                    className="flex cursor-pointer items-center space-x-1 text-white hover:text-gray-300 transition-colors duration-200 text-base font-medium"
+                    className="flex cursor-pointer items-center space-x-1 text-white hover:text-gray-300 transition-colors duration-200 text-base font-medium group"
                   >
                     <span>{item.name}</span>
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                   </Link>
 
                   {openDropdown === item.name && (
-                    <div className="absolute top-full -left-32 mt-2 min-w-96 w-max bg-white rounded-2xl shadow-2xl z-50 border border-gray-100">
+                    <div className="absolute top-full -left-32 mt-2 min-w-96 w-max bg-white rounded-2xl shadow-2xl z-50 border border-gray-100 animate-in fade-in-0 zoom-in-95 duration-200 ease-out">
                       {/* Invisible bridge to prevent dropdown from closing */}
                       <div className="absolute -top-2 left-0 right-0 h-2 bg-transparent"></div>
                       {/* Arrow pointing up */}
-                      <div className="absolute -top-2 left-40 w-4 h-4 bg-white border-l border-t border-gray-100 transform rotate-45"></div>
+                      <div className="absolute -top-2 left-40 w-4 h-4 bg-white border-l border-t border-gray-100 transform rotate-45 animate-in fade-in-0 duration-300 ease-out"></div>
                       <div className="p-4">
                         <div className="grid grid-cols-2 gap-3">
-                          {item.dropdown.map((dropdownItem) => (
+                          {item.dropdown.map((dropdownItem, index) => (
                             <Link
                               key={dropdownItem.name}
                               href={dropdownItem.path}
-                              className="flex items-center space-x-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-200 group"
+                              className="flex items-center space-x-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-200 group animate-in fade-in-0 slide-in-from-top-2"
+                              style={{
+                                animationDelay: `${index * 50}ms`,
+                                animationDuration: '200ms',
+                                animationFillMode: 'both'
+                              }}
                               onClick={() => setOpenDropdown(null)}
                             >
                               <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-200 overflow-hidden">
@@ -338,12 +343,17 @@ export default function Header() {
                       />
                     </button>
                     {openDropdown === item.name && (
-                      <div className="ml-4 space-y-2 mt-2">
-                        {item.dropdown.map((dropdownItem) => (
+                      <div className="ml-4 space-y-2 mt-2 animate-in fade-in-0 slide-in-from-top-2 duration-200">
+                        {item.dropdown.map((dropdownItem, index) => (
                           <Link
                             key={dropdownItem.name}
                             href={dropdownItem.path}
-                            className="flex items-center space-x-3 px-3 py-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-200"
+                            className="flex items-center space-x-3 px-3 py-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-200 animate-in fade-in-0 slide-in-from-left-2"
+                            style={{
+                              animationDelay: `${index * 75}ms`,
+                              animationDuration: '250ms',
+                              animationFillMode: 'both'
+                            }}
                             onClick={() => {
                               setIsMobileMenuOpen(false);
                               setOpenDropdown(null);
