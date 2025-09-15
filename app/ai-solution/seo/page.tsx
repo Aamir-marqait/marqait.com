@@ -7,6 +7,7 @@ import WhyBusinessesNeedAiSeo from "./why-businesses-need-ai-seo";
 import OurSeoServices from "./our-seo-services";
 import BenefitsSection from "./benefits-section";
 import FaqSection from "./faq-section";
+import ContactSection from "./contact-section";
 
 function page() {
   return (
@@ -26,6 +27,7 @@ function page() {
       <OurSeoServices />
       <BenefitsSection />
       <FaqSection />
+      <ContactSection />
     </div>
   );
 }
