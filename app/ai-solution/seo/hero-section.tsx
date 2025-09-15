@@ -1,11 +1,12 @@
-import Link from "next/link"
-import { ChevronRight } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
     <div className="relative flex min-h-screen flex-col lg:flex-row">
       {/* Left Content */}
-      <div className="relative z-10 px-4 sm:px-8 md:px-16 lg:px-40 mt-8 sm:mt-12 lg:mt-16 flex-1">
+      <div className="relative z-10 px-4  sm:px-8 md:px-16 lg:px-44 mt-8 sm:mt-12 lg:mt-16 flex-1">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 mb-8 sm:mb-16 md:mb-24 lg:mb-36">
           <Link
@@ -73,8 +74,9 @@ export default function HeroSection() {
             letterSpacing: "0%",
           }}
         >
-          Marqait AI offers AI SEO automation services for search engine optimization. Use AI for SEO to improve a
-          website visibility and ranking in search engines.
+          Marqait AI offers AI SEO automation services for search engine
+          optimization. Use AI for SEO to improve a website visibility and
+          ranking in search engines.
         </p>
 
         <button
@@ -90,7 +92,8 @@ export default function HeroSection() {
             lineHeight: "28px",
             letterSpacing: "0%",
             textAlign: "center",
-            background: "linear-gradient(180.68deg, rgba(184, 18, 255, 0.85) -29.88%, rgba(110, 11, 153, 0.85) 99.98%)",
+            background:
+              "linear-gradient(180.68deg, rgba(184, 18, 255, 0.85) -29.88%, rgba(110, 11, 153, 0.85) 99.98%)",
             borderRadius: "12px",
             border: "none",
             cursor: "pointer",
@@ -101,12 +104,13 @@ export default function HeroSection() {
       </div>
 
       <div className="hidden sm:block absolute sm:relative sm:w-full md:w-1/2 lg:absolute lg:right-0 lg:top-[18px] lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-full mt-8 sm:mt-0">
-        <img
+        <Image
           src="/seo/hero-image.png"
           alt="AI SEO Hero Image"
-          className="w-full h-full object-cover sm:object-contain lg:object-fill lg:object-left rounded-lg sm:rounded-none"
+          fill
+          className="object-cover sm:object-contain lg:object-fill lg:object-left rounded-lg sm:rounded-none"
         />
       </div>
     </div>
-  )
+  );
 }
