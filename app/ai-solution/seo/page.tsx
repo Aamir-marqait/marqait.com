@@ -3,6 +3,8 @@ import Image from "next/image";
 import HeroSection from "./hero-section";
 import WhatIsAiSeo from "./what-is-seo";
 
+import WhyBusinessesNeedAiSeo from "./why-businesses-need-ai-seo";
+
 function page() {
   return (
     <div className="bg-black">
@@ -17,6 +19,7 @@ function page() {
         />
       </div>
       <WhatIsAiSeo />
+      <WhyBusinessesNeedAiSeo />
     </div>
   );
 }
