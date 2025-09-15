@@ -4,6 +4,7 @@ import HeroSection from "./hero-section";
 import WhatIsAiSeo from "./what-is-seo";
 
 import WhyBusinessesNeedAiSeo from "./why-businesses-need-ai-seo";
+import OurSeoServices from "./our-seo-services";
 
 function page() {
   return (
@@ -20,6 +21,7 @@ function page() {
       </div>
       <WhatIsAiSeo />
       <WhyBusinessesNeedAiSeo />
+      <OurSeoServices />
     </div>
   );
 }
