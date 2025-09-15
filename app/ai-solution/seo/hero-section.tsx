@@ -78,29 +78,30 @@ export default function HeroSection() {
           optimization. Use AI for SEO to improve a website visibility and
           ranking in search engines.
         </p>
-
-        <button
-          className="text-white transition-colors w-full sm:w-auto text-sm sm:text-base"
-          style={{
-            paddingTop: "8px",
-            paddingLeft: "12px",
-            paddingRight: "12px",
-            paddingBottom: "8px",
-            fontFamily: "Inter",
-            fontWeight: 600,
-            fontSize: "16px",
-            lineHeight: "28px",
-            letterSpacing: "0%",
-            textAlign: "center",
-            background:
-              "linear-gradient(180.68deg, rgba(184, 18, 255, 0.85) -29.88%, rgba(110, 11, 153, 0.85) 99.98%)",
-            borderRadius: "12px",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          Book a Free Consultation
-        </button>
+        <Link href={"/contact"}>
+          <button
+            className="text-white transition-colors w-full sm:w-auto text-sm sm:text-base"
+            style={{
+              paddingTop: "8px",
+              paddingLeft: "12px",
+              paddingRight: "12px",
+              paddingBottom: "8px",
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "16px",
+              lineHeight: "28px",
+              letterSpacing: "0%",
+              textAlign: "center",
+              background:
+                "linear-gradient(180.68deg, rgba(184, 18, 255, 0.85) -29.88%, rgba(110, 11, 153, 0.85) 99.98%)",
+              borderRadius: "12px",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            Book a Free Consultation
+          </button>
+        </Link>
       </div>
 
       <div className="hidden sm:block absolute sm:relative sm:w-full md:w-1/2 lg:absolute lg:right-0 lg:top-[18px] lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-full mt-8 sm:mt-0">
