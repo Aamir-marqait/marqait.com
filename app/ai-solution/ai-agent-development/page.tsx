@@ -6,6 +6,8 @@ import Why from "./why";
 import DevelopmentProcessSection from "./our-dev-process";
 import IndustriesSection from "./industries-section";
 import AIAgentBenefits from "./ai-agent-benefits";
+import FaqSection from "./ai-agent-faq-section";
+import ContactSection from "@/components/ai-solution-contact";
 
 function page() {
   return (
@@ -17,6 +19,8 @@ function page() {
       <DevelopmentProcessSection />
       <IndustriesSection />
       <AIAgentBenefits />
+      <FaqSection />
+      <ContactSection />
     </div>
   );
 }
