@@ -39,7 +39,6 @@ export default function DevelopmentProcessSection() {
   return (
     <section className="py-20 px-4 bg-black">
       <div className="max-w-[70rem] mx-auto">
-        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-bold text-white mb-6 leading-[48px] text-center">
             Our AI Agent Development Process
@@ -50,13 +49,10 @@ export default function DevelopmentProcessSection() {
           </p>
         </div>
 
-        {/* Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Process Steps */}
           <div className="space-y-8">
             {processSteps.map((step, index) => (
               <div key={index} className="flex gap-6">
-                {/* Number Badge */}
                 <div className="flex-shrink-0">
                   <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
                     <span className="text-[18px]  font-bold text-white leading-[28px] text-center">
@@ -64,8 +60,6 @@ export default function DevelopmentProcessSection() {
                     </span>
                   </div>
                 </div>
-
-                {/* Content */}
                 <div className="flex-1">
                   <h3 className="text-[20px] font-bold text-white mb-2 leading-[28px]">
                     {step.title}
@@ -77,8 +71,6 @@ export default function DevelopmentProcessSection() {
               </div>
             ))}
           </div>
-
-          {/* Illustration */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-lg">
               <Image
