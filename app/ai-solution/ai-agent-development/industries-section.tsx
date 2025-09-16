@@ -1,6 +1,39 @@
 import Image from "next/image";
 
 export default function IndustriesSection() {
+  const industries = [
+    {
+      id: 1,
+      title: "AI For Healthcare",
+      description: "Smart medical diagnosis and patient care automation",
+      image: "/agents/1.jpg"
+    },
+    {
+      id: 2,
+      title: "AI For Startups",
+      description: "Accelerate growth with intelligent business process automation",
+      image: "/agents/2.png"
+    },
+    {
+      id: 3,
+      title: "AI For Customer Service",
+      description: "24/7 intelligent support with natural conversation abilities",
+      image: "/agents/3.jpg"
+    },
+    {
+      id: 4,
+      title: "AI For Retail",
+      description: "Personalized shopping experiences and inventory management solutions",
+      image: "/agents/4.jpg"
+    },
+    {
+      id: 5,
+      title: "AI For Finance & Banking",
+      description: "Secure financial analysis and automated compliance monitoring",
+      image: "/agents/5.png"
+    }
+  ];
+
   return (
     <section className="py-20 px-4 bg-black">
       <div className="max-w-[70rem] mx-auto">
@@ -19,83 +52,76 @@ export default function IndustriesSection() {
         <div className="space-y-6">
           {/* Top Row - 3 cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="relative group overflow-hidden aspect-[4/3]">
-              <Image
-                src="/agents/1.jpg"
-                alt="AI For Healthcare"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                <h3 className="text-[22px] w-full font-bold text-white leading-[100%] text-center">
-                  AI For Healthcare
-                </h3>
+            {industries.slice(0, 3).map((industry) => (
+              <div key={industry.id} className="relative group overflow-hidden aspect-[4/3] cursor-pointer">
+                <Image
+                  src={industry.image}
+                  alt={industry.title}
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:scale-105"
+                />
+                
+                {/* Hover overlay - darkens image */}
+                <div className="absolute inset-0 bg-black/0 transition-all duration-500 ease-out group-hover:bg-black/60"></div>
+                
+                {/* Default state - title at bottom center */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 transition-opacity duration-500 ease-out group-hover:opacity-0">
+                  <h3 className="text-[22px] w-full font-bold text-white leading-[100%] text-center">
+                    {industry.title}
+                  </h3>
+                </div>
+                
+                {/* Hover state - title and description at bottom left */}
+                <div className="absolute inset-0 p-6 opacity-0 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 translate-y-4">
+                  <div className="h-full flex flex-col justify-end">
+                    <h3 className="text-[22px] font-bold text-white leading-tight mb-3 text-left transform transition-all duration-500 ease-out">
+                      {industry.title}
+                    </h3>
+                    <p className="text-[16px] text-white/90 leading-relaxed text-left transform transition-all duration-500 ease-out delay-100">
+                      {industry.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div className="relative group overflow-hidden aspect-[4/3]">
-              <Image
-                src="/agents/2.png"
-                alt="AI For Startups"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                <h3 className="text-[22px] w-full font-bold text-white leading-[100%] text-center">
-                  AI For Startups
-                </h3>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden aspect-[4/3]">
-              <Image
-                src="/agents/3.jpg"
-                alt="AI For Customer Service"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                <h3 className="text-[22px] w-full font-bold text-white leading-[100%] text-center">
-                  AI For Customer Service
-                </h3>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Bottom Row - 2 cards centered */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <div className="relative group overflow-hidden aspect-[4/3]">
-              <Image
-                src="/agents/4.jpg"
-                alt="AI For Retail"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                <h3 className="text-[22px] w-full font-bold text-white leading-[100%] text-center">
-                  AI For Retail
-                </h3>
+            {industries.slice(3, 5).map((industry) => (
+              <div key={industry.id} className="relative group overflow-hidden aspect-[4/3] cursor-pointer">
+                <Image
+                  src={industry.image}
+                  alt={industry.title}
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-cover transition-all duration-500 ease-out group-hover:scale-105"
+                />
+                
+                {/* Hover overlay - darkens image */}
+                <div className="absolute inset-0 bg-black/0 transition-all duration-500 ease-out group-hover:bg-black/60"></div>
+                
+                {/* Default state - title at bottom center */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 transition-opacity duration-500 ease-out group-hover:opacity-0">
+                  <h3 className="text-[22px] w-full font-bold text-white leading-[100%] text-center">
+                    {industry.title}
+                  </h3>
+                </div>
+                
+                {/* Hover state - title and description at bottom left */}
+                <div className="absolute inset-0 p-6 opacity-0 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 translate-y-4">
+                  <div className="h-full flex flex-col justify-end">
+                    <h3 className="text-[22px] font-bold text-white leading-tight mb-3 text-left transform transition-all duration-500 ease-out">
+                      {industry.title}
+                    </h3>
+                    <p className="text-[16px] text-white/90 leading-relaxed text-left transform transition-all duration-500 ease-out delay-100">
+                      {industry.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div className="relative group overflow-hidden aspect-[4/3]">
-              <Image
-                src="/agents/5.png"
-                alt="AI For Finance & Banking"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-                <h3 className="text-[22px] w-full font-bold text-white leading-[100%] text-center">
-                  AI For Finance & Banking
-                </h3>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
