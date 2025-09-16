@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function HeroSection() {
   const router = useRouter();
@@ -19,8 +20,18 @@ function HeroSection() {
       <div className="absolute inset-0 bg-black/60 z-5"></div>
       <div className=" relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-0  items-center min-h-[80vh]">
-          <div className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 order-2 lg:order-1 relative">
-            <div className="space-y-3 sm:space-y-4 lg:space-y-6  mx-auto relative z-10">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 order-2 lg:order-1 relative"
+          >
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              className="space-y-3 sm:space-y-4 lg:space-y-6  mx-auto relative z-10"
+            >
               <h1
                 className="self-stretch max-w-lg text-white font-inter font-bold leading-[150%]
                 text-2xl
@@ -34,9 +45,14 @@ function HeroSection() {
               >
                 AI-Solutions & Automation Services
               </h1>
-            </div>
+            </motion.div>
 
-            <div className="space-y-3 sm:space-y-4 lg:space-y-5 relative z-10">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              className="space-y-3 sm:space-y-4 lg:space-y-5 relative z-10"
+            >
               <p
                 className="flex-shrink-0 font-inter font-normal leading-[140%]
                 text-sm
@@ -57,9 +73,14 @@ function HeroSection() {
                 Industry-specific automation, streamline workflows, boost
                 efficiency, and accelerate business growth.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="pt-3 sm:pt-4 md:pt-6 lg:pt-6 relative z-10">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+              className="pt-3 sm:pt-4 md:pt-6 lg:pt-6 relative z-10"
+            >
               <button
                 onClick={() => router.push("/contacts")}
                 className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
@@ -103,12 +124,20 @@ function HeroSection() {
                   </svg>
                 </div>
               </button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Right Content - AI Image */}
-          <div className="order-1 lg:order-2  justify-center lg:justify-end">
-            <div
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+            className="order-1 lg:order-2  justify-center lg:justify-end"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
               className="relative w-full
               max-w-xs
               sm:max-w-sm
@@ -130,8 +159,8 @@ function HeroSection() {
                 height={600}
                 className="relative w-full h-full z-10 "
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </div>
