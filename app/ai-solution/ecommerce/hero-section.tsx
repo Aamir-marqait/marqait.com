@@ -47,7 +47,7 @@ export default function HeroSection() {
                   letterSpacing: "0%",
                 }}
               >
-                AI Agent Development
+                AI For E-commerce
               </span>
             </nav>
             {/* Content */}
