@@ -37,7 +37,7 @@ export default function ContactSection() {
       }}
     >
       <div className="sm:px-8 md:px-16 lg:px-44 w-1/2 ">
-        <div className="flex items-center justify-center mb-4 sm:mb-5 min-w-lg">
+        <div className="flex items-center justify-center mb-4 sm:mb-5 min-w-md">
           <div className="flex-1 max-w-[60px] xs:max-w-[80px] sm:max-w-[100px] md:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-r from-transparent to-gray-600"></div>
           <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full"></div>
           <span
@@ -53,7 +53,7 @@ export default function ContactSection() {
           <div className="flex-1 max-w-[60px] xs:max-w-[80px] sm:max-w-[100px] md:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-l from-transparent to-gray-600"></div>
         </div>
         <h2
-          className="text-white text-center mb-8 min-w-lg"
+          className="text-white text-center mb-8 min-w-md"
           style={{
             fontFamily: "Inter",
             fontWeight: 600,
@@ -68,7 +68,7 @@ export default function ContactSection() {
 
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 px-8 py-5 rounded-lg min-w-lg "
+          className="space-y-6 px-8 py-5 rounded-lg min-w-md "
           style={{
             background:
               "linear-gradient(180deg, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0) 100%)",
