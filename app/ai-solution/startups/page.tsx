@@ -5,6 +5,7 @@ import SolutionForStartup from "./solution-for-startup";
 import Why from "./why";
 import Benefits from "./benefit";
 import ContactSection from "@/components/ai-solution-contact";
+import Role from "./role";
 
 function page() {
   return (
@@ -15,7 +16,7 @@ function page() {
       <WhatIsStartup />
       <SolutionForStartup />
       <Why />
-      {/* one more to go */}
+      <Role />
       <Benefits />
       <ContactSection />
     </div>
