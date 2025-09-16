@@ -3,6 +3,8 @@ import HeroSection from "./hero-section";
 import WhatIsStartup from "./what-is-startup";
 import SolutionForStartup from "./solution-for-startup";
 import Why from "./why";
+import Benefits from "./benefit";
+import ContactSection from "@/components/ai-solution-contact";
 
 function page() {
   return (
@@ -13,6 +15,9 @@ function page() {
       <WhatIsStartup />
       <SolutionForStartup />
       <Why />
+      {/* one more to go */}
+      <Benefits />
+      <ContactSection />
     </div>
   );
 }
