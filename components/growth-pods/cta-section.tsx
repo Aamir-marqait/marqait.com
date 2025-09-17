@@ -1,7 +1,7 @@
-"use client"
-import Link from "next/link"
-import Image from "next/image"
-import { trackCTAClick } from "../../analytics"
+"use client";
+import Link from "next/link";
+import Image from "next/image";
+import { trackCTAClick } from "../../analytics";
 
 export default function CTASection() {
   return (
@@ -106,15 +106,16 @@ export default function CTASection() {
           <div>
             <p
               className="text-[rgba(255,255,255,0.80)] text-center font-inter font-normal leading-[150%] mx-auto px-2 sm:px-4 lg:px-0
-              text-sm leading-[20px]
+              text-sm 
               sm:text-base sm:leading-[24px]
               md:text-lg md:leading-[27px]
               lg:text-xl lg:leading-[30px]
               xl:text-[20px] xl:leading-[150%]
               max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-[672px]"
             >
-              Whether you&apos;re launching or scaling, we&apos;ll help you build with AI from day one — faster
-              execution, leaner ops, better results. Let&apos;s design a Growth Pod around your vision.
+              Whether you&apos;re launching or scaling, we&apos;ll help you
+              build with AI from day one — faster execution, leaner ops, better
+              results. Let&apos;s design a Growth Pod around your vision.
             </p>
           </div>
 
@@ -122,7 +123,9 @@ export default function CTASection() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center pt-6 sm:pt-8 md:pt-10 lg:pt-12 xl:pt-16">
             <Link
               href="/contacts"
-              onClick={() => trackCTAClick("Join Existing Pod", "Growth Pods CTA")}
+              onClick={() =>
+                trackCTAClick("Join Existing Pod", "Growth Pods CTA")
+              }
               className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2 w-full sm:w-auto"
               style={{
                 borderRadius: "15px",
@@ -131,7 +134,8 @@ export default function CTASection() {
                 paddingRight: "16px",
                 paddingBottom: "12px",
                 paddingLeft: "16px",
-                background: "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
+                background:
+                  "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
                 border: "1px solid #E6D4FF99",
                 fontFamily: "Inter",
                 fontWeight: 600,
@@ -153,7 +157,9 @@ export default function CTASection() {
             </Link>
             <Link
               href="/contacts"
-              onClick={() => trackCTAClick("Build Custom Pod", "Growth Pods CTA")}
+              onClick={() =>
+                trackCTAClick("Build Custom Pod", "Growth Pods CTA")
+              }
               style={{
                 borderRadius: "15px",
                 borderWidth: "1px",
@@ -184,5 +190,5 @@ export default function CTASection() {
         </div>
       </div>
     </div>
-  )
+  );
 }
