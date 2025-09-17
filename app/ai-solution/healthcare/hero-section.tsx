@@ -52,7 +52,7 @@ export default function AiAgentHero() {
               letterSpacing: "0%",
             }}
           >
-            AI Agent Development
+            AI For Healthcare
           </span>
         </nav>
 

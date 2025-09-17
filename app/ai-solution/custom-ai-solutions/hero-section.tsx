@@ -1,7 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function AiAgentHero() {
+export default function HeroSection() {
   return (
     <section className="relative py-20  overflow-hidden">
       {/* Background Image */}
@@ -52,7 +52,7 @@ export default function AiAgentHero() {
               letterSpacing: "0%",
             }}
           >
-            AI Agent Development
+            Custom AI Solutions
           </span>
         </nav>
 

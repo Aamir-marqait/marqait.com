@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function WhatIsAgent() {
+export default function What() {
   return (
     <section className="bg-black py-20 px-6 max-w-[70rem]  mx-auto">
       <div className="">
