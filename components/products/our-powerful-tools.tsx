@@ -120,9 +120,9 @@ export default function OurPowerfulTools() {
                     style={{
                       borderRadius: "15px",
                       borderWidth: "1px",
-                      paddingTop: "6px",
+                      paddingTop: "4px",
                       paddingRight: "11px",
-                      paddingBottom: "6px",
+                      paddingBottom: "4px",
                       paddingLeft: "11px",
                       background:
                         "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
