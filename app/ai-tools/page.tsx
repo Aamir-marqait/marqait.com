@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import AIProductsSection from "@/components/products/ai-products-section";
 import AiPowerhouseHero from "@/components/products/products-hero-section";
 import KeyBenefits from "@/components/products/key-benefits";
+import OurPowerfulTools from "@/components/products/our-powerful-tools";
 
 export const metadata: Metadata = {
   title: "Best AI Tools for Marketing Automation - Marqait AI",
@@ -33,6 +34,7 @@ const AITools = () => {
       <div className="w-full max-w-none">
         <AiPowerhouseHero />
         <KeyBenefits />
+        <OurPowerfulTools />
         <AIProductsSection />
       </div>
     </div>
