@@ -14,28 +14,28 @@ const services = [
     title: "AI for Healthcare",
     description:
       "Revolutionize healthcare with advanced AI solutions that enhance patient care, support diagnostics, and deliver predictive insights—improving outcomes, reduced costs, and boosting clinical efficiency",
-    link: "/healthcare",
+    link: "/ai-for-healthcare",
   },
   {
     icon: "🚀",
     title: "AI for Startups",
     description:
       "Accelerate your startup's growth with scalable, affordable AI solutions that deliver enterprise-level intelligence—helping emerging businesses gain a competitive edge and disrupt their markets.",
-    link: "/startups",
+    link: "/ai-for-startups",
   },
   {
     icon: "🎧",
     title: "AI for Customer Service",
     description:
       "Elevate customer experience with AI-powered automation that reduces response times, boosts satisfaction, and delivers 24/7 support—while preserving the human touch customers expect.",
-    link: "/customer-service",
+    link: "/ai-for-customer-service",
   },
   {
     icon: "🏪",
     title: "AI in Retail Industry",
     description:
       "Transform retail with AI solutions that optimize inventory, enhance personalization, and boost sales—delivering deep insights into consumer behavior, shopping trends, and market dynamics",
-    link: "/retails",
+    link: "/ai-for-retails",
   },
   {
     icon: "🤖",
@@ -49,14 +49,14 @@ const services = [
     title: "AI for SEO",
     description:
       "Dominate search results with AI-driven SEO strategies that analyze patterns, optimize content, and predict algorithm changes—ensuring steady organic traffic growth and online visibility.",
-    link: "/seo",
+    link: "/ai-for-seo",
   },
   {
     icon: "🛒",
     title: "AI for Ecommerce",
     description:
       "Maximize your store's potential with AI-driven ecommerce solutions that enhance user experience, boost conversions, and raise order values—delivering personalization that drives loyalty and growth",
-    link: "/ecommerce",
+    link: "/ai-for-ecommerce",
   },
 ];
 
