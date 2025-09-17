@@ -7,56 +7,56 @@ const services = [
     title: "Custom AI Solutions",
     description:
       "Solve your unique business challenges with custom AI solutions — from machine learning models and algorithm optimization to seamless system integration tailored to your industry",
-    link: "/ai-solution/custom-ai-solutions",
+    link: "/custom-ai-solutions",
   },
   {
     icon: "❤️",
     title: "AI for Healthcare",
     description:
       "Revolutionize healthcare with advanced AI solutions that enhance patient care, support diagnostics, and deliver predictive insights—improving outcomes, reduced costs, and boosting clinical efficiency",
-    link: "/ai-solution/healthcare",
+    link: "/healthcare",
   },
   {
     icon: "🚀",
     title: "AI for Startups",
     description:
       "Accelerate your startup's growth with scalable, affordable AI solutions that deliver enterprise-level intelligence—helping emerging businesses gain a competitive edge and disrupt their markets.",
-    link: "/ai-solution/startups",
+    link: "/startups",
   },
   {
     icon: "🎧",
     title: "AI for Customer Service",
     description:
       "Elevate customer experience with AI-powered automation that reduces response times, boosts satisfaction, and delivers 24/7 support—while preserving the human touch customers expect.",
-    link: "/ai-solution/customer-service",
+    link: "/customer-service",
   },
   {
     icon: "🏪",
     title: "AI in Retail Industry",
     description:
       "Transform retail with AI solutions that optimize inventory, enhance personalization, and boost sales—delivering deep insights into consumer behavior, shopping trends, and market dynamics",
-    link: "/ai-solution/retails",
+    link: "/retails",
   },
   {
     icon: "🤖",
     title: "AI Agent Development",
     description:
       "Create AI agents that handle complex tasks, make autonomous decisions, and interact naturally—covering conversational AI, task automation, and intelligent processes.",
-    link: "/ai-solution/ai-agent-development",
+    link: "/ai-agent-development",
   },
   {
     icon: "🔍",
     title: "AI for SEO",
     description:
       "Dominate search results with AI-driven SEO strategies that analyze patterns, optimize content, and predict algorithm changes—ensuring steady organic traffic growth and online visibility.",
-    link: "/ai-solution/seo",
+    link: "/seo",
   },
   {
     icon: "🛒",
     title: "AI for Ecommerce",
     description:
       "Maximize your store's potential with AI-driven ecommerce solutions that enhance user experience, boost conversions, and raise order values—delivering personalization that drives loyalty and growth",
-    link: "/ai-solution/ecommerce",
+    link: "/ecommerce",
   },
 ];
 

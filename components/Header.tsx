@@ -95,49 +95,49 @@ export default function Header() {
       dropdown: [
         {
           name: "Custom AI Solutions",
-          path: "/ai-solution/custom-ai-solutions",
+          path: "/custom-ai-solutions",
           description: "",
           icon: "/ai-solutions/1.png",
         },
         {
           name: "AI For Healthcare",
-          path: "/ai-solution/healthcare",
+          path: "/healthcare",
           description: "",
           icon: "/ai-solutions/2.png",
         },
         {
           name: "AI For Startups",
-          path: "/ai-solution/startups",
+          path: "/startups",
           description: "",
           icon: "/ai-solutions/3.png",
         },
         {
           name: "AI For Customer Service",
-          path: "/ai-solution/customer-service",
+          path: "/customer-service",
           description: "",
           icon: "/ai-solutions/4.png",
         },
         {
           name: "AI For Retails",
-          path: "/ai-solution/retails",
+          path: "/retails",
           description: "",
           icon: "/ai-solutions/5.png",
         },
         {
           name: "AI Agent Development",
-          path: "/ai-solution/ai-agent-development",
+          path: "/ai-agent-development",
           description: "",
           icon: "/ai-solutions/6.png",
         },
         {
           name: "AI For SEO",
-          path: "/ai-solution/seo",
+          path: "/seo",
           description: "",
           icon: "/ai-solutions/7.png",
         },
         {
           name: "AI For E-Commerce",
-          path: "/ai-solution/ecommerce",
+          path: "/ecommerce",
           description: "",
           icon: "/ai-solutions/8.png",
         },
@@ -202,8 +202,8 @@ export default function Header() {
                               className="flex items-center space-x-3 p-3 rounded-xl hover:bg-gray-50 transition-all duration-200 group animate-in fade-in-0 slide-in-from-top-2"
                               style={{
                                 animationDelay: `${index * 50}ms`,
-                                animationDuration: '200ms',
-                                animationFillMode: 'both'
+                                animationDuration: "200ms",
+                                animationFillMode: "both",
                               }}
                               onClick={() => setOpenDropdown(null)}
                             >
@@ -351,8 +351,8 @@ export default function Header() {
                             className="flex items-center space-x-3 px-3 py-3 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-200 animate-in fade-in-0 slide-in-from-left-2"
                             style={{
                               animationDelay: `${index * 75}ms`,
-                              animationDuration: '250ms',
-                              animationFillMode: 'both'
+                              animationDuration: "250ms",
+                              animationFillMode: "both",
                             }}
                             onClick={() => {
                               setIsMobileMenuOpen(false);
