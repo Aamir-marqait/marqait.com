@@ -9,45 +9,51 @@ export default function BrandPage() {
 
   const brandItems = [
     {
-      title: "AI-Driven Scripting",
+      title: "AI-Powered Audience Targeting",
       description:
         "Generates comprehensive guidelines covering logo usage, colour palettes (CMYK, RGB, Hex), typography, imagery style, tone of voice, and brand messaging.",
-      image: "/pilot/1.png",
+      image: "/reel/1.png",
     },
     {
-      title: "Automated Visual Selection",
+      title: "Automated Ad Creative Generation",
       description:
         "Automatically creates brand assets including logos, business cards, letterheads, and marketing materials based on your brand guidelines.",
-      image: "/pilot/2.png",
+      image: "/reel/2.png",
     },
     {
-      title: "Intelligent Text to Speech Narration",
+      title: "Dynamic Budget Optimization",
       description:
         "Creates a dynamic, searchable brand book that can be easily shared with team members and external partners for consistent brand application.",
-      image: "/pilot/3.png",
+      image: "/reel/3.png",
     },
     {
-      title: "Editing & Pricing",
+      title: "Real-time Performance Monitoring",
       description:
         "Monitors and ensures brand consistency across all touchpoints, providing real-time feedback and suggestions for brand compliance.",
-      image: "/pilot/4.png",
+      image: "/reel/4.png",
     },
     {
-      title: "Platform Specific Optimization",
+      title: "A/B Testing Automation",
       description:
         "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
-      image: "/pilot/5.png",
+      image: "/reel/5.png",
     },
     {
-      title: "Natural Language Video Editing",
+      title: "Cross-Platform Campaign Management",
       description:
         "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
-      image: "/pilot/5.png",
+      image: "/reel/6.png",
+    },
+    {
+      title: "Natural Language Campaign Optimization",
+      description:
+        "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
+      image: "/reel/7.png",
     },
   ];
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden py-10">
       <div
         className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900"
         style={{
