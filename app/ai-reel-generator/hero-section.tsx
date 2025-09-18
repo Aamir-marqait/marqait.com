@@ -47,17 +47,17 @@ export default function HeroSection() {
                   letterSpacing: "0%",
                 }}
               >
-                AdPilot AI
+                ReelCraft AI
               </span>
             </nav>
             {/* Content */}
             <div className="space-y-8">
               <h2 className="text-[48px] font-bold bg-gradient-to-br from-white to-[#B372CF] bg-clip-text text-transparent leading-[130%] tracking-[-0.05em] align-middle font-inter">
-                AdPilot AI: Launch & Optimize Ad Campaigns
+                ReelCraft AI: Produce dynamic short-form videos
               </h2>
               <p className="text-[18px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
-                Drive conversions with AI-driven precision across Meta and
-                Google.
+                Create captivating reels and videos optimized for social media
+                engagement.
               </p>
 
               <p className=" flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
@@ -103,11 +103,11 @@ export default function HeroSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-full max-w-xl">
               <Image
-                src="/pilot/hero.png"
+                src="/reel/hero.png"
                 alt="3D illustration of ecommerce elements including storefront, gift boxes, shopping bags, and credit card"
                 width={500}
                 height={400}
-                className="w-full h-auto object-cover"
+                className="w-full h-[30rem] object-contain"
               />
             </div>
           </div>

@@ -8,26 +8,26 @@ import FaqSection from "./faq-section";
 import FinalCtaSection from "./final-cta";
 
 export const metadata: Metadata = {
-  title: "Free AI Campaign Generator - Marqait AI",
+  title: "AI Reel Generator - Marqait AI",
   description:
-    "Create comprehensive marketing campaigns instantly with AI. Generate campaign strategies, content plans, social media posts, email sequences, and advertising copy across multiple channels.",
+    "Create engaging video reels instantly with AI. Generate viral social media content, short-form videos, and captivating reels for Instagram, TikTok, and other platforms.",
   keywords:
-    "AI campaign generator, marketing campaign creator, AI marketing tools, campaign strategy, content marketing, social media campaigns, email marketing, advertising copy",
+    "AI reel generator, video content creator, AI video tools, social media reels, Instagram reels, TikTok videos, short-form content, viral videos",
   alternates: {
-    canonical: "https://www.marqait.com/ai-campaign-generator",
+    canonical: "https://www.marqait.com/ai-reel-generator",
   },
   openGraph: {
-    title: "Free AI Campaign Generator - Marqait AI",
+    title: "Free AI Reel Generator - Marqait AI",
     description:
-      "Create comprehensive marketing campaigns instantly with AI. Generate campaign strategies, content plans, social media posts, email sequences, and advertising copy across multiple channels.",
-    url: "https://www.marqait.com/ai-campaign-generator",
+      "Create engaging video reels instantly with AI. Generate viral social media content, short-form videos, and captivating reels for Instagram, TikTok, and other platforms.",
+    url: "https://www.marqait.com/ai-reel-generator",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI Campaign Generator - Marqait AI",
+    title: "Free AI Reel Generator - Marqait AI",
     description:
-      "Create comprehensive marketing campaigns instantly with AI. Generate campaign strategies, content plans, social media posts, email sequences, and advertising copy across multiple channels.",
+      "Create engaging video reels instantly with AI. Generate viral social media content, short-form videos, and captivating reels for Instagram, TikTok, and other platforms.",
   },
 };
 
