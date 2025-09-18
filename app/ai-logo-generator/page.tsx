@@ -6,6 +6,8 @@ import DevelopmentProcessSection from "./how-logo-is-generated-";
 import LogoCategoriesSection from "./categories";
 import ProTipsSection from "./pro-tip-section";
 import ComparisonTableSection from "./comparison-table-section";
+import FaqSection from "./faq-section";
+import FinalCtaSection from "./final-cta-section";
 
 export const metadata: Metadata = {
   title: "Free AI Logo Generator - Online Text to Logo Maker",
@@ -43,6 +45,8 @@ export default function AILogoGenerator() {
       <LogoCategoriesSection />
       <ProTipsSection />
       <ComparisonTableSection />
+      <FaqSection />
+      <FinalCtaSection />
     </div>
   );
 }
