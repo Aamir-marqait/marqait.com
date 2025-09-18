@@ -3,6 +3,11 @@ import HeroSection from "./hero-section";
 import Introduction from "./introduction";
 import KeyFeature from "./key-features";
 import FeatureOne from "./feature-one";
+import FeatureTwo from "./feature-two";
+import FeatureThree from "./feature-three";
+import Benefits from "./benefits";
+import FaqSection from "./faq-section";
+import FinalCtaSection from "./final-cta";
 
 export const metadata: Metadata = {
   title: "Free AI Brandbook Generator - Marqait AI",
@@ -37,6 +42,11 @@ export default function AIEditor() {
       <Introduction />
       <KeyFeature />
       <FeatureOne />
+      <FeatureTwo />
+      <FeatureThree />
+      <Benefits />
+      <FaqSection />
+      <FinalCtaSection />
     </div>
   );
 }
