@@ -71,7 +71,7 @@ export default function Header() {
         },
         {
           name: "AI Social Media Post Creator",
-          path: "/products/ai-social",
+          path: "/ai-social-media-post-creator",
           description: "Generates social media post",
           icon: "/copilot/Social.png",
         },
