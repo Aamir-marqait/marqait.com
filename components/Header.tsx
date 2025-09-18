@@ -83,7 +83,7 @@ export default function Header() {
         },
         {
           name: "Reel Generator",
-          path: "/products/reel-generator",
+          path: "/ai-reel-generator",
           description: "Generates engaging reels",
           icon: "/copilot/ImageGen.png",
         },
