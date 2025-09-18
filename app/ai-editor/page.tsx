@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import HeroSection from "./hero-section";
 import Introduction from "./introduction";
 import KeyFeature from "./key-features";
+import FeatureOne from "./feature-one";
 
 export const metadata: Metadata = {
   title: "Free AI Brandbook Generator - Marqait AI",
@@ -35,6 +36,7 @@ export default function AIEditor() {
       <HeroSection />
       <Introduction />
       <KeyFeature />
+      <FeatureOne />
     </div>
   );
 }
