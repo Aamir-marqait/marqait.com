@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import HeroSection from "./hero-section";
 import Introduction from "./introduction";
 import WhyToChoose from "./why-to-choose";
+import DevelopmentProcessSection from "./developmet-process";
 
 export const metadata: Metadata = {
   title: "Free AI Social Media Post Generator - Marqait AI",
@@ -33,6 +34,7 @@ export default function AISocialMediaPostGenerator() {
       <HeroSection />
       <Introduction />
       <WhyToChoose />
+      <DevelopmentProcessSection />
     </div>
   );
 }
