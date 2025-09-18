@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import HeroSection from "./hero-section";
 import Introduction from "./introduction";
 import Benefits from "./benefit";
+import BrandPage from "./brand";
+import MadeEveryBrand from "./made-everybrand";
+import FaqSection from "./faq-section";
+import FinalCtaSection from "./final-cta";
 
 export const metadata: Metadata = {
   title: "Free AI Campaign Generator - Marqait AI",
@@ -35,6 +39,10 @@ export default function AISocialMediaPostGenerator() {
       <HeroSection />
       <Introduction />
       <Benefits />
+      <BrandPage />
+      <MadeEveryBrand />
+      <FaqSection />
+      <FinalCtaSection />
     </div>
   );
 }
