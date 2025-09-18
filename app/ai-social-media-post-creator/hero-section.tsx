@@ -3,9 +3,14 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="pt-20 px-4">
+    <section
+      className="pt-20 px-4 min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/social/hero.png')",
+      }}
+    >
       <div className="max-w-[70rem] mx-auto text-center">
-        <nav className="flex items-center space-x-2 mb-8 sm:mb-16 md:mb-24 lg:mb-36">
+        <nav className="flex items-center space-x-2 mb-8 sm:mb-16 md:mb-24 lg:mb-24">
           <Link
             href="/"
             className="text-white text-xs sm:text-sm"
@@ -47,16 +52,13 @@ export default function HeroSection() {
             AI Social Media Post Creator
           </span>
         </nav>
-        <div className="mb-16">
-          <h2 className="text-[64px] font-bold mb-4 leading-[72px] tracking-[0%] align-middle bg-gradient-to-br from-white from-10% to-[#B372CF] to-90% bg-clip-text text-transparent">
-            Free AI Logo Generator
+        <div className="mb-1">
+          <h2 className="text-[64px] max-w-2xl mx-auto font-bold mb-4 leading-[72px] tracking-[0%] align-middle bg-gradient-to-br from-white from-10% to-[#B372CF] to-90% bg-clip-text text-transparent">
+            Free AI Social Media Post Creator
           </h2>
           <p className="text-[20px] font-normal text-white mb-8 max-w-4xl mx-auto leading-[150%] tracking-[0%] text-center align-middle">
-            Generate unique logo with a text prompt using Marqait free AI logo
-            generator.
-            <br />
-            Input simple text prompts and our AI makes logo design online for
-            you.
+            Generate engaging social media posts for free with a simple text
+            prompt using Marqait’s free AI social media post generator.
           </p>
 
           <div className="flex justify-center mb-6">

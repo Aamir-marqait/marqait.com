@@ -7,42 +7,42 @@ export default function UseAISocialMedia() {
       title: "Small Business Owners & Startups",
       description:
         "Create professional social media content quickly and affordably. Perfect for startups and small businesses looking to establish their brand presence without hiring expensive agencies.",
-      image: "/ecommerce/1.png",
+      image: "/social/1.png",
     },
     {
       id: 2,
       title: "Digital Marketers & Agencies",
       description:
         "Generate high-converting social media campaigns for multiple clients. Streamline content creation workflows and deliver consistent, branded posts across all platforms.",
-      image: "/ecommerce/2.png",
+      image: "/social/2.png",
     },
     {
       id: 3,
       title: "Influencer & Creators",
       description:
         "Craft engaging, authentic content that resonates with your audience. Generate posts that match your unique voice and style while maintaining consistent engagement.",
-      image: "/ecommerce/3.png",
+      image: "/social/3.png",
     },
     {
       id: 4,
       title: "Freelancers",
       description:
         "Produce diverse content for multiple projects and clients. Create compelling posts that showcase your skills and attract new opportunities in the competitive freelance market.",
-      image: "/ecommerce/4.png",
+      image: "/social/4.png",
     },
     {
       id: 5,
       title: "Corporate Teams",
       description:
         "Coordinate company-wide social media strategies with branded, professional content. Ensure consistent messaging across departments while maintaining corporate standards.",
-      image: "/ecommerce/3.png",
+      image: "/social/5.png",
     },
     {
       id: 6,
       title: "Social Media Managers",
       description:
         "Scale content creation across multiple accounts and platforms. Generate trending, platform-optimized posts that drive engagement and build communities around brands.",
-      image: "/ecommerce/4.png",
+      image: "/social/6.png",
     },
   ];
 
