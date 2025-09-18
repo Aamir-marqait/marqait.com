@@ -4,6 +4,7 @@ import KeyBenefits from "@/components/products/key-benefits";
 import OurPowerfulTools from "@/components/products/our-powerful-tools";
 import WhatAreTools from "@/components/products/what-are-ai-tools";
 import FaqSection from "@/components/products/faq-section";
+import FinalCtaSection from "@/components/products/final-cta-section";
 
 export const metadata: Metadata = {
   title: "Best AI Tools for Marketing Automation - Marqait AI",
@@ -37,7 +38,8 @@ const AITools = () => {
         <KeyBenefits />
         <OurPowerfulTools />
         <WhatAreTools />
-        <FaqSection/>
+        <FaqSection />
+        <FinalCtaSection />
       </div>
     </div>
   );

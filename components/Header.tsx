@@ -252,7 +252,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop Get Started Button */}
-          <Link className="hidden lg:block" href={"/"}>
+          <Link className="hidden lg:block" href={"/contact"}>
             <button
               onClick={() => trackCTAClick("Contact Us", "Header")}
               className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
