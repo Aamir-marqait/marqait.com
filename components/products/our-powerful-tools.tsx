@@ -24,7 +24,7 @@ const services = [
     title: "AdPilot AI",
     description:
       "Create powerful campaigns in minutes with Marqait AI Campaign Generator. Our AI helps you generate marketing, ad, and social media campaigns that boost engagement, maximize ROI, and save time..",
-    link: "/ad-pilot-ai",
+    link: "/ai-campaign-generator",
   },
   {
     title: "ContentSpark AI",

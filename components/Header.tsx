@@ -59,7 +59,7 @@ export default function Header() {
         },
         {
           name: "AI Campaign Generator",
-          path: "/products/ai-campaign",
+          path: "/ai-campaign-generator",
           description: "Generates campaigns",
           icon: "/copilot/Campaign.png",
         },
