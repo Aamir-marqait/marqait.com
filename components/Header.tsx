@@ -24,28 +24,6 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  // const handleServicesClick = (e) => {
-  //   e.preventDefault();
-  //   if (location.pathname === "/") {
-  //     scrollToServices();
-  //   } else {
-  //     navigate("/", { replace: true });
-  //     setTimeout(() => scrollToServices(), 100);
-  //   }
-  //   setIsMobileMenuOpen(false);
-  // };
-
-  // const handleInsightsClick = (e) => {
-  //   e.preventDefault();
-  //   if (location.pathname === "/") {
-  //     scrollToCopilot();
-  //   } else {
-  //     navigate("/", { replace: true });
-  //     setTimeout(() => scrollToCopilot(), 100);
-  //   }
-  //   setIsMobileMenuOpen(false);
-  // };
-
   const navigationItems: NavigationItem[] = [
     {
       name: "AI Tools",
@@ -53,40 +31,40 @@ export default function Header() {
       dropdown: [
         {
           name: "BrandMark AI",
-          path: "/ai-logo-generator",
+          path: "/brandmark-ai",
           description: "Create logo in seconds",
           icon: "/copilot/LogoGenerator.png",
         },
         {
           name: "ContentSpark AI",
-          path: "/ai-social-media-post-creator",
+          path: "/contentspark-ai",
           description: "Generates social media post",
           icon: "/copilot/Social.png",
         },
         {
           name: "BrandBlueprint AI",
-          path: "/ai-brandbook-generator",
+          path: "/brandblueprint-ai",
           description: "Generates brand book",
           icon: "/copilot/Branding.png",
         },
         {
           name: "ReelCraft AI",
-          path: "/ai-reel-generator",
+          path: "/reelcraft-ai",
           description: "Generates engaging reels",
-          icon: "/copilot/ImageGen.png",
+          icon: "/copilot/strategy.png",
         },
         {
           name: "AdPilot AI",
-          path: "/ai-campaign-generator",
+          path: "/adpilot-ai",
           description: "Generates campaigns",
           icon: "/copilot/Campaign.png",
         },
 
         {
           name: "AI Editor",
-          path: "/products/ai-strategy",
+          path: "/ai-editor",
           description: "Generates strategy",
-          icon: "/copilot/strategy.png",
+          icon: "/copilot/ImageGen.png",
         },
       ],
     },
