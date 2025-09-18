@@ -53,7 +53,7 @@ export default function Header() {
       dropdown: [
         {
           name: "AI Logo Generator",
-          path: "/products/ai-logo",
+          path: "/ai-logo-generator",
           description: "Create logo in seconds",
           icon: "/copilot/LogoGenerator.png",
         },
