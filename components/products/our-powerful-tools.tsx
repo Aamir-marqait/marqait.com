@@ -18,7 +18,7 @@ const services = [
     title: "ReelCraft AI",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
-    link: "/reel-craft-ai",
+    link: "/ai-reel-generator",
   },
   {
     title: "AdPilot AI",
