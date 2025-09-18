@@ -77,7 +77,7 @@ export default function Header() {
         },
         {
           name: "AI Brand Book Creator",
-          path: "/products/ai-brand",
+          path: "/ai-brandbook-generator",
           description: "Generates brand book",
           icon: "/copilot/Branding.png",
         },

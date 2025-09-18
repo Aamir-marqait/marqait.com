@@ -12,7 +12,7 @@ const services = [
     title: "BrandBlueprint AI",
     description:
       "Build your brand identity with Marqait AI Brand Book Generator. Our AI organizes your logos, colors, fonts, and guidelines into a professional brand book. It helps you create stunning, interactive digital brand books with ease.",
-    link: "/brand-blueprint-ai",
+    link: "/ai-brandbook-generator",
   },
   {
     title: "ReelCraft AI",
