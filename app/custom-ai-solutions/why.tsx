@@ -15,9 +15,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Custom AI Agent Solutions",
+      title: "Tailored Functionality ",
       description:
-        "Tailored solutions designed specifically for your business needs and objectives.",
+        "Solutions designed specifically for your business processes and requirements",
     },
     {
       icon: (
@@ -34,9 +34,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Scalable Architecture",
+      title: "Competitive Advantage",
       description:
-        "Future-proof systems that grow with your business and adapt to changing requirements.",
+        "Proprietary AI capabilities that differentiate your business in the market",
     },
     {
       icon: (
@@ -53,9 +53,8 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Advanced NLP & ML Integration",
-      description:
-        "Cutting-edge natural language processing and machine learning capabilities",
+      title: "Scalability",
+      description: "Systems that grow and evolve with your business needs",
     },
     {
       icon: (
@@ -72,9 +71,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Data Security & Compliance",
+      title: "Integration",
       description:
-        "Enterprise-grade security with full compliance to industry standards.",
+        "Seamless connectivity with your existing systems and workflows",
     },
     {
       icon: (
@@ -91,9 +90,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Proven ROI",
+      title: "ROI Optimization",
       description:
-        "Demonstrated return on investment with measurable business impact.",
+        "Focused solutions that target your most impactful use cases",
     },
   ];
 
@@ -102,17 +101,14 @@ export default function Why() {
       <div className="max-w-[70rem] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-[#F2F2F2] font-bold text-[32px] max-w-xl mx-auto leading-[150%] tracking-[0%] text-center mb-6 font-inter">
-            Why Choose Marqait AI for{" "}
-            <span className="text-[#BD14FF]"> AI Agent Development?</span>
+            Why <span className="text-[#BD14FF]">Custom AI Solutions </span>
+            Matter for Your Business
           </h2>
           <p className="text-[18px] leading-[150%] tracking-[0%] text-center max-w-4xl mx-auto font-inter text-white/90">
-            At Marqait AI, we go beyond building AI agents. We create
-            intelligent, future-ready AI solutions that seamlessly integrate
-            into your business ecosystem. Companies across industries trust us
-            because we blend cutting-edge AI technologies with deep domain
-            expertise to design, develop, and deploy custom AI agents that
-            streamline operations, reduce costs, and enhance customer
-            experiences.
+            In today's competitive landscape, off-the-shelf software often falls
+            short of addressing unique business challenges. Custom AI solutions
+            from a specialized custom AI development company like Marqait AI
+            provide:
           </p>
         </div>
 
