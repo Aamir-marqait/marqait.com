@@ -3,6 +3,9 @@ import HeroSection from "./hero-section";
 import Introduction from "./introduction";
 import Benefits from "./benefits";
 import BrandPage from "./brand";
+import MadeEveryBrand from "./made-everybrand";
+import FaqSection from "./faq-section";
+import FinalCtaSection from "./final-cta";
 
 export const metadata: Metadata = {
   title: "Free AI Brandbook Generator - Marqait AI",
@@ -37,6 +40,9 @@ export default function AISocialMediaPostGenerator() {
       <Introduction />
       <Benefits />
       <BrandPage />
+      <MadeEveryBrand />
+      <FaqSection />
+      <FinalCtaSection />
     </div>
   );
 }
