@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import AIProductsSection from "@/components/products/ai-products-section";
 import AiPowerhouseHero from "@/components/products/products-hero-section";
 import KeyBenefits from "@/components/products/key-benefits";
 import OurPowerfulTools from "@/components/products/our-powerful-tools";
+import WhatAreTools from "@/components/products/what-are-ai-tools";
+import FaqSection from "@/components/products/faq-section";
+import FinalCtaSection from "@/components/products/final-cta-section";
 
 export const metadata: Metadata = {
   title: "Best AI Tools for Marketing Automation - Marqait AI",
@@ -35,7 +37,9 @@ const AITools = () => {
         <AiPowerhouseHero />
         <KeyBenefits />
         <OurPowerfulTools />
-        <AIProductsSection />
+        <WhatAreTools />
+        <FaqSection />
+        <FinalCtaSection />
       </div>
     </div>
   );
