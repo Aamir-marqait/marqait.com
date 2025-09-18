@@ -11,26 +11,23 @@ export default function Introduction() {
             <h2 className="text-white font-bold font-inter max-w-md text-[32px] leading-[150%] tracking-[1%]">
               Introducing Marqait’s Pro
               <br />
-              <span className="text-[#BD14FF]">AI AdPilot</span>
+              <span className="text-[#BD14FF]">AI ReelCraft</span>
             </h2>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              Our powerful tool designed to help businesses craft a strong,
-              consistent, and professional brand identity. With AI-driven
-              precision, it builds comprehensive brand books that cover
-              everything from colors and typography to tone of voice and
-              messaging guidelines. The result is a clear, accessible blueprint
-              that ensures your brand stays cohesive and impactful across every
-              platform and interaction.
+              Marqait AI ReelCraft makes it effortless for businesses to produce
+              stunning, scroll-stopping short-form videos designed for today’s
+              social media platforms. With AI-driven creativity, it ensures
+              every reel is polished, engaging, and aligned with your brand
+              identity.
             </p>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              Beyond just design assets, the Pro AI BrandBlueprint Generator
-              empowers your team with actionable guidelines that streamline
-              decision-making and reduce inconsistencies. Whether you’re
-              launching a new brand, refreshing an existing one, or scaling
-              across multiple channels, it ensures every touchpoint reflects
-              your brand’s true identity with clarity and confidence.
+              From boosting reach to increasing engagement and driving
+              conversions, ReelCraft helps your content perform at its best. By
+              taking the complexity out of video creation, it empowers brands to
+              focus on growth while delivering consistent, high-quality
+              storytelling.
             </p>
             <Link className="hidden lg:block" href={"/contact"}>
               <button
@@ -54,7 +51,7 @@ export default function Introduction() {
                   color: "#F2F0F5",
                 }}
               >
-                Generate a Campaign
+                Generate a Video
               </button>
             </Link>
           </div>
@@ -62,7 +59,7 @@ export default function Introduction() {
           {/* Right Illustration */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/pilot/second image.png"
+              src="/reel/2nd.png"
               alt="AI SEO Illustration"
               width={500}
               height={400}
