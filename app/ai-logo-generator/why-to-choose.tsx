@@ -69,40 +69,40 @@ export default function WhyToChoose() {
             d="M18.0007 9.33333C18.3688 9.33333 18.6673 9.03486 18.6673 8.66667C18.6673 8.29848 18.3688 8 18.0007 8C17.6325 8 17.334 8.29848 17.334 8.66667C17.334 9.03486 17.6325 9.33333 18.0007 9.33333Z"
             fill="white"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M23.3327 14.6673C23.7009 14.6673 23.9993 14.3688 23.9993 14.0007C23.9993 13.6325 23.7009 13.334 23.3327 13.334C22.9645 13.334 22.666 13.6325 22.666 14.0007C22.666 14.3688 22.9645 14.6673 23.3327 14.6673Z"
             fill="white"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M11.3327 10.6673C11.7009 10.6673 11.9993 10.3688 11.9993 10.0007C11.9993 9.63246 11.7009 9.33398 11.3327 9.33398C10.9645 9.33398 10.666 9.63246 10.666 10.0007C10.666 10.3688 10.9645 10.6673 11.3327 10.6673Z"
             fill="white"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M8.66667 17.3333C9.03486 17.3333 9.33333 17.0349 9.33333 16.6667C9.33333 16.2985 9.03486 16 8.66667 16C8.29848 16 8 16.2985 8 16.6667C8 17.0349 8.29848 17.3333 8.66667 17.3333Z"
             fill="white"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M15.9993 2.66602C8.66602 2.66602 2.66602 8.66602 2.66602 15.9993C2.66602 23.3327 8.66602 29.3327 15.9993 29.3327C17.234 29.3327 18.1967 28.338 18.1967 27.082C18.1967 26.4994 17.9567 25.9687 17.614 25.582C17.2273 25.1967 17.03 24.7127 17.03 24.082C17.025 23.7886 17.079 23.4971 17.189 23.225C17.299 22.9529 17.4626 22.7057 17.6702 22.4982C17.8777 22.2906 18.1249 22.127 18.397 22.017C18.6691 21.907 18.9606 21.853 19.254 21.858H21.9153C25.9834 21.858 29.322 18.5207 29.322 14.4527C29.286 8.01535 23.2807 2.66602 15.9993 2.66602Z"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
@@ -122,37 +122,37 @@ export default function WhyToChoose() {
           <path
             d="M13.5787 20.6663C13.4596 20.2049 13.2191 19.7838 12.8822 19.4469C12.5452 19.1099 12.1241 18.8694 11.6627 18.7503L3.48268 16.641C3.34312 16.6014 3.22029 16.5173 3.13283 16.4016C3.04537 16.2859 2.99805 16.1448 2.99805 15.9997C2.99805 15.8546 3.04537 15.7135 3.13283 15.5978C3.22029 15.482 3.34312 15.398 3.48268 15.3583L11.6627 13.2477C12.1239 13.1288 12.5449 12.8884 12.8819 12.5517C13.2188 12.215 13.4594 11.7942 13.5787 11.333L15.688 3.15301C15.7272 3.01291 15.8112 2.88947 15.9271 2.80154C16.043 2.71361 16.1845 2.66602 16.33 2.66602C16.4755 2.66602 16.617 2.71361 16.7329 2.80154C16.8488 2.88947 16.9328 3.01291 16.972 3.15301L19.08 11.333C19.1991 11.7944 19.4396 12.2155 19.7765 12.5525C20.1135 12.8895 20.5346 13.13 20.996 13.249L29.176 15.357C29.3167 15.3958 29.4407 15.4797 29.5291 15.5958C29.6175 15.7119 29.6654 15.8538 29.6654 15.9997C29.6654 16.1456 29.6175 16.2875 29.5291 16.4036C29.4407 16.5197 29.3167 16.6035 29.176 16.6423L20.996 18.7503C20.5346 18.8694 20.1135 19.1099 19.7765 19.4469C19.4396 19.7838 19.1991 20.2049 19.08 20.6663L16.9707 28.8463C16.9315 28.9865 16.8475 29.1099 16.7316 29.1978C16.6157 29.2858 16.4742 29.3333 16.3287 29.3333C16.1832 29.3333 16.0417 29.2858 15.9258 29.1978C15.8099 29.1099 15.7259 28.9865 15.6867 28.8463L13.5787 20.6663Z"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M26.9961 4V9.33333"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M29.6634 6.66602H24.3301"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M5.66406 22.666V25.3327"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M6.99674 24H4.33008"
             stroke="white"
-            stroke-width="2.66667"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2.66667"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
