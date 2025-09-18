@@ -1,29 +1,39 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is a Custom AI solution?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "Custom AI solution is an artificial intelligence system built to meet a specific organization needs. AI solutions automate tasks, analyze data, or enhance decision-making.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How can AI help my business?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "AI can save time, reduce errors, improve efficiency, and provide insights from data. It can automate repetitive tasks, predict trends, and enhance customer experiences.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "Which industries can benefit from custom AI?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "Almost any industry can benefit whether it is healthcare, finance, e-commerce, manufacturing, education, marketing, and more. AI solutions are built to match your unique business challenges.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "How long does it take to implement a custom AI solution?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "Implementation time depends on the complexity of the project. Simple AI tools can take weeks, while advanced solutions may take months.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "Is my business data safe with AI solutions?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "Yes. Custom AI solutions follow strict security standards to protect your data and ensure confidentiality.",
+    },
+    {
+      question: "Can AI solutions be scaled as my business grows?",
+      answer:
+        "Absolutely. Custom AI is designed to scale with your business, handling more data, users, and processes without losing performance.",
+    },
+    {
+      question: "Do I need technical expertise to use AI solutions?",
+      answer:
+        "No. Custom AI solutions are designed to be user-friendly, with simple interfaces so your team can use them without technical knowledge.",
     },
   ];
 
@@ -42,7 +52,7 @@ export default function FaqSection() {
             className="text-[20px] text-white/90 leading-[150%] tracking-[0%] text-center"
             style={{ fontFamily: "Inter", fontWeight: 400 }}
           >
-            Everything you need to know about our AI Agent Development
+            Everything you need to know about our Custom AI Solutions
           </p>
         </div>
 

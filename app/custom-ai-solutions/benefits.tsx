@@ -3,33 +3,28 @@ import Image from "next/image";
 export default function AIAgentBenefits() {
   const benefits = [
     {
-      title: "Faster Decisions",
-      description: "Data-driven insights for real-time problem-solving",
+      title: "Deep Technical Expertise",
+      description: "PhD-level data scientists, experienced ML engineers, and AI researchers at the forefront of technology",
       position: "left",
     },
     {
-      title: " Personalized Experience",
-      description: "Adaptive AI agents that understand users better",
+      title: "Industry-Specific Knowledge",
+      description: "Understanding unique challenges and regulatory requirements across different industries",
       position: "left",
     },
     {
-      title: "DATA-DRIVEN DECISIONS",
-      description: "No guesswork—only actionable insights.",
+      title: "Scalable Architecture",
+      description: "Solutions built to handle growing data volumes and expanding business needs",
       position: "left",
     },
     {
-      title: " 24/7 Availability",
-      description: "Always-on virtual support for customers and operations",
+      title: "Proven Track Record",
+      description: "Hundreds of successful AI implementations with results that exceed expectations",
       position: "right",
     },
     {
-      title: "Cost Reduction",
-      description: "Automating repetitive tasks saves time and resources",
-      position: "right",
-    },
-    {
-      title: " Business Scalability",
-      description: "Handle increasing workloads without additional manpower",
+      title: "End-to-End Service",
+      description: "Comprehensive AI development from consultation to ongoing support",
       position: "right",
     },
   ];
@@ -50,7 +45,7 @@ export default function AIAgentBenefits() {
             className="text-[#F2F2F2] font-bold text-[32px] leading-[150%] tracking-[0%] text-center "
             style={{ fontFamily: "Inter" }}
           >
-            Benefits of Our AI Agent Development
+            Benefits of Our Custom AI Solutions?
           </h2>
         </div>
 
