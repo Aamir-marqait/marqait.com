@@ -59,14 +59,13 @@ export default function HeroSection() {
         {/* Content */}
         <div className="relative z-10 max-w-[50rem] mx-auto px-6 text-center">
           <h1 className="text-[48px] font-bold text-white mb-8 leading-[130%] text-center">
-            AI Agent Development Company
+            Custom AI Solutions: AI Software Development Company in India
           </h1>
 
           <p className="text-[20px] font-normal text-white/90 mb-12 max-w-4xl mx-auto leading-[150%] text-center">
-            Transform your business with intelligent AI agents that automate
-            processes, enhance customer experiences, and drive growth. We
-            specialize in developing custom AI solutions that integrate
-            seamlessly with your existing systems.
+            Leading Custom AI Development Company Delivering Tailored Artificial
+            Intelligence Solutions for automate repetitive tasks and increase
+            productivity
           </p>
 
           <button
