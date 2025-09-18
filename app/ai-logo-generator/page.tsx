@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import HeroSection from "./hero-section";
 import Introduction from "./introduction";
 import WhyToChoose from "./why-to-choose";
+import DevelopmentProcessSection from "./how-logo-is-generated-";
+import LogoCategoriesSection from "./categories";
 
 export const metadata: Metadata = {
   title: "Free AI Logo Generator - Online Text to Logo Maker",
@@ -35,6 +37,8 @@ export default function AILogoGenerator() {
       <HeroSection />
       <Introduction />
       <WhyToChoose />
+      <DevelopmentProcessSection />
+      <LogoCategoriesSection />
     </div>
   );
 }
