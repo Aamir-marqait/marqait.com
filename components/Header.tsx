@@ -52,40 +52,41 @@ export default function Header() {
       path: "/products",
       dropdown: [
         {
-          name: "AI Logo Generator",
+          name: "BrandMark AI",
           path: "/ai-logo-generator",
           description: "Create logo in seconds",
           icon: "/copilot/LogoGenerator.png",
         },
         {
-          name: "AI Campaign Generator",
-          path: "/ai-campaign-generator",
-          description: "Generates campaigns",
-          icon: "/copilot/Campaign.png",
-        },
-        {
-          name: "AI Strategy Generator",
-          path: "/products/ai-strategy",
-          description: "Generates strategy",
-          icon: "/copilot/strategy.png",
-        },
-        {
-          name: "AI Social Media Post Creator",
+          name: "ContentSpark AI",
           path: "/ai-social-media-post-creator",
           description: "Generates social media post",
           icon: "/copilot/Social.png",
         },
         {
-          name: "AI Brand Book Creator",
+          name: "BrandBlueprint AI",
           path: "/ai-brandbook-generator",
           description: "Generates brand book",
           icon: "/copilot/Branding.png",
         },
         {
-          name: "Reel Generator",
+          name: "ReelCraft AI",
           path: "/ai-reel-generator",
           description: "Generates engaging reels",
           icon: "/copilot/ImageGen.png",
+        },
+        {
+          name: "AdPilot AI",
+          path: "/ai-campaign-generator",
+          description: "Generates campaigns",
+          icon: "/copilot/Campaign.png",
+        },
+
+        {
+          name: "AI Editor",
+          path: "/products/ai-strategy",
+          description: "Generates strategy",
+          icon: "/copilot/strategy.png",
         },
       ],
     },
