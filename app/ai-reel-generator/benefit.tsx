@@ -1,29 +1,34 @@
 export default function Benefits() {
   const benefits = [
     {
-      title: "Social Media Marketing",
+      title: "Lead Generation",
       description:
-        "Consistently create fresh, trending video content to keep your audience engaged.",
+        "Drive high-quality leads through precisely targeted ad campaigns.",
     },
     {
-      title: "Product Showcases",
+      title: "Sales Growth",
       description:
-        "PQuickly produce dynamic video ads and demonstrations for new products or services.",
+        "Increase conversions and revenue by reaching potential customers with compelling offers.",
     },
     {
-      title: "Influencer Marketing",
+      title: "Brand Awareness",
       description:
-        "Collaborate with influencers by providing them with high-quality, AI-generated video content.",
+        "CExpand your brand's visibility and reach a wider audience across major advertising platforms.",
     },
     {
-      title: "Brand Storytelling",
+      title: "Efficient Ad Spend",
       description:
-        "Share your brand's narrative in an engaging, visual format that resonates with viewers.",
+        " Optimize your budget to get the most out of every dollar spent on advertising.",
     },
     {
-      title: "Time and Cost Savings",
+      title: "Reduced Manual Work",
       description:
-        "Drastically reduce the time and resources typically required for video production.",
+        "Automate complex ad management tasks, freeing up your team for strategic initiatives.",
+    },
+    {
+      title: "Data Driven Decisions",
+      description:
+        "Data-Driven Decisions:* Make informed choices based on real-time performance data and AI insights.",
     },
   ];
 
@@ -54,16 +59,14 @@ export default function Benefits() {
           </div>
 
           {/* Benefits Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
                 className={`bg-gradient-to-b from-[rgba(9,9,9,0.3)] to-[rgba(184,18,255,0.15)] backdrop-blur-[10px] border-0 border-r border-b border-l border-t rounded-lg p-6 hover:border-purple-400/80 transition-colors duration-300 flex flex-col justify-around ${
-                  index === 2
-                    ? "border-[#B812FF] h-[252px]"
-                    : index === 1 || index === 3
-                      ? "border-[#B812FF] h-[233px]"
-                      : "border-[#B812FF] h-[214px]"
+                  index === 1 || index === 4
+                    ? "border-[#B812FF] h-[200px]"
+                    : "border-[#B812FF] h-[190px]"
                 }`}
               >
                 <h3 className="text-[22px] font-semibold text-white mb-4 text-center leading-[120%] tracking-[0%] font-inter">
