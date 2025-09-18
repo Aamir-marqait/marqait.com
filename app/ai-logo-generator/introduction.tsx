@@ -56,7 +56,7 @@ export default function Introduction() {
           {/* Right Illustration */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/ecommerce/what.png"
+              src="/logoai/what.png"
               alt="AI SEO Illustration"
               width={500}
               height={400}
