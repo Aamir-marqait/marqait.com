@@ -7,21 +7,21 @@ export default function MadeEveryBrand() {
       title: "Small Business Owners & Startups",
       description:
         "Create professional social media content quickly and affordably. Perfect for startups and small businesses looking to establish their brand presence without hiring expensive agencies.",
-      image: "/ecommerce/1.png",
+      image: "/brand/1.png",
     },
     {
       id: 2,
       title: "Digital Marketers & Agencies",
       description:
         "Generate high-converting social media campaigns for multiple clients. Streamline content creation workflows and deliver consistent, branded posts across all platforms.",
-      image: "/ecommerce/2.png",
+      image: "/brand/2.png",
     },
     {
       id: 3,
       title: "Influencer & Creators",
       description:
         "Craft engaging, authentic content that resonates with your audience. Generate posts that match your unique voice and style while maintaining consistent engagement.",
-      image: "/ecommerce/3.png",
+      image: "/brand/3.png",
     },
   ];
 

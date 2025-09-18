@@ -28,14 +28,14 @@ export default function Benefits() {
   ];
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="relative overflow-hidden">
       <div
         className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900"
         style={{
-          backgroundImage: `url('/abstract-tech-digital-pattern-dark-background-with.jpg')`,
+          backgroundImage: `url('/brand/Benefits.png')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/60" />
+        {/* <div className="absolute inset-0 bg-black/60" /> */}
       </div>
 
       {/* Content */}
@@ -59,9 +59,11 @@ export default function Benefits() {
               <div
                 key={index}
                 className={`bg-gradient-to-b from-[rgba(9,9,9,0.3)] to-[rgba(184,18,255,0.15)] backdrop-blur-[10px] border-0 border-r border-b border-l border-t rounded-lg p-6 hover:border-purple-400/80 transition-colors duration-300 flex flex-col justify-between ${
-                  index === 2 ? 'border-[#B812FF] h-[252px]' : 
-                  (index === 1 || index === 3) ? 'border-[#B812FF] h-[233px]' : 
-                  'border-[#B812FF] h-[214px]'
+                  index === 2
+                    ? "border-[#B812FF] h-[252px]"
+                    : index === 1 || index === 3
+                      ? "border-[#B812FF] h-[233px]"
+                      : "border-[#B812FF] h-[214px]"
                 }`}
               >
                 <h3 className="text-[22px] font-semibold text-white mb-4 text-center leading-[100%] tracking-[0%] font-inter">
