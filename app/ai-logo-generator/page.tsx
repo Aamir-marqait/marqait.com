@@ -28,6 +28,8 @@ export const metadata: Metadata = {
 export default function AILogoGenerator() {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
+      <div className="absolute -left-1/4 top-32 w-[40rem] h-[40rem] bg-[#850DB8] opacity-20 rounded-full blur-3xl"></div>
+      <div className="absolute right-0 top-[45rem] transform -translate-y-1/2 w-[50rem] h-[40rem] bg-[#850DB8] opacity-20 rounded-full blur-3xl"></div>
       <HeroSection />
     </div>
   );
