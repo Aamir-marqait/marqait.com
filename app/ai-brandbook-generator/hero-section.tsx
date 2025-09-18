@@ -101,9 +101,9 @@ export default function HeroSection() {
 
           {/* Illustration */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-xl">
               <Image
-                src="/ecommerce/hero.png"
+                src="/brand/hero.png"
                 alt="3D illustration of ecommerce elements including storefront, gift boxes, shopping bags, and credit card"
                 width={500}
                 height={400}

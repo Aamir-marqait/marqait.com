@@ -12,31 +12,31 @@ export default function BrandPage() {
       title: "Holistic Brand Definition",
       description:
         "Generates comprehensive guidelines covering logo usage, colour palettes (CMYK, RGB, Hex), typography, imagery style, tone of voice, and brand messaging.",
-      image: "/3d-rendered-blocks-cubes-digital-tech-aesthetic-bl.jpg",
+      image: "/brand/1A.png",
     },
     {
       title: "Automated Asset Generation",
       description:
         "Automatically creates brand assets including logos, business cards, letterheads, and marketing materials based on your brand guidelines.",
-      image: "/automated-design-tools-creating-brand-assets-logos.jpg",
+      image: "/brand/2A.png",
     },
     {
       title: "Interactive Digital Brand Book",
       description:
         "Creates a dynamic, searchable brand book that can be easily shared with team members and external partners for consistent brand application.",
-      image: "/digital-brand-book-interface-interactive-design-gu.jpg",
+      image: "/brand/3A.png",
     },
     {
       title: "Consistency Enforcement",
       description:
         "Monitors and ensures brand consistency across all touchpoints, providing real-time feedback and suggestions for brand compliance.",
-      image: "/brand-consistency-monitoring-dashboard-analytics-i.jpg",
+      image: "/brand/4.png",
     },
     {
       title: "AI-Powered Refinement",
       description:
         "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
-      image: "/ai-artificial-intelligence-brand-optimization-anal.jpg",
+      image: "/brand/5.png",
     },
   ];
 
