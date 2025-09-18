@@ -30,7 +30,7 @@ const services = [
     title: "ContentSpark AI",
     description:
       "Create social media posts with Marqait AI Social Media Post Generator. Type your idea, and our AI instantly generates the best social media posts that help you save time and stay consistent across all your platforms",
-    link: "/content-spark-ai",
+    link: "/ai-social-media-post-creator",
   },
   {
     title: "Image Editor AI",
