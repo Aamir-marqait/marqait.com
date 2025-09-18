@@ -68,7 +68,7 @@ export default function DevelopmentProcessSection() {
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-lg">
               <Image
-                src="/agents/process.png"
+                src="/social/Mockup02.png"
                 alt="AI Agent Development Process Illustration"
                 width={500}
                 height={400}
