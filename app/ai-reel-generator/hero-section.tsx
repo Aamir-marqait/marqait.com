@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="py-20 px-4">
-      <div className="max-w-[70rem] mx-auto">
+      <div className="max-w-[80rem] mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-end">
-          <div>
+          <div className="pl-5">
             <nav className="flex items-center space-x-2 mb-8 sm:mb-16 md:mb-24 lg:mb-20">
               <Link
                 href="/"
