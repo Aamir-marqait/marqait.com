@@ -6,6 +6,7 @@ import Why from "./why";
 import Benefits from "./benefit";
 import ContactSection from "@/components/ai-solution-contact";
 import Role from "./role";
+import FaqSection from "./faq";
 
 function page() {
   return (
@@ -18,6 +19,7 @@ function page() {
       <Why />
       <Role />
       <Benefits />
+      <FaqSection />
       <ContactSection />
     </div>
   );
