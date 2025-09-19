@@ -75,15 +75,15 @@ export default function HeroSection() {
 
               <p className=" flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                AI-driven precision targeting across platforms
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                Automated campaign optimization for conversions
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                Meta and Google Ads integration
               </p>
 
               <button
