@@ -4,35 +4,38 @@ export default function DevelopmentProcessSection() {
   const processSteps = [
     {
       number: "01",
-      title: "Discovery & Requirement Analysis",
-      description: "Understanding your challenges and goals",
+      title: "Personalized Recommendation Engines",
+      description: "Suggest products customers are most likely to buy",
     },
     {
       number: "02",
-      title: "AI Agent Design",
-      description:
-        "Crafting workflows, decision-making models, and interaction logic",
+      title: "Customer Behavior Analysis",
+      description: "Track and analyze shopping patterns for better decision-making",
     },
     {
       number: "03",
-      title: "Development & Training",
-      description: "Building and training AI models with real-world data",
+      title: "Dynamic Pricing Systems",
+      description: "Optimize prices in real time to maximize sales and profits",
     },
     {
       number: "04",
-      title: "Integration",
-      description:
-        "Connecting AI agents seamlessly with your apps, CRMs, and platforms",
+      title: "Inventory Optimization",
+      description: "Forecast demand and manage stock levels effectively",
     },
     {
       number: "05",
-      title: "Testing & Optimization",
-      description: "Ensuring performance, scalability, and compliance",
+      title: "Visual Search & Recognition",
+      description: "Allow customers to search products using images",
     },
     {
       number: "06",
-      title: "Deployment & Support",
-      description: "Continuous monitoring, updates, and improvements",
+      title: "Retail Chatbots & Virtual Assistants",
+      description: "Provide instant support and improve customer service",
+    },
+    {
+      number: "07",
+      title: "Fraud Detection & Security",
+      description: "Identify unusual transactions and protect retail operations",
     },
   ];
 
@@ -41,11 +44,10 @@ export default function DevelopmentProcessSection() {
       <div className="max-w-[70rem] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-bold text-white mb-6 leading-[48px] text-center">
-            Our AI Agent Development Process
+            AI Solutions for Retail We Offer
           </h2>
           <p className="text-[18px] font-normal text-white/90 max-w-4xl mx-auto leading-[28px] text-center">
-            We follow a strategic and transparent development process to ensure
-            our AI agents deliver measurable business value:
+            Marqait AI builds custom solutions for retailers, including:
           </p>
         </div>
 
