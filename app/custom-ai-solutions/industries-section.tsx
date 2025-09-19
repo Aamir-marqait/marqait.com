@@ -5,31 +5,31 @@ export default function IndustriesSection() {
     {
       id: 1,
       title: "AI For Healthcare",
-      description: "Smart medical diagnosis and patient care automation",
+      description: "Medical imaging analysis, drug discovery optimization, patient monitoring, predictive health analytics, and EHR automation",
       image: "/agents/1.jpg"
     },
     {
       id: 2,
-      title: "AI For Startups",
-      description: "Accelerate growth with intelligent business process automation",
+      title: "AI For Manufacturing",
+      description: "Predictive maintenance, quality control systems, supply chain optimization, and smart factory IoT solutions",
       image: "/agents/2.png"
     },
     {
       id: 3,
-      title: "AI For Customer Service",
-      description: "24/7 intelligent support with natural conversation abilities",
+      title: "AI For Technology",
+      description: "Intelligent search, automated code review, performance monitoring, and user experience optimization",
       image: "/agents/3.jpg"
     },
     {
       id: 4,
       title: "AI For Retail",
-      description: "Personalized shopping experiences and inventory management solutions",
+      description: "Personalized recommendations, inventory optimization, dynamic pricing, and customer behavior analysis",
       image: "/agents/4.jpg"
     },
     {
       id: 5,
       title: "AI For Finance & Banking",
-      description: "Secure financial analysis and automated compliance monitoring",
+      description: "Fraud detection, algorithmic trading, credit scoring automation, and intelligent customer service chatbots",
       image: "/agents/5.png"
     }
   ];

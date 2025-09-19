@@ -3,27 +3,27 @@ import Image from "next/image";
 export default function CustomAiAgentsSection() {
   const agentTypes = [
     {
-      title: "Conversational AI agents",
+      title: "Discovery & Strategy",
       description:
-        "Our conversational AI agents, including chatbots, voicebots, and virtual assistants, that help businesses deliver seamless and personalised communication. These agents can handle customer queries, provide real-time support, and even manage routine tasks such as booking, order tracking, and FAQs.",
+        " We begin by working closely with your team to understand your business objectives, challenges, and technical requirements. This stage helps us define clear success metrics and build a roadmap tailored to your goals.",
       image: "/agents/custom1.jpg",
     },
     {
-      title: "Intelligent process automation agents",
+      title: "Data Preparation & Model Development",
       description:
-        "Our intelligent process automation (IPA) agents streamline complex workflows across industries. From automating back-office tasks to managing data entry, approvals, and compliance checks, they deliver efficiency and accuracy. Whether in HR, finance, or supply chain, our agents help organizations work smarter and faster.",
+        "Next, we assess your data sources, clean and structure the information, and prepare it for AI applications. Using this foundation, our experts design and develop custom AI models optimized for your specific use cases.",
       image: "/agents/custom3.jpg",
     },
     {
-      title: "Decision-making AI agents",
+      title: "Testing & Integration",
       description:
-        "Our decision-making agents analyze data to uncover patterns and deliver actionable insights. They support predictive analytics, risk assessment, and strategic planning, helping businesses make smarter decisions, stay competitive, and respond quickly to market changes.",
+        "Every solution undergoes rigorous testing to ensure accuracy, reliability, and performance. Once validated, we integrate the AI seamlessly into your existing workflows and systems, ensuring minimal disruption and maximum efficiency.",
       image: "/agents/custom2.jpg",
     },
     {
-      title: "Industry-specific AI agents",
+      title: "Ongoing Support & Optimization",
       description:
-        "We design industry-specific AI agents for diverse needs. In healthcare, they improve patient care and workflows; in retail, they enhance customer experience and inventory; in finance, they handle fraud detection and compliance. For startups, our agents streamline operations and drive growth. Whatever the industry, we deliver AI solutions that create impact.",
+        "Our partnership doesn’t end at deployment. We continuously monitor your AI solutions, provide technical support, and implement enhancements to keep them performing at their best as your business evolves",
       image: "/agents/custom4.jpg",
     },
   ];
@@ -34,13 +34,11 @@ export default function CustomAiAgentsSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-bold text-[#F2F2F2] mb-6 leading-[150%] text-center">
-            At Marqait AI, We build custom AI Agents
+            Our Custom AI Development Process
           </h2>
           <p className="text-[18px] font-normal text-gray-300 max-w-4xl mx-auto leading-[150%] text-center">
-            At Marqait AI, we specialize in building powerful, custom AI Agents
-            designed to transform the way businesses operate and interact with
-            customers. Our AI Agents solutions go beyond simple automation. They
-            are built to learn, adapt, and deliver measurable results.
+            As a custom AI development company, we follow a streamlined
+            methodology to ensure successful project outcomes:
           </p>
         </div>
 
@@ -51,7 +49,7 @@ export default function CustomAiAgentsSection() {
               key={index}
               className="rounded-3xl p-6 "
               style={{
-                background: "linear-gradient(180deg, #05000A 0%, #1B1125 100%)"
+                background: "linear-gradient(180deg, #05000A 0%, #1B1125 100%)",
               }}
             >
               <div className="mb-6">

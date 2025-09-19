@@ -24,67 +24,46 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  // const handleServicesClick = (e) => {
-  //   e.preventDefault();
-  //   if (location.pathname === "/") {
-  //     scrollToServices();
-  //   } else {
-  //     navigate("/", { replace: true });
-  //     setTimeout(() => scrollToServices(), 100);
-  //   }
-  //   setIsMobileMenuOpen(false);
-  // };
-
-  // const handleInsightsClick = (e) => {
-  //   e.preventDefault();
-  //   if (location.pathname === "/") {
-  //     scrollToCopilot();
-  //   } else {
-  //     navigate("/", { replace: true });
-  //     setTimeout(() => scrollToCopilot(), 100);
-  //   }
-  //   setIsMobileMenuOpen(false);
-  // };
-
   const navigationItems: NavigationItem[] = [
     {
       name: "AI Tools",
       path: "/products",
       dropdown: [
         {
-          name: "AI Logo Generator",
-          path: "/ai-logo-generator",
+          name: "BrandMark AI",
+          path: "/brandmark-ai",
           description: "Create logo in seconds",
           icon: "/copilot/LogoGenerator.png",
         },
         {
-          name: "AI Campaign Generator",
-          path: "/products/ai-campaign",
-          description: "Generates campaigns",
-          icon: "/copilot/Campaign.png",
-        },
-        {
-          name: "AI Strategy Generator",
-          path: "/products/ai-strategy",
-          description: "Generates strategy",
-          icon: "/copilot/strategy.png",
-        },
-        {
-          name: "AI Social Media Post Creator",
-          path: "/products/ai-social",
+          name: "ContentSpark AI",
+          path: "/contentspark-ai",
           description: "Generates social media post",
           icon: "/copilot/Social.png",
         },
         {
-          name: "AI Brand Book Creator",
-          path: "/products/ai-brand",
+          name: "BrandBlueprint AI",
+          path: "/brandblueprint-ai",
           description: "Generates brand book",
           icon: "/copilot/Branding.png",
         },
         {
-          name: "Reel Generator",
-          path: "/products/reel-generator",
+          name: "ReelCraft AI",
+          path: "/reelcraft-ai",
           description: "Generates engaging reels",
+          icon: "/copilot/strategy.png",
+        },
+        {
+          name: "AdPilot AI",
+          path: "/adpilot-ai",
+          description: "Generates campaigns",
+          icon: "/copilot/Campaign.png",
+        },
+
+        {
+          name: "AI Editor",
+          path: "/ai-editor",
+          description: "Generates strategy",
           icon: "/copilot/ImageGen.png",
         },
       ],
