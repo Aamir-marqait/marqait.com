@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 
 import WaitlistModal from "../../components/waitlist-modal";
 
@@ -68,7 +67,6 @@ export default function Introduction() {
             </button>
           </div>
 
-          {/* Right Illustration */}
           <div className="flex justify-center rounded-lg lg:justify-end">
             <video
               src="/reel/video.mp4"
