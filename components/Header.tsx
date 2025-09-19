@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { trackCTAClick } from "../analytics";
@@ -20,7 +20,11 @@ interface NavigationItem {
   dropdown?: DropdownItem[];
 }
 
-export default function Header() {
+interface HeaderProps {
+  onOpenWaitlist?: () => void;
+}
+
+export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -163,7 +167,6 @@ export default function Header() {
                     className="flex cursor-pointer items-center space-x-1 text-white hover:text-gray-300 transition-colors duration-200 text-base font-medium group"
                   >
                     <span>{item.name}</span>
-                    <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                   </Link>
 
                   {openDropdown === item.name && (
@@ -231,11 +234,15 @@ export default function Header() {
           </nav>
 
           {/* Desktop Get Started Button */}
-          <Link className="hidden lg:block" href={"/contact"}>
+          <div className="hidden lg:block cursor-pointer">
             <button
-              onClick={() => trackCTAClick("Contact Us", "Header")}
-              className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+              onClick={() => {
+                trackCTAClick("Get Started", "Header");
+                onOpenWaitlist?.();
+              }}
+              className=" cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
               style={{
+                cursor: "pointer",
                 borderRadius: "15px",
                 borderWidth: "1px",
                 paddingTop: "6px",
@@ -256,6 +263,7 @@ export default function Header() {
             >
               Get Started
               <Image
+                className="cursor-pointer"
                 src="/icons/arrow.svg"
                 alt="arrow-right"
                 width={21}
@@ -283,7 +291,7 @@ export default function Header() {
                 className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-8"
               />
             </button> */}
-          </Link>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -315,11 +323,6 @@ export default function Header() {
                       className="cursor-pointer flex items-center justify-between w-full px-3 py-3 text-white hover:text-gray-300 hover:bg-gray-900 rounded-md transition-colors duration-200"
                     >
                       <span className="text-base font-medium">{item.name}</span>
-                      <ChevronDown
-                        className={`w-4 h-4 transition-transform duration-200 ${
-                          openDropdown === item.name ? "rotate-180" : ""
-                        }`}
-                      />
                     </button>
                     {openDropdown === item.name && (
                       <div className="ml-4 space-y-2 mt-2 animate-in fade-in-0 slide-in-from-top-2 duration-200">
@@ -381,9 +384,12 @@ export default function Header() {
               )}
 
               {/* Mobile Sign Up Button */}
-              <Link className="pt-4 pb-2" href={"/contacts"}>
+              <div className="pt-4 pb-2">
                 <button
-                  onClick={() => trackCTAClick("Contact Us", "Mobile Header")}
+                  onClick={() => {
+                    trackCTAClick("Get Started", "Mobile Header");
+                    onOpenWaitlist?.();
+                  }}
                   className="cursor-pointer flex items-center justify-center gap-2 w-full px-4 py-3 rounded-2xl border border-[rgba(255,255,255,0.25)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold leading-6"
                   style={{
                     boxShadow:
@@ -417,7 +423,7 @@ export default function Header() {
                     className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2 h-8"
                   />
                 </button> */}
-              </Link>
+              </div>
             </div>
           </div>
         )}
