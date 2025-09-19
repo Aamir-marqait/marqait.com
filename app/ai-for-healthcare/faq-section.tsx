@@ -1,29 +1,34 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is AI in Healthcare?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "AI in healthcare uses artificial intelligence to make medical care faster and more accurate. It helps doctors detect diseases, monitor patients, discover new drugs, automate tasks, and make better decisions with data.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How does AI improve healthcare?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "AI improves healthcare by making diagnostics faster, automating workflows, predicting health risks, and enhancing patient care.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "Can AI replace doctors?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "No. AI supports doctors with data-driven insights and reduces their workload, but final decisions always remain with medical professionals.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "Is patient data safe with AI systems?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "Yes. Our AI solutions follow strict compliance and security standards, including HIPAA, to keep patient data safe and confidential.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "Which areas of healthcare benefit most from AI?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "AI is most effective in diagnostics, patient monitoring, hospital management, drug discovery, and preventive care.",
+    },
+    {
+      question: "How long does it take to implement AI in healthcare?",
+      answer:
+        "Implementation time depends on the solution. Simple automation may take weeks, while advanced diagnostic systems can take several months.",
     },
   ];
 
@@ -42,7 +47,7 @@ export default function FaqSection() {
             className="text-[20px] text-white/90 leading-[150%] tracking-[0%] text-center"
             style={{ fontFamily: "Inter", fontWeight: 400 }}
           >
-            Everything you need to know about our AI Agent Development
+            Everything you need to know about AI in Healthcare
           </p>
         </div>
 
