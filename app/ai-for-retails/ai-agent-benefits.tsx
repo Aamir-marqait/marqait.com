@@ -3,33 +3,33 @@ import Image from "next/image";
 export default function AIAgentBenefits() {
   const benefits = [
     {
-      title: "Faster Decisions",
-      description: "Data-driven insights for real-time problem-solving",
+      title: "Boost Sales",
+      description: "Drive more conversions with smarter recommendations",
       position: "left",
     },
     {
-      title: " Personalized Experience",
-      description: "Adaptive AI agents that understand users better",
+      title: "Increase Efficiency",
+      description: "Automate manual tasks and reduce operational costs",
       position: "left",
     },
     {
-      title: "DATA-DRIVEN DECISIONS",
-      description: "No guesswork—only actionable insights.",
+      title: "Data-Driven Insights",
+      description: "Make better business decisions with predictive analytics",
       position: "left",
     },
     {
-      title: " 24/7 Availability",
+      title: "24/7 Availability",
       description: "Always-on virtual support for customers and operations",
       position: "right",
     },
     {
-      title: "Cost Reduction",
-      description: "Automating repetitive tasks saves time and resources",
+      title: "Enhance Customer Experience",
+      description: "Deliver personalized and seamless shopping",
       position: "right",
     },
     {
-      title: " Business Scalability",
-      description: "Handle increasing workloads without additional manpower",
+      title: "Scalable Solutions",
+      description: "AI systems that grow with your retail business",
       position: "right",
     },
   ];
@@ -50,7 +50,7 @@ export default function AIAgentBenefits() {
             className="text-[#F2F2F2] font-bold text-[32px] leading-[150%] tracking-[0%] text-center "
             style={{ fontFamily: "Inter" }}
           >
-            Benefits of Our AI Agent Development
+            Benefits of Our AI Retail Solutions
           </h2>
         </div>
 

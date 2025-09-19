@@ -15,9 +15,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Custom AI Agent Solutions",
+      title: "Faster Diagnosis",
       description:
-        "Tailored solutions designed specifically for your business needs and objectives.",
+        "Identify diseases from scans, reports, and symptoms with higher accuracy.",
     },
     {
       icon: (
@@ -34,9 +34,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Scalable Architecture",
+      title: "Cost Reduction",
       description:
-        "Future-proof systems that grow with your business and adapt to changing requirements.",
+        "Save time and reduce operational expenses with automation.",
     },
     {
       icon: (
@@ -53,9 +53,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Advanced NLP & ML Integration",
+      title: "Personalized Care",
       description:
-        "Cutting-edge natural language processing and machine learning capabilities",
+        "Create treatment plans tailored to individual patients.",
     },
     {
       icon: (
@@ -72,9 +72,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Data Security & Compliance",
+      title: "Improved Efficiency",
       description:
-        "Enterprise-grade security with full compliance to industry standards.",
+        "Doctors and staff can focus more on patients instead of paperwork.",
     },
     {
       icon: (
@@ -91,9 +91,9 @@ export default function Why() {
           />
         </svg>
       ),
-      title: "Proven ROI",
+      title: "Better Predictions",
       description:
-        "Demonstrated return on investment with measurable business impact.",
+        "Forecast patient risks to support preventive care.",
     },
   ];
 
@@ -103,16 +103,11 @@ export default function Why() {
         <div className="text-center mb-16">
           <h2 className="text-[#F2F2F2] font-bold text-[32px] max-w-xl mx-auto leading-[150%] tracking-[0%] text-center mb-6 font-inter">
             Why Choose Marqait AI for{" "}
-            <span className="text-[#BD14FF]"> AI Agent Development?</span>
+            <span className="text-[#BD14FF]"> Health Care?</span>
           </h2>
           <p className="text-[18px] leading-[150%] tracking-[0%] text-center max-w-4xl mx-auto font-inter text-white/90">
-            At Marqait AI, we go beyond building AI agents. We create
-            intelligent, future-ready AI solutions that seamlessly integrate
-            into your business ecosystem. Companies across industries trust us
-            because we blend cutting-edge AI technologies with deep domain
-            expertise to design, develop, and deploy custom AI agents that
-            streamline operations, reduce costs, and enhance customer
-            experiences.
+            AI provides advantages that traditional healthcare systems cannot
+            match:
           </p>
         </div>
 

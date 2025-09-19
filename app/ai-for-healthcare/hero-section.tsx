@@ -1,7 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
-export default function AiAgentHero() {
+export default function HeroSection() {
   return (
     <section className="relative py-20  overflow-hidden">
       {/* Background Image */}
@@ -59,14 +59,17 @@ export default function AiAgentHero() {
         {/* Content */}
         <div className="relative z-10 max-w-[50rem] mx-auto px-6 text-center">
           <h1 className="text-[48px] font-bold text-white mb-8 leading-[130%] text-center">
-            AI Agent Development Company
+            AI in Healthcare: Smart AI Solutions for Healthcare
           </h1>
 
           <p className="text-[20px] font-normal text-white/90 mb-12 max-w-4xl mx-auto leading-[150%] text-center">
-            Transform your business with intelligent AI agents that automate
-            processes, enhance customer experiences, and drive growth. We
-            specialize in developing custom AI solutions that integrate
-            seamlessly with your existing systems.
+            AI is transforming healthcare by making patient care faster, more
+            accurate, and more personalized. At Marqait AI, we design custom AI
+            solutions for healthcare that support doctors, hospitals, and
+            medical organizations in delivering better outcomes. From medical
+            imaging and diagnostics to predictive patient care, our AI tools
+            reduce errors, save time, and improve efficiency across healthcare
+            systems.
           </p>
 
           <button
