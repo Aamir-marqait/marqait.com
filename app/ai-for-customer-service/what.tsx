@@ -8,24 +8,26 @@ export default function What() {
           {/* Left Content */}
           <div className="space-y-8">
             <h2 className="text-white font-bold font-inter max-w-md text-[32px] leading-[150%] tracking-[1%]">
-              What Is{" "}
-              <span className="text-[#BD14FF]">AI Agent Development?</span>
+              Introducing Marqait{" "}
+              <span className="text-[#BD14FF]">AI for Customer Service</span>
             </h2>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              AI agent development involves creating intelligent software
-              systems that can perceive their environment, make decisions, and
-              take actions to achieve specific goals. These autonomous agents
-              use machine learning, natural language processing, and advanced
-              algorithms to simulate human-like reasoning and behavior.
+              At Marqait AI, we design AI-driven customer support tools that
+              empower businesses to handle customer queries more efficiently.
+              Whether you’re running an e-commerce business, SaaS company, or
+              enterprise service desk, our AI solutions help deliver
+              round-the-clock assistance and personalized customer experiences.
             </p>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              AI agent development involves creating intelligent software
-              systems that can perceive their environment, make decisions, and
-              take actions to achieve specific goals. These autonomous agents
-              use machine learning, natural language processing, and advanced
-              algorithms to simulate human-like reasoning and behavior.
+              From AI chatbots that resolve FAQs instantly to virtual assistants
+              that provide guided support, we make customer service smarter and
+              more reliable. Our natural language processing (NLP) systems
+              understand customer intent, while sentiment analysis helps detect
+              customer emotions for better responses. By combining automation,
+              personalization, and predictive insights, we enable brands to
+              deliver consistent and scalable customer support.
             </p>
           </div>
 

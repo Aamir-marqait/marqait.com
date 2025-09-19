@@ -102,17 +102,15 @@ export default function Why() {
       <div className="max-w-[70rem] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-[#F2F2F2] font-bold text-[32px] max-w-xl mx-auto leading-[150%] tracking-[0%] text-center mb-6 font-inter">
-            Why Choose Marqait AI for{" "}
-            <span className="text-[#BD14FF]"> AI Agent Development?</span>
+            Why Use
+            <span className="text-[#BD14FF]">
+              {" "}
+              AI Solutions for Customer Service
+            </span>
           </h2>
           <p className="text-[18px] leading-[150%] tracking-[0%] text-center max-w-4xl mx-auto font-inter text-white/90">
-            At Marqait AI, we go beyond building AI agents. We create
-            intelligent, future-ready AI solutions that seamlessly integrate
-            into your business ecosystem. Companies across industries trust us
-            because we blend cutting-edge AI technologies with deep domain
-            expertise to design, develop, and deploy custom AI agents that
-            streamline operations, reduce costs, and enhance customer
-            experiences.
+            AI provides capabilities that traditional customer service systems
+            cannot match:
           </p>
         </div>
 
