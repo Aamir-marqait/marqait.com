@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 export default function DevelopmentProcessSection() {
   const processSteps = [
@@ -76,10 +75,10 @@ export default function DevelopmentProcessSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-start">
-          {/* Left column - items 1-5 */}
-          <div className="space-y-6">
-            {processSteps.slice(0, 5).map((step, index) => (
+        <div className="space-y-8">
+          {/* Row 1 - items 1-3 */}
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            {processSteps.slice(0, 3).map((step, index) => (
               <div key={index} className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
@@ -100,23 +99,33 @@ export default function DevelopmentProcessSection() {
             ))}
           </div>
 
-          {/* Center column - image */}
-          <div className="flex justify-center">
-            <div className="w-full max-w-sm">
-              <Image
-                src="/agents/process.png"
-                alt="AI Agent Development Process Illustration"
-                width={400}
-                height={320}
-                className="w-full h-auto"
-              />
-            </div>
+          {/* Row 2 - items 4-6 */}
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            {processSteps.slice(3, 6).map((step, index) => (
+              <div key={index + 3} className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                    <span className="text-[16px] font-bold text-white">
+                      {step.number}
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-[18px] font-bold text-white mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-[14px] font-normal text-gray-400">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
 
-          {/* Right column - items 6-9 in diagonal layout */}
-          <div className="space-y-6 ">
-            {processSteps.slice(5).map((step, index) => (
-              <div key={index + 5} className={`flex gap-4 `}>
+          {/* Row 3 - items 7-9 */}
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            {processSteps.slice(6).map((step, index) => (
+              <div key={index + 6} className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
                     <span className="text-[16px] font-bold text-white">
