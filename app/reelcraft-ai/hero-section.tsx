@@ -75,15 +75,15 @@ export default function HeroSection() {
 
               <p className=" flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                Dynamic short-form video creation
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                Optimized for social media engagement
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                AI-powered reel and video production
               </p>
 
               <button

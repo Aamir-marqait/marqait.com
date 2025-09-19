@@ -11,43 +11,43 @@ export default function BrandPage() {
     {
       title: "AI-Powered Audience Targeting",
       description:
-        "Generates comprehensive guidelines covering logo usage, colour palettes (CMYK, RGB, Hex), typography, imagery style, tone of voice, and brand messaging.",
+        "Analyzes your target audience demographics and engagement patterns to create highly targeted video content that resonates with viewers and drives maximum engagement.",
       image: "/reel/1.png",
     },
     {
       title: "Automated Ad Creative Generation",
       description:
-        "Automatically creates brand assets including logos, business cards, letterheads, and marketing materials based on your brand guidelines.",
+        "Automatically generates eye-catching video creatives, transitions, effects, and visual elements optimized for different social media platforms and audience preferences.",
       image: "/reel/2.png",
     },
     {
       title: "Dynamic Budget Optimization",
       description:
-        "Creates a dynamic, searchable brand book that can be easily shared with team members and external partners for consistent brand application.",
+        "Intelligently allocates your video production budget across different content types and platforms to maximize reach and engagement while minimizing costs.",
       image: "/reel/3.png",
     },
     {
       title: "Real-time Performance Monitoring",
       description:
-        "Monitors and ensures brand consistency across all touchpoints, providing real-time feedback and suggestions for brand compliance.",
+        "Tracks video performance metrics in real-time, providing insights on engagement rates, watch time, and audience behavior to optimize future content.",
       image: "/reel/4.png",
     },
     {
       title: "A/B Testing Automation",
       description:
-        "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
+        "Automatically tests different video variations, thumbnails, and captions to identify the highest-performing combinations for your target audience.",
       image: "/reel/5.png",
     },
     {
       title: "Cross-Platform Campaign Management",
       description:
-        "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
+        "Seamlessly manages and distributes your video content across multiple social media platforms with optimized formats and scheduling for each channel.",
       image: "/reel/6.png",
     },
     {
       title: "Natural Language Campaign Optimization",
       description:
-        "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
+        "Optimizes video content using natural language processing to enhance captions, descriptions, and hashtags for improved discoverability and engagement.",
       image: "/reel/7.png",
     },
   ];

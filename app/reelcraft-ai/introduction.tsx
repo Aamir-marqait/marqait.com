@@ -1,7 +1,20 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function Introduction() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section className="bg-black py-20 px-6 max-w-[70rem]  mx-auto">
       <div className="">
@@ -29,45 +42,52 @@ export default function Introduction() {
               focus on growth while delivering consistent, high-quality
               storytelling.
             </p>
-            <Link className="hidden lg:block" href={"/contact"}>
-              <button
-                className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
-                style={{
-                  borderRadius: "15px",
-                  borderWidth: "1px",
-                  paddingTop: "6px",
-                  paddingRight: "11px",
-                  paddingBottom: "6px",
-                  paddingLeft: "11px",
-                  background:
-                    "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
-                  border: "1px solid #E6D4FF99",
-                  fontFamily: "Inter",
-                  fontWeight: 600,
-                  fontSize: "14px",
-                  lineHeight: "30px",
-                  letterSpacing: "0px",
-                  verticalAlign: "middle",
-                  color: "#F2F0F5",
-                }}
-              >
-                Generate a Video
-              </button>
-            </Link>
+            <button
+              onClick={openWaitlistModal}
+              className=" lg:block cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+              style={{
+                borderRadius: "15px",
+                borderWidth: "1px",
+                paddingTop: "6px",
+                paddingRight: "11px",
+                paddingBottom: "6px",
+                paddingLeft: "11px",
+                background:
+                  "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
+                border: "1px solid #E6D4FF99",
+                fontFamily: "Inter",
+                fontWeight: 600,
+                fontSize: "14px",
+                lineHeight: "30px",
+                letterSpacing: "0px",
+                verticalAlign: "middle",
+                color: "#F2F0F5",
+              }}
+            >
+              Generate a Video
+            </button>
           </div>
 
           {/* Right Illustration */}
-          <div className="flex justify-center lg:justify-end">
-            <Image
-              src="/reel/gif.gif"
-              alt="AI SEO Illustration"
+          <div className="flex justify-center rounded-lg lg:justify-end">
+            <video
+              src="/reel/video.mp4"
               width={500}
               height={400}
-              className="max-w-full h-auto"
+              className="max-w-full h-[35rem] rounded-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
         </div>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }
