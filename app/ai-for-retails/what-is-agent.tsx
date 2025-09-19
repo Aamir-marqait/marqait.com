@@ -8,24 +8,30 @@ export default function WhatIsAgent() {
           {/* Left Content */}
           <div className="space-y-8">
             <h2 className="text-white font-bold font-inter max-w-md text-[32px] leading-[150%] tracking-[1%]">
-              What Is{" "}
-              <span className="text-[#BD14FF]">AI Agent Development?</span>
+              Introducing{" "}
+              <span className="text-[#BD14FF]">
+                Marqait AI Solutions for Retail
+              </span>
             </h2>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              AI agent development involves creating intelligent software
-              systems that can perceive their environment, make decisions, and
-              take actions to achieve specific goals. These autonomous agents
-              use machine learning, natural language processing, and advanced
-              algorithms to simulate human-like reasoning and behavior.
+              At Marqait AI, we create AI-powered retail solutions that help
+              businesses understand their customers better and operate more
+              efficiently. By using artificial intelligence in retail,
+              supermarkets, e-commerce platforms, and retail chains can deliver
+              personalized shopping experiences, optimize operations, and
+              increase sales. Our AI solutions are built to make retail smarter,
+              faster, and more customer-centric.
             </p>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              AI agent development involves creating intelligent software
-              systems that can perceive their environment, make decisions, and
-              take actions to achieve specific goals. These autonomous agents
-              use machine learning, natural language processing, and advanced
-              algorithms to simulate human-like reasoning and behavior.
+              From personalized product recommendations that boost sales to
+              AI-driven inventory management that reduces stock-outs and
+              overstocking, we help retailers stay ahead of customer demands.
+              Our systems also use predictive analytics for demand forecasting,
+              enabling businesses to plan effectively, reduce waste, and improve
+              profit margins. With AI automation, every stage of the retail
+              supply chain becomes more efficient and reliable.
             </p>
           </div>
 

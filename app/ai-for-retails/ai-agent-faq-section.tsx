@@ -1,29 +1,29 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is AI in Retail?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "AI in retail uses artificial intelligence to improve shopping experiences, optimize operations, and increase sales through data-driven insights.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How does AI improve customer experience?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "AI provides personalized recommendations, smarter search, and instant customer support, making shopping faster and more enjoyable.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "Can AI help with inventory management?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "Yes. AI predicts demand, prevents overstocking or shortages, and automates stock management.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "Is AI only for online retail?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "No. Both e-commerce and physical stores can use AI for inventory, customer engagement, and sales optimization.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "How long does it take to implement AI in retail?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "Implementation time varies by project. Simple AI chatbots may take weeks, while advanced systems like recommendation engines can take a few months.",
     },
   ];
 
