@@ -1,7 +1,19 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
+import WaitlistModal from "../waitlist-modal";
 
 export default function AiPowerhouseHero() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section className="relative min-h-screen flex py-20 justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -126,6 +138,7 @@ export default function AiPowerhouseHero() {
 
         {/* CTA Button */}
         <button
+          onClick={openWaitlistModal}
           className="cursor-pointer mx-auto flex items-center transition-all duration-200 justify-center gap-2"
           style={{
             borderRadius: "15px",
@@ -161,6 +174,11 @@ export default function AiPowerhouseHero() {
           />
         </button>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }

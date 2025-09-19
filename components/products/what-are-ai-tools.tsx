@@ -58,7 +58,7 @@ export default function WhatAreTools() {
                 <div className="flex-shrink-0">
                   <div className="w-8 h-8  flex items-center justify-center">
                     <Image
-                      src="/tools/icon.svg"
+                      src="/tools/Icon.svg"
                       alt="Step icon"
                       width={28}
                       height={18}
