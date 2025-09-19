@@ -1,7 +1,20 @@
+"use client"
+import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function HeroSection() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section
       className="pt-20 px-4 min-h-screen bg-cover bg-center bg-no-repeat"
@@ -63,6 +76,7 @@ export default function HeroSection() {
 
           <div className="flex justify-center mb-6">
             <button
+              onClick={openWaitlistModal}
               className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
               style={{
                 borderRadius: "15px",
@@ -83,7 +97,7 @@ export default function HeroSection() {
                 color: "#F2F0F5",
               }}
             >
-              Generate a logo with AI
+              Generate a Social Media Post with AI
             </button>
           </div>
 
@@ -110,6 +124,11 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }
