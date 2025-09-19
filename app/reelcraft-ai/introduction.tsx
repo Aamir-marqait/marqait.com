@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Image from "next/image";
 import WaitlistModal from "../../components/waitlist-modal";
 
 export default function Introduction() {
@@ -67,16 +67,14 @@ export default function Introduction() {
             </button>
           </div>
 
-          <div className="flex justify-center rounded-lg lg:justify-end">
-            <video
-              src="/reel/video.mp4"
+          {/* Right Illustration */}
+          <div className="flex justify-center lg:justify-end">
+            <Image
+              src="/reel/gif.gif"
+              alt="AI SEO Illustration"
               width={500}
               height={400}
-              className="max-w-full h-[35rem] rounded-lg"
-              autoPlay
-              loop
-              muted
-              playsInline
+              className="max-w-full h-auto"
             />
           </div>
         </div>
