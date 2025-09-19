@@ -1,29 +1,29 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is AI Agent Development?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "AI Agent Development involves creating intelligent AI systems that can automate processes, enhance customer experiences, and drive business growth. We specialize in developing custom AI solutions that integrate seamlessly with your existing systems.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How do AI agents integrate with existing business systems?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "Our AI agents are designed to integrate seamlessly with your current infrastructure through APIs, webhooks, and custom connectors. They can work with CRMs, databases, communication platforms, and other business tools without disrupting your workflow.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "What types of AI agents can you develop?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "We develop various types of AI agents including customer service chatbots, sales automation agents, data analysis agents, workflow automation agents, and intelligent assistants tailored to your specific business needs and industry requirements.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "How long does it take to develop a custom AI agent?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "Development time varies based on complexity and requirements. Simple AI agents can be developed in 2-4 weeks, while more complex, multi-functional agents typically take 6-12 weeks from concept to deployment.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "Do you provide ongoing support and maintenance for AI agents?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "Yes, we provide comprehensive ongoing support including performance monitoring, updates, bug fixes, and feature enhancements. Our team ensures your AI agents continue to perform optimally and evolve with your business needs.",
     },
   ];
 

@@ -1,29 +1,29 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is AI for E-commerce?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "AI for E-commerce uses artificial intelligence to enhance online stores with personalized shopping experiences, automated customer service, inventory management, and conversion optimization. Marqait AI provides comprehensive e-commerce solutions including Shopify AI integrations and dynamic pricing systems.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How can AI improve e-commerce conversion rates?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "AI improves conversions through personalized product recommendations, dynamic pricing optimization, AI-powered chatbots for customer support, abandoned cart recovery, and intelligent search functionality that helps customers find exactly what they're looking for.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "What AI solutions work best for Shopify stores?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "Shopify stores benefit most from AI-powered product recommendations, automated inventory management, personalized marketing campaigns, intelligent customer segmentation, and AI chatbots for 24/7 customer support and sales assistance.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "Can AI help with inventory management and pricing?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "Yes, AI can automate inventory management by predicting demand, optimizing stock levels, and preventing overselling. Dynamic AI pricing adjusts product prices in real-time based on market conditions, competition, and demand patterns to maximize profitability.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "How does AI enhance customer experience in e-commerce?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "AI enhances customer experience through personalized product suggestions, intelligent search results, 24/7 AI-powered customer support, predictive customer service, and customized shopping journeys that adapt to individual preferences and behavior patterns.",
     },
   ];
 
@@ -42,7 +42,7 @@ export default function FaqSection() {
             className="text-[20px] text-white/90 leading-[150%] tracking-[0%] text-center"
             style={{ fontFamily: "Inter", fontWeight: 400 }}
           >
-            Everything you need to know about our AI Agent Development
+            Everything you need to know about AI for E-commerce
           </p>
         </div>
 
