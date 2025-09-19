@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Site Map - Marqait AI",
-  description: "Use the sitemap to find our marketing automation and ai tools including free AI logo generator, social media post, campaigns generator and more.",
-  keywords: "sitemap, navigation, Marqait pages, AI marketing, marketing automation, website structure",
+  description: "Navigate through all Marqait AI pages including AI Tools like BrandMark AI, ContentSpark AI, and AI Solutions for healthcare, startups, e-commerce and more.",
+  keywords: "sitemap, navigation, AI tools, AI solutions, BrandMark AI, ContentSpark AI, marketing automation, website structure",
 };
 
 interface SitemapItem {
@@ -38,49 +38,109 @@ export default function Sitemap() {
         },
         {
           title: "Contact Us",
-          url: "/contact",
+          url: "/contacts",
           description:
             "Get in touch with our team - we're here to help you grow your business with AI marketing automation",
         },
-      ],
-    },
-    {
-      title: "Products & Services",
-      items: [
         {
-          title: "AI Tools",
-          url: "/ai-tools",
+          title: "Insights",
+          url: "/blog",
           description:
-            "Explore AI tools for Marketing automation at Marqait AI. Get free ai logo generator, social media post generator, campaign generator and more.",
-        },
-        {
-          title: "Growth Pods",
-          url: "/growth-pods",
-          description:
-            "Dedicated marketing teams that scale with your business - the ultimate marketing automation solution",
+            "Read the latest insights, tips, and updates about AI marketing automation",
         },
       ],
     },
     {
-      title: "Resources & Content",
+      title: "AI Tools",
       items: [
         {
-          title: "AI Blog",
-          url: "/ai-blog",
+          title: "BrandMark AI",
+          url: "/brandmark-ai",
           description:
-            "Marqait AI Blog keeps you up-to-date about the latest advancements in our AI marketing automation tools and platform.",
+            "Create professional logos in seconds with AI-powered logo generation",
         },
         {
-          title: "AI Social Media Post Generator",
-          url: "/ai-social-media-post-generator",
+          title: "ContentSpark AI",
+          url: "/contentspark-ai",
           description:
-            "Generate engaging social media posts for free with a simple text prompt using Marqait's free AI social media post generator.",
+            "Generate engaging social media posts with AI-powered content creation",
         },
         {
-          title: "AI Logo Generator",
-          url: "/ai-logo-generator",
+          title: "BrandBlueprint AI",
+          url: "/brandblueprint-ai",
           description:
-            "Generate unique logo with a text prompt using Marqait's free AI logo generator. Input simple text prompts and our AI makes logo design online for you.",
+            "Create comprehensive brand books and guidelines with AI assistance",
+        },
+        {
+          title: "ReelCraft AI",
+          url: "/reelcraft-ai",
+          description:
+            "Generate engaging video reels and short-form content with AI",
+        },
+        {
+          title: "AdPilot AI",
+          url: "/adpilot-ai",
+          description:
+            "Create and optimize advertising campaigns with AI-powered insights",
+        },
+        {
+          title: "AI Editor",
+          url: "/ai-editor",
+          description:
+            "Advanced AI-powered content editing and optimization tools",
+        },
+      ],
+    },
+    {
+      title: "AI Solutions",
+      items: [
+        {
+          title: "Custom AI Solutions",
+          url: "/custom-ai-solutions",
+          description:
+            "Tailored AI solutions designed specifically for your business needs",
+        },
+        {
+          title: "AI For Healthcare",
+          url: "/ai-for-healthcare",
+          description:
+            "Specialized AI marketing solutions for healthcare organizations",
+        },
+        {
+          title: "AI For Startups",
+          url: "/ai-for-startups",
+          description:
+            "AI-powered marketing automation designed for growing startups",
+        },
+        {
+          title: "AI For Customer Service",
+          url: "/ai-for-customer-service",
+          description:
+            "Enhance customer service with AI-powered automation and insights",
+        },
+        {
+          title: "AI For Retails",
+          url: "/ai-for-retails",
+          description:
+            "AI marketing solutions tailored for retail and e-commerce businesses",
+        },
+        {
+          title: "AI Agent Development",
+          url: "/ai-agent-development",
+          description:
+            "Custom AI agent development for automated business processes",
+        },
+        {
+          title: "AI For SEO",
+          url: "/ai-for-seo",
+          description:
+            "AI-powered SEO optimization and content strategy solutions",
+        },
+        {
+          title: "AI For E-Commerce",
+          url: "/ai-for-ecommerce",
+          description:
+            "Comprehensive AI marketing solutions for e-commerce platforms",
         },
       ],
     },
@@ -152,7 +212,7 @@ export default function Sitemap() {
           </div>
 
           {/* Sitemap Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
             {sitemapSections.map((section, sectionIndex) => (
               <div
                 key={sectionIndex}
@@ -249,7 +309,7 @@ export default function Sitemap() {
                 Transform your marketing with AI-powered automation. Contact our
                 team to learn how Marqait can help scale your business.
               </p>
-              <Link href="/contact">
+              <Link href="/contacts">
                 <button
                   className="cursor-pointer flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-3 lg:px-10 lg:py-4 rounded-2xl border border-[rgba(255,255,255,0.40)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold mx-auto
                   text-sm sm:text-base lg:text-[16px]"
