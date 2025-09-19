@@ -3,18 +3,19 @@ import Image from "next/image";
 export default function AIAgentBenefits() {
   const benefits = [
     {
-      title: "Faster Decisions",
-      description: "Data-driven insights for real-time problem-solving",
+      title: "Higher Accuracy",
+      description: "Reduce diagnostic errors with advanced AI models.",
       position: "left",
     },
     {
-      title: " Personalized Experience",
-      description: "Adaptive AI agents that understand users better",
+      title: " Scalable Systems",
+      description: "Built to grow with your healthcare facility.",
       position: "left",
     },
     {
-      title: "DATA-DRIVEN DECISIONS",
-      description: "No guesswork—only actionable insights.",
+      title: "Compliance-Ready",
+      description:
+        "Designed to meet healthcare regulations and strict data privacy standards.",
       position: "left",
     },
     {
@@ -23,13 +24,14 @@ export default function AIAgentBenefits() {
       position: "right",
     },
     {
-      title: "Cost Reduction",
-      description: "Automating repetitive tasks saves time and resources",
+      title: "Proven Expertise",
+      description:
+        "Experience delivering AI solutions in healthcare and life sciences.",
       position: "right",
     },
     {
-      title: " Business Scalability",
-      description: "Handle increasing workloads without additional manpower",
+      title: "End-to-End Service",
+      description: "From consultation to deployment and long-term support.",
       position: "right",
     },
   ];
@@ -50,7 +52,7 @@ export default function AIAgentBenefits() {
             className="text-[#F2F2F2] font-bold text-[32px] leading-[150%] tracking-[0%] text-center "
             style={{ fontFamily: "Inter" }}
           >
-            Benefits of Our AI Agent Development
+            Benefits of Our AI Solutions for Healthcare
           </h2>
         </div>
 

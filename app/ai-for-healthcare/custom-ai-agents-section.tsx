@@ -3,27 +3,27 @@ import Image from "next/image";
 export default function CustomAiAgentsSection() {
   const agentTypes = [
     {
-      title: "Conversational AI agents",
+      title: "Discovery & Planning",
       description:
-        "Our conversational AI agents, including chatbots, voicebots, and virtual assistants, that help businesses deliver seamless and personalised communication. These agents can handle customer queries, provide real-time support, and even manage routine tasks such as booking, order tracking, and FAQs.",
+        "We start by understanding your workflows, patient needs, and organizational challenges to design AI tailored for your healthcare setting.",
       image: "/agents/custom1.jpg",
     },
     {
-      title: "Intelligent process automation agents",
+      title: "Data Preparation & Model Development",
       description:
-        "Our intelligent process automation (IPA) agents streamline complex workflows across industries. From automating back-office tasks to managing data entry, approvals, and compliance checks, they deliver efficiency and accuracy. Whether in HR, finance, or supply chain, our agents help organizations work smarter and faster.",
+        "Our experts clean, organize, and train your healthcare data to build AI models that can predict, analyze, and support medical decisions.",
       image: "/agents/custom3.jpg",
     },
     {
-      title: "Decision-making AI agents",
+      title: "Testing & Integration",
       description:
-        "Our decision-making agents analyze data to uncover patterns and deliver actionable insights. They support predictive analytics, risk assessment, and strategic planning, helping businesses make smarter decisions, stay competitive, and respond quickly to market changes.",
+        "Every system undergoes strict testing for accuracy, compliance, and safety before being integrated into your hospital or clinic systems.",
       image: "/agents/custom2.jpg",
     },
     {
-      title: "Industry-specific AI agents",
+      title: "Continuous Support & Optimization",
       description:
-        "We design industry-specific AI agents for diverse needs. In healthcare, they improve patient care and workflows; in retail, they enhance customer experience and inventory; in finance, they handle fraud detection and compliance. For startups, our agents streamline operations and drive growth. Whatever the industry, we deliver AI solutions that create impact.",
+        "We provide ongoing monitoring, support, and improvements to ensure your AI solutions remain secure, reliable, and scalable.",
       image: "/agents/custom4.jpg",
     },
   ];
@@ -34,13 +34,11 @@ export default function CustomAiAgentsSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-bold text-[#F2F2F2] mb-6 leading-[150%] text-center">
-            At Marqait AI, We build custom AI Agents
+            Our AI Development Process for Healthcare
           </h2>
           <p className="text-[18px] font-normal text-gray-300 max-w-4xl mx-auto leading-[150%] text-center">
-            At Marqait AI, we specialize in building powerful, custom AI Agents
-            designed to transform the way businesses operate and interact with
-            customers. Our AI Agents solutions go beyond simple automation. They
-            are built to learn, adapt, and deliver measurable results.
+            We follow a proven process to deliver safe and effective AI
+            healthcare solutions:
           </p>
         </div>
 
@@ -51,7 +49,7 @@ export default function CustomAiAgentsSection() {
               key={index}
               className="rounded-3xl p-6 "
               style={{
-                background: "linear-gradient(180deg, #05000A 0%, #1B1125 100%)"
+                background: "linear-gradient(180deg, #05000A 0%, #1B1125 100%)",
               }}
             >
               <div className="mb-6">

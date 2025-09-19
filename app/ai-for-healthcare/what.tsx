@@ -8,24 +8,29 @@ export default function WhatIsAgent() {
           {/* Left Content */}
           <div className="space-y-8">
             <h2 className="text-white font-bold font-inter max-w-md text-[32px] leading-[150%] tracking-[1%]">
-              What Is{" "}
-              <span className="text-[#BD14FF]">AI Agent Development?</span>
+              We Transform {" "}
+              <span className="text-[#BD14FF]">
+                Healthcare with Artificial Intelligence
+              </span>
             </h2>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              AI agent development involves creating intelligent software
-              systems that can perceive their environment, make decisions, and
-              take actions to achieve specific goals. These autonomous agents
-              use machine learning, natural language processing, and advanced
-              algorithms to simulate human-like reasoning and behavior.
+              As a trusted AI solutions provider, we build AI-powered healthcare
+              systems that help hospitals, clinics, pharmaceutical companies,
+              and startups improve accuracy and efficiency. Our solutions are
+              designed to reduce errors, save time, and make medical processes
+              more reliable.
             </p>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              AI agent development involves creating intelligent software
-              systems that can perceive their environment, make decisions, and
-              take actions to achieve specific goals. These autonomous agents
-              use machine learning, natural language processing, and advanced
-              algorithms to simulate human-like reasoning and behavior.
+              From automating electronic health records and billing to assisting
+              with disease detection, our AI tools simplify complex workflows
+              and give healthcare providers more time to focus on patients.
+              <br />
+              With AI, doctors can detect diseases earlier, predict patient
+              risks, and make smarter, data-driven decisions in real time. This
+              leads to more personalized treatment plans, better outcomes, and
+              improved patient satisfaction.
             </p>
           </div>
 

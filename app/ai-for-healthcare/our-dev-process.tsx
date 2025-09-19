@@ -4,35 +4,40 @@ export default function DevelopmentProcessSection() {
   const processSteps = [
     {
       number: "01",
-      title: "Discovery & Requirement Analysis",
-      description: "Understanding your challenges and goals",
+      title: "Medical Image Analysis",
+      description: "Detect diseases from X-rays, MRIs, and CT scans using AI imaging.",
     },
     {
       number: "02",
-      title: "AI Agent Design",
+      title: "Predictive Health Analytics",
       description:
-        "Crafting workflows, decision-making models, and interaction logic",
+        "Forecast patient risks, hospital admissions, and disease trends.",
     },
     {
       number: "03",
-      title: "Development & Training",
-      description: "Building and training AI models with real-world data",
+      title: "Virtual Health Assistants",
+      description: "AI-powered chatbots for patient support and appointment scheduling.",
     },
     {
       number: "04",
-      title: "Integration",
+      title: "Electronic Health Record (EHR) Automation",
       description:
-        "Connecting AI agents seamlessly with your apps, CRMs, and platforms",
+        "Automate data entry, billing, and record management.",
     },
     {
       number: "05",
-      title: "Testing & Optimization",
-      description: "Ensuring performance, scalability, and compliance",
+      title: "Drug Discovery & Clinical Trials",
+      description: "Accelerate drug research and trial optimization with AI.",
     },
     {
       number: "06",
-      title: "Deployment & Support",
-      description: "Continuous monitoring, updates, and improvements",
+      title: "Remote Patient Monitoring",
+      description: "Track vital signs and health data in real time.",
+    },
+    {
+      number: "07",
+      title: "Healthcare Workflow Automation",
+      description: "Simplify scheduling, claims, and administrative tasks.",
     },
   ];
 
@@ -41,11 +46,11 @@ export default function DevelopmentProcessSection() {
       <div className="max-w-[70rem] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-bold text-white mb-6 leading-[48px] text-center">
-            Our AI Agent Development Process
+            AI Solutions for Healthcare We Offer
           </h2>
           <p className="text-[18px] font-normal text-white/90 max-w-4xl mx-auto leading-[28px] text-center">
-            We follow a strategic and transparent development process to ensure
-            our AI agents deliver measurable business value:
+            At Marqait AI we provide a wide range of AI solutions for
+            healthcare, including:
           </p>
         </div>
 
