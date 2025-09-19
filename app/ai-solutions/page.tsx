@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/growth-pods/hero-section";
-import CTASection from "@/components/growth-pods/cta-section";
+// import CTASection from "@/components/growth-pods/cta-section";
 import EveryIndustry from "@/components/ai-solutions/ai-sol-every-industry";
 import Why from "@/components/ai-solutions/why";
-import CaseStudies from "@/components/ai-solutions/case-studies";
+// import CaseStudies from "@/components/ai-solutions/case-studies";
 import How from "@/components/ai-solutions/how";
+import ContactSection from "@/components/ai-solution-contact";
 
 export const metadata: Metadata = {
   title:
@@ -40,8 +41,9 @@ export default function GrowthPods() {
       <EveryIndustry />
       <How />
       <Why />
-      <CaseStudies />
-      <CTASection />
+      <ContactSection />
+      {/* <CaseStudies /> */}
+      {/* <CTASection /> */}
     </div>
   );
 }
