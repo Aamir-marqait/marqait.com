@@ -20,7 +20,6 @@ export default function Footer() {
     setIsSubscribing(false);
   };
 
-
   const footerLinks: {
     aiTools: Array<{ text: string; url: string }>;
     aiSolutions: Array<{ text: string; url: string }>;
@@ -48,6 +47,7 @@ export default function Footer() {
       { text: "Contact Us", url: "/contacts" },
       { text: "Site Map", url: "/sitemap" },
       { text: "Blogs", url: "/blog" },
+      { text: "Terms and Privacy", url: "/terms-and-privacy" },
     ],
   };
 
