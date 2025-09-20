@@ -19,7 +19,7 @@ export default function AiAgentHero() {
     <section className="relative py-20  overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+        className="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
         style={{
           backgroundImage: "url('/agents/background.png')",
         }}

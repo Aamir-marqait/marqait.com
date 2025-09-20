@@ -41,7 +41,7 @@ export default function Introduction() {
             </p>
             <button
               onClick={openWaitlistModal}
-              className="hidden lg:block cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+              className="lg:block cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
               style={{
                 borderRadius: "15px",
                 borderWidth: "1px",
