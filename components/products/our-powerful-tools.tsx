@@ -84,11 +84,11 @@ export default function OurPowerfulTools() {
                 <div className="p-6 flex flex-col h-full">
                   <div className="mb-4">
                     <Image
-                      src={`/tools/hero${index + 1}.png`}
+                      src={`/tools/hero${index + 1}.jpg`}
                       alt={service.title}
                       width={120}
                       height={120}
-                      className="w-full h-12/12 object-cover"
+                      className="w-full h-[25rem] object-cover"
                     />
                   </div>
                   <h3
