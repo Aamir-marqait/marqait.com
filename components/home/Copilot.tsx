@@ -101,7 +101,7 @@ export default function CopilotSection() {
               sm:text-xs sm:leading-[16.8px] sm:tracking-[0.8px]
               md:text-sm md:leading-[19.6px] md:tracking-[1px]"
             >
-              COPILOT
+              AI Tools
             </span>
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full"></div>
             <div className="flex-1 max-w-[60px] xs:max-w-[80px] sm:max-w-[100px] md:max-w-[150px] lg:max-w-[250px] h-px bg-gradient-to-l from-transparent to-gray-600"></div>
@@ -118,7 +118,7 @@ export default function CopilotSection() {
             variants={itemVariants}
           >
             <motion.span className="text-white" variants={slideLeftVariants}>
-              Manage all your efforts with a smart
+              Explore Our Latest AI Tools
             </motion.span>
             <br />
             <motion.span className="text-white" variants={slideRightVariants}>

@@ -75,7 +75,7 @@ export default function HeroSection({
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Marketing Automation
+                Automation Solutions
               </h1>
             </div>
           </div>
@@ -89,8 +89,8 @@ export default function HeroSection({
               lg:text-[24px] lg:leading-[150%] lg:tracking-[-0.5px]
               text-white lg:text-[rgba(255,255,255,0.90)]"
             >
-              From chai-wala to creator, run campaigns with Fortune precision.
-              No agencies, no complexity, just results.
+              From chai-wala to creator, run campaigns with fortune precision
+              with Marqait, your AI tools & AI solution provider company.
             </p>
           </div>
 
