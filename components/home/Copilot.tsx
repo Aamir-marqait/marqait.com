@@ -118,11 +118,11 @@ export default function CopilotSection() {
             variants={itemVariants}
           >
             <motion.span className="text-white" variants={slideLeftVariants}>
-              Explore Our Latest AI Tools
+              Transform Your Ideas into Reality
             </motion.span>
             <br />
             <motion.span className="text-white" variants={slideRightVariants}>
-              marketing automation platform
+              with Our Latest AI Tools
             </motion.span>
           </motion.h2>
         </div>

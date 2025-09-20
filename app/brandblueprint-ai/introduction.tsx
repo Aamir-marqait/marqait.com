@@ -22,11 +22,9 @@ export default function Introduction() {
           {/* Left Content */}
           <div className="space-y-8">
             <h2 className="text-white font-bold font-inter max-w-md text-[32px] leading-[150%] tracking-[1%]">
-              Introducing Marqait’s Pro
-              <br />
-              <span className="text-[#BD14FF]">
-                AI BrandBlueprint Generator
-              </span>
+              Introducing{" "}
+              <span className="text-[#BD14FF]">BrandBlueprint AI</span> - Your
+              AI BrandBook Generator
             </h2>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
