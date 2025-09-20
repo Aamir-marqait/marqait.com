@@ -1,29 +1,29 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is AdPilot AI?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "AdPilot AI is an advanced advertising automation tool that uses artificial intelligence to launch and optimize ad campaigns across Meta and Google platforms. It drives conversions with AI-driven precision targeting and automated campaign management.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "Which advertising platforms does AdPilot AI support?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "AdPilot AI supports major advertising platforms including Meta (Facebook and Instagram) and Google Ads. The platform automatically optimizes campaigns for each platform's unique requirements to ensure maximum performance.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "How does AdPilot AI optimize ad campaigns?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "AdPilot AI uses machine learning algorithms to analyze performance data, audience behavior, and market trends. It automatically adjusts targeting, bidding, and creative elements to maximize conversions and minimize costs.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "Can AdPilot AI create ad scripts and visuals?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "Yes, AdPilot AI features AI-driven scripting that generates compelling ad copy and automated visual selection that chooses the most effective creative assets based on performance data and audience preferences.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "Does AdPilot AI offer natural language video editing?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "Yes, AdPilot AI includes natural language video editing capabilities that allow you to edit and customize video ads using simple text commands, making professional video ad creation accessible without technical expertise.",
     },
   ];
 
@@ -42,7 +42,7 @@ export default function FaqSection() {
             className="text-[20px] text-white/90 leading-[150%] tracking-[0%] text-center"
             style={{ fontFamily: "Inter", fontWeight: 400 }}
           >
-            Everything you need to know about our AI Campaign Generator
+            Everything you need to know about AdPilot AI
           </p>
         </div>
 

@@ -1,7 +1,20 @@
+"use client";
+import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function Hero() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section className="relative py-20  overflow-hidden">
       {/* Background Image */}
@@ -59,17 +72,20 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 max-w-[50rem] mx-auto px-6 text-center">
           <h1 className="text-[48px] font-bold text-white mb-8 leading-[130%] text-center">
-            AI Agent Development Company
+            AI Customer Service: AI Solutions for Customer Support
           </h1>
 
           <p className="text-[20px] font-normal text-white/90 mb-12 max-w-4xl mx-auto leading-[150%] text-center">
-            Transform your business with intelligent AI agents that automate
-            processes, enhance customer experiences, and drive growth. We
-            specialize in developing custom AI solutions that integrate
-            seamlessly with your existing systems.
+            AI is transforming customer service by enabling faster, more
+            accurate, and personalized support across industries. At Marqait AI,
+            we provide AI-powered customer service solutions that help
+            businesses improve response times, enhance customer satisfaction,
+            and reduce support costs. From AI chatbots to sentiment analysis,
+            our solutions make customer interactions seamless and effective.
           </p>
 
           <button
+            onClick={openWaitlistModal}
             className="text-white transition-colors w-full sm:w-auto text-sm sm:text-base"
             style={{
               paddingTop: "8px",
@@ -93,6 +109,11 @@ export default function Hero() {
           </button>
         </div>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }

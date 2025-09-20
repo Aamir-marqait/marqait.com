@@ -1,29 +1,29 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is BrandBlueprint AI?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "BrandBlueprint AI is an advanced tool that uses artificial intelligence to help businesses develop a complete, consistent brand identity. It generates comprehensive brand guidelines, visual assets, and maintains consistency across all platforms.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How does BrandBlueprint AI create brand guidelines?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "BrandBlueprint AI analyzes your business goals, target audience, and industry to generate instant brand guidelines including color palettes, typography, logo variations, and brand voice recommendations tailored to your unique identity.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "Can BrandBlueprint AI maintain consistency across platforms?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "Yes. BrandBlueprint AI ensures consistent visual identity across all platforms by creating standardized brand assets and guidelines that can be applied to websites, social media, marketing materials, and other brand touchpoints.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "What types of brand assets can the AI generate?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "BrandBlueprint AI can generate logos, color schemes, typography selections, brand style guides, marketing templates, and visual elements that align with your brand's essence and target audience.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "Is BrandBlueprint AI suitable for new businesses?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "Absolutely. BrandBlueprint AI is perfect for startups and new businesses that need to establish a strong brand identity quickly and professionally without the high costs of traditional brand development agencies.",
     },
   ];
 
@@ -42,7 +42,7 @@ export default function FaqSection() {
             className="text-[20px] text-white/90 leading-[150%] tracking-[0%] text-center"
             style={{ fontFamily: "Inter", fontWeight: 400 }}
           >
-            Everything you need to know about our AI Agent Development
+            Everything you need to know about BrandBlueprint AI
           </p>
         </div>
 

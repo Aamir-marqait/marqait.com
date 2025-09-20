@@ -12,7 +12,7 @@ import WaitlistModal from "../components/waitlist-modal";
 
 import DesignPattern from "@/components/home/design-pattern";
 import UI from "@/components/home/UI";
-import ClientTestimonialsSection from "@/components/home/client-testimonials-section";
+// import ClientTestimonialsSection from "@/components/home/client-testimonials-section";
 import FreeTierAgents from "@/components/home/featured-agents-free-tier";
 import ProTierAgents from "@/components/home/featured-agents-pro-tier";
 import UniqueFeatured from "@/components/home/featured-unique";
@@ -100,7 +100,7 @@ export default function Home() {
         <ProTierAgents/>
         <UniqueFeatured/>
         <MarketingTransforms/>
-        <ClientTestimonialsSection />
+        {/* <ClientTestimonialsSection /> */}
         <ContactFormSection ref={contactFormRef} />
         {/* <FAQSection /> */}
         <Toast

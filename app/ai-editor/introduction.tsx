@@ -1,7 +1,20 @@
+"use client"
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function Introduction() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section className="bg-black py-20 px-6 max-w-[70rem]  mx-auto">
       <div className="">
@@ -28,9 +41,9 @@ export default function Introduction() {
               Photo Editor helps you get polished photos instantly. Fast, easy,
               and professional – all in one tool.
             </p>
-            <Link className="hidden lg:block" href={"/contact"}>
-              <button
-                className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+            <button
+              onClick={openWaitlistModal}
+              className="hidden lg:block cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
                 style={{
                   borderRadius: "15px",
                   borderWidth: "1px",
@@ -52,7 +65,6 @@ export default function Introduction() {
               >
                 Upload Your Image
               </button>
-            </Link>
           </div>
 
           {/* Right Illustration */}
@@ -67,6 +79,11 @@ export default function Introduction() {
           </div>
         </div>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }

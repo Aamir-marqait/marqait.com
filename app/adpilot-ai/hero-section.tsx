@@ -1,8 +1,21 @@
+"use client"
+import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function HeroSection() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section className="py-20 px-4">
       <div className="max-w-[70rem] mx-auto">
@@ -62,18 +75,19 @@ export default function HeroSection() {
 
               <p className=" flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                AI-driven precision targeting across platforms
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                Automated campaign optimization for conversions
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Lorem ipsum provides
+                Meta and Google Ads integration
               </p>
 
               <button
+                onClick={openWaitlistModal}
                 className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
                 style={{
                   borderRadius: "15px",
@@ -113,6 +127,11 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }

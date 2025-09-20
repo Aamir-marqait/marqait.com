@@ -1,24 +1,29 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact/contact-form";
+import { Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us - Marqait AI",
-  description: "Looking to collaborate or learn how our AI marketing solutions can support your business objectives? Fill out the form and our team will be in touch shortly.",
-  keywords: "contact us, AI marketing solutions, business collaboration, marketing automation support",
+  description:
+    "Looking to collaborate or learn how our AI marketing solutions can support your business objectives? Fill out the form and our team will be in touch shortly.",
+  keywords:
+    "contact us, AI marketing solutions, business collaboration, marketing automation support",
   alternates: {
-    canonical: "https://www.marqait.com/contact"
+    canonical: "https://www.marqait.com/contact",
   },
   openGraph: {
     title: "Contact Us - Marqait AI",
-    description: "Looking to collaborate or learn how our AI marketing solutions can support your business objectives? Fill out the form and our team will be in touch shortly.",
+    description:
+      "Looking to collaborate or learn how our AI marketing solutions can support your business objectives? Fill out the form and our team will be in touch shortly.",
     url: "https://www.marqait.com/contact",
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Us - Marqait AI",
-    description: "Looking to collaborate or learn how our AI marketing solutions can support your business objectives? Fill out the form and our team will be in touch shortly."
-  }
+    description:
+      "Looking to collaborate or learn how our AI marketing solutions can support your business objectives? Fill out the form and our team will be in touch shortly.",
+  },
 };
 
 export default function ContactPage() {
@@ -106,7 +111,7 @@ export default function ContactPage() {
                     text-xl sm:text-2xl md:text-3xl lg:text-[30px]"
                     style={{
                       fontSize: "30px",
-                      lineHeight: "60px"
+                      lineHeight: "60px",
                     }}
                   >
                     Contact Information :
@@ -116,8 +121,8 @@ export default function ContactPage() {
                       <div className="w-5 h-5 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
+                          width="20"
+                          height="20"
                           viewBox="0 0 24 24"
                           fill="none"
                         >
@@ -135,14 +140,16 @@ export default function ContactPage() {
                         className="text-[#8C45FF] hover:text-purple-300 transition-colors font-inter font-normal
                         text-sm sm:text-base lg:text-[16px]"
                         style={{
-                          fontSize:
-                            "16px",
-                          lineHeight:
-                            "24px",
+                          fontSize: "16px",
+                          lineHeight: "24px",
                         }}
                       >
                         hello@marqait.com
                       </a>
+                    </div>
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <Phone className="text-white h-4 w-4" />
+                      <span className="text-[#8C45FF]">9880542033</span>
                     </div>
                   </div>
                 </div>

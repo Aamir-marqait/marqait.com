@@ -1,8 +1,21 @@
+"use client"
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function HeroSection() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <div className="relative flex min-h-screen flex-col lg:flex-row">
       {/* Left Content */}
@@ -78,9 +91,9 @@ export default function HeroSection() {
           optimization. Use AI for SEO to improve a website visibility and
           ranking in search engines.
         </p>
-        <Link href={"/contact"}>
-          <button
-            className="text-white transition-colors w-full sm:w-auto text-sm sm:text-base"
+        <button
+          onClick={openWaitlistModal}
+          className="text-white transition-colors w-full sm:w-auto text-sm sm:text-base"
             style={{
               paddingTop: "8px",
               paddingLeft: "12px",
@@ -101,7 +114,6 @@ export default function HeroSection() {
           >
             Book a Free Consultation
           </button>
-        </Link>
       </div>
 
       <div className="hidden sm:block absolute sm:relative sm:w-full md:w-1/2 lg:absolute lg:right-0 lg:top-[18px] lg:w-1/2 h-64 sm:h-80 md:h-96 lg:h-full mt-8 sm:mt-0">
@@ -112,6 +124,11 @@ export default function HeroSection() {
           className="object-cover sm:object-contain lg:object-fill lg:object-left rounded-lg sm:rounded-none"
         />
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </div>
   );
 }

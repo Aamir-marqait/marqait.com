@@ -3,33 +3,28 @@ import Image from "next/image";
 export default function AIAgentBenefits() {
   const benefits = [
     {
-      title: "Faster Decisions",
-      description: "Data-driven insights for real-time problem-solving",
+      title: "Improve Customer Satisfaction",
+      description: "Deliver quick, accurate, and personalized support",
       position: "left",
     },
     {
-      title: " Personalized Experience",
-      description: "Adaptive AI agents that understand users better",
+      title: "Boost Team Productivity",
+      description: "Free up agents to focus on complex queries",
       position: "left",
     },
     {
-      title: "DATA-DRIVEN DECISIONS",
-      description: "No guesswork—only actionable insights.",
+      title: "Data-Driven Insights",
+      description: "Track customer queries and improve decision-making",
       position: "left",
     },
     {
-      title: " 24/7 Availability",
-      description: "Always-on virtual support for customers and operations",
+      title: "Reduce Costs",
+      description: "Minimize repetitive manual tasks with automation",
       position: "right",
     },
     {
-      title: "Cost Reduction",
-      description: "Automating repetitive tasks saves time and resources",
-      position: "right",
-    },
-    {
-      title: " Business Scalability",
-      description: "Handle increasing workloads without additional manpower",
+      title: "Increase Scalability",
+      description: "Support growing customer bases without expanding headcount",
       position: "right",
     },
   ];

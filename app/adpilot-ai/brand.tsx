@@ -11,37 +11,37 @@ export default function BrandPage() {
     {
       title: "AI-Driven Scripting",
       description:
-        "Generates comprehensive guidelines covering logo usage, colour palettes (CMYK, RGB, Hex), typography, imagery style, tone of voice, and brand messaging.",
+        "Automatically generates compelling ad scripts and copy using AI that resonates with your target audience and drives conversions across Meta and Google platforms.",
       image: "/pilot/1.png",
     },
     {
       title: "Automated Visual Selection",
       description:
-        "Automatically creates brand assets including logos, business cards, letterheads, and marketing materials based on your brand guidelines.",
+        "Intelligently selects the most effective visual elements, images, and creative assets for your ad campaigns based on performance data and audience preferences.",
       image: "/pilot/2.png",
     },
     {
       title: "Intelligent Text to Speech Narration",
       description:
-        "Creates a dynamic, searchable brand book that can be easily shared with team members and external partners for consistent brand application.",
+        "Converts ad scripts into natural-sounding voiceovers using advanced text-to-speech technology, perfect for video ads and audio campaigns.",
       image: "/pilot/3.png",
     },
     {
       title: "Editing & Pricing",
       description:
-        "Monitors and ensures brand consistency across all touchpoints, providing real-time feedback and suggestions for brand compliance.",
+        "Streamlines the ad creation process with built-in editing tools and transparent pricing models, making campaign management efficient and cost-effective.",
       image: "/pilot/4.png",
     },
     {
       title: "Platform Specific Optimization",
       description:
-        "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
+        "Automatically optimizes ad campaigns for each platform's unique requirements, ensuring maximum performance on Meta, Google, and other advertising channels.",
       image: "/pilot/5.png",
     },
     {
       title: "Natural Language Video Editing",
       description:
-        "Uses artificial intelligence to continuously refine and optimize your brand elements based on performance data and market trends.",
+        "Edit and customize video ads using simple natural language commands, making professional video ad creation accessible to everyone without technical expertise.",
       image: "/pilot/5.png",
     },
   ];

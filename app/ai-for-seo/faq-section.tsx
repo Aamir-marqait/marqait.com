@@ -1,29 +1,29 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is AI for SEO?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "AI for SEO uses artificial intelligence to automate and optimize search engine optimization tasks. Marqait AI offers AI SEO automation services that improve website visibility and ranking in search engines through intelligent content optimization, keyword research, and technical SEO improvements.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How does AI improve SEO performance?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "AI enhances SEO by analyzing search patterns, optimizing content for search engines, automating keyword research, improving site structure, and providing data-driven insights for better search rankings and increased organic traffic.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "Can AI help with keyword research and content optimization?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "Yes, AI can automatically identify high-value keywords, analyze competitor strategies, optimize content for search intent, and suggest improvements to boost your content's search engine visibility and ranking potential.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "What SEO tasks can be automated with AI?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "AI can automate keyword research, content optimization, meta tag generation, technical SEO audits, competitor analysis, performance monitoring, and reporting, allowing you to focus on strategy while AI handles routine optimization tasks.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "How long does it take to see SEO results with AI?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "SEO results with AI typically start showing within 3-6 months, with significant improvements in search rankings and organic traffic visible after 6-12 months. AI accelerates the optimization process but search engine results still require time to develop.",
     },
   ];
 

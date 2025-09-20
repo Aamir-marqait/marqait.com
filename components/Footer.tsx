@@ -1,24 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import { useState, FormEvent, MouseEvent } from "react";
+import { useState, FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter, usePathname } from "next/navigation";
 
-import {
-  scrollToWhatGrowthPods,
-  scrollToHowGrowthPodsWork,
-  scrollToWhoItsFor,
-  scrollToWhyBusinessNeeds,
-} from "@/utils/scrollUtils";
 import { trackCTAClick } from "@/analytics";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSubscribing, setIsSubscribing] = useState(false);
-  const router = useRouter();
-  const pathname = usePathname();
 
   const handleSubscribe = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,72 +20,34 @@ export default function Footer() {
     setIsSubscribing(false);
   };
 
-  const handleGrowthPodClick =
-    (scrollFunction: () => void, buttonName: string) =>
-    (e: MouseEvent<HTMLButtonElement>) => {
-      e.preventDefault();
-      trackCTAClick(buttonName, "Footer");
-      if (pathname === "/growth-pods") {
-        scrollFunction();
-      } else {
-        router.push("/growth-pods");
-        setTimeout(() => scrollFunction(), 100);
-      }
-    };
 
   const footerLinks: {
-    loremIpsum: Array<{
-      text: string;
-      url: string;
-      onClick: (e: MouseEvent<HTMLButtonElement>) => void;
-    }>;
+    aiTools: Array<{ text: string; url: string }>;
+    aiSolutions: Array<{ text: string; url: string }>;
     quickLinks: Array<{ text: string; url: string }>;
-    company: Array<{ text: string; url: string }>;
   } = {
-    loremIpsum: [
-      {
-        text: "What are Growth Pods?",
-        url: "/growth-pods",
-        onClick: handleGrowthPodClick(
-          scrollToWhatGrowthPods,
-          "What are Growth Pods?"
-        ),
-      },
-      {
-        text: " How Growth PodsWorks?",
-        url: "/growth-pods",
-        onClick: handleGrowthPodClick(
-          scrollToHowGrowthPodsWork,
-          "How Growth Pods Works?"
-        ),
-      },
-      {
-        text: "Who It's For?",
-        url: "/growth-pods",
-        onClick: handleGrowthPodClick(scrollToWhoItsFor, "Who It's For?"),
-      },
-      {
-        text: "Why Your Business Needs One?",
-        url: "/growth-pods",
-        onClick: handleGrowthPodClick(
-          scrollToWhyBusinessNeeds,
-          "Why Your Business Needs One?"
-        ),
-      },
+    aiTools: [
+      { text: "BrandMark AI", url: "/brandmark-ai" },
+      { text: "ContentSpark AI", url: "/contentspark-ai" },
+      { text: "BrandBlueprint AI", url: "/brandblueprint-ai" },
+      { text: "ReelCraft AI", url: "/reelcraft-ai" },
+      { text: "AdPilot AI", url: "/adpilot-ai" },
+      { text: "AI Editor", url: "/ai-editor" },
+    ],
+    aiSolutions: [
+      { text: "Custom AI Solutions", url: "/custom-ai-solutions" },
+      { text: "AI For Healthcare", url: "/ai-for-healthcare" },
+      { text: "AI For Startups", url: "/ai-for-startups" },
+      { text: "AI For Customer Service", url: "/ai-for-customer-service" },
+      { text: "AI For Retails", url: "/ai-for-retails" },
+      { text: "AI Agent Development", url: "/ai-agent-development" },
+      { text: "AI For SEO", url: "/ai-for-seo" },
+      { text: "AI For E-Commerce", url: "/ai-for-ecommerce" },
     ],
     quickLinks: [
-      // { text: "News", url: "/" },
-      // { text: "Articles", url: "/" },
       { text: "Contact Us", url: "/contacts" },
       { text: "Site Map", url: "/sitemap" },
-      // { text: "Lorem Ipsum", url: "/" },
-    ],
-    company: [
-      // { text: "Lorem Ipsum", url: "/" },
-      // { text: "Lorem Ipsum", url: "/" },
-      // { text: "Lorem Ipsum", url: "/" },
-      // { text: "Contact Us", url: "/contacts" },
-      // { text: "Partners", url: "/" },
+      { text: "Blogs", url: "/blog" },
     ],
   };
 
@@ -129,48 +82,16 @@ export default function Footer() {
 
             <div className="lg:col-span-8">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
-                {/* Lorem Ipsum Column */}
+                {/* AI Tools Column */}
                 <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   <h3
                     className="text-gray-400 font-inter font-semibold leading-5 tracking-[0.7px] uppercase
                     text-xs sm:text-sm"
                   >
-                    Growth Pods
+                    AI TOOLS
                   </h3>
                   <ul className="space-y-2 sm:space-y-3 lg:space-y-4">
-                    {footerLinks.loremIpsum.map((link, index) => (
-                      <li key={index}>
-                        {link.onClick ? (
-                          <button
-                            onClick={link.onClick}
-                            className="text-gray-300 hover:text-white transition-colors duration-200 font-inter font-normal leading-6
-                              text-sm sm:text-base text-left"
-                          >
-                            {link.text}
-                          </button>
-                        ) : (
-                          <Link
-                            href={link.url}
-                            className="text-gray-300 hover:text-white transition-colors duration-200 font-inter font-normal leading-6
-                              text-sm sm:text-base"
-                          >
-                            {link.text}
-                          </Link>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="space-y-3 sm:space-y-4 lg:space-y-6">
-                  <h3
-                    className="text-gray-400 font-inter font-semibold leading-5 tracking-[0.7px] uppercase
-                    text-xs sm:text-sm"
-                  >
-                    QUICK LINKS
-                  </h3>
-                  <ul className="space-y-2 sm:space-y-3 lg:space-y-4">
-                    {footerLinks.quickLinks.map((link, index) => (
+                    {footerLinks.aiTools.map((link, index) => (
                       <li key={index}>
                         <Link
                           href={link.url}
@@ -185,18 +106,44 @@ export default function Footer() {
                   </ul>
                 </div>
 
+                {/* AI Solutions Column */}
                 <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   <h3
                     className="text-gray-400 font-inter font-semibold leading-5 tracking-[0.7px] uppercase
                     text-xs sm:text-sm"
                   >
-                    {/* COMPANY */}
+                    AI SOLUTIONS
                   </h3>
                   <ul className="space-y-2 sm:space-y-3 lg:space-y-4">
-                    {footerLinks.company.map((link, index) => (
+                    {footerLinks.aiSolutions.map((link, index) => (
                       <li key={index}>
                         <Link
                           href={link.url}
+                          onClick={() => trackCTAClick(link.text, "Footer")}
+                          className="text-gray-300 hover:text-white transition-colors duration-200 font-inter font-normal leading-6
+                            text-sm sm:text-base"
+                        >
+                          {link.text}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Quick Links Column */}
+                <div className="space-y-3 sm:space-y-4 lg:space-y-6">
+                  <h3
+                    className="text-gray-400 font-inter font-semibold leading-5 tracking-[0.7px] uppercase
+                    text-xs sm:text-sm"
+                  >
+                    QUICK LINKS
+                  </h3>
+                  <ul className="space-y-2 sm:space-y-3 lg:space-y-4">
+                    {footerLinks.quickLinks.map((link, index) => (
+                      <li key={index}>
+                        <Link
+                          href={link.url}
+                          onClick={() => trackCTAClick(link.text, "Footer")}
                           className="text-gray-300 hover:text-white transition-colors duration-200 font-inter font-normal leading-6
                             text-sm sm:text-base"
                         >

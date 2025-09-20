@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function UniqueFeatured() {
   return (
@@ -43,28 +44,30 @@ export default function UniqueFeatured() {
               image or video—can be edited in our intuitive editor using natural
               language. Simply converse with the AI to refine your creations
             </p>
-            <button
-              className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
+            <Link href={"/ai-editor"}>
+              <button
+                className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto
                 px-3 py-2 text-xs  h-[45px] leading-[20px]
                 sm:px-4 sm:py-2.5 sm:text-sm  sm:h-[50px] sm:leading-[24px]
                 md:px-4 md:py-2 md:text-base  md:h-[55px] md:leading-[28px]
                  lg:h-auto lg:text-[15.6px] lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
-              style={{
-                background:
-                  "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
-                borderRadius: "16px",
-              }}
-            >
-              Learn More
-              <Image
-                src="/icons/arrow.svg"
-                alt="arrow-right"
-                width={30}
-                height={24}
-                className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
-              />
-            </button>
+                style={{
+                  background:
+                    "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
+                  borderRadius: "16px",
+                }}
+              >
+                Try AI Editor
+                <Image
+                  src="/icons/arrow.svg"
+                  alt="arrow-right"
+                  width={30}
+                  height={24}
+                  className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
+                />
+              </button>
+            </Link>
           </div>
 
           <div className="hero-image-container flex-1 h-[400px]">

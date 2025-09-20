@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { trackCTAClick } from "../../analytics";
 
 export default function HeroSection({
@@ -48,40 +47,36 @@ export default function HeroSection({
 
             {/* AI-Powered Marketing Automation text */}
             <div className="relative z-10 mt-10">
-              <motion.h1
+              <h1
                 className="font-inter text-white font-medium text-center tracking-tight
                 text-[32px] leading-[38px]
                 xs:text-[20px] xs:leading-[24px] xs:tracking-[-2px]
                 sm:text-[30px] sm:leading-[36px] sm:tracking-[-2.5px]
                 md:text-[40px] md:leading-[48px] md:tracking-[-3px]
                 lg:text-[52px] lg:leading-[62px] lg:tracking-[-3.5px]
-                xl:text-[48px] xl:leading-[100px] xl:tracking-[-4.149px]"
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                xl:text-[48px] xl:leading-[100px] xl:tracking-[-4.149px]
+                animate-in fade-in slide-in-from-bottom-6 duration-700"
               >
                 AI-Powered
-              </motion.h1>
-              <motion.h1
+              </h1>
+              <h1
                 className="font-inter font-medium text-center tracking-tight -mt-3
                   text-[32px] leading-[38px]
                   xs:text-[20px] xs:leading-[24px] xs:tracking-[-2px] xs:-mt-2
                   sm:text-[30px] sm:leading-[36px] sm:tracking-[-2.5px] sm:-mt-2
                   md:text-[40px] md:leading-[48px] md:tracking-[-3px] md:-mt-3
                   lg:text-[50px] lg:leading-[62px] lg:tracking-[-3.5px] lg:-mt-4
-                  xl:text-[48px] xl:leading-[65px] xl:tracking-[-4.149px] xl:-mt-4"
+                  xl:text-[48px] xl:leading-[65px] xl:tracking-[-4.149px] xl:-mt-4
+                  animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200"
                 style={{
                   background: "linear-gradient(180deg, #FFF 0%, #B372CF 80%)",
                   backgroundClip: "text",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               >
                 Marketing Automation
-              </motion.h1>
+              </h1>
             </div>
           </div>
 

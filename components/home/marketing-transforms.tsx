@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -85,7 +84,7 @@ export default function MarketingTransforms() {
   ];
 
   return (
-    <section className=" px-4 bg-black">
+    <section className=" px-4 bg-black mb-16">
       <motion.div
         ref={ref}
         className="relative mx-auto px-4 sm:px-6 lg:px-8 xl:px-12"
@@ -161,10 +160,10 @@ export default function MarketingTransforms() {
               </p>
 
               {/* Learn More Link */}
-              <button className="inline-flex items-center gap-2 font-inter font-medium text-sm leading-[150%] text-[#D26DFE] hover:text-purple-300 transition-colors group">
+              {/* <button className="inline-flex items-center gap-2 font-inter font-medium text-sm leading-[150%] text-[#D26DFE] hover:text-purple-300 transition-colors group">
                 <span>Learn more</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </button> */}
             </motion.div>
           ))}
         </motion.div>

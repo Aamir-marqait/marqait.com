@@ -1,29 +1,29 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What is AI Social Media Post Generator?",
+      question: "What is AI in Customer Service?",
       answer:
-        "AI Social Media Post Generator is a tool that uses artificial intelligence to create personalized social media posts. Marqait AI offers a free AI social media post generator tool designed to help users create, schedule and share social posts.",
+        "AI in customer service uses artificial intelligence tools like chatbots, NLP, and automation to improve support efficiency and customer satisfaction.",
     },
     {
-      question: "Is Marqait's AI Social Media Post Generator free to use?",
+      question: "How does AI improve customer support?",
       answer:
-        "Yes. You can use our Free AI Social Media Post Generator to create unlimited posts. We also offer premium features for businesses and marketers who want advanced customization and scheduling.",
+        "AI reduces wait times, provides instant responses, detects customer emotions, and personalizes support interactions.",
     },
     {
-      question: "Can I generate Instagram posts with AI?",
+      question: "Can AI replace human agents?",
       answer:
-        "Yes. You can create eye-catching captions, trending hashtags, and content ideas designed for maximum engagement on Instagram.",
+        "AI handles repetitive queries, but human agents are still essential for complex or sensitive issues. Together, they deliver a hybrid, efficient service model.",
     },
     {
-      question: "Can I use AI-generated posts for business marketing?",
+      question: "Is AI customer service only for big companies?",
       answer:
-        "Yes, you can use AI-generated social media posts for business promotion, brand awareness, e-commerce marketing, and influencer growth.",
+        "No. AI solutions can be scaled for small businesses, startups, and enterprises.",
     },
     {
-      question: "Will the AI help with hashtags and keywords?",
+      question: "How long does it take to implement AI in customer support?",
       answer:
-        "Yes, the tool comes with an AI Hashtag Generator that suggests trending and relevant hashtags to increase your reach and engagement.",
+        "Implementation varies—simple chatbots can be deployed in weeks, while advanced systems like sentiment analysis may take a few months.",
     },
   ];
 

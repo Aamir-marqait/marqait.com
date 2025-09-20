@@ -4,35 +4,38 @@ export default function DevelopmentProcessSection() {
   const processSteps = [
     {
       number: "01",
-      title: "Discovery & Requirement Analysis",
-      description: "Understanding your challenges and goals",
+      title: "AI Chatbots & Virtual Assistants",
+      description: "Provide instant, automated responses to customer inquiries",
     },
     {
       number: "02",
-      title: "AI Agent Design",
-      description:
-        "Crafting workflows, decision-making models, and interaction logic",
+      title: "Sentiment Analysis Tools",
+      description: "Detect customer emotions to adjust responses appropriately",
     },
     {
       number: "03",
-      title: "Development & Training",
-      description: "Building and training AI models with real-world data",
+      title: "Automated Ticket Routing",
+      description: "Assign queries to the right agents instantly for faster resolution",
     },
     {
       number: "04",
-      title: "Integration",
-      description:
-        "Connecting AI agents seamlessly with your apps, CRMs, and platforms",
+      title: "Voice AI & Call Center Automation",
+      description: "Enable smart voice-based customer support solutions",
     },
     {
       number: "05",
-      title: "Testing & Optimization",
-      description: "Ensuring performance, scalability, and compliance",
+      title: "Personalized Customer Interactions",
+      description: "Use AI to tailor conversations and recommendations",
     },
     {
       number: "06",
-      title: "Deployment & Support",
-      description: "Continuous monitoring, updates, and improvements",
+      title: "Knowledge Base Automation",
+      description: "Generate self-service FAQs and support articles automatically",
+    },
+    {
+      number: "07",
+      title: "Fraud & Spam Detection",
+      description: "Prevent fraudulent requests and spam interactions",
     },
   ];
 
@@ -41,11 +44,10 @@ export default function DevelopmentProcessSection() {
       <div className="max-w-[70rem] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-bold text-white mb-6 leading-[48px] text-center">
-            Our AI Agent Development Process
+            AI Solutions for Customer Service We Offer
           </h2>
           <p className="text-[18px] font-normal text-white/90 max-w-4xl mx-auto leading-[28px] text-center">
-            We follow a strategic and transparent development process to ensure
-            our AI agents deliver measurable business value:
+            Marqait AI develops customized solutions tailored to your business:
           </p>
         </div>
 

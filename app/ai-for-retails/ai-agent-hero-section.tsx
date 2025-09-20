@@ -1,7 +1,20 @@
+"use client"
+import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function HeroSection() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section className="relative py-20  overflow-hidden">
       {/* Background Image */}
@@ -72,6 +85,7 @@ export default function HeroSection() {
           </p>
 
           <button
+            onClick={openWaitlistModal}
             className="text-white transition-colors w-full sm:w-auto text-sm sm:text-base"
             style={{
               paddingTop: "8px",
@@ -95,6 +109,11 @@ export default function HeroSection() {
           </button>
         </div>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }

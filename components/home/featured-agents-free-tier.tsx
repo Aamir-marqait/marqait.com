@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function FreeTierAgents() {
   return (
@@ -57,28 +58,31 @@ export default function FreeTierAgents() {
                 Design your brand identity with AI-powered logo generation.
                 Simple, fast, and professional.
               </p>
-              <button
-                className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99] touch-manipulation
+              <Link href={"/brandmark-ai"}>
+                {" "}
+                <button
+                  className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99] touch-manipulation
                 w-full sm:w-auto
                 px-4 py-3 text-sm h-[48px] leading-[20px]
                 sm:px-3 sm:py-2 sm:text-base sm:h-auto sm:leading-[24px]
                 lg:px-4 lg:py-2 lg:text-[15.6px] lg:h-auto lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
-                style={{
-                  background:
-                    "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
-                  borderRadius: "16px",
-                }}
-                aria-label="Try BrandMark AI logo generator"
-              >
-                Try BrandMark AI
-                <Image
-                  src="/icons/arrow.svg"
-                  alt=""
-                  width={30}
-                  height={24}
-                  className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
-                />
-              </button>
+                  style={{
+                    background:
+                      "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
+                    borderRadius: "16px",
+                  }}
+                  aria-label="Try BrandMark AI logo generator"
+                >
+                  Try BrandMark AI
+                  <Image
+                    src="/icons/arrow.svg"
+                    alt=""
+                    width={30}
+                    height={24}
+                    className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
+                  />
+                </button>
+              </Link>
             </div>
           </motion.div>
 
@@ -117,28 +121,30 @@ export default function FreeTierAgents() {
                 Boost your social presence with AI-driven content creation.
                 Tailored posts for every platform
               </p>
-              <button
-                className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99] touch-manipulation
+              <Link href={"/contentspark-ai"}>
+                <button
+                  className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99] touch-manipulation
                 w-full sm:w-auto
                 px-4 py-3 text-sm h-[48px] leading-[20px]
                 sm:px-3 sm:py-2 sm:text-base sm:h-[52px] sm:leading-[24px]
                 lg:px-4 lg:py-2 lg:text-[15.6px] lg:h-auto lg:leading-[30px] lg:tracking-[0px] lg:font-semibold"
-                style={{
-                  background:
-                    "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
-                  borderRadius: "16px",
-                }}
-                aria-label="Try ContentSpark AI social media generator"
-              >
-                Try ContentSpark AI
-                <Image
-                  src="/icons/arrow.svg"
-                  alt=""
-                  width={30}
-                  height={24}
-                  className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
-                />
-              </button>
+                  style={{
+                    background:
+                      "linear-gradient(0deg, rgba(184, 18, 255, 0.765) 0%, rgba(110, 11, 153, 0.85) 90.91%)",
+                    borderRadius: "16px",
+                  }}
+                  aria-label="Try ContentSpark AI social media generator"
+                >
+                  Try ContentSpark AI
+                  <Image
+                    src="/icons/arrow.svg"
+                    alt=""
+                    width={30}
+                    height={24}
+                    className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
+                  />
+                </button>
+              </Link>
             </div>
           </motion.div>
         </div>

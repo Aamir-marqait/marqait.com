@@ -1,8 +1,21 @@
+"use client";
+import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import WaitlistModal from "../../components/waitlist-modal";
 
 export default function HeroSection() {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
+  const openWaitlistModal = () => {
+    setIsWaitlistModalOpen(true);
+  };
+
+  const closeWaitlistModal = () => {
+    setIsWaitlistModalOpen(false);
+  };
+
   return (
     <section className="py-20 px-4">
       <div className="max-w-[70rem] mx-auto">
@@ -65,7 +78,12 @@ export default function HeroSection() {
               </p>
 
               <button
-                className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  openWaitlistModal();
+                }}
+                className="cursor-pointer z-50 relative flex items-center transition-all duration-200 justify-center gap-2"
                 style={{
                   borderRadius: "15px",
                   borderWidth: "1px",
@@ -83,6 +101,7 @@ export default function HeroSection() {
                   letterSpacing: "0px",
                   verticalAlign: "middle",
                   color: "#F2F0F5",
+                  cursor: "pointer",
                 }}
               >
                 Book a Free Consultation
@@ -104,6 +123,11 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      <WaitlistModal
+        isOpen={isWaitlistModalOpen}
+        onClose={closeWaitlistModal}
+      />
     </section>
   );
 }
