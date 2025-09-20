@@ -34,31 +34,31 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
       path: "/products",
       dropdown: [
         {
-          name: "BrandMark AI",
+          name: "AI Logo Generator",
           path: "/brandmark-ai",
           description: "Create logo in seconds",
           icon: "/copilot/LogoGenerator.jpg",
         },
         {
-          name: "ContentSpark AI",
+          name: "AI Social Media Post Generator",
           path: "/contentspark-ai",
           description: "Generates social media post",
           icon: "/copilot/Social.jpg",
         },
         {
-          name: "BrandBlueprint AI",
+          name: "AI BrandBook Generator",
           path: "/brandblueprint-ai",
           description: "Generates brand book",
           icon: "/copilot/Branding.jpg",
         },
         {
-          name: "ReelCraft AI",
+          name: "AI Reels Generator",
           path: "/reelcraft-ai",
           description: "Generates engaging reels",
           icon: "/copilot/strategy.jpg",
         },
         {
-          name: "AdPilot AI",
+          name: "AI Campaign Generator",
           path: "/adpilot-ai",
           description: "Generates campaigns",
           icon: "/copilot/Campaign.jpg",
