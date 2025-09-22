@@ -28,17 +28,16 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Marketing Automation Platform for Everyone - Marqait AI",
+  title: "Marqait AI - Best AI Development Company In Bengaluru, India",
   description:
-    "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
-  keywords:
-    "AI marketing, marketing automation, digital marketing platform, marketing strategy, brand development, campaign management, marketing agency alternative",
+    "Marqait AI, an AI development company, Our AI development service includes AI solutions, marketing automation, and advanced AI tools.",
+
   authors: [{ name: "MARQAIT" }],
   robots: "index, follow",
   openGraph: {
-    title: "Marketing Automation Platform for Everyone - Marqait AI",
+    title: "Marqait AI - Best AI Development Company In Bengaluru, India",
     description:
-      "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
+      "Marqait AI, an AI development company, Our AI development service includes AI solutions, marketing automation, and advanced AI tools.",
     type: "website",
     url: "https://marqait.com",
     images: [
@@ -54,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marketing Automation Platform for Everyone - Marqait AI",
+    title: "Marqait AI - Best AI Development Company In Bengaluru, India",
     description:
-      "Marketing automation help you automate tasks, run campaigns, improve efficiency and lead generation. Explore Marqait AI marketing automation platform.",
+      "Marqait AI, an AI development company, Our AI development service includes AI solutions, marketing automation, and advanced AI tools.",
     images: ["https://marqait.com/twitter-image.jpg"],
     site: "@marqait",
     creator: "@marqait",
