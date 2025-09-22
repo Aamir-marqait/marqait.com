@@ -26,12 +26,15 @@ export default function Footer() {
     quickLinks: Array<{ text: string; url: string }>;
   } = {
     aiTools: [
-      { text: "AI Logo Generator", url: "/brandmark-ai" },
-      { text: "AI Social Media Post Generator", url: "/contentspark-ai" },
-      { text: "AI BrandBook Generator", url: "/brandblueprint-ai" },
-      { text: "AI Reel Generator", url: "/reelcraft-ai" },
-      { text: "AI Campaign Generator", url: "/adpilot-ai" },
-      { text: "AI Image Editor", url: "/ai-editor" },
+      { text: "AI Logo Generator", url: "/ai-logo-generator" },
+      {
+        text: "AI Social Media Post Generator",
+        url: "/ai-social-media-post-generator",
+      },
+      { text: "AI BrandBook Generator", url: "/ai-brandbook-generator" },
+      { text: "AI Reel Generator", url: "/ai-reel-generator" },
+      { text: "AI Campaign Generator", url: "/ai-campaign-generator" },
+      { text: "AI Image Editor", url: "/ai-image-editor" },
     ],
     aiSolutions: [
       { text: "Custom AI Solutions", url: "/custom-ai-solutions" },
