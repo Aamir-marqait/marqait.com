@@ -6,37 +6,37 @@ const services = [
     title: "BrandMark AI",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
-    link: "/brandmark-ai",
+    link: "/ai-logo-generator",
   },
   {
     title: "BrandBlueprint AI",
     description:
       "Build your brand identity with Marqait AI Brand Book Generator. Our AI organizes your logos, colors, fonts, and guidelines into a professional brand book. It helps you create stunning, interactive digital brand books with ease.",
-    link: "/brandblueprint-ai",
+    link: "/ai-brandbook-generator",
   },
   {
     title: "ReelCraft AI",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
-    link: "/reelcraft-ai",
+    link: "/ai-reel-generator",
   },
   {
     title: "AdPilot AI",
     description:
       "Create powerful campaigns in minutes with Marqait AI Campaign Generator. Our AI helps you generate marketing, ad, and social media campaigns that boost engagement, maximize ROI, and save time..",
-    link: "/adpilot-ai",
+    link: "/ai-campaign-generator",
   },
   {
     title: "ContentSpark AI",
     description:
       "Create social media posts with Marqait AI Social Media Post Generator. Type your idea, and our AI instantly generates the best social media posts that help you save time and stay consistent across all your platforms",
-    link: "/contentspark-ai",
+    link: "/ai-social-media-post-generator",
   },
   {
     title: "Image Editor AI",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
-    link: "/ai-editor",
+    link: "/ai-image-editor",
   },
 ];
 

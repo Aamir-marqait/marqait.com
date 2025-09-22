@@ -35,8 +35,8 @@ const AITools = () => {
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
       <div className="w-full max-w-none">
         <AiPowerhouseHero />
-        <KeyBenefits />
         <OurPowerfulTools />
+        <KeyBenefits />
         <WhatAreTools />
         <FaqSection />
         <FinalCtaSection />

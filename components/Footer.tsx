@@ -26,12 +26,15 @@ export default function Footer() {
     quickLinks: Array<{ text: string; url: string }>;
   } = {
     aiTools: [
-      { text: "BrandMark AI", url: "/brandmark-ai" },
-      { text: "ContentSpark AI", url: "/contentspark-ai" },
-      { text: "BrandBlueprint AI", url: "/brandblueprint-ai" },
-      { text: "ReelCraft AI", url: "/reelcraft-ai" },
-      { text: "AdPilot AI", url: "/adpilot-ai" },
-      { text: "AI Editor", url: "/ai-editor" },
+      { text: "AI Logo Generator", url: "/ai-logo-generator" },
+      {
+        text: "AI Social Media Post Generator",
+        url: "/ai-social-media-post-generator",
+      },
+      { text: "AI BrandBook Generator", url: "/ai-brandbook-generator" },
+      { text: "AI Reel Generator", url: "/ai-reel-generator" },
+      { text: "AI Campaign Generator", url: "/ai-campaign-generator" },
+      { text: "AI Image Editor", url: "/ai-image-editor" },
     ],
     aiSolutions: [
       { text: "Custom AI Solutions", url: "/custom-ai-solutions" },
@@ -72,10 +75,14 @@ export default function Footer() {
                 text-sm sm:text-base"
               >
                 <p>
-                  Marqait is an AI-powered marketing automation platform that
-                  helps to scale your business. With our AI marketing automation
-                  solutions, streamline your email campaigns, automate social
-                  media posts, and intelligent campaign generators and more.
+                  Marqait AI is an AI development company that provides AI
+                  solutions, marketing automation, and advanced AI tools. It
+                  offers custom AI solutions, including AI for Healthcare, AI
+                  for Startups, AI for Customer Service, AI for Retail, AI for
+                  SEO, AI for E-Commerce, and AI Agent Development.
+                  <br /> <br /> Generate social media posts, design logos,
+                  create reels, run ad campaigns, build brandbooks, or edit
+                  photos online with Marqait AI Tools.
                 </p>
               </div>
             </div>
