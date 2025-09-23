@@ -3,31 +3,31 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "BrandMark AI",
+    title: "AI Logo Generator",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
     link: "/ai-logo-generator",
   },
   {
-    title: "BrandBlueprint AI",
+    title: "AI Brandbook Generator",
     description:
       "Build your brand identity with Marqait AI Brand Book Generator. Our AI organizes your logos, colors, fonts, and guidelines into a professional brand book. It helps you create stunning, interactive digital brand books with ease.",
     link: "/ai-brandbook-generator",
   },
   {
-    title: "ReelCraft AI",
+    title: "AI Reel Generator",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
     link: "/ai-reel-generator",
   },
   {
-    title: "AdPilot AI",
+    title: "AI Campaign Generator",
     description:
       "Create powerful campaigns in minutes with Marqait AI Campaign Generator. Our AI helps you generate marketing, ad, and social media campaigns that boost engagement, maximize ROI, and save time..",
     link: "/ai-campaign-generator",
   },
   {
-    title: "ContentSpark AI",
+    title: "AI Social Media Post Generator",
     description:
       "Create social media posts with Marqait AI Social Media Post Generator. Type your idea, and our AI instantly generates the best social media posts that help you save time and stay consistent across all your platforms",
     link: "/ai-social-media-post-generator",
@@ -91,7 +91,7 @@ export default function OurPowerfulTools() {
                       className="w-full h-[25rem] object-cover"
                     />
                   </div>
-                  <h3
+                  <h2
                     className="mb-4 text-white group-hover:text-purple-300 transition-colors"
                     style={{
                       fontFamily: "Inter",
@@ -102,7 +102,7 @@ export default function OurPowerfulTools() {
                     }}
                   >
                     {service.title}
-                  </h3>
+                  </h2>
                   <p
                     className="text-white mb-6 flex-grow"
                     style={{
