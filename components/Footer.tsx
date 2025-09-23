@@ -50,7 +50,8 @@ export default function Footer() {
       { text: "Contact Us", url: "/contacts" },
       { text: "Site Map", url: "/sitemap" },
       { text: "Blogs", url: "/blog" },
-      { text: "Terms and Privacy", url: "/terms-and-privacy" },
+      { text: "Terms of Service", url: "/terms" },
+      { text: "Privacy Policy", url: "/privacy-policy" },
     ],
   };
 
