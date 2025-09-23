@@ -129,7 +129,7 @@ export default function EveryIndustry() {
                       className="w-16 h-16 object-contain"
                     />
                   </div>
-                  <h3
+                  <h2
                     className="mb-4 text-white group-hover:text-purple-300 transition-colors"
                     style={{
                       fontFamily: "Inter",
@@ -140,7 +140,7 @@ export default function EveryIndustry() {
                     }}
                   >
                     {service.title}
-                  </h3>
+                  </h2>
                   <p
                     className="text-white mb-6 flex-grow"
                     style={{
