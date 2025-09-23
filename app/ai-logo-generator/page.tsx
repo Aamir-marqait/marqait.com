@@ -13,8 +13,6 @@ export const metadata: Metadata = {
   title: "Free AI Logo Generator - Online Text to Logo Maker",
   description:
     "Generate unique logo with a text prompt using Marqait's free AI logo generator. Input simple text prompts and our AI makes logo design online for you.",
-  keywords:
-    "AI logo generator, free logo maker, text to logo, AI design tools, online logo generator",
   alternates: {
     canonical: "https://www.marqait.com/ai-logo-generator",
   },

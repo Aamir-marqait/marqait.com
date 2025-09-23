@@ -39,9 +39,9 @@ export default function FeatureTwo() {
           </div>
           <div className="space-y-8">
             <div className="flex flex-col gap-3">
-              <h1 className="font-bold text-white text-[28px] leading-[150%] tracking-[0%]">
+              <h2 className="font-bold text-white text-[28px] leading-[150%] tracking-[0%]">
                 Add Effects and Filters to Your Photos with AI
-              </h1>
+              </h2>
             </div>
             {processSteps.map((step, index) => (
               <div key={index} className="flex gap-6">

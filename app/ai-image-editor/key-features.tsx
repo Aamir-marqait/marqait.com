@@ -287,9 +287,9 @@ export default function KeyFeature() {
     <div className="min-h-screen bg-black text-white py-16 px-4">
       <div className="max-w-[60rem] mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-[32px] text-[#F2F2F2] font-bold leading-[150%] tracking-[0%] text-center mb-6">
+          <h2 className="text-4xl md:text-[32px] text-[#F2F2F2] font-bold leading-[150%] tracking-[0%] text-center mb-6">
             Key Features of Our AI Photo Editor
-          </h1>
+          </h2>
           <p className="text-[17px] text-white/90 leading-[150%] tracking-[0%] text-center max-w-4xl mx-auto text-pretty">
             Our online photo editor tools make it easy to edit images and
             photos, fast!

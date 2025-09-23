@@ -43,9 +43,9 @@ export default function Benefits() {
         <div className="max-w-[70rem] mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-white font-bold font-inter text-center text-[36px] leading-[150%] tracking-[1%]">
+            <h2 className="text-white font-bold font-inter text-center text-[36px] leading-[150%] tracking-[1%]">
               Our Benefits
-            </h1>
+            </h2>
             <p className="text-[18px] font-normal text-white/90 max-w-4xl mx-auto leading-[28px] text-center">
               a dummy or placeholder text commonly used in graphic design,
               publishing, and web development. Its purpose is to permit a page

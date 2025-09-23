@@ -65,9 +65,9 @@ export default function HeroSection() {
             </nav>
             {/* Content */}
             <div className="space-y-8">
-              <h2 className="text-[48px] font-bold bg-gradient-to-br from-white to-[#B372CF] bg-clip-text text-transparent leading-[130%] tracking-[-0.05em] align-middle font-inter">
+              <h1 className="text-[48px] font-bold bg-gradient-to-br from-white to-[#B372CF] bg-clip-text text-transparent leading-[130%] tracking-[-0.05em] align-middle font-inter">
                 AI Photo Editor Online: Marqait AI
-              </h2>
+              </h1>
               <p className="text-[18px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 Edit photos instantly with Marqait AI Photo Editor. Enhance
                 images, remove backgrounds, retouch faces, and edit texts using
