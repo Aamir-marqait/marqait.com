@@ -1,7 +1,9 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 function HeroSection() {
@@ -19,6 +21,35 @@ function HeroSection() {
     >
       <div className="absolute inset-0 bg-black/60 z-5"></div>
       <div className=" relative z-10 container mx-auto px-4 py-8 sm:py-12 lg:py-16">
+        <nav className="flex items-center space-x-2 mb-8 sm:mb-16 md:mb-24 lg:mb-20">
+          <Link
+            href="/"
+            className="text-white text-xs sm:text-sm"
+            style={{
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0%",
+            }}
+          >
+            Home
+          </Link>
+          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+          <span
+            className="text-white/70 text-xs sm:text-sm"
+            style={{
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0%",
+            }}
+          >
+            AI Solutions
+          </span>
+        </nav>
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-0  items-center min-h-[80vh]">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}

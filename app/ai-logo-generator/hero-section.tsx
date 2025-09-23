@@ -1,6 +1,8 @@
 "use client"
 import { useState } from "react";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import WaitlistModal from "../../components/waitlist-modal";
 
 export default function HeroSection() {
@@ -17,7 +19,51 @@ export default function HeroSection() {
 
   return (
     <section className="pt-20 px-4">
-      <div className="max-w-[70rem] mx-auto text-center">
+      <div className="max-w-[70rem] mx-auto">
+        <nav className="flex items-center space-x-2 mb-8 sm:mb-16 md:mb-24 lg:mb-20">
+          <Link
+            href="/"
+            className="text-white text-xs sm:text-sm"
+            style={{
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0%",
+            }}
+          >
+            Home
+          </Link>
+          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+          <Link
+            href="/ai-tools"
+            className="text-white text-xs sm:text-sm"
+            style={{
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0%",
+            }}
+          >
+            AI Tools
+          </Link>
+          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+          <span
+            className="text-white/70 text-xs sm:text-sm"
+            style={{
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0%",
+            }}
+          >
+            AI Logo Generator
+          </span>
+        </nav>
+        
+        <div className="text-center">
         {/* Header Content */}
         <div className="mb-16">
           <h2 className="text-[64px] font-bold mb-4 leading-[72px] tracking-[0%] align-middle bg-gradient-to-br from-white from-10% to-[#B372CF] to-90% bg-clip-text text-transparent">
@@ -90,6 +136,7 @@ export default function HeroSection() {
             height={600}
             className="w-full h-auto"
           />
+        </div>
         </div>
       </div>
 
