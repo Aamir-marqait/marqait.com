@@ -58,7 +58,7 @@ export default function FreeTierAgents() {
                 Design your brand identity with AI-powered logo generation.
                 Simple, fast, and professional.
               </p>
-              <Link href={"/brandmark-ai"}>
+              <Link href={"/ai-logo-generator"}>
                 {" "}
                 <button
                   className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99] touch-manipulation
@@ -121,7 +121,7 @@ export default function FreeTierAgents() {
                 Boost your social presence with AI-driven content creation.
                 Tailored posts for every platform
               </p>
-              <Link href={"/contentspark-ai"}>
+              <Link href={"/ai-social-media-post-generator"}>
                 <button
                   className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99] touch-manipulation
                 w-full sm:w-auto
