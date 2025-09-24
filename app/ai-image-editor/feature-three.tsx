@@ -28,9 +28,9 @@ export default function FeatureThree() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div className="space-y-8">
             <div className="flex flex-col gap-3">
-              <h1 className="font-bold text-white text-[28px] leading-[150%] tracking-[0%]">
+              <h2 className="font-bold text-white text-[28px] leading-[150%] tracking-[0%]">
                 Edit Photo with AI: Simple Tools, Powerful Results
-              </h1>
+              </h2>
             </div>
             {processSteps.map((step, index) => (
               <div key={index} className="flex gap-6">

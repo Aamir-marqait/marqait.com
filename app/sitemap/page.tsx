@@ -54,38 +54,38 @@ export default function Sitemap() {
       title: "AI Tools",
       items: [
         {
-          title: "BrandMark AI",
-          url: "/brandmark-ai",
+          title: "AI Logo Generator",
+          url: "/ai-logo-generator",
           description:
             "Create professional logos in seconds with AI-powered logo generation",
         },
         {
-          title: "ContentSpark AI",
-          url: "/contentspark-ai",
+          title: "AI Social Media Post Generator",
+          url: "/ai-social-media-post-generator",
           description:
             "Generate engaging social media posts with AI-powered content creation",
         },
         {
-          title: "BrandBlueprint AI",
-          url: "/brandblueprint-ai",
+          title: "AI BrandBook Generator",
+          url: "/ai-brandbook-generator",
           description:
             "Create comprehensive brand books and guidelines with AI assistance",
         },
         {
-          title: "ReelCraft AI",
-          url: "/reelcraft-ai",
+          title: "AI Reels Generator",
+          url: "/ai-reel-generator",
           description:
             "Generate engaging video reels and short-form content with AI",
         },
         {
-          title: "AdPilot AI",
-          url: "/adpilot-ai",
+          title: "AI Campaign Generator",
+          url: "/ai-campaign-generator",
           description:
             "Create and optimize advertising campaigns with AI-powered insights",
         },
         {
           title: "AI Editor",
-          url: "/ai-editor",
+          url: "/ai-image-editor",
           description:
             "Advanced AI-powered content editing and optimization tools",
         },

@@ -8,29 +8,26 @@ import How from "@/components/ai-solutions/how";
 import ContactSection from "@/components/ai-solution-contact";
 
 export const metadata: Metadata = {
-  title:
-    "AI-Powered Growth Pods for Business, Startups & Creators - Marqait AI",
+  title: "AI Solutions & Automation Services - Marqait AI",
   description:
-    "Marqait's AI-Powered Growth Pods: Dedicated teams that build custom AI marketing automation for startups, creators, agencies, and eCommerce brands.",
+    "We provide AI solutions and automation services. Get Industry-specific automation, streamline workflows, boost efficiency, and accelerate business growth.",
   keywords:
-    "growth pods, AI marketing automation, custom AI solutions, startups, creators, agencies, eCommerce",
+    "AI solutions, automation services, industry automation, workflow optimization, business efficiency, AI automation",
   alternates: {
-    canonical: "https://www.marqait.com/growth-pods",
+    canonical: "https://www.marqait.com/ai-solutions",
   },
   openGraph: {
-    title:
-      "AI-Powered Growth Pods for Business, Startups & Creators - Marqait AI",
+    title: "AI Solutions & Automation Services - Marqait AI",
     description:
-      "Marqait's AI-Powered Growth Pods: Dedicated teams that build custom AI marketing automation for startups, creators, agencies, and eCommerce brands.",
-    url: "https://www.marqait.com/growth-pods",
+      "We provide AI solutions and automation services. Get Industry-specific automation, streamline workflows, boost efficiency, and accelerate business growth.",
+    url: "https://www.marqait.com/ai-solutions",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "AI-Powered Growth Pods for Business, Startups & Creators - Marqait AI",
+    title: "AI Solutions & Automation Services - Marqait AI",
     description:
-      "Marqait's AI-Powered Growth Pods: Dedicated teams that build custom AI marketing automation for startups, creators, agencies, and eCommerce brands.",
+      "We provide AI solutions and automation services. Get Industry-specific automation, streamline workflows, boost efficiency, and accelerate business growth.",
   },
 };
 

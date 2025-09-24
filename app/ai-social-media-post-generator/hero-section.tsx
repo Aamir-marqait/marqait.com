@@ -66,9 +66,9 @@ export default function HeroSection() {
           </span>
         </nav>
         <div className="mb-1">
-          <h2 className="text-[64px] max-w-2xl mx-auto font-bold mb-4 leading-[72px] tracking-[0%] align-middle bg-gradient-to-br from-white from-10% to-[#B372CF] to-90% bg-clip-text text-transparent">
+          <h1 className="text-[64px] max-w-2xl mx-auto font-bold mb-4 leading-[72px] tracking-[0%] align-middle bg-gradient-to-br from-white from-10% to-[#B372CF] to-90% bg-clip-text text-transparent">
             Free AI Social Media Post Creator
-          </h2>
+          </h1>
           <p className="text-[20px] font-normal text-white mb-8 max-w-4xl mx-auto leading-[150%] tracking-[0%] text-center align-middle">
             Generate engaging social media posts for free with a simple text
             prompt using Marqait’s free AI social media post generator.

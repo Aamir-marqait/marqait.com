@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import WaitlistModal from "../waitlist-modal";
 
 export default function AiPowerhouseHero() {
@@ -26,7 +28,37 @@ export default function AiPowerhouseHero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="flex items-center space-x-2 mb-8 sm:mb-16 md:mb-24 lg:mb-20">
+          <Link
+            href="/"
+            className="text-white text-xs sm:text-sm"
+            style={{
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0%",
+            }}
+          >
+            Home
+          </Link>
+          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+          <span
+            className="text-white/70 text-xs sm:text-sm"
+            style={{
+              fontFamily: "Inter",
+              fontWeight: 600,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0%",
+            }}
+          >
+            AI Tools
+          </span>
+        </nav>
+        
+        <div className="text-center">
         <div className="glassmorphism-testimonial inline-flex items-center gap-3 px-7 py-3 mb-8">
           <style jsx>{`
             .glassmorphism-testimonial {
@@ -173,6 +205,7 @@ export default function AiPowerhouseHero() {
             }}
           />
         </button>
+        </div>
       </div>
 
       <WaitlistModal

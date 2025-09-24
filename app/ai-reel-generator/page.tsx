@@ -11,8 +11,6 @@ export const metadata: Metadata = {
   title: "AI Reel Generator - Marqait AI",
   description:
     "Create engaging video reels instantly with AI. Generate viral social media content, short-form videos, and captivating reels for Instagram, TikTok, and other platforms.",
-  keywords:
-    "AI reel generator, video content creator, AI video tools, social media reels, Instagram reels, TikTok videos, short-form content, viral videos",
   alternates: {
     canonical: "https://www.marqait.com/ai-reel-generator",
   },

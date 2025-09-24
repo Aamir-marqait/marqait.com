@@ -11,8 +11,6 @@ export const metadata: Metadata = {
   title: "Free AI Campaign Generator - Marqait AI",
   description:
     "Create comprehensive marketing campaigns instantly with AI. Generate campaign strategies, content plans, social media posts, email sequences, and advertising copy across multiple channels.",
-  keywords:
-    "AI campaign generator, marketing campaign creator, AI marketing tools, campaign strategy, content marketing, social media campaigns, email marketing, advertising copy",
   alternates: {
     canonical: "https://www.marqait.com/ai-campaign-generator",
   },
