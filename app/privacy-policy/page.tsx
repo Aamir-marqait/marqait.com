@@ -323,7 +323,7 @@ export default function PrivacyPolicy() {
                   </svg>
                 </Link>
                 <Link
-                  href="/delete-user-data"
+                  href="/user-data-deletion"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-[rgba(255,255,255,0.40)] bg-[rgba(220,38,38,0.40)] transition-all duration-200 hover:bg-[rgba(220,38,38,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold text-white text-sm"
                   style={{
                     boxShadow: "0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset",

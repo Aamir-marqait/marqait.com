@@ -383,7 +383,7 @@ export default function TermsOfService() {
                   </svg>
                 </Link>
                 <Link
-                  href="/privacy"
+                  href="/privacy-policy"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl border border-[rgba(255,255,255,0.20)] bg-transparent transition-all duration-200 hover:bg-[rgba(255,255,255,0.05)] hover:border-[rgba(255,255,255,0.35)] font-semibold text-white text-sm"
                 >
                   Privacy Policy

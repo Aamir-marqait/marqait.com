@@ -44,7 +44,7 @@ export default function UniqueFeatured() {
               image or video—can be edited in our intuitive editor using natural
               language. Simply converse with the AI to refine your creations
             </p>
-            <Link href={"/ai-editor"}>
+            <Link href={"/ai-image-editor"}>
               <button
                 className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto

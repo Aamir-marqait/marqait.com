@@ -43,7 +43,7 @@ export default function ProTierAgents() {
               guidelines and assets.
             </p>
 
-            <Link href={"/brandblueprint-ai"}>
+            <Link href={"/ai-brandbook-generator"}>
               <button
                 className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto
@@ -116,7 +116,7 @@ export default function ProTierAgents() {
                 Create captivating reels and videos optimized for social media
                 engagement
               </p>
-              <Link href={"/reelcraft-ai"}>
+              <Link href={"/ai-reel-generator"}>
                 <button
                   className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto
@@ -178,7 +178,7 @@ export default function ProTierAgents() {
                 Drive conversions with AI-driven precision across Meta and
                 Google
               </p>
-              <Link href={"/adpilot-ai"}>
+              <Link href={"/ai-campaign-generator"}>
                 <button
                   className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto

@@ -93,7 +93,7 @@ export default function Footer() {
                 {/* AI Tools Column */}
                 <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   <h3
-                    className="text-gray-400 font-inter font-semibold leading-5 tracking-[0.7px] uppercase
+                    className="text-white font-inter font-semibold leading-5 tracking-[0.7px] uppercase
                     text-xs sm:text-sm"
                   >
                     AI TOOLS
@@ -104,7 +104,7 @@ export default function Footer() {
                         <Link
                           href={link.url}
                           onClick={() => trackCTAClick(link.text, "Footer")}
-                          className="text-gray-300 hover:text-white transition-colors duration-200 font-inter font-normal leading-6
+                          className="text-white/90 hover:text-white hover:underline transition-colors duration-200 font-inter font-normal leading-6
                             text-sm sm:text-base"
                         >
                           {link.text}
@@ -117,7 +117,7 @@ export default function Footer() {
                 {/* AI Solutions Column */}
                 <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   <h3
-                    className="text-gray-400 font-inter font-semibold leading-5 tracking-[0.7px] uppercase
+                    className="text-white font-inter font-semibold leading-5 tracking-[0.7px] uppercase
                     text-xs sm:text-sm"
                   >
                     AI SOLUTIONS
@@ -128,7 +128,7 @@ export default function Footer() {
                         <Link
                           href={link.url}
                           onClick={() => trackCTAClick(link.text, "Footer")}
-                          className="text-gray-300 hover:text-white transition-colors duration-200 font-inter font-normal leading-6
+                          className="text-white/90 hover:text-white hover:underline transition-colors duration-200 font-inter font-normal leading-6
                             text-sm sm:text-base"
                         >
                           {link.text}
@@ -141,7 +141,7 @@ export default function Footer() {
                 {/* Quick Links Column */}
                 <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   <h3
-                    className="text-gray-400 font-inter font-semibold leading-5 tracking-[0.7px] uppercase
+                    className="text-white font-inter font-semibold leading-5 tracking-[0.7px] uppercase
                     text-xs sm:text-sm"
                   >
                     QUICK LINKS
@@ -152,7 +152,7 @@ export default function Footer() {
                         <Link
                           href={link.url}
                           onClick={() => trackCTAClick(link.text, "Footer")}
-                          className="text-gray-300 hover:text-white transition-colors duration-200 font-inter font-normal leading-6
+                          className="text-white/90 hover:text-white hover:underline transition-colors duration-200 font-inter font-normal leading-6
                             text-sm sm:text-base"
                         >
                           {link.text}
@@ -223,8 +223,8 @@ export default function Footer() {
             className="text-gray-400 font-inter font-normal leading-6 text-center sm:text-left
             text-sm sm:text-base"
           >
-            © 2025. <Link href={"/"}>Marqait</Link> ⎜ AI-Powered Marketing
-            Automation Platform.
+            Copyright © 2025. <Link href={"/"}>Marqait AI.</Link> All rights
+            reserved.
           </p>
           <div className="flex items-center justify-center sm:justify-end space-x-3 sm:space-x-4 lg:space-x-6">
             <a
