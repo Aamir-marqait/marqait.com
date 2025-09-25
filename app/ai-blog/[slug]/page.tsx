@@ -68,6 +68,14 @@ function enhanceBlogHtml(html: string) {
   return out;
 }
 
+// Helper function to convert category slugs to user-friendly names
+function formatCategoryName(category: string): string {
+  return category
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 
 
 
@@ -103,12 +111,13 @@ export default async function BlogPost(
                     fontFeatureSettings: "'dlig' on",
                   }}
                 >
-                  {blogPost.category.toUpperCase()}
+                 
+                  {formatCategoryName(blogPost.category)}
                 </span>
               </div>
 
               {/* Title */}
-              <h1
+              {/* <h1
                 className="text-white font-inter font-bold leading-tight flex-1 self-stretch
                 text-xl 
                 sm:text-2xl sm:leading-[32px]
@@ -119,10 +128,10 @@ export default async function BlogPost(
                 }}
               >
                 {blogPost.title}
-              </h1>
+              </h1> */}
 
               {/* Description */}
-              <p
+              {/* <p
                 className="text-white font-inter font-normal leading-relaxed
                 text-sm 
                 sm:text-base sm:leading-[26px]
@@ -134,7 +143,7 @@ export default async function BlogPost(
                 }}
               >
                 {blogPost.description}
-              </p>
+              </p> */}
 
               {/* Author Info Card */}
               <div
@@ -336,7 +345,8 @@ export default async function BlogPost(
                               text-xs sm:text-sm lg:text-[14px]"
                               style={{}}
                             >
-                              {post.category}
+                                {formatCategoryName(post.category)}
+                           
                             </span>
                           </div>
                         </div>

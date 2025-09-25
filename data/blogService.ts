@@ -21,7 +21,7 @@ export interface TransformedBlogPost {
 // Default author info (you can modify this or fetch from a separate authors table)
 const defaultAuthor = {
   name: "Marqait Team",
-  avatar: "/user.jpg"
+  avatar: "/logo1.png"
   
 }
 

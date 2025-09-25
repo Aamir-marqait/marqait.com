@@ -78,10 +78,10 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
         {/* Hero Title Section */}
         <div className="text-center mb-16 sm:mb-20 lg:mb-24">
           <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-            The Latest <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">AI Insights</span> from Marqait
+            Marqait AI Blog:<span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">Latest AI Trends</span> & Updates
           </h1>
           <p className="text-gray-300 text-lg sm:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed">
-            Discover cutting-edge strategies, breakthrough tools, and expert insights that are shaping the future of AI-powered marketing
+            Stay up to date on Artificial Intelligence with our blogs covering the latest AI trends, tools, solutions, updates, and news
           </p>
         </div>
         
