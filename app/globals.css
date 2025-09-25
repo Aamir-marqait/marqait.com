@@ -165,6 +165,20 @@
 /* Paragraphs */
 .blog-content p { margin: 0 0 1rem 0; color: rgba(255,255,255,0.88); }
 
+/* Optional: finer control for processed blog images */
+.blog-content img.blog-img {
+  display: block;          /* breaks out of stray <p> nicely */
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  background: #0b0b0f;     /* nice fallback while loading */
+  object-fit: cover;       /* safe even without width/height */
+}
+
+
 /* Links */
 .blog-content a {
   color: rgba(255,255,255,0.92);
