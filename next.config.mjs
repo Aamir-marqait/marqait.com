@@ -58,6 +58,36 @@ const nextConfig = {
         destination: "/contact",
         permanent: true,
       },
+      {
+        source: "/adpilot-ai",
+        destination: "/ai-campaign-generator",
+        permanent: true,
+      },
+      {
+        source: "/ai-editor",
+        destination: "/ai-image-editor",
+        permanent: true,
+      },
+      {
+        source: "/brandmark-ai",
+        destination: "/ai-logo-generator",
+        permanent: true,
+      },
+      {
+        source: "/contentspark-ai",
+        destination: "/ai-social-media-post-generator",
+        permanent: true,
+      },
+      {
+        source: "/reelcraft-ai",
+        destination: "/ai-reel-generator",
+        permanent: true,
+      },
+      {
+        source: "/brandblueprint-ai",
+        destination: "/ai-brandbook-generator",
+        permanent: true,
+      },
     ];
   },
 };
