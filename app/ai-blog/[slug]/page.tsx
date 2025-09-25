@@ -5,48 +5,8 @@ import { getPostBySlug, getRecentPosts } from "../../../data/blogService";
 import BlogContactForm from "../../../components/blog/blog-contact-form";
 import BlogSocialShare from "../../../components/blog/blog-social-share";
 
-// Generate additional image based on blog post category/topic
-const getAdditionalImage = (category: string) => {
-  const imageMap: Record<string, string> = {
-    "AI & Technology": "/blog/add2.png",
-    "AI & Marketing": "/blog/2.png",
-    "Data & Analytics": "/blog/add2.png",
-    "Customer Experience": "/blog/add3.jpg",
-    "Growth Strategy": "/blog/add4.png",
-    Automation: "/blog/add5.webp",
-    "Business Strategy": "/blog/add6.png",
-    "Case Studies": "/blog/dd7.webp",
-  };
 
-  return imageMap[category.trim()] || "/blog/post.jpg";
-};
 
-// Generate additional content based on blog post category/topic
-const getAdditionalContent = (blogPost: any) => {
-  const baseContent: Record<string, string[]> = {
-    "AI & Technology": [
-      "Strategic AI implementation represents a fundamental shift in how businesses approach problem-solving and innovation. Organizations that successfully integrate AI into their strategic framework don't just adopt technology—they reimagine their entire value proposition. This transformation requires a comprehensive understanding of both current capabilities and future potential, coupled with a clear roadmap that aligns AI initiatives with broader business objectives. The most successful companies treat AI not as a standalone solution but as an enabler that amplifies human intelligence and creativity, creating new opportunities for growth and competitive differentiation in an increasingly digital marketplace.",
-    ],
-    "Data & Analytics": [
-      "The evolution from data collection to data-driven decision making represents one of the most significant transformations in modern business operations. While organizations have been gathering information for decades, the ability to extract meaningful insights and translate them into actionable strategies has been revolutionized by AI and machine learning technologies. Today's business leaders are discovering that the true value of data lies not in its volume, but in the quality of insights it can generate and the speed at which those insights can be applied to real-world challenges. This shift from intuition-based to evidence-based decision making is creating more resilient, adaptive, and successful organizations across every industry sector.",
-    ],
-    "Customer Experience": [
-      "The modern customer experience landscape has been fundamentally transformed by AI technologies that enable unprecedented levels of personalization and responsiveness. Organizations are discovering that successful customer engagement in the digital age requires a delicate balance between technological efficiency and human touch, where AI handles the complexity of real-time personalization while human agents focus on building meaningful relationships and solving complex problems. This evolution has created new expectations among consumers who now demand not just quality products and services, but intelligent, anticipatory experiences that adapt to their preferences, behaviors, and contexts in real-time across all touchpoints and channels.",
-    ],
-    "Growth Strategy": [
-      "Real-world AI implementations across diverse industries reveal a consistent pattern: success comes not from the technology itself, but from the organizational commitment to transformation and the strategic approach to change management. These case studies demonstrate that the most impactful AI deployments are those that address specific business challenges with measurable outcomes, rather than implementing AI for its own sake. Companies that achieve significant ROI from AI investments typically share common characteristics including strong leadership commitment, comprehensive employee training programs, robust data infrastructure, and a culture that embraces experimentation and continuous learning from both successes and failures.",
-    ],
-    "Automation": [
-      "The relationship between automation and human workforce represents one of the most nuanced and important conversations in modern business strategy. Rather than viewing AI and automation as replacement technologies, forward-thinking organizations are discovering that the most powerful applications combine machine efficiency with human creativity, emotional intelligence, and critical thinking. This collaborative approach to human-AI interaction is creating new job categories, enhancing existing roles, and enabling employees to focus on higher-value activities that require uniquely human skills such as strategic thinking, relationship building, and creative problem-solving, ultimately leading to more fulfilling and productive work environments.",
-    ],
-  };
-
-  return (
-    baseContent[blogPost.category.trim()] || [
-      "The rapid evolution of artificial intelligence continues to reshape the business landscape, creating new opportunities for organizations willing to embrace change and adapt their strategies to leverage these powerful technologies. As AI becomes more accessible and sophisticated, the competitive advantage will increasingly shift from simply having access to AI tools to developing the organizational capabilities, cultural mindset, and strategic vision necessary to apply these technologies effectively in solving real business challenges and creating meaningful value for customers, employees, and stakeholders.",
-    ]
-  );
-};
 
 type RouteParams = { slug: string };
 
@@ -123,9 +83,7 @@ export default async function BlogPost(
   }
 
   const recentPosts = await getRecentPosts(blogPost?.id);
-  const additionalContent = blogPost ? getAdditionalContent(blogPost) : [];
-  const additionalImage = blogPost ? getAdditionalImage(blogPost.category) : "/blog/post.jpg";
-
+  
   console.log("Rendering blog post:", blogPost);
 
   return (
@@ -296,37 +254,9 @@ export default async function BlogPost(
   />
 </div>
 
-              {/* Additional Image */}
-              <div
-                className="w-full flex-shrink-0 rounded-lg overflow-hidden relative
-                h-48 sm:h-64 md:h-80 lg:h-[380px]
-                max-w-full lg:max-w-[701px]"
-              >
-                <Image
-                  src={additionalImage}
-                  alt={`${blogPost.category} related image`}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+             
 
-              {/* Additional Content */}
-              <div className="space-y-4 sm:space-y-5 lg:space-y-6">
-                {additionalContent.map((paragraph, index) => (
-                  <div
-                    key={index}
-                    className="text-white font-inter font-normal leading-relaxed
-                    text-sm 
-                    sm:text-base sm:leading-[26px]
-                    md:text-lg md:leading-[28px]
-                    lg:text-[18px] lg:leading-[30px]"
-                    style={{
-                      fontFeatureSettings: "'liga' off",
-                    }}
-                    dangerouslySetInnerHTML={{ __html: paragraph }}
-                  />
-                ))}
-              </div>
+              
             </article>
 
             <BlogSocialShare

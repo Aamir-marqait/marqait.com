@@ -30,7 +30,7 @@ export default async function Blog() {
 
   return (
     <div className="min-h-screen bg-[#020103]">
-      <BlogHeroSection />
+      {/* <BlogHeroSection /> */}
       <BlogPostsSection blogPosts={blogPosts} />
       <AllBlogPostsSection blogPosts={blogPosts} />
     </div>
