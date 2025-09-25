@@ -55,9 +55,16 @@ export async function generateMetadata(
 }
 
 // Helper to tag the TOC UL as a card without editing source HTML
+// Convert Google Drive preview links to direct view links,
+// and add classes/lazy-loading to images. Also marks TOC list.
 function enhanceBlogHtml(html: string) {
-  // Mark the first UL after "Table of Contents" as .toc (no DOM changes needed elsewhere)
-  let out = html.replace(
+  let out = html;
+
+  console.log("=== DEBUG: Original HTML ===");
+  console.log(out.substring(2000, 2500)); // Show a portion with images
+
+  // --- Mark the first UL after "Table of Contents" as a .toc card ---
+  out = out.replace(
     /(<h2[^>]*>\s*Table of Contents\s*<\/h2>\s*)<ul(?![^>]*class=)/i,
     '$1<ul class="toc"'
   );
@@ -65,7 +72,123 @@ function enhanceBlogHtml(html: string) {
     /(<h2[^>]*>\s*Table of Contents\s*<\/h2>\s*)<ul([^>]*class=(['"])([^'"]*)\3)/i,
     (_m, h2, clsAttr, _q, classes) => `${h2}<ul ${clsAttr.replace(classes, `${classes} toc`)}`
   );
+
+  // --- SIMPLIFIED Google Drive URL conversion ---
+  // This will match ANY Google Drive file URL and convert it to direct view format
+  out = out.replace(
+    /https:\/\/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)\/[^"'\s>]*/g,
+    (match, id) => {
+      console.log(`Converting URL: ${match} -> https://drive.google.com/uc?export=view&id=${id}`);
+      return `https://drive.google.com/uc?export=view&id=${id}`;
+    }
+  );
+
+  // Also handle /open?id= format
+  out = out.replace(
+    /https:\/\/drive\.google\.com\/open\?id=([a-zA-Z0-9_-]+)[^"'\s>]*/g,
+    (match, id) => {
+      console.log(`Converting open URL: ${match} -> https://drive.google.com/uc?export=view&id=${id}`);
+      return `https://drive.google.com/uc?export=view&id=${id}`;
+    }
+  );
+
+  // Convert any existing uc?export=download to export=view
+  out = out.replace(
+    /https:\/\/drive\.google\.com\/uc\?export=download&id=([a-zA-Z0-9_-]+)[^"'\s>]*/g,
+    (match, id) => {
+      console.log(`Converting download URL: ${match} -> https://drive.google.com/uc?export=view&id=${id}`);
+      return `https://drive.google.com/uc?export=view&id=${id}`;
+    }
+  );
+
+  console.log("=== DEBUG: After URL conversion ===");
+  console.log(out.substring(2000, 2500));
+
+  // --- Add loading="lazy" for all images (if missing) ---
+  out = out.replace(
+    /<img((?:(?!loading=)[^>])*)>/g,
+    (_m, attrs) => `<img loading="lazy"${attrs}>`
+  );
+
+  // --- Add blog-img class properly without duplicates ---
+  // First, handle images with no class attribute
+  out = out.replace(
+    /<img(?![^>]*\bclass=)([^>]*)>/g,
+    (_m, attrs) => `<img class="blog-img"${attrs}>`
+  );
+  
+  // Then, handle images with existing classes (avoid duplicates)
+  out = out.replace(
+    /<img([^>]*\bclass=(['"])([^'"]*)\2[^>]*)>/g,
+    (_m, attrs, q, classes) => {
+      // Only add blog-img if it's not already present
+      if (!classes.includes('blog-img')) {
+        return `<img ${attrs.replace(classes, `${classes} blog-img`)}>`
+      }
+      return `<img ${attrs}>`
+    }
+  );
+
+  console.log("=== DEBUG: Final HTML ===");
+  console.log(out.substring(2000, 2500));
+  
   return out;
+}
+
+
+// Add this function before your main component
+function renderBlogContent(content: string) {
+  const enhancedHtml = enhanceBlogHtml(content);
+  
+  // Split by img tags and replace with Next.js Image components
+  const parts = enhancedHtml.split(/(<img[^>]*>)/g);
+  
+  return parts.map((part, index) => {
+    const imgMatch = part.match(/<img[^>]*src=["']([^"']+)["'][^>]*>/);
+    
+    if (imgMatch) {
+      const src = imgMatch[1];
+      const altMatch = part.match(/alt=["']([^"']*)["']/);
+      const alt = altMatch ? altMatch[1] : "";
+      
+      return (
+        <div key={index} className="my-6">
+          <Image
+            src={src}
+            alt={alt}
+            width={800}
+            height={400}
+            className="blog-img w-full h-auto object-cover rounded-lg"
+            style={{
+              maxWidth: '100%',
+              height: 'auto'
+            }}
+          />
+        </div>
+      );
+    }
+    
+    // Render non-image HTML content
+    if (part.trim() && !part.startsWith('<img')) {
+      return (
+        <div 
+          key={index} 
+          dangerouslySetInnerHTML={{ __html: part }} 
+        />
+      );
+    }
+    
+    return null;
+  }).filter(Boolean);
+}
+
+
+// Helper function to convert category slugs to user-friendly names
+function formatCategoryName(category: string): string {
+  return category
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 
 
@@ -86,6 +209,8 @@ export default async function BlogPost(
   
   console.log("Rendering blog post:", blogPost);
 
+  
+
   return (
     <section className="relative bg-[#020103] py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
       <div className="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
@@ -103,12 +228,13 @@ export default async function BlogPost(
                     fontFeatureSettings: "'dlig' on",
                   }}
                 >
-                  {blogPost.category.toUpperCase()}
+                 
+                  {formatCategoryName(blogPost.category)}
                 </span>
               </div>
 
               {/* Title */}
-              <h1
+              {/* <h1
                 className="text-white font-inter font-bold leading-tight flex-1 self-stretch
                 text-xl 
                 sm:text-2xl sm:leading-[32px]
@@ -119,10 +245,10 @@ export default async function BlogPost(
                 }}
               >
                 {blogPost.title}
-              </h1>
+              </h1> */}
 
               {/* Description */}
-              <p
+              {/* <p
                 className="text-white font-inter font-normal leading-relaxed
                 text-sm 
                 sm:text-base sm:leading-[26px]
@@ -134,7 +260,7 @@ export default async function BlogPost(
                 }}
               >
                 {blogPost.description}
-              </p>
+              </p> */}
 
               {/* Author Info Card */}
               <div
@@ -241,18 +367,14 @@ export default async function BlogPost(
                 />
               </div>
 
-              {/* Content */}
-             <div className="blog-content">
-  <article
-    className="
-      prose prose-invert prose-lg max-w-none
-      prose-headings:font-inter prose-p:font-inter prose-li:font-inter
-      prose-h2:mt-10 prose-h2:mb-3
-      prose-h3:mt-8 prose-h3:mb-2
-    "
-    dangerouslySetInnerHTML={{ __html: enhanceBlogHtml(blogPost.content) }}
-  />
+             {/* Content */}
+<div className="blog-content">
+  <article className="prose prose-invert prose-lg max-w-none prose-headings:font-inter prose-p:font-inter prose-li:font-inter prose-h2:mt-10 prose-h2:mb-3 prose-h3:mt-8 prose-h3:mb-2">
+    {renderBlogContent(blogPost.content)}
+  </article>
 </div>
+
+
 
              
 
@@ -336,7 +458,8 @@ export default async function BlogPost(
                               text-xs sm:text-sm lg:text-[14px]"
                               style={{}}
                             >
-                              {post.category}
+                                {formatCategoryName(post.category)}
+                           
                             </span>
                           </div>
                         </div>
