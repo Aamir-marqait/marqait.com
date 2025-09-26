@@ -65,9 +65,9 @@ export default function HeroSection() {
             </nav>
             {/* Content */}
             <div className="space-y-8">
-              <h2 className="text-[48px] font-bold text-white leading-[130%] tracking-[-0.05em] align-middle font-inter">
+              <h1 className="text-[48px] font-bold text-white leading-[130%] tracking-[-0.05em] align-middle font-inter">
                 AI for Ecommerce: The Future of Online Stores
-              </h2>
+              </h1>
 
               <p className="text-[18px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 At Marqait AI, we provide AI ecommerce solutions that help

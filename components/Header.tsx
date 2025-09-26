@@ -67,7 +67,7 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
         {
           name: "AI Editor",
           path: "/ai-image-editor",
-          description: "Generates strategy",
+          description: "Edit your Image with AI",
           icon: "/copilot/ImageGen.jpg",
         },
       ],

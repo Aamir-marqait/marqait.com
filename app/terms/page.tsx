@@ -7,7 +7,7 @@ export default function TermsOfService() {
   useSEO({
     title: "Terms of Service - Marqait AI",
     description:
-      "Read Marqait AI's Terms of Service. Understand the rules and guidelines for using our AI-powered marketing platform.",
+      "These terms govern your use of Marqait AI's platform and services. Please read them carefully.",
     canonical: "https://www.marqait.com/terms",
     keywords:
       "terms of service, user agreement, terms and conditions, service rules, Marqait AI legal",

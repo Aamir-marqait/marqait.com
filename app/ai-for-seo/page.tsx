@@ -9,6 +9,11 @@ import BenefitsSection from "./benefits-section";
 import FaqSection from "./faq-section";
 import ContactSection from "../../components/ai-solution-contact";
 
+export const metadata = {
+  title: "AI for SEO - AI SEO Automation Services | Marqait AI",
+  description: "Marqait AI offers AI SEO automation services for search engine optimization. Use AI for SEO to improve a website visibility and ranking in search engines."
+};
+
 function page() {
   return (
     <div className="bg-black">

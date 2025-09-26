@@ -10,24 +10,24 @@ import FaqSection from "./faq-section";
 import FinalCtaSection from "./final-cta";
 
 export const metadata: Metadata = {
-  title: "Free AI Brandbook Generator - Marqait AI",
+  title: "AI Image Editor - Free Online Photo Editor | Marqait AI",
   description:
-    "Create professional brand guidelines and brandbooks instantly with AI. Generate comprehensive brand identity documents including logos, colors, fonts, and visual guidelines.",
+    "Edit images with AI-powered tools. Remove backgrounds, enhance photos, add effects, and more with our free online AI image editor.",
   alternates: {
-    canonical: "https://www.marqait.com/ai-brandbook-generator",
+    canonical: "https://www.marqait.com/ai-image-editor",
   },
   openGraph: {
-    title: "Free AI Brandbook Generator - Marqait AI",
+    title: "AI Image Editor - Free Online Photo Editor | Marqait AI",
     description:
-      "Create professional brand guidelines and brandbooks instantly with AI. Generate comprehensive brand identity documents including logos, colors, fonts, and visual guidelines.",
-    url: "https://www.marqait.com/ai-brandbook-generator",
+      "Edit images with AI-powered tools. Remove backgrounds, enhance photos, add effects, and more with our free online AI image editor.",
+    url: "https://www.marqait.com/ai-image-editor",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI Brandbook Generator - Marqait AI",
+    title: "AI Image Editor - Free Online Photo Editor | Marqait AI",
     description:
-      "Create professional brand guidelines and brandbooks instantly with AI. Generate comprehensive brand identity documents including logos, colors, fonts, and visual guidelines.",
+      "Edit images with AI-powered tools. Remove backgrounds, enhance photos, add effects, and more with our free online AI image editor.",
   },
 };
 

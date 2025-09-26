@@ -8,6 +8,11 @@ import ContactSection from "@/components/ai-solution-contact";
 import Role from "./role";
 import FaqSection from "./faq";
 
+export const metadata = {
+  title: "AI for Startups - Grow the Business with AI Solutions - Marqait AI",
+  description: "AI for startups to grow with AI-powered automation solutions. Enhanced decision-making, operational efficiency, and personalized customer engagement."
+};
+
 function page() {
   return (
     <div className="bg-black relative overflow-hidden">

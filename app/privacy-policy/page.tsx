@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
   useSEO({
     title: "Privacy Policy - Marqait AI",
     description:
-      "Read Marqait AI's Privacy Policy. Learn about our data protection practices, how we collect and use your information, and your privacy rights.",
+      "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
     canonical: "https://www.marqait.com/privacy",
     keywords:
       "privacy policy, data protection, user privacy, GDPR, CCPA, data rights, Marqait AI privacy",
