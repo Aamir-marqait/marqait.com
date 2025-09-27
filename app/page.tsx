@@ -25,8 +25,8 @@ export default function Home() {
 
   useSEO({
     canonical: "https://www.marqait.com",
-    // title: "Marqait - AI-Powered Growth Platform",
-    // description: "Transform your business with AI-powered growth solutions. Join thousands of companies using Marqait to scale their operations.",
+    title: "Marqait AI - Best AI Tools, AI Solutions & Marketing Automation",
+    description: "Marqait AI is a leading AI development company offering AI tools, marketing automation, and custom AI solutions to improve efficiency and productivity.",
     keywords:
       "AI, growth platform, business automation, marqait, artificial intelligence",
     ogType: "website",
