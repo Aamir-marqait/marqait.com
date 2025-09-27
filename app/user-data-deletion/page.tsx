@@ -39,7 +39,9 @@ export default function DeleteUserDataPage() {
   };
 
   useSEO({
-    canonical: "https://www.marqait.com/delete-user-data",
+    title: "User Data Deletion Requests - Marqait AI",
+    description: "Request deletion of your personal data from Marqait. We take your privacy seriously and will process your request within 30 business days in accordance with applicable data protection laws.",
+    canonical: "https://www.marqait.com/user-data-deletion",
   });
 
   const handleSubmit = async (e: any) => {

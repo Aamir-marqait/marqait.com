@@ -9,6 +9,11 @@ import AIAgentBenefits from "./ai-agent-benefits";
 import FaqSection from "./ai-agent-faq-section";
 import ContactSection from "@/components/ai-solution-contact";
 
+export const metadata = {
+  title: "AI Agent Development Services Company In India",
+  description: "Marqait AI is an AI agent development company creating intelligent AI agents that automate tasks. Discover our custom AI Agents development services."
+};
+
 function page() {
   return (
     <div className="bg-black">

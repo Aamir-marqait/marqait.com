@@ -5,7 +5,7 @@ import { useSEO } from "@/utils/seo";
 export default function About() {
   useSEO({
     title: "About - Marqait AI",
-    description: "Marqait AI is an AI marketing automation platform. Our mission is to ensure that marketing automation benefits everyone.",
+    description: "Marqait AI is an AI development company. Our mission is to ensure that our artificial intelligence Tools and Solutions benefit all of humanity.",
     canonical: "https://www.marqait.com/about",
     keywords: "about Marqait AI, AI marketing automation, company mission, team, marketing technology",
     ogType: "website",

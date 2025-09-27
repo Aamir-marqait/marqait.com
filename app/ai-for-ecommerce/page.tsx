@@ -8,6 +8,11 @@ import Benefits from "./benefits";
 import FaqSection from "./faq";
 import ContactSection from "@/components/ai-solution-contact";
 
+export const metadata = {
+  title: "AI for Ecommerce - AI Ecommerce Solutions | Marqait AI",
+  description: "Boost sales with AI for Ecommerce. From personalized shopping to AI SEO automation, optimize product pages, reduce cart abandonment & grow revenue."
+};
+
 function page() {
   return (
     <div className="bg-black relative overflow-hidden">

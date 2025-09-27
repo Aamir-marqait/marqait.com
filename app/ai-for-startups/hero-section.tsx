@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -65,9 +65,9 @@ export default function HeroSection() {
           <div>
             {/* Content */}
             <div className="space-y-8 mt-24">
-              <h2 className="text-[48px] font-bold text-white leading-[130%] tracking-[-0.05em] align-middle font-inter">
+              <h1 className="text-[48px] font-bold text-white leading-[130%] tracking-[-0.05em] align-middle font-inter">
                 AI for Startups - Grow the Business with AI
-              </h2>
+              </h1>
 
               <p className="text-[18px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 AI for startup to grow with AI-powered automation solutions.
