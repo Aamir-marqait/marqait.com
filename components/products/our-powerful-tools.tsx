@@ -7,36 +7,42 @@ const services = [
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
     link: "/ai-logo-generator",
+    image: "/logo.jpg",
   },
   {
     title: "AI Brandbook Generator",
     description:
       "Build your brand identity with Marqait AI Brand Book Generator. Our AI organizes your logos, colors, fonts, and guidelines into a professional brand book. It helps you create stunning, interactive digital brand books with ease.",
     link: "/ai-brandbook-generator",
+    image: "/brand.png",
   },
   {
     title: "AI Reel Generator",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
     link: "/ai-reel-generator",
+    image: "/video.jpg",
   },
   {
     title: "AI Campaign Generator",
     description:
       "Create powerful campaigns in minutes with Marqait AI Campaign Generator. Our AI helps you generate marketing, ad, and social media campaigns that boost engagement, maximize ROI, and save time..",
     link: "/ai-campaign-generator",
+    image: "/ads.jpg",
   },
   {
     title: "AI Social Media Post Generator",
     description:
       "Create social media posts with Marqait AI Social Media Post Generator. Type your idea, and our AI instantly generates the best social media posts that help you save time and stay consistent across all your platforms",
     link: "/ai-social-media-post-generator",
+    image: "/post.jpg",
   },
   {
     title: "Image Editor AI",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
     link: "/ai-image-editor",
+    image: "/edit.jpg",
   },
 ];
 
@@ -84,7 +90,7 @@ export default function OurPowerfulTools() {
                 <div className="p-6 flex flex-col h-full">
                   <div className="mb-4">
                     <Image
-                      src={`/tools/hero${index + 1}.jpg`}
+                      src={service.image}
                       alt={service.title}
                       width={120}
                       height={120}
