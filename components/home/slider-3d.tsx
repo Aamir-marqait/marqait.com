@@ -18,42 +18,42 @@ const slides: SlideData[] = [
     title: "Logo Generator",
     description:
       "Design unique logos in minutes with our AI Logo Generator. Just enter your brand name or idea, and our AI instantly makes professional logo designs that match your style and identity.",
-    image: "/copilot/LogoGenerator.jpg",
+    image: "/logo.jpg",
   },
   {
     id: 2,
     title: "AI Reel Generator",
     description:
       "Create engaging video reels effortlessly with our AI Reel Generator. Input your content ideas, and our AI crafts compelling short-form videos with optimized scripts, visual suggestions, and timing that captures attention and drives engagement across social media platforms.",
-    image: "/copilot/strategy.jpg",
+    image: "/video.jpg",
   },
   {
     id: 3,
     title: "Brand Book Creator",
     description:
       "Build your brand identity with Marqait AI Brand Book Generator. Our AI organizes your logos, colors, fonts, and guidelines into a professional brand book. It helps you create stunning, interactive digital brand books with ease.",
-    image: "/copilot/Branding.jpg",
+    image: "/brand.png",
   },
   {
     id: 4,
     title: "Campaign Generation ",
     description:
       "Create powerful campaigns in minutes with Marqait AI Campaign Generator. Our AI helps you generate marketing campaigns, ad campaigns, and social media campaigns that boost engagement, maximize ROI, and save time.",
-    image: "/copilot/Campaign.jpg",
+    image: "/ads.jpg",
   },
   {
     id: 5,
     title: "AI Image Editor",
     description:
       "Edit and enhance your content with intelligent AI assistance. Our AI Editor helps you refine text, improve writing quality, optimize content for different platforms, and ensure your messaging is clear, engaging, and professional across all your marketing materials.",
-    image: "/copilot/ImageGen.jpg",
+    image: "/edit.jpg",
   },
   {
     id: 6,
     title: "Social Media Post Generation",
     description:
       "Create social media posts with Marqait AI Social Media Post Generator. Type your idea, and our AI instantly generates the best social media posts that help you save time and stay consistent across all platforms.",
-    image: "/copilot/Social.jpg",
+    image: "/post.jpg",
   },
 ];
 

@@ -37,38 +37,38 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
           name: "AI Logo Generator",
           path: "/ai-logo-generator",
           description: "Create logo in seconds",
-          icon: "/copilot/LogoGenerator.jpg",
+          icon: "/logo.jpg",
         },
         {
           name: "AI Social Media Post Generator",
           path: "/ai-social-media-post-generator",
           description: "Generates social media post",
-          icon: "/copilot/Social.jpg",
+          icon: "/post.jpg",
         },
         {
           name: "AI BrandBook Generator",
           path: "/ai-brandbook-generator",
           description: "Generates brand book",
-          icon: "/copilot/Branding.jpg",
+          icon: "/brand.png",
         },
         {
           name: "AI Reels Generator",
           path: "/ai-reel-generator",
           description: "Generates engaging reels",
-          icon: "/copilot/strategy.jpg",
+          icon: "/video.jpg",
         },
         {
           name: "AI Campaign Generator",
           path: "/ai-campaign-generator",
           description: "Generates campaigns",
-          icon: "/copilot/Campaign.jpg",
+          icon: "/ads.jpg",
         },
 
         {
           name: "AI Editor",
           path: "/ai-image-editor",
           description: "Edit your Image with AI",
-          icon: "/copilot/ImageGen.jpg",
+          icon: "/edit.jpg",
         },
       ],
     },
@@ -147,7 +147,7 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
                 alt="Marqait AI Logo"
                 width={200}
                 height={32}
-                className="object-contain"
+                className="object-cover"
               />
             </Link>
 
@@ -195,7 +195,7 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
                                   alt={dropdownItem.name}
                                   width={48}
                                   height={48}
-                                  className="object-contain rounded-full"
+                                  className="object-cover rounded-full w-full h-full"
                                 />
                               </div>
                               <div className="flex-1 min-w-0">
@@ -341,13 +341,13 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
                               setOpenDropdown(null);
                             }}
                           >
-                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center overflow-hidden">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center overflow-hidden">
                               <Image
                                 src={dropdownItem.icon}
                                 alt={dropdownItem.name}
                                 width={40}
                                 height={40}
-                                className="object-cover rounded-md"
+                                className="object-cover rounded-full"
                               />
                             </div>
                             <div className="flex-1 min-w-0">
