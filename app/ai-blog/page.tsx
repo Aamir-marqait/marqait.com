@@ -4,6 +4,9 @@ import BlogHeroSection from "@/components/blog/blog-hero-section";
 import BlogPostsSection from "@/components/blog/blog-posts-section";
 import { getAllPublishedPosts } from "@/data/blogService";
 
+// app/ai-blog/page.tsx
+export const revalidate = 600; // refresh in background every 10 min
+
 export const metadata: Metadata = {
   title: "Marqait AI Blogs | Artificial Intelligence Blog and Update",
   description: "Discover the latest AI marketing strategies, tips, and insights. Stay ahead with expert content on AI-powered marketing automation and digital growth.",
