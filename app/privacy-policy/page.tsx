@@ -1,19 +1,31 @@
-"use client";
-
-import { useSEO } from "@/utils/seo";
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export default function PrivacyPolicy() {
-  useSEO({
+export const metadata: Metadata = {
+  title: "Privacy Policy - Marqait AI",
+  description:
+    "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
+  keywords:
+    "privacy policy, data protection, user privacy, GDPR, CCPA, data rights, Marqait AI privacy",
+  alternates: {
+    canonical: "https://www.marqait.com/privacy-policy",
+  },
+  openGraph: {
     title: "Privacy Policy - Marqait AI",
     description:
       "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
-    canonical: "https://www.marqait.com/privacy",
-    keywords:
-      "privacy policy, data protection, user privacy, GDPR, CCPA, data rights, Marqait AI privacy",
-    ogType: "website",
-    twitterCard: "summary_large_image",
-  });
+    url: "https://www.marqait.com/privacy-policy",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy - Marqait AI",
+    description:
+      "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
+  },
+};
+
+export default function PrivacyPolicy() {
 
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">

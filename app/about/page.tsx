@@ -1,16 +1,26 @@
-"use client";
+import type { Metadata } from "next";
 
-import { useSEO } from "@/utils/seo";
-
-export default function About() {
-  useSEO({
+export const metadata: Metadata = {
+  title: "About - Marqait AI",
+  description: "Marqait AI is an AI development company. Our mission is to ensure that our artificial intelligence Tools and Solutions benefit all of humanity.",
+  keywords: "about Marqait AI, AI marketing automation, company mission, team, marketing technology",
+  alternates: {
+    canonical: "https://www.marqait.com/about",
+  },
+  openGraph: {
     title: "About - Marqait AI",
     description: "Marqait AI is an AI development company. Our mission is to ensure that our artificial intelligence Tools and Solutions benefit all of humanity.",
-    canonical: "https://www.marqait.com/about",
-    keywords: "about Marqait AI, AI marketing automation, company mission, team, marketing technology",
-    ogType: "website",
-    twitterCard: "summary_large_image"
-  });
+    url: "https://www.marqait.com/about",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About - Marqait AI",
+    description: "Marqait AI is an AI development company. Our mission is to ensure that our artificial intelligence Tools and Solutions benefit all of humanity.",
+  },
+};
+
+export default function About() {
 
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
