@@ -1,19 +1,31 @@
-"use client";
-
-import { useSEO } from "@/utils/seo";
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export default function TermsOfService() {
-  useSEO({
+export const metadata: Metadata = {
+  title: "Terms of Service - Marqait AI",
+  description:
+    "These terms govern your use of Marqait AI's platform and services. Please read them carefully.",
+  keywords:
+    "terms of service, user agreement, terms and conditions, service rules, Marqait AI legal",
+  alternates: {
+    canonical: "https://www.marqait.com/terms",
+  },
+  openGraph: {
     title: "Terms of Service - Marqait AI",
     description:
       "These terms govern your use of Marqait AI's platform and services. Please read them carefully.",
-    canonical: "https://www.marqait.com/terms",
-    keywords:
-      "terms of service, user agreement, terms and conditions, service rules, Marqait AI legal",
-    ogType: "website",
-    twitterCard: "summary_large_image",
-  });
+    url: "https://www.marqait.com/terms",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service - Marqait AI",
+    description:
+      "These terms govern your use of Marqait AI's platform and services. Please read them carefully.",
+  },
+};
+
+export default function TermsOfService() {
 
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
