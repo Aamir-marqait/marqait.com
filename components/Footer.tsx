@@ -47,9 +47,9 @@ export default function Footer() {
       { text: "AI For E-Commerce", url: "/ai-for-ecommerce" },
     ],
     quickLinks: [
-      { text: "Contact Us", url: "/contacts" },
+      { text: "Contact Us", url: "/contact" },
       { text: "Site Map", url: "/sitemap" },
-      { text: "Blogs", url: "/blog" },
+      { text: "Blogs", url: "/ai-blog" },
       { text: "Terms of Service", url: "/terms" },
       { text: "Privacy Policy", url: "/privacy-policy" },
     ],

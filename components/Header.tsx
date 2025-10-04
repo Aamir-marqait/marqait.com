@@ -31,7 +31,7 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
   const navigationItems: NavigationItem[] = [
     {
       name: "AI Tools",
-      path: "/products",
+      path: "/ai-tools",
       dropdown: [
         {
           name: "AI Logo Generator",
@@ -126,8 +126,8 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
         },
       ],
     },
-    { name: "Insights", path: "/blog" },
-    { name: "Contact", path: "/contacts" },
+    { name: "Insights", path: "/ai-blog" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
