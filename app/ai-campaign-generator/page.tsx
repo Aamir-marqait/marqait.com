@@ -32,8 +32,8 @@ export const metadata: Metadata = {
 export default function AISocialMediaPostGenerator() {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
-      <div className="pointer-events-none absolute -left-/4 top-0 w-[40rem] h-[40rem] bg-[#850DB8] opacity-20 rounded-full blur-3xl"></div>
-      <div className="pointer-events-none absolute right-32 top-96 transform -translate-y-1/2 w-[50rem] h-[40rem] bg-[#850DB8] opacity-20 rounded-full blur-3xl"></div>
+      <div className="hidden md:block pointer-events-none absolute -left-/4 top-0 w-[40rem] h-[40rem] bg-[#850DB8] opacity-20 rounded-full blur-3xl"></div>
+      <div className="hidden md:block pointer-events-none absolute right-32 top-96 transform -translate-y-1/2 w-[50rem] h-[40rem] bg-[#850DB8] opacity-20 rounded-full blur-3xl"></div>
       <HeroSection />
       <Introduction />
       <Benefits />
