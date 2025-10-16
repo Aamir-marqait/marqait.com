@@ -1,5 +1,4 @@
 import { Zap } from "lucide-react";
-import Link from "next/link";
 
 export default function FinalCtaSection() {
   return (
@@ -19,32 +18,33 @@ export default function FinalCtaSection() {
                 and complicated software.
               </p>
               <div className="flex justify-center">
-                <Link className="" href={"/contact"}>
-                  <button
-                    className="cursor-pointer  flex items-center transition-all duration-200 justify-center gap-2"
-                    style={{
-                      borderRadius: "15px",
-                      borderWidth: "1px",
-                      paddingTop: "6px",
-                      paddingRight: "11px",
-                      paddingBottom: "6px",
-                      paddingLeft: "11px",
-                      background:
-                        "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
-                      border: "1px solid #E6D4FF99",
-                      fontFamily: "Inter",
-                      fontWeight: 600,
-                      fontSize: "14px",
-                      lineHeight: "30px",
-                      letterSpacing: "0px",
-                      verticalAlign: "middle",
-                      color: "#F2F0F5",
-                    }}
-                  >
-                    <Zap className="w-4 h-4" />
-                    Generate My BrandBlueprint
-                  </button>
-                </Link>
+                <a
+                  href="https://app.marqait.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
+                  style={{
+                    borderRadius: "15px",
+                    borderWidth: "1px",
+                    paddingTop: "6px",
+                    paddingRight: "11px",
+                    paddingBottom: "6px",
+                    paddingLeft: "11px",
+                    background:
+                      "linear-gradient(180deg, rgba(184, 18, 255, 0.85) 0%, rgba(110, 11, 153, 0.85) 100%)",
+                    border: "1px solid #E6D4FF99",
+                    fontFamily: "Inter",
+                    fontWeight: 600,
+                    fontSize: "14px",
+                    lineHeight: "30px",
+                    letterSpacing: "0px",
+                    verticalAlign: "middle",
+                    color: "#F2F0F5",
+                  }}
+                >
+                  <Zap className="w-4 h-4" />
+                  Generate My BrandBlueprint
+                </a>
               </div>
             </div>
           </div>

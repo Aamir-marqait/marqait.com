@@ -1,20 +1,8 @@
 "use client";
-import { useState } from "react";
+
 import Image from "next/image";
 
-import WaitlistModal from "../../components/waitlist-modal";
-
 export default function Introduction() {
-  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
-
-  const openWaitlistModal = () => {
-    setIsWaitlistModalOpen(true);
-  };
-
-  const closeWaitlistModal = () => {
-    setIsWaitlistModalOpen(false);
-  };
-
   return (
     <section className="bg-black py-20 px-6 max-w-[70rem]  mx-auto">
       <div className="">
@@ -45,9 +33,11 @@ export default function Introduction() {
               across multiple channels, it ensures every touchpoint reflects
               your brand’s true identity with clarity and confidence.
             </p>
-            <button
-              onClick={openWaitlistModal}
-              className="lg:block cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+            <a
+              href="https://app.marqait.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
               style={{
                 borderRadius: "15px",
                 borderWidth: "1px",
@@ -68,7 +58,7 @@ export default function Introduction() {
               }}
             >
               Generate BrandBlueprint
-            </button>
+            </a>
           </div>
 
           {/* Right Illustration */}
@@ -83,11 +73,6 @@ export default function Introduction() {
           </div>
         </div>
       </div>
-
-      <WaitlistModal
-        isOpen={isWaitlistModalOpen}
-        onClose={closeWaitlistModal}
-      />
     </section>
   );
 }
