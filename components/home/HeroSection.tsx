@@ -1,18 +1,6 @@
 import Image from "next/image";
-import { trackCTAClick } from "../../analytics";
 
-export default function HeroSection({
-  onScrollToContact,
-}: {
-  onScrollToContact: any;
-}) {
-  const handleScrollToContact = () => {
-    trackCTAClick("Join Waitlist", "Hero Section");
-    if (onScrollToContact) {
-      onScrollToContact();
-    }
-  };
-
+export default function HeroSection() {
   return (
     <section className="relative  overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-1 sm:pt-1 md:pt-1 lg:pt-1">
@@ -95,8 +83,10 @@ export default function HeroSection({
           </div>
 
           <div className="z-1 inline-flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 lg:gap-10 pt-3 sm:pt-6 lg:pt-[15px] mx-auto relative">
-            <button
-              onClick={handleScrollToContact}
+            <a
+              href="https://app.marqait.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto
                 px-3 py-2 text-xs min-w-[120px] h-[45px] leading-[20px]
@@ -117,7 +107,7 @@ export default function HeroSection({
                 height={24}
                 className="rounded-full bg-[rgba(242,240,245,0.15)] p-1.5 h-5 sm:h-6 lg:h-8"
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>
