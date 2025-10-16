@@ -3,13 +3,12 @@ import Footer from "./Footer";
 
 interface LayoutProps {
   children: React.ReactNode;
-  onOpenWaitlist?: () => void;
 }
 
-const Layout = ({ children, onOpenWaitlist }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header onOpenWaitlist={onOpenWaitlist} />
+      <Header />
       <main className="flex-1 bg-[#020103] pt-16 lg:pt-20">
         {children}
       </main>

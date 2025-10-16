@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function FinalCtaSection() {
   return (
@@ -17,9 +16,11 @@ export default function FinalCtaSection() {
                 creativity, and scale your marketing like never before.
               </p>
               <div className="flex justify-center">
-                <Link className="" href={"/contact"}>
-                <button
-                  className="cursor-pointer  flex items-center transition-all duration-200 justify-center gap-2"
+                <a
+                  href="https://app.marqait.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
                   style={{
                     borderRadius: "15px",
                     borderWidth: "1px",
@@ -52,8 +53,7 @@ export default function FinalCtaSection() {
                       padding: "3px",
                     }}
                   />
-                </button>
-              </Link>
+                </a>
               </div>
             </div>
           </div>

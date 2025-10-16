@@ -1,21 +1,10 @@
-"use client"
-import { useState } from "react";
+"use client";
+
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import WaitlistModal from "../../components/waitlist-modal";
 
 export default function HeroSection() {
-  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
-
-  const openWaitlistModal = () => {
-    setIsWaitlistModalOpen(true);
-  };
-
-  const closeWaitlistModal = () => {
-    setIsWaitlistModalOpen(false);
-  };
-
   return (
     <section className="py-20 px-4">
       <div className="max-w-[70rem] mx-auto">
@@ -91,9 +80,11 @@ export default function HeroSection() {
                 Photo effects & filters
               </p>
 
-              <button
-                onClick={openWaitlistModal}
-                className="cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+              <a
+                href="https://app.marqait.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
                 style={{
                   borderRadius: "15px",
                   borderWidth: "1px",
@@ -114,7 +105,7 @@ export default function HeroSection() {
                 }}
               >
                 Upload Your Image
-              </button>
+              </a>
             </div>
           </div>
 
@@ -132,11 +123,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-      <WaitlistModal
-        isOpen={isWaitlistModalOpen}
-        onClose={closeWaitlistModal}
-      />
     </section>
   );
 }

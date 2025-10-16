@@ -26,16 +26,14 @@ export default function Home() {
   useSEO({
     canonical: "https://www.marqait.com",
     title: "Marqait AI - Best AI Tools, AI Solutions & Marketing Automation",
-    description: "Marqait AI is a leading AI development company offering AI tools, marketing automation, and custom AI solutions to improve efficiency and productivity.",
+    description:
+      "Marqait AI is a leading AI development company offering AI tools, marketing automation, and custom AI solutions to improve efficiency and productivity.",
     keywords:
       "AI, growth platform, business automation, marqait, artificial intelligence",
     ogType: "website",
     twitterCard: "summary_large_image",
   });
 
-  const openWaitlistModal = () => {
-    setIsWaitlistModalOpen(true);
-  };
 
   const closeWaitlistModal = () => {
     setIsWaitlistModalOpen(false);
@@ -92,14 +90,14 @@ export default function Home() {
         })}
       </Script>
       <div className="w-full max-w-none">
-        <HeroSection onScrollToContact={openWaitlistModal} />
+        <HeroSection />
         <DesignPattern />
         <CopilotSection />
         <UI />
         <FreeTierAgents />
-        <ProTierAgents/>
-        <UniqueFeatured/>
-        <MarketingTransforms/>
+        <ProTierAgents />
+        <UniqueFeatured />
+        <MarketingTransforms />
         {/* <ClientTestimonialsSection /> */}
         <ContactFormSection ref={contactFormRef} />
         {/* <FAQSection /> */}

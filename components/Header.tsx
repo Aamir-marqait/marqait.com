@@ -20,11 +20,7 @@ interface NavigationItem {
   dropdown?: DropdownItem[];
 }
 
-interface HeaderProps {
-  onOpenWaitlist?: () => void;
-}
-
-export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
+export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -235,10 +231,12 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
 
           {/* Desktop Get Started Button */}
           <div className="hidden lg:block cursor-pointer">
-            <button
+            <a
+              href="https://app.marqait.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => {
                 trackCTAClick("Get Started", "Header");
-                onOpenWaitlist?.();
               }}
               className=" cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
               style={{
@@ -275,7 +273,7 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
                   padding: "3px",
                 }}
               />
-            </button>
+            </a>
             {/* <button
               className="cursor-pointer flex items-center gap-2 px-4 py-1.5 rounded-2xl border border-[rgba(255,255,255,0.40)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold leading-6"
               style={{
@@ -385,10 +383,12 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
 
               {/* Mobile Sign Up Button */}
               <div className="pt-4 pb-2">
-                <button
+                <a
+                  href="https://app.marqait.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => {
                     trackCTAClick("Get Started", "Mobile Header");
-                    onOpenWaitlist?.();
                   }}
                   className="cursor-pointer flex items-center justify-center gap-2 w-full px-4 py-3 rounded-2xl border border-[rgba(255,255,255,0.25)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold leading-6"
                   style={{
@@ -406,7 +406,7 @@ export default function Header({ onOpenWaitlist }: HeaderProps = {}) {
                     height={32}
                     className="rounded-3xl bg-[rgba(242,240,245,0.15)] p-2"
                   />
-                </button>
+                </a>
                 {/* <button
                   className="cursor-pointer flex items-center justify-center gap-2 w-full px-4 py-3 rounded-2xl border border-[rgba(255,255,255,0.25)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold leading-6"
                   style={{

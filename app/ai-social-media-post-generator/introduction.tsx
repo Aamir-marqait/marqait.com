@@ -1,19 +1,8 @@
 "use client";
-import { useState } from "react";
+
 import Image from "next/image";
-import WaitlistModal from "../../components/waitlist-modal";
 
 export default function Introduction() {
-  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
-
-  const openWaitlistModal = () => {
-    setIsWaitlistModalOpen(true);
-  };
-
-  const closeWaitlistModal = () => {
-    setIsWaitlistModalOpen(false);
-  };
-
   return (
     <section className="bg-black py-20 px-6 max-w-[70rem]  mx-auto">
       <div className="">
@@ -21,7 +10,8 @@ export default function Introduction() {
           {/* Left Content */}
           <div className="space-y-8">
             <h2 className="text-white font-bold font-inter max-w-md text-[32px] leading-[150%] tracking-[1%]">
-              Introducing <span className="text-[#BD14FF]">ContentSpark AI</span> - Your AI
+              Introducing{" "}
+              <span className="text-[#BD14FF]">ContentSpark AI</span> - Your AI
               Social Media Post Creator
             </h2>
 
@@ -38,9 +28,11 @@ export default function Introduction() {
               engaging posts tailored for Instagram, LinkedIn, Facebook, and X
               (Twitter), optimized for maximum impact.
             </p>
-            <button
-              onClick={openWaitlistModal}
-              className="lg:block cursor-pointer flex items-center transition-all duration-200 justify-center gap-2"
+            <a
+              href="https://app.marqait.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
               style={{
                 borderRadius: "15px",
                 borderWidth: "1px",
@@ -61,7 +53,7 @@ export default function Introduction() {
               }}
             >
               Generate Social Media Post
-            </button>
+            </a>
           </div>
 
           {/* Right Illustration */}
@@ -76,11 +68,6 @@ export default function Introduction() {
           </div>
         </div>
       </div>
-
-      <WaitlistModal
-        isOpen={isWaitlistModalOpen}
-        onClose={closeWaitlistModal}
-      />
     </section>
   );
 }
