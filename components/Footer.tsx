@@ -228,7 +228,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center justify-center sm:justify-end space-x-3 sm:space-x-4 lg:space-x-6">
             <a
-              href="https://www.facebook.com/share/1G2Rsu27c8/"
+              href="https://www.facebook.com/MarqaitAI"
               onClick={() => trackCTAClick("Facebook", "Footer Social")}
               className="text-gray-400 hover:text-white duration-200 p-1 hover:scale-110 transform transition-transform"
               aria-label="Facebook"
@@ -244,7 +244,7 @@ export default function Footer() {
               />
             </a>
             <a
-              href="https://www.instagram.com/marqait.ai?igsh=MXNpdTExYzlpcGx3ZQ=="
+              href="https://www.instagram.com/marqait.ai/"
               onClick={() => trackCTAClick("Instagram", "Footer Social")}
               className="text-gray-400 hover:text-white  duration-200 p-1 hover:scale-110 transform transition-transform"
               aria-label="Instagram"
@@ -260,7 +260,7 @@ export default function Footer() {
               />
             </a>
             <a
-              href="https://www.x.com/marqait_ai"
+              href="https://x.com/marqait_ai"
               onClick={() => trackCTAClick("Twitter/X", "Footer Social")}
               className="text-gray-400 hover:text-white  duration-200 p-1 hover:scale-110 transform transition-transform"
               aria-label="Twitter"
