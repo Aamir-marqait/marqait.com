@@ -147,15 +147,16 @@ export default function AiPowerhouseHero() {
 
           {/* Main Heading */}
           <h1 className="font-inter text-5xl font-semibold text-white mb-6 leading-[68px] text-center max-w-3xl mx-auto">
-            Your all-in-one AI powerhouse for marketing, content & business
-            growth
+            AI Marketing Tools: Boost Your Marketing with AI Automation
           </h1>
 
           {/* Description */}
           <p className="font-inter text-2xl font-normal text-white/90 mb-8 max-w-3xl mx-auto leading-[150%] text-center">
-            Access 15+ AI tools designed to help you create stunning content,
+            Access 15+ AI tools for marketing to create stunning content,
             <br />
-            build marketing campaigns, launch websites, and grow your business.
+            social media posts, automate ad campaigns, and more. <br />
+            Grow your business faster with Marqait’s AI marketing automation
+            platform.
           </p>
 
           {/* CTA Button */}

@@ -1,11 +1,6 @@
 export default function FaqSection() {
   const faqs = [
     {
-      question: "What are AI marketing tools?",
-      answer:
-        "AI marketing tools are software applications that use artificial intelligence and machine learning to help businesses create, manage, and optimize marketing campaigns faster and more effectively. Instead of spending hours brainstorming, designing, or analyzing, marketers can use AI tools to automate repetitive tasks and generate high-performing content in minutes.",
-    },
-    {
       question: "How can Marqait's AI tools help generate marketing campaigns?",
       answer:
         "Marqait's AI tools can instantly generate campaigns, ads, and social media posts tailored to your business needs. Our AI understands your challenges and goals to create targeted marketing content that resonates with your audience.",

@@ -17,7 +17,7 @@ export default function KeyBenefits() {
       ),
       title: "Save Time",
       description:
-        "Generate campaigns, images, and content in minutes, allowing your team to focus on strategy and growth.",
+        "Our AI marketing tools help to automate Ad campaigns, content design, and post scheduling in seconds so your team can focus on strategy and growth.",
     },
     {
       icon: (
@@ -36,7 +36,7 @@ export default function KeyBenefits() {
       ),
       title: "Boost Creativity",
       description:
-        "AI provides fresh ideas, ad variations, and design options that inspire innovation.",
+        "You can generate unique ideas, ad variations, and creative visuals instantly with our AI marketing tools that keeps your marketing unique.",
     },
     {
       icon: (
@@ -55,7 +55,7 @@ export default function KeyBenefits() {
       ),
       title: "Improve ROI",
       description:
-        "Personalized content and optimized targeting help you reach the right audience with the right message.",
+        "Reach the right audience with personalized, data-driven content and optimized ad targeting to maximize your marketing return.",
     },
     {
       icon: (
@@ -72,9 +72,9 @@ export default function KeyBenefits() {
           />
         </svg>
       ),
-      title: "Brand Consistency",
+      title: "Ensure Brand Consistency",
       description:
-        "Whether you manage one brand or hundreds, our AI tools grow with your business and handle campaigns at...",
+        "Our AI tools for marketing maintain consistent messaging and visuals across all ad campaigns. Marqait’s AI tools for marketing help you scale your brand identity effortlessly.",
     },
     {
       icon: (
@@ -93,7 +93,7 @@ export default function KeyBenefits() {
       ),
       title: "Scale with Ease",
       description:
-        "AI provides fresh ideas, ad variations, and design options that inspire innovation.",
+        "Automate marketing with our AI tools built to handle everything, from small and medium sized business campaigns to automation.",
     },
   ];
 
@@ -102,12 +102,12 @@ export default function KeyBenefits() {
       <div className="max-w-[70rem] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-[#F2F2F2] font-bold text-[32px] leading-[150%] tracking-[0%] text-center mb-6 font-inter">
-            Key Benefits
+            Key Benefits of our AI Marketing Tools
           </h2>
           <p className="text-[18px] leading-[150%] tracking-[0%] text-center max-w-4xl mx-auto font-inter text-white/90">
-            Using Marqait AI’s marketing tools gives you more than just
-            automation, it gives you smarter, faster, and more creative
-            marketing.
+            At Marqait AI, our AI marketing tools gives your business more than
+            automation. It gives you smarter, faster artificial intelligence
+            marketing solutions.
           </p>
         </div>
 
