@@ -121,7 +121,7 @@ export default function HeroSection() {
           <div className="">
             <Image
               src="/logoai/hero.png"
-              alt="Collection of AI-generated logos showcasing various business types and design styles"
+              alt="AI logo designs"
               width={1000}
               height={600}
               className="w-full h-auto"

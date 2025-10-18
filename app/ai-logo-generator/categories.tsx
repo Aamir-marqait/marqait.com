@@ -39,7 +39,7 @@ export default function LogoCategoriesSection() {
       <div className="max-w-[70rem] mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-[36px] font-bold font-inter text-[#F2F2F2] mb-4 leading-[48px] tracking-[0%] text-center align-middle">
-            Explore Our Logo Categories
+            Generate a logo you love
           </h2>
           <p className="text-[16px] font-normal text-white/90 max-w-3xl mx-auto leading-[28px] tracking-[0%] text-center align-middle">
             Specialized AI models trained for different industries and use cases
@@ -61,7 +61,7 @@ export default function LogoCategoriesSection() {
               <div className="mb-6">
                 <Image
                   src={categories[0].image}
-                  alt={categories[0].title}
+                  alt="AI logo designs"
                   width={64}
                   height={64}
                   className="w-16 h-16"
@@ -89,7 +89,7 @@ export default function LogoCategoriesSection() {
               <div className="mb-6">
                 <Image
                   src={categories[1].image}
-                  alt={categories[1].title}
+                  alt="AI logo designs"
                   width={48}
                   height={48}
                   className="w-16 h-16"
@@ -118,10 +118,10 @@ export default function LogoCategoriesSection() {
               <div className="mb-6">
                 <Image
                   src={categories[2].image}
-                  alt={categories[2].title}
+                  alt="AI logo designs"
                   width={48}
                   height={48}
-                 className="w-16 h-16"
+                  className="w-16 h-16"
                 />
               </div>
               <h3 className="text-[24px] font-bold text-white mb-4 leading-[32px] tracking-[0%] text-center align-middle">
@@ -146,7 +146,7 @@ export default function LogoCategoriesSection() {
               <div className="mb-6">
                 <Image
                   src={categories[3].image}
-                  alt={categories[3].title}
+                  alt="AI logo designs"
                   width={48}
                   height={48}
                   className="w-16 h-16"
@@ -176,7 +176,7 @@ export default function LogoCategoriesSection() {
                 <div className="mb-6">
                   <Image
                     src={categories[4].image}
-                    alt={categories[4].title}
+                    alt="AI logo designs"
                     width={48}
                     height={48}
                     className="w-16 h-16"
