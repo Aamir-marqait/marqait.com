@@ -9,8 +9,9 @@ export default function FinalCtaSection() {
           <div className="relative z-10">
             <div className="text-center">
               <h2 className="text-[38px] max-w-lg mx-auto font-bold text-white mb-6 leading-[100%] tracking-[0px] text-center">
-                Start Building Your <br />
-                <span className="text-[#BD14FF]">Brand Today</span>
+                Generate a logo
+                <br />
+                <span className="text-[#BD14FF]">you love in seconds</span>
               </h2>
               <p className="text-[20px] font-normal text-white mb-8 max-w-3xl mx-auto leading-[150%] tracking-[0%] text-center">
                 Don’t let branding hold you back. Use our Free AI Logo Generator

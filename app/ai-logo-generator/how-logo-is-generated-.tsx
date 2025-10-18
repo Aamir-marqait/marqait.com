@@ -75,7 +75,7 @@ export default function DevelopmentProcessSection() {
             <div className="w-full max-w-lg">
               <Image
                 src="/logoai/how.png"
-                alt="AI Agent Development Process Illustration"
+                alt="AI logo generator tool"
                 width={500}
                 height={400}
                 className="w-full h-auto"

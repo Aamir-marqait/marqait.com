@@ -58,7 +58,7 @@ export default function Introduction() {
           <div className="flex justify-center lg:justify-end">
             <Image
               src="/logoai/what.png"
-              alt="AI SEO Illustration"
+              alt="AI logo generator tool"
               width={500}
               height={400}
               className="max-w-full h-auto"

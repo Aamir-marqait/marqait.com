@@ -53,10 +53,10 @@ export default function OurPowerfulTools() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl leading-[60px] lg:text-[36px] font-bold mb-4 text-balance">
-            Our Powerful {""}
+            Explore Our{" "}
             <span className="text-purple-400 lg:text-[36px] ">
               <span className="relative">
-                Marketing AI Tools
+                AI Marketing Tools
                 <Image
                   src="/line.svg"
                   alt="decorative line"
