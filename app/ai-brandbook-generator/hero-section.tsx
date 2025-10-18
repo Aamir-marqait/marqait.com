@@ -55,7 +55,7 @@ export default function HeroSection() {
             {/* Content */}
             <div className="space-y-8">
               <h1 className="text-[48px] font-bold bg-gradient-to-br from-white to-[#B372CF] bg-clip-text text-transparent leading-[130%] tracking-[-0.05em] align-middle font-inter">
-                BrandBlueprint AI: Define your brand's essence
+                AI Brand Book Generator
               </h1>
               <p className="text-[18px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 Develop a complete, consistent brand identity with AI-generated
