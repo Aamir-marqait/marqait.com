@@ -8,24 +8,24 @@ import FaqSection from "./faq-section";
 import FinalCtaSection from "./final-cta";
 
 export const metadata: Metadata = {
-  title: "Free AI Campaign Generator - Marqait AI",
+  title: "AI Ad Generator - Create Smarter Ad Campaigns with AI",
   description:
-    "Create comprehensive marketing campaigns instantly with AI. Generate campaign strategies, content plans, social media posts, email sequences, and advertising copy across multiple channels.",
+    "Searching for AI tool for advertising? Marqait AI offers the best AI Ad Generator to launch high-converting Google and Meta Ad campaigns..",
   alternates: {
     canonical: "https://www.marqait.com/ai-ad-generator",
   },
   openGraph: {
-    title: "Free AI Campaign Generator - Marqait AI",
+    title: "AI Ad Generator - Create Smarter Ad Campaigns with AI",
     description:
-      "Create comprehensive marketing campaigns instantly with AI. Generate campaign strategies, content plans, social media posts, email sequences, and advertising copy across multiple channels.",
+      "Searching for AI tool for advertising? Marqait AI offers the best AI Ad Generator to launch high-converting Google and Meta Ad campaigns..",
     url: "https://www.marqait.com/ai-ad-generator",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI Campaign Generator - Marqait AI",
+    title: "AI Ad Generator - Create Smarter Ad Campaigns with AI",
     description:
-      "Create comprehensive marketing campaigns instantly with AI. Generate campaign strategies, content plans, social media posts, email sequences, and advertising copy across multiple channels.",
+      "Searching for AI tool for advertising? Marqait AI offers the best AI Ad Generator to launch high-converting Google and Meta Ad campaigns..",
   },
 };
 

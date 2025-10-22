@@ -3,27 +3,37 @@ export default function FaqSection() {
     {
       question: "What is AdPilot AI?",
       answer:
-        "AdPilot AI is an advanced advertising automation tool that uses artificial intelligence to launch and optimize ad campaigns across Meta and Google platforms. It drives conversions with AI-driven precision targeting and automated campaign management.",
+        "AdPilot AI is an advanced AI-powered tool from Marqait AI that automatically creates, optimises, and launches high-performing Ad campaigns quickly—without needing marketing expertise.",
     },
     {
-      question: "Which advertising platforms does AdPilot AI support?",
+      question: "Can I run ads on multiple platforms?",
       answer:
-        "AdPilot AI supports major advertising platforms including Meta (Facebook and Instagram) and Google Ads. The platform automatically optimizes campaigns for each platform's unique requirements to ensure maximum performance.",
+        "Yes! Marqait's AI-powered Ad generator, AdPilot AI supports major ad platforms like Google and Meta, automatically optimizing your campaigns for each platform.",
     },
     {
-      question: "How does AdPilot AI optimize ad campaigns?",
+      question: "Do I need experience in marketing to use it?",
       answer:
-        "AdPilot AI uses machine learning algorithms to analyze performance data, audience behavior, and market trends. It automatically adjusts targeting, bidding, and creative elements to maximize conversions and minimize costs.",
+        "Not at all. AdPilot AI is built for everyone—businesses, content creators, and agencies. The AI guides you through every step.",
     },
     {
-      question: "Can AdPilot AI create ad scripts and visuals?",
+      question: "How quickly can I launch a campaign?",
       answer:
-        "Yes, AdPilot AI features AI-driven scripting that generates compelling ad copy and automated visual selection that chooses the most effective creative assets based on performance data and audience preferences.",
+        "You can go from idea to live campaign in minutes. AdPilot AI generates ad copy, visuals, and targeting instantly.",
     },
     {
-      question: "Does AdPilot AI offer natural language video editing?",
+      question: "Will AI optimize my campaigns automatically?",
       answer:
-        "Yes, AdPilot AI includes natural language video editing capabilities that allow you to edit and customize video ads using simple text commands, making professional video ad creation accessible without technical expertise.",
+        "Yes. Our AI Ad generator continuously monitors performance, adjusts targeting, and fine-tunes your ads to maximize ROI.",
+    },
+    {
+      question: "Can I customize the ads?",
+      answer:
+        "Absolutely. While our AI Ad generator, AdPilot AI automates much of the work, you can edit visuals, scripts, and targeting to suit your brand and audience.",
+    },
+    {
+      question: "Is there a free trial?",
+      answer:
+        "Yes! You can try Marqait's AI Ad generator, AdPilot AI risk-free and see how easy it is to create high-converting campaigns before committing.",
     },
   ];
 

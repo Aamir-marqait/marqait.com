@@ -1,6 +1,5 @@
 import { Zap } from "lucide-react";
 
-
 export default function FinalCtaSection() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -10,13 +9,13 @@ export default function FinalCtaSection() {
           <div className="relative z-10">
             <div className="text-center">
               <h2 className="flex flex-col gap-2 text-[38px] max-w-lg mx-auto font-bold text-white mb-6 leading-[100%] tracking-[0px] text-center">
-                Start Building Your
-                <span className="text-[#BD14FF]">Brand Today</span>
+                Launch Smarter Ads with
+                <span className="text-[#BD14FF]">AI Ad Generator</span>
               </h2>
               <p className="text-[20px] font-normal text-white mb-8 max-w-3xl mx-auto leading-[150%] tracking-[0%] text-center">
-                Start using the free AI social media post generator tool to make
-                an engaging social media post in seconds without design skills
-                and complicated software.
+                Stop spending hours on ad campaigns. Let our AI Ad generator do
+                the heavy lifting and help you create high-converting ads in
+                minutes.
               </p>
               <div className="flex justify-center">
                 <a
