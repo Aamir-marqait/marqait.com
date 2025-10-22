@@ -178,7 +178,7 @@ export default function ProTierAgents() {
                 Drive conversions with AI-driven precision across Meta and
                 Google
               </p>
-              <Link href={"/ai-campaign-generator"}>
+              <Link href={"/ai-ad-generator"}>
                 <button
                   className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto

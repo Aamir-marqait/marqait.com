@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/ai-social-media-post-generator', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/ai-brandbook-generator', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/ai-reel-generator', priority: 0.8, changeFrequency: 'weekly' as const },
-    { path: '/ai-campaign-generator', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/ai-ad-generator', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/ai-image-editor', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/ai-solutions', priority: 0.9, changeFrequency: 'weekly' as const },
     { path: '/custom-ai-solutions', priority: 0.8, changeFrequency: 'weekly' as const },

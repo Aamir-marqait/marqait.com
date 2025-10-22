@@ -60,7 +60,7 @@ const nextConfig = {
       },
       {
         source: "/adpilot-ai",
-        destination: "/ai-campaign-generator",
+        destination: "/ai-ad-generator",
         permanent: true,
       },
       {

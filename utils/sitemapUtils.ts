@@ -157,7 +157,7 @@ export function generateSitemapSections(): SitemapSection[] {
       title: 'AI Reels Generator',
       description: 'Generate engaging video reels and short-form content with AI'
     },
-    '/ai-campaign-generator': {
+    '/ai-ad-generator': {
       title: 'AI Campaign Generator',
       description: 'Create and optimize advertising campaigns with AI-powered insights'
     },
@@ -238,7 +238,7 @@ export function generateSitemapSections(): SitemapSection[] {
       mainPages.push(item);
     } else if (route.startsWith('/ai-') && 
                ['ai-logo-generator', 'ai-social-media-post-generator', 'ai-brandbook-generator', 
-                'ai-reel-generator', 'ai-campaign-generator', 'ai-image-editor'].includes(route.replace('/', ''))) {
+                'ai-reel-generator', 'ai-ad-generator', 'ai-image-editor'].includes(route.replace('/', ''))) {
       aiTools.push(item);
     } else if (route.startsWith('/ai-') || route === '/custom-ai-solutions') {
       aiSolutions.push(item);
