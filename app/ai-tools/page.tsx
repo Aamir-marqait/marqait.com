@@ -7,26 +7,26 @@ import FaqSection from "@/components/products/faq-section";
 import FinalCtaSection from "@/components/products/final-cta-section";
 
 export const metadata: Metadata = {
-  title: "Best AI Tools for Marketing Automation - Marqait AI",
+  title: "Free AI Marketing Tools - Marqait AI",
   description:
-    "Explore AI tools for Marketing automation at Marqait AI. Get free ai logo generator, social media post generator, campaign generator and more.",
+    "Marqait AI offers free AI marketing tools to automate content creation, ad campaigns, social media posts, and more for smarter marketing.",
   keywords:
     "AI tools, marketing automation, AI logo generator, social media post generator, campaign generator, free AI tools",
   alternates: {
     canonical: "https://www.marqait.com/ai-tools",
   },
   openGraph: {
-    title: "Best AI Tools for Marketing Automation - Marqait AI",
+    title: "Free AI Marketing Tools - Marqait AI",
     description:
-      "Explore AI tools for Marketing automation at Marqait AI. Get free ai logo generator, social media post generator, campaign generator and more.",
+      "Marqait AI offers free AI marketing tools to automate content creation, ad campaigns, social media posts, and more for smarter marketing.",
     url: "https://www.marqait.com/ai-tools",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best AI Tools for Marketing Automation - Marqait AI",
+    title: "Free AI Marketing Tools - Marqait AI",
     description:
-      "Explore AI tools for Marketing automation at Marqait AI. Get free ai logo generator, social media post generator, campaign generator and more.",
+      "Marqait AI offers free AI marketing tools to automate content creation, ad campaigns, social media posts, and more for smarter marketing.",
   },
 };
 
