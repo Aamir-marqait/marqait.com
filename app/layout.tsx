@@ -85,6 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PGC7VTP2');`}
         </Script>
 
+        <meta name="yandex-verification" content="613dd56c06bdbdda" />
         <link rel="icon" type="image/png" sizes="32x32" href="/meta-logo.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/meta-logo.png" />
         <link rel="shortcut icon" href="/meta-logo.png" />
