@@ -55,7 +55,7 @@ export default function Header() {
         },
         {
           name: "AI Campaign Generator",
-          path: "/ai-campaign-generator",
+          path: "/ai-ad-generator",
           description: "Generates campaigns",
           icon: "/ads.jpg",
         },

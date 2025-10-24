@@ -62,6 +62,7 @@ export const metadata: Metadata = {
   },
   other: {
     "google-site-verification": "QuAPM_tGjjCbDjftUBKt-cr5wD5DQILYO8GkZkj6SUA",
+    "yandex-verification": "613dd56c06bdbdda",
     "theme-color": "#8C45FF",
     "msapplication-TileColor": "#8C45FF",
   },

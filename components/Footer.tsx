@@ -33,7 +33,7 @@ export default function Footer() {
       },
       { text: "AI BrandBook Generator", url: "/ai-brandbook-generator" },
       { text: "AI Reel Generator", url: "/ai-reel-generator" },
-      { text: "AI Campaign Generator", url: "/ai-campaign-generator" },
+      { text: "AI Campaign Generator", url: "/ai-ad-generator" },
       { text: "AI Image Editor", url: "/ai-image-editor" },
     ],
     aiSolutions: [

@@ -55,24 +55,25 @@ export default function HeroSection() {
             {/* Content */}
             <div className="space-y-8">
               <h1 className="text-[48px] font-bold bg-gradient-to-br from-white to-[#B372CF] bg-clip-text text-transparent leading-[130%] tracking-[-0.05em] align-middle font-inter">
-                AdPilot AI: Launch & Optimize Ad Campaigns
+                AI Ad Generator - Create Ad Campaign with AI
               </h1>
               <p className="text-[18px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
-                Drive conversions with AI-driven precision across Meta and
-                Google.
+                Launch high-converting Ads campaigns in minutes with AdPilot AI,
+                Marqait’s AI Ad Generator. Just enter your product details, and
+                we’ll generate ads that get results instantly.
               </p>
 
               <p className=" flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                AI-driven precision targeting across platforms
+                AI-optimized ads for better performance and conversions.
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Automated campaign optimization for conversions
+                Run Google & Meta Ad campaigns seamlessly from one platform.
               </p>
               <p className="flex gap-2 items-center text-[12px] font-normal text-white/90 leading-[150%] tracking-[0%] align-middle font-inter">
                 <span className="w-[10px] h-[10px] bg-[#22C55E] rounded-full"></span>
-                Meta and Google Ads integration
+                Save time and effort with smart ad creation.
               </p>
 
               <a
@@ -99,7 +100,7 @@ export default function HeroSection() {
                   color: "#F2F0F5",
                 }}
               >
-                Learn More
+                Generate AI ADs
               </a>
             </div>
           </div>
@@ -109,7 +110,7 @@ export default function HeroSection() {
             <div className="relative w-full max-w-xl">
               <Image
                 src="/pilot/hero.png"
-                alt="3D illustration of ecommerce elements including storefront, gift boxes, shopping bags, and credit card"
+                alt="AI Ad Generator"
                 width={500}
                 height={400}
                 className="w-full h-auto object-cover"

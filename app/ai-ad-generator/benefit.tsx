@@ -1,29 +1,29 @@
 export default function Benefits() {
   const benefits = [
     {
-      title: "Social Media Marketing",
+      title: "Social Media Marketing Made Simple",
       description:
-        "Consistently create fresh, trending video content to keep your audience engaged.",
+        "Reach your audience where they scroll. Create and launch high-performing ads for every platform in minutes.",
     },
     {
-      title: "Product Showcases",
+      title: "Product Showcases That Sell",
       description:
-        "PQuickly produce dynamic video ads and demonstrations for new products or services.",
+        "Highlight your product’s best features with stunning image and video ads—no designer or editor required",
     },
     {
-      title: "Influencer Marketing",
+      title: "Effortless Influencer Marketing",
       description:
-        "Collaborate with influencers by providing them with high-quality, AI-generated video content.",
+        "Collaborate with Influencer seamlessly. AdPilot AI helps you create branded content that blends naturally with influencer campaigns.",
     },
     {
-      title: "Brand Storytelling",
+      title: "Powerful Brand Storytelling",
       description:
-        "Share your brand's narrative in an engaging, visual format that resonates with viewers.",
+        "Tell your story with visuals, scripts, and voice-overs that connect emotionally and convert faster.",
     },
     {
       title: "Time and Cost Savings",
       description:
-        "Drastically reduce the time and resources typically required for video production.",
+        "Cut agency costs and endless edits. AdPilot AI automates the heavy lifting so you can focus on growth.",
     },
   ];
 
@@ -44,12 +44,12 @@ export default function Benefits() {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-white font-bold font-inter text-center text-[36px] leading-[150%] tracking-[1%]">
-              Our Benefits
+              Why Businesses Love Our AI Ads Generator
             </h2>
             <p className="text-[18px] font-normal text-white/90 max-w-4xl mx-auto leading-[28px] text-center">
-              a dummy or placeholder text commonly used in graphic design,
-              publishing, and web development. Its purpose is to permit a page
-              layout to be designed.
+              Our Ad Ad generator, AdPilot AI empowers marketers, creators, and
+              businesses to launch smarter campaigns and grow faster. Here’s how
+              it makes an impact.
             </p>
           </div>
 

@@ -4,23 +4,23 @@ export default function MadeEveryBrand() {
   const industries = [
     {
       id: 1,
-      title: "Small Business Owners & Startups",
+      title: "For Small and Medium Businesses",
       description:
-        "Create professional social media content quickly and affordably. Perfect for startups and small businesses looking to establish their brand presence without hiring expensive agencies.",
+        "Launch high-performing campaigns without hiring an agency. Save time, cut costs, and reach the right audience effortlessly.",
       image: "/brand/1.png",
     },
     {
       id: 2,
-      title: "Digital Marketers & Agencies",
+      title: "For Content Creators",
       description:
-        "Generate high-converting social media campaigns for multiple clients. Streamline content creation workflows and deliver consistent, branded posts across all platforms.",
+        "Turn ideas into engaging ads in minutes. Create scroll-stopping visuals, videos, and scripts to grow your audience faster.",
       image: "/brand/2.png",
     },
     {
       id: 3,
-      title: "Influencer & Creators",
+      title: "For Marketing Agencies",
       description:
-        "Craft engaging, authentic content that resonates with your audience. Generate posts that match your unique voice and style while maintaining consistent engagement.",
+        "Scale client campaigns with ease. Automate creative work, optimize performance, and deliver results efficiently—all from one platform.",
       image: "/brand/3.png",
     },
   ];
@@ -31,12 +31,11 @@ export default function MadeEveryBrand() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-[32px] font-bold text-[#F2F2F2] mb-6 leading-[48px] text-center">
-            Made for Every Brand, Big or Small
+            AI Ad Generator for Everyone
           </h2>
           <p className="text-[18px] font-normal text-white/90  max-w-2xl mx-auto leading-[28px] text-center">
-            a dummy or placeholder text commonly used in graphic design,
-            publishing, and web development. Its purpose is to permit a page
-            layout to be designed.
+            Our AI Ad Generator is built to make ad campaigns simple, effective,
+            and accessible—no matter who you are or what you do.
           </p>
         </div>
 

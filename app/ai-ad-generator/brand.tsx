@@ -9,40 +9,64 @@ export default function BrandPage() {
 
   const brandItems = [
     {
+      title: "Instant Campaign Creation",
+      description:
+        "Go from idea to live campaign in seconds. Just enter your details, and AdPilot AI builds the copy, creatives, and targeting for you.",
+      image: "/pilot/1.png",
+    },
+    {
+      title: "Multi-Format Ad Design",
+      description:
+        "Create image and video ads that stand out. AdPilot AI suggests the best formats and visuals to grab attention and drive clicks.",
+      image: "/pilot/2.png",
+    },
+    {
       title: "AI-Driven Scripting",
       description:
-        "Automatically generates compelling ad scripts and copy using AI that resonates with your target audience and drives conversions across Meta and Google platforms.",
-      image: "/pilot/1.png",
+        "Skip the brainstorming. Our AI writes persuasive ad copy and video scripts so you can focus on growing your business",
+      image: "/pilot/3.png",
     },
     {
       title: "Automated Visual Selection",
       description:
-        "Intelligently selects the most effective visual elements, images, and creative assets for your ad campaigns based on performance data and audience preferences.",
-      image: "/pilot/2.png",
-    },
-    {
-      title: "Intelligent Text to Speech Narration",
-      description:
-        "Converts ad scripts into natural-sounding voiceovers using advanced text-to-speech technology, perfect for video ads and audio campaigns.",
-      image: "/pilot/3.png",
-    },
-    {
-      title: "Editing & Pricing",
-      description:
-        "Streamlines the ad creation process with built-in editing tools and transparent pricing models, making campaign management efficient and cost-effective.",
+        "Get scroll-stopping visuals automatically. Our AI ad generator picks the perfect images and clips that match your message and convert better.",
       image: "/pilot/4.png",
     },
     {
-      title: "Platform Specific Optimization",
+      title: "Intelligent Text-to-Speech",
       description:
-        "Automatically optimizes ad campaigns for each platform's unique requirements, ensuring maximum performance on Meta, Google, and other advertising channels.",
+        "Add natural voice-overs in a single click. Make your ads sound professional without hiring a voice artist.",
       image: "/pilot/5.png",
     },
     {
       title: "Natural Language Video Editing",
       description:
-        "Edit and customize video ads using simple natural language commands, making professional video ad creation accessible to everyone without technical expertise.",
+        "Edit your videos by simply telling the AI what to change. Fast, easy, and beginner-friendly.",
       image: "/pilot/5.png",
+    },
+    {
+      title: "Real-Time Optimization",
+      description:
+        "Your campaigns get smarter as they run. Our AI ad generator analyzes performance and adjusts for the best results—automatically.",
+      image: "/pilot/1.png",
+    },
+    {
+      title: "Platform-Specific Optimization",
+      description:
+        "Your ads are always in the right format. Our AI Ad generator, AdPilot AI tailors campaigns for Meta, Google, and more—no manual tweaking",
+      image: "/pilot/2.png",
+    },
+    {
+      title: "Editing & Pricing Control",
+      description:
+        "Edit and manage your ad budget in one place. No extra tools, no wasted time.",
+      image: "/pilot/3.png",
+    },
+    {
+      title: "Seamless Platform Integration",
+      description:
+        "Launch and manage everything from one dashboard. Run campaigns across platforms without switching tabs",
+      image: "/pilot/6.png",
     },
   ];
 
@@ -64,8 +88,7 @@ export default function BrandPage() {
           <div className="mb-20">
             <div className="text-center mb-16">
               <h2 className="text-white font-bold font-inter text-center text-[36px] leading-[150%] tracking-[1%]">
-                Everything You Need for a<br />
-                Cohesive Brand
+                All the AI Ad Generator features you need
               </h2>
             </div>
 

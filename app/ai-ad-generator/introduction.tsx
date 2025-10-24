@@ -11,26 +11,27 @@ export default function Introduction() {
           <div className="space-y-8">
             <h2 className="text-white font-bold font-inter max-w-md text-[32px] leading-[150%] tracking-[1%]">
               Introducing <span className="text-[#BD14FF]">AdPilot AI</span> -
-              Your Campaign Generator
+              The most advanced AI Ad Generator
             </h2>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              Our powerful tool designed to help businesses craft a strong,
-              consistent, and professional brand identity. With AI-driven
-              precision, it builds comprehensive brand books that cover
-              everything from colors and typography to tone of voice and
-              messaging guidelines. The result is a clear, accessible blueprint
-              that ensures your brand stays cohesive and impactful across every
-              platform and interaction.
+              <strong>Instant Ad Campaign Generate:</strong> Launch complete ad
+              campaigns in just a few clicks. Enter your product or service
+              details, and AdPilot AI generates ad copy, creatives, and
+              targeting automatically—no expertise required.
             </p>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
-              Beyond just design assets, the Pro AI BrandBlueprint Generator
-              empowers your team with actionable guidelines that streamline
-              decision-making and reduce inconsistencies. Whether you’re
-              launching a new brand, refreshing an existing one, or scaling
-              across multiple channels, it ensures every touchpoint reflects
-              your brand’s true identity with clarity and confidence.
+              <strong>Create Image & Video Ads:</strong> Design eye-catching
+              image and video ads instantly. AdPilot AI suggests visuals,
+              formats, and copy optimized for engagement, making every ad
+              high-performing and shareable.
+            </p>
+            <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
+              <strong>Launch Ads on Meta & Google:</strong> Deploy your
+              campaigns directly to Google and Meta without leaving the
+              platform. Track performance in real-time and let AI optimize for
+              maximum ROI automatically.
             </p>
             <a
               href="https://app.marqait.com/"
@@ -64,7 +65,7 @@ export default function Introduction() {
           <div className="flex justify-center lg:justify-end">
             <Image
               src="/pilot/second image.png"
-              alt="AI SEO Illustration"
+              alt="AI Generated Ad image example"
               width={500}
               height={400}
               className="max-w-full h-auto"
