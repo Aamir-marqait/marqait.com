@@ -64,6 +64,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/ai-campaign-generator",
+        destination: "/ai-ad-generator",
+        permanent: true,
+      },
+      {
         source: "/ai-editor",
         destination: "/ai-image-editor",
         permanent: true,

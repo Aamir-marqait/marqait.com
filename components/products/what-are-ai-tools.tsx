@@ -49,9 +49,9 @@ export default function WhatAreTools() {
               <p className="font-bold text-[#D8D8D8] text-[15px] leading-[100%] tracking-[8%]  uppercase">
                 Why Choose Us
               </p>
-              <h1 className="font-bold text-white text-[28px] leading-[100%] tracking-[0%]">
+              <h2 className="font-bold text-white text-[28px] leading-[100%] tracking-[0%]">
                 With Marqait You Can:
-              </h1>
+              </h2>
             </div>
             {processSteps.map((step, index) => (
               <div key={index} className="flex gap-6">

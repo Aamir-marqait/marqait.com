@@ -52,7 +52,7 @@ export default function OurPowerfulTools() {
       <div className="relative z-10 container mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl leading-[60px] lg:text-[36px] font-bold mb-4 text-balance">
+          <h2 className="text-4xl md:text-5xl leading-[60px] lg:text-[36px] font-bold mb-4 text-balance">
             Explore Our{" "}
             <span className="text-purple-400 lg:text-[36px] ">
               <span className="relative">
@@ -66,7 +66,7 @@ export default function OurPowerfulTools() {
                 />
               </span>
             </span>
-          </h1>
+          </h2>
         </div>
 
         {/* Services Grid */}
