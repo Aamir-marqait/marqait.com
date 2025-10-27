@@ -33,7 +33,7 @@ export default function ProTierAgents() {
         >
           <div className="hero-content flex-1">
             <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
-              BrandBlueprint AI: Define your brand's essence
+              AI BranBook Generator : Define your brand's essence
             </h3>
             <p
               className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3 "
@@ -57,7 +57,7 @@ export default function ProTierAgents() {
                   borderRadius: "16px",
                 }}
               >
-                Try Brand BluePrint AI
+                Try AI BranBook Generator
                 <Image
                   src="/icons/arrow.svg"
                   alt="arrow-right"
@@ -107,7 +107,7 @@ export default function ProTierAgents() {
 
             <div className="flex-shrink-0 mt-auto">
               <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
-                ReelCraft AI: Produce dynamic short-form videos
+                AI Reel Generator: Produce dynamic short-form videos
               </h3>
               <p
                 className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
@@ -130,7 +130,7 @@ export default function ProTierAgents() {
                     borderRadius: "16px",
                   }}
                 >
-                  Try ReelCraft AI
+                  Try AI Reel Generator
                   <Image
                     src="/icons/arrow.svg"
                     alt="arrow-right"
@@ -169,7 +169,7 @@ export default function ProTierAgents() {
 
             <div className="flex-shrink-0 mt-auto">
               <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
-                AdPilot AI: Launch and optimize ad campaigns
+                AI Campaign Generator: Launch and optimize ad campaigns
               </h3>
               <p
                 className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
@@ -192,7 +192,7 @@ export default function ProTierAgents() {
                     borderRadius: "16px",
                   }}
                 >
-                  Try AdPilot AI
+                  Try AI Campaign Generator
                   <Image
                     src="/icons/arrow.svg"
                     alt="arrow-right"

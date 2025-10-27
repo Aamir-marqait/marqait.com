@@ -49,7 +49,7 @@ export default function FreeTierAgents() {
 
             <div className="flex-shrink-0 mt-auto">
               <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
-                BrandMark AI: Instantly create unique logos
+                AI Logo Generator: Instantly create unique logos
               </h3>
               <p
                 className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
@@ -73,7 +73,7 @@ export default function FreeTierAgents() {
                   }}
                   aria-label="Try BrandMark AI logo generator"
                 >
-                  Try BrandMark AI
+                  Try  AI Logo Generator
                   <Image
                     src="/icons/arrow.svg"
                     alt=""
@@ -112,7 +112,7 @@ export default function FreeTierAgents() {
 
             <div className="flex-shrink-0 mt-auto">
               <h3 className="text-xl sm:text-2xl lg:text-[24px] leading-tight sm:leading-[1.2] lg:leading-[150%] font-semibold text-white mb-3 sm:mb-4 font-roboto">
-                ContentSpark AI: Generate engaging social media posts
+                AI Social Media Post Generator: Generate engaging social media posts
               </h3>
               <p
                 className="text-base sm:text-lg lg:text-[16px] leading-relaxed sm:leading-[1.4] lg:leading-[150%] font-normal mb-6 sm:mb-8 font-inter line-clamp-3"
@@ -135,7 +135,7 @@ export default function FreeTierAgents() {
                   }}
                   aria-label="Try ContentSpark AI social media generator"
                 >
-                  Try ContentSpark AI
+                  Try AI Social Media Post Generator
                   <Image
                     src="/icons/arrow.svg"
                     alt=""
