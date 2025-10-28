@@ -66,6 +66,18 @@ export default function Header() {
           description: "Edit your Image with AI",
           icon: "/edit.jpg",
         },
+        {
+          name: "Gaming Logo Maker",
+          path: "/ai-solutions/gaming-logo-maker",
+          description: "Create gaming logos instantly",
+          icon: "/5.png",
+        },
+        {
+          name: "LinkedIn Carousel Generator",
+          path: "/ai-solutions/free-linkedin-carousel-generator",
+          description: "Generate LinkedIn carousels",
+          icon: "/6.png",
+        },
       ],
     },
     {

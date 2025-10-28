@@ -35,6 +35,11 @@ export default function Footer() {
       { text: "AI Reel Generator", url: "/ai-reel-generator" },
       { text: "AI Campaign Generator", url: "/ai-ad-generator" },
       { text: "AI Image Editor", url: "/ai-image-editor" },
+      { text: "Gaming Logo Maker", url: "/ai-solutions/gaming-logo-maker" },
+      {
+        text: "LinkedIn Carousel Generator",
+        url: "/ai-solutions/free-linkedin-carousel-generator",
+      },
     ],
     aiSolutions: [
       { text: "Custom AI Solutions", url: "/custom-ai-solutions" },
