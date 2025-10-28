@@ -165,6 +165,14 @@ export function generateSitemapSections(): SitemapSection[] {
       title: 'AI Image Editor',
       description: 'Advanced AI-powered image editing and optimization tools'
     },
+    '/ai-solutions/gaming-logo-maker': {
+      title: 'Gaming Logo Maker',
+      description: 'Create unique gaming logos with AI-powered design tools'
+    },
+    '/ai-solutions/free-linkedin-carousel-generator': {
+      title: 'LinkedIn Carousel Generator',
+      description: 'Generate engaging LinkedIn carousel posts with AI assistance'
+    },
     '/ai-solutions': {
       title: 'AI Solutions',
       description: 'Comprehensive AI marketing solutions for businesses of all sizes'
@@ -227,23 +235,41 @@ export function generateSitemapSections(): SitemapSection[] {
   for (const route of routes) {
     const metadata = pageMetadata[route];
     if (!metadata) continue;
-    
+
     const item: SitemapItem = {
       title: metadata.title,
       url: route,
       description: metadata.description
     };
-    
+
     if (['/contact', '/contacts', '/', '/about', '/ai-blog', '/blog'].includes(route)) {
       mainPages.push(item);
-    } else if (route.startsWith('/ai-') && 
-               ['ai-logo-generator', 'ai-social-media-post-generator', 'ai-brandbook-generator', 
-                'ai-reel-generator', 'ai-ad-generator', 'ai-image-editor'].includes(route.replace('/', ''))) {
+    } else if ((route.startsWith('/ai-') &&
+               ['ai-logo-generator', 'ai-social-media-post-generator', 'ai-brandbook-generator',
+                'ai-reel-generator', 'ai-ad-generator', 'ai-image-editor'].includes(route.replace('/', ''))) ||
+               ['/ai-solutions/gaming-logo-maker', '/ai-solutions/free-linkedin-carousel-generator'].includes(route)) {
       aiTools.push(item);
     } else if (route.startsWith('/ai-') || route === '/custom-ai-solutions') {
       aiSolutions.push(item);
     } else {
       otherPages.push(item);
+    }
+  }
+
+  // Add new AI tools manually (even if pages don't exist yet)
+  const newTools = [
+    '/ai-solutions/gaming-logo-maker',
+    '/ai-solutions/free-linkedin-carousel-generator'
+  ];
+
+  for (const route of newTools) {
+    const metadata = pageMetadata[route];
+    if (metadata && !aiTools.some(item => item.url === route)) {
+      aiTools.push({
+        title: metadata.title,
+        url: route,
+        description: metadata.description
+      });
     }
   }
   

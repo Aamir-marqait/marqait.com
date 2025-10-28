@@ -44,6 +44,20 @@ const services = [
     link: "/ai-image-editor",
     image: "/edit.jpg",
   },
+  {
+    title: "Gaming Logo Maker",
+    description:
+      "Create professional gaming logos instantly with our AI Gaming Logo Maker. Design unique gaming brand identities with custom styles, colors, and gaming-themed elements that stand out.",
+    link: "/ai-solutions/gaming-logo-maker",
+    image: "/5.png",
+  },
+  {
+    title: "LinkedIn Carousel Generator",
+    description:
+      "Generate engaging LinkedIn carousels effortlessly with our AI-powered tool. Create professional, eye-catching carousel posts that boost engagement and grow your LinkedIn presence.",
+    link: "/ai-solutions/free-linkedin-carousel-generator",
+    image: "/6.png",
+  },
 ];
 
 export default function OurPowerfulTools() {
