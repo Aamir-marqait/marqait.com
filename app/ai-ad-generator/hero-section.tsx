@@ -76,7 +76,7 @@ export default function HeroSection() {
                 Save time and effort with smart ad creation.
               </p>
 
-              <a
+              <Link
                 href="https://app.marqait.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -101,7 +101,7 @@ export default function HeroSection() {
                 }}
               >
                 Generate AI ADs
-              </a>
+              </Link>
             </div>
           </div>
 
