@@ -130,8 +130,8 @@ const ContactFormSection = forwardRef<HTMLElement>(
 
             {/* Subtitle */}
             <p className="self-stretch text-center font-inter text-[20px] font-medium leading-[27px] tracking-[-0.5px] max-w-[30rem] mx-auto text-[rgba(255,255,255,0.90)]">
-              Tell us about your business goals, and we&apos;ll craft your
-              AI-powered growth plan within one business day.
+              Tell us about your business goals, and we’ll craft your marketing
+              automation plan within one business day.
             </p>
           </div>
 
