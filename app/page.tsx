@@ -25,15 +25,14 @@ export default function Home() {
 
   useSEO({
     canonical: "https://www.marqait.com",
-    title: "Marqait AI - Best AI Tools, AI Solutions & Marketing Automation",
+    title: "Marqait AI | All-in-One Marketing Automation Platform",
     description:
-      "Marqait AI is a leading AI development company offering AI tools, marketing automation, and custom AI solutions to improve efficiency and productivity.",
+      "Automate marketing tasks with Marqait — an AI-powered marketing automation platform to design, launch Ads campaigns, and more. Alternate of agency",
     keywords:
       "AI, growth platform, business automation, marqait, artificial intelligence",
     ogType: "website",
     twitterCard: "summary_large_image",
   });
-
 
   const closeWaitlistModal = () => {
     setIsWaitlistModalOpen(false);

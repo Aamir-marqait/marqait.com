@@ -26,7 +26,7 @@ function UI() {
           sizes="(max-width: 640px) 100vw, 50vw"
         />
       </div>
-       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#05000A] via-[#05000A]/80 to-transparent z-5" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#05000A] via-[#05000A]/80 to-transparent z-5" />
 
       {/* Dashboard image with responsive margins and overlaid text */}
       <div className="relative  max-w-[70rem] mx-auto z-10 mt-16 sm:mt-32 md:mt-48 lg:mt-[16.5rem] ">
@@ -48,19 +48,20 @@ function UI() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <h1 className="text-white font-semibold text-xl sm:text-3xl md:text-xl lg:text-5xl xl:text-[34px] leading-tight sm:leading-snug md:leading-relaxed lg:leading-[150%] text-balance animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h2 className="text-white font-semibold text-xl sm:text-3xl md:text-xl lg:text-5xl xl:text-[34px] leading-tight sm:leading-snug md:leading-relaxed lg:leading-[150%] text-balance animate-in fade-in slide-in-from-bottom-4 duration-700">
             Integrate and Manage
             <br />
             all your marketing efforts with one platform
-          </h1>
+          </h2>
 
           {/* Description text */}
           <div className="flex justify-center mt-3 sm:mt-4 md:mt-6">
             <p className="text-white w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1.5/2 text-center text-sm sm:text-base md:text-base lg:text-lg leading-relaxed tracking-tight text-pretty opacity-[90%] animate-in fade-in slide-in-from-bottom-2 duration-700 delay-200">
-              Integrate and manage all your marketing efforts with one powerful
-              platform. Simplify workflows, monitor performance, and unify tools
-              to boost efficiency, strengthen campaigns, and deliver consistent
-              results across every channel
+              Unify your workflows and tools with a single, intelligent
+              marketing automation dashboard. Track performance, monitor
+              campaigns, and optimize results in real time — all from one place.
+              Marqait simplifies marketing management so you can focus on
+              creativity and growth.
             </p>
           </div>
         </motion.div>
