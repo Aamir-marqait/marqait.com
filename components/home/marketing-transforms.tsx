@@ -63,23 +63,26 @@ export default function MarketingTransforms() {
     {
       icon: "/1.svg",
       title: "Automated Efficiency",
-      description: "Automate tasks, save time, and focus on strategy",
+      description:
+        "Automate repetitive tasks, save valuable time, and focus on creative strategy, let AI handle the busywork.",
     },
     {
       icon: "/2.svg",
       title: "24/7 Availability",
-      description: "Your AI team works tirelessly, around the clock",
+      description:
+        "Your AI team never sleeps. Generate, edit, and optimize content anytime, anywhere.",
     },
     {
       icon: "/3.svg",
       title: "Intelligent Adaptation",
       description:
-        "Our AI agents learn your brand, style, and goals for personalized results",
+        "Marqait AI learns your brand voice, audience behavior, and goals to deliver smarter, more personalized results.",
     },
     {
       icon: "/4.svg",
       title: "Seamless Integration",
-      description: "Connect with your favorite marketing tools and platforms",
+      description:
+        "Connect with your favorite marketing tools, CRMs, and ad platforms for end-to-end automation.",
     },
   ];
 
@@ -115,8 +118,8 @@ export default function MarketingTransforms() {
       </motion.div>
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="font-inter font-semibold text-[#FFFFFF] text-center mb-16 text-balance text-[36px] leading-[62.4px]">
-          How Marqait AI Transforms Your Marketing
+        <h2 className="font-inter max-w-xl mx-auto font-semibold text-[#FFFFFF] text-center mb-16 text-balance text-[36px] leading-[62.4px]">
+          Why Choose Marqait for Marketing Automation Platform
         </h2>
 
         {/* Features Grid */}
