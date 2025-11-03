@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About - Marqait AI",
@@ -181,7 +182,7 @@ export default function About() {
                 Join thousands of businesses that trust Marqait AI to automate their marketing 
                 and drive meaningful growth.
               </p>
-              <a 
+              <Link 
                 href="/contact"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl border border-[rgba(255,255,255,0.40)] bg-[rgba(140,69,255,0.40)] transition-all duration-200 hover:bg-[rgba(140,69,255,0.50)] hover:border-[rgba(255,255,255,0.35)] font-semibold text-white text-lg"
                 style={{
@@ -204,7 +205,7 @@ export default function About() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

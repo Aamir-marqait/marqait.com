@@ -1,4 +1,5 @@
 import { Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function FinalCtaSection() {
   return (
@@ -18,7 +19,7 @@ export default function FinalCtaSection() {
                 minutes.
               </p>
               <div className="flex justify-center">
-                <a
+                <Link
                   href="https://app.marqait.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -44,7 +45,7 @@ export default function FinalCtaSection() {
                 >
                   <Zap className="w-4 h-4" />
                   Generate My Ad Campaign
-                </a>
+                </Link>
               </div>
             </div>
           </div>

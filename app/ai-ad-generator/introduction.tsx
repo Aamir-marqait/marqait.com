@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Introduction() {
   return (
@@ -33,7 +34,7 @@ export default function Introduction() {
               platform. Track performance in real-time and let AI optimize for
               maximum ROI automatically.
             </p>
-            <a
+            <Link
               href="https://app.marqait.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -58,7 +59,7 @@ export default function Introduction() {
               }}
             >
               Generate a Campaign
-            </a>
+            </Link>
           </div>
 
           {/* Right Illustration */}
