@@ -237,3 +237,107 @@ export async function getAllAISolutions() {
     return []
   }
 }
+
+// ADD these new functions to your existing lib/sanity.ts
+
+const dynamicPageQuery = `
+  title,
+  customPath,
+  seoTitle,
+  seoDescription,
+  seoKeywords,
+  heroSection {
+    mainHeading {
+      line1,
+      line2
+    },
+    description,
+    ctaButton {
+      text,
+      link
+    },
+    heroImage {
+      asset->{
+        _id,
+        url
+      },
+      alt
+    }
+  },
+  contentSections[] {
+    _type,
+    _type == "textImageSection" => {
+      sectionType,
+      heading { normalText, gradientText },
+      content,
+      image { asset->{ _id, url }, alt }
+    },
+    _type == "gridSection" => {
+      heading,
+      description,
+      gridItems[] {
+        title,
+        description,
+        image { asset->{ _id, url }, alt }
+      }
+    },
+    _type == "featuresSection" => {
+      heading { normalText, gradientText },
+      description,
+      features[] { icon, title, description }
+    },
+    _type == "processSection" => {
+      heading,
+      description,
+      processSteps[] { stepNumber, title, description },
+      processImage { asset->{ _id, url }, alt }
+    },
+    _type == "benefitsSection" => {
+      heading,
+      leftBenefits[] { title, description },
+      rightBenefits[] { title, description },
+      centerImage { asset->{ _id, url }, alt }
+    },
+    _type == "faqSection" => {
+      heading { normalText, gradientText },
+      description,
+      faqs[] { question, answer }
+    },
+    _type == "ctaSection" => {
+      heading { normalText, gradientText },
+      ctaImage { asset->{ _id, url }, alt }
+    }
+  }
+`;
+
+export async function getDynamicPageByPath(path: string) {
+  try {
+    const page = await client.fetch(`
+      *[_type == "dynamicPages" && customPath == $path][0] {
+        ${dynamicPageQuery}
+      }
+    `, { path })
+    return page
+  } catch (error) {
+    console.error('Error fetching dynamic page:', error)
+    return null
+  }
+}
+
+export async function getAllDynamicPaths() {
+  try {
+    const pages = await client.fetch(`
+      *[_type == "dynamicPages" && defined(customPath)] {
+        customPath
+      }
+    `)
+    return pages.map((page: any) => page.customPath)
+  } catch (error) {
+    console.error('Error fetching dynamic paths:', error)
+    return []
+  }
+}
+
+
+
+

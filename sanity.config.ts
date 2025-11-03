@@ -6,6 +6,7 @@ import { visionTool } from '@sanity/vision'
 // Import your schemas
 import { servicesSchema } from './sanity/schemas/services'
 import { aiSolutionsSchema } from './sanity/schemas/aiSolutions'
+import {dynamicPagesSchema} from './sanity/schemas/dynamicPages'
 
 export default defineConfig({
   name: 'marqait-studio',
@@ -23,6 +24,7 @@ export default defineConfig({
     types: [
       servicesSchema,
       aiSolutionsSchema,
+      dynamicPagesSchema
     ],
   },
 })
