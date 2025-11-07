@@ -28,10 +28,11 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Marqait AI - Best AI Tools, AI Solutions & Marketing Automation",
+  title: "Marqait AI | All-in-One Marketing Automation Platform",
   description:
-    "Marqait AI is a leading AI development company offering AI tools, marketing automation, and custom AI solutions to improve efficiency and productivity.",
-
+    "Automate marketing tasks with Marqait — an AI-powered marketing automation platform to design, launch Ads campaigns, and more. Alternate of agency",
+  keywords:
+    "AI, growth platform, business automation, marqait, artificial intelligence",
   authors: [{ name: "MARQAIT" }],
   robots: "index, follow",
   openGraph: {
@@ -53,9 +54,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marqait AI - Best AI Tools, AI Solutions & Marketing Automation",
+    title: "Marqait AI | All-in-One Marketing Automation Platform",
     description:
-      "Marqait AI is a leading AI development company offering AI tools, marketing automation, and custom AI solutions to improve efficiency and productivity.",
+      "Automate marketing tasks with Marqait — an AI-powered marketing automation platform to design, launch Ads campaigns, and more. Alternate of agency",
+
     images: ["https://marqait.com/twitter-image.jpg"],
     site: "@marqait",
     creator: "@marqait",
