@@ -4,10 +4,12 @@
 import { useState, FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import { trackCTAClick } from "@/analytics";
 
 export default function Footer() {
+  const pathname = usePathname();
   const [email, setEmail] = useState("");
   const [isSubscribing, setIsSubscribing] = useState(false);
   const [openAccordion, setOpenAccordion] = useState<string | null>("platform");
@@ -321,7 +323,8 @@ export default function Footer() {
         </div>
         <div className="border-t border-white/15"></div>
 
-        {/* SEO Content Section - Accordions */}
+        {/* SEO Content Section - Accordions - Only on Homepage */}
+        {pathname === "/" && (
         <div className="py-8 sm:py-12 lg:py-16">
           {/* Marqait AI: The Marketing Automation Platform */}
           <div className=" rounded-lg overflow-hidden">
@@ -693,6 +696,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        )}
       </div>
     </footer>
   );
