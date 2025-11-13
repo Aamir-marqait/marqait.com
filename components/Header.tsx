@@ -151,7 +151,7 @@ export default function Header() {
               className="flex items-center justify-center space-x-3 cursor-pointer"
             >
               <Image
-                src="/logo/mainlogo.svg"
+                src="/logo/mainlogo.png"
                 alt="Marqait AI Logo"
                 width={200}
                 height={32}

@@ -36,20 +36,20 @@ export const metadata: Metadata = {
   authors: [{ name: "MARQAIT" }],
   robots: "index, follow",
   openGraph: {
-    title: "Marqait AI - Best AI Tools, AI Solutions & Marketing Automation",
+    title: "Marqait AI | All-in-One Marketing Automation Platform",
     description:
-      "Marqait AI is a leading AI development company offering AI tools, marketing automation, and custom AI solutions to improve efficiency and productivity.",
+      "Automate marketing tasks with Marqait — an AI-powered marketing automation platform to design, launch ad campaigns, and more. The smarter alternative to agencies.",
     type: "website",
-    url: "https://marqait.com",
+    url: "https://www.marqait.com/",
     images: [
       {
-        url: "https://marqait.com/og-image.jpg",
+        url: "https://marqait.com/logo.png",
         width: 1200,
         height: 630,
         alt: "Marqait AI Marketing Automation Platform",
       },
     ],
-    siteName: "MARQAIT",
+    siteName: "Marqait AI",
     locale: "en_US",
   },
   twitter: {
@@ -57,8 +57,7 @@ export const metadata: Metadata = {
     title: "Marqait AI | All-in-One Marketing Automation Platform",
     description:
       "Automate marketing tasks with Marqait — an AI-powered marketing automation platform to design, launch Ads campaigns, and more. Alternate of agency",
-
-    images: ["https://marqait.com/twitter-image.jpg"],
+    images: ["https://marqait.com/logo.png"],
     site: "@marqait",
     creator: "@marqait",
   },
