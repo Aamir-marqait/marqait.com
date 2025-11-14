@@ -147,10 +147,10 @@ export default function ContactPage() {
                         hello@marqait.com
                       </a>
                     </div>
-                    <div className="flex items-center gap-3 sm:gap-4">
+                    {/* <div className="flex items-center gap-3 sm:gap-4">
                       <Phone className="text-white h-4 w-4" />
                       <span className="text-[#8C45FF]">9880542033</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
