@@ -35,7 +35,7 @@ export default function HeroSection() {
 
             {/* AI-Powered Marketing Automation text */}
             <div className="relative z-10 mt-10">
-              <h1
+              <span
                 className="font-inter text-white font-medium text-center tracking-tight
                 text-[32px] leading-[38px]
                 xs:text-[20px] xs:leading-[24px] xs:tracking-[-2px]
@@ -46,8 +46,8 @@ export default function HeroSection() {
                 animate-in fade-in slide-in-from-bottom-6 duration-700"
               >
                 AI-Powered
-              </h1>
-              <span
+              </span>
+              <h1
                 className="font-inter font-medium text-center tracking-tight -mt-3
                   text-[32px] leading-[38px]
                   xs:text-[20px] xs:leading-[24px] xs:tracking-[-2px] xs:-mt-2
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 }}
               >
                 Marketing Automation Platform
-              </span>
+              </h1>
             </div>
           </div>
 
