@@ -173,6 +173,14 @@ export function generateSitemapSections(): SitemapSection[] {
       title: 'LinkedIn Carousel Generator',
       description: 'Generate engaging LinkedIn carousel posts with AI assistance'
     },
+    '/marketing-strategy-generator': {
+      title: 'Marketing Strategy Generator',
+      description: 'Create comprehensive marketing strategies with AI-powered analysis and insights'
+    },
+    '/business-strategy-generator': {
+      title: 'Business Strategy Generator',
+      description: 'Develop winning business strategies with AI-driven planning and recommendations'
+    },
     '/ai-solutions': {
       title: 'AI Solutions',
       description: 'Comprehensive AI marketing solutions for businesses of all sizes'
@@ -247,7 +255,8 @@ export function generateSitemapSections(): SitemapSection[] {
     } else if ((route.startsWith('/ai-') &&
                ['ai-logo-generator', 'ai-social-media-post-generator', 'ai-brandbook-generator',
                 'ai-reel-generator', 'ai-ad-generator', 'ai-image-editor'].includes(route.replace('/', ''))) ||
-               ['/ai-solutions/gaming-logo-maker', '/ai-solutions/free-linkedin-carousel-generator'].includes(route)) {
+               ['/ai-solutions/gaming-logo-maker', '/ai-solutions/free-linkedin-carousel-generator',
+                '/marketing-strategy-generator', '/business-strategy-generator'].includes(route)) {
       aiTools.push(item);
     } else if (route.startsWith('/ai-') || route === '/custom-ai-solutions') {
       aiSolutions.push(item);
@@ -259,7 +268,9 @@ export function generateSitemapSections(): SitemapSection[] {
   // Add new AI tools manually (even if pages don't exist yet)
   const newTools = [
     '/ai-solutions/gaming-logo-maker',
-    '/ai-solutions/free-linkedin-carousel-generator'
+    '/ai-solutions/free-linkedin-carousel-generator',
+    '/marketing-strategy-generator',
+    '/business-strategy-generator'
   ];
 
   for (const route of newTools) {

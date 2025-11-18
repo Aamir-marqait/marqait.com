@@ -47,7 +47,7 @@ export default function HeroSection() {
               >
                 AI-Powered
               </h1>
-              <h1
+              <span
                 className="font-inter font-medium text-center tracking-tight -mt-3
                   text-[32px] leading-[38px]
                   xs:text-[20px] xs:leading-[24px] xs:tracking-[-2px] xs:-mt-2
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 }}
               >
                 Marketing Automation Platform
-              </h1>
+              </span>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ export default function HeroSection() {
             <a
               href="https://app.marqait.com/"
               target="_blank"
-              rel="noopener noreferrer"
+              // rel="noopener noreferrer"
               className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
                 w-full sm:w-auto
                 px-3 py-2 text-xs min-w-[120px] h-[45px] leading-[20px]

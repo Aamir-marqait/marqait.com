@@ -58,6 +58,20 @@ const services = [
     link: "/ai-solutions/free-linkedin-carousel-generator",
     image: "/6.png",
   },
+  {
+    title: "Marketing Strategy Generator",
+    description:
+      "Create comprehensive marketing strategies with our AI-powered tool. Generate data-driven marketing plans, identify target audiences, and develop campaigns that drive results and grow your business.",
+    link: "/marketing-strategy-generator",
+    image: "/copilot/4.png",
+  },
+  {
+    title: "Business Strategy Generator",
+    description:
+      "Develop winning business strategies with AI assistance. Generate strategic plans, analyze market opportunities, and create actionable roadmaps that help your business achieve its goals.",
+    link: "/business-strategy-generator",
+    image: "/copilot/5.png",
+  },
 ];
 
 export default function OurPowerfulTools() {

@@ -93,6 +93,11 @@ const nextConfig = {
         destination: "/ai-brandbook-generator",
         permanent: true,
       },
+      {
+        source: "/ai-solutions/free-linkedin-carousel-generator",
+        destination: "/free-linkedin-carousel-generator",
+        permanent: true,
+      },
     ];
   },
 };
