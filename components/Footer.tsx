@@ -47,6 +47,8 @@ export default function Footer() {
         text: "LinkedIn Carousel Generator",
         url: "/ai-solutions/free-linkedin-carousel-generator",
       },
+      { text: "Marketing Strategy Generator", url: "/marketing-strategy-generator" },
+      { text: "Business Strategy Generator", url: "/business-strategy-generator" },
     ],
     aiSolutions: [
       { text: "Custom AI Solutions", url: "/custom-ai-solutions" },

@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/growth-pods', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/ai-solutions/gaming-logo-maker', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/ai-solutions/free-linkedin-carousel-generator', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/marketing-strategy-generator', priority: 0.8, changeFrequency: 'weekly' as const },
+    { path: '/business-strategy-generator', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/privacy-policy', priority: 0.5, changeFrequency: 'monthly' as const },
     { path: '/terms', priority: 0.5, changeFrequency: 'monthly' as const },
     { path: '/user-data-deletion', priority: 0.5, changeFrequency: 'monthly' as const },
