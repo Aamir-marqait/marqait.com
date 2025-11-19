@@ -87,6 +87,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
 
         <meta name="yandex-verification" content="613dd56c06bdbdda" />
+        <meta name="msvalidate.01" content="B96B69100C98341E199F2E25F48CEC25" />
         <link rel="icon" type="image/png" sizes="32x32" href="/meta-logo.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/meta-logo.png" />
         <link rel="shortcut icon" href="/meta-logo.png" />
