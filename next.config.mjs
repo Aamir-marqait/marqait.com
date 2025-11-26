@@ -98,6 +98,11 @@ const nextConfig = {
         destination: "/free-linkedin-carousel-generator",
         permanent: true,
       },
+      {
+        source: "/ai-solutions/gaming-logo-maker",
+        destination: "/gaming-logo-maker",
+        permanent: true,
+      },
     ];
   },
 };
