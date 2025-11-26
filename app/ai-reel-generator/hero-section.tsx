@@ -99,7 +99,7 @@ export default function HeroSection() {
                   color: "#F2F0F5",
                 }}
               >
-                Learn More
+                Get Started
               </a>
             </div>
           </div>
