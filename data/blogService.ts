@@ -9,7 +9,7 @@ export interface TransformedBlogPost {
   content: string
   image: string
   date: string
-  cover_image_url:string
+  cover_image_url: string
   readTime: string
   category: string
   author: {
@@ -22,7 +22,7 @@ export interface TransformedBlogPost {
 const defaultAuthor = {
   name: "Marqait Team",
   avatar: "/logo1.png"
-  
+
 }
 
 // data/blogService.ts
@@ -85,6 +85,11 @@ function transformBlogPost(post: BlogPost): TransformedBlogPost {
 
 export async function getAllPublishedPosts(): Promise<TransformedBlogPost[]> {
   try {
+    if (!supabase) {
+      console.warn('Supabase client is not initialized. Returning empty blog list.')
+      return []
+    }
+
     const { data, error } = await supabase
       .from('blogs')
       .select('*')
@@ -105,6 +110,11 @@ export async function getAllPublishedPosts(): Promise<TransformedBlogPost[]> {
 
 export async function getPostBySlug(slug: string): Promise<TransformedBlogPost | null> {
   try {
+    if (!supabase) {
+      console.warn('Supabase client is not initialized. Returning null for blog post.')
+      return null
+    }
+
     const { data, error } = await supabase
       .from('blogs')
       .select('*')
@@ -126,6 +136,11 @@ export async function getPostBySlug(slug: string): Promise<TransformedBlogPost |
 
 export async function getRecentPosts(excludeId?: string, limit: number = 5): Promise<TransformedBlogPost[]> {
   try {
+    if (!supabase) {
+      console.warn('Supabase client is not initialized. Returning empty recent posts list.')
+      return []
+    }
+
     let query = supabase
       .from('blogs')
       .select('*')

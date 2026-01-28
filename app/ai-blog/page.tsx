@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import AllBlogPostsSection from "@/components/blog/all-blog-posts-section";
-import BlogHeroSection from "@/components/blog/blog-hero-section";
 import BlogPostsSection from "@/components/blog/blog-posts-section";
 import { getAllPublishedPosts } from "@/data/blogService";
 

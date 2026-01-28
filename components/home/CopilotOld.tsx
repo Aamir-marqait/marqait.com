@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import CopilotFeatureBoxes from "./copilot-feature-boxes";
 import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
@@ -6,7 +5,7 @@ import { trackCTAClick } from "../../analytics";
 export default function CopilotSection({
   onScrollToContact,
 }: {
-  onScrollToContact: any;
+  onScrollToContact: () => void;
 }) {
   return (
     <section

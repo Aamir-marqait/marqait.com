@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/contact/contact-form";
-import { Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact Us - Marqait AI",

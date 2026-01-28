@@ -9,12 +9,12 @@ interface BlogPostsSectionProps {
 }
 
 // Helper component for images with error handling
-function BlogImage({ 
-  src, 
-  alt, 
-  width, 
-  height, 
-  className 
+function BlogImage({
+  src,
+  alt,
+  width,
+  height,
+  className
 }: {
   src: string;
   alt: string;
@@ -74,7 +74,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
   return (
     <section className="relative bg-[#020103] py-16 sm:py-20 lg:py-24 xl:py-32">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        
+
         {/* Hero Title Section */}
         <div className="text-center mb-16 sm:mb-20 lg:mb-24">
           <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
@@ -84,7 +84,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
             Stay up to date on Artificial Intelligence with our blogs covering the latest AI trends, tools, solutions, updates, and news
           </p>
         </div>
-        
+
         {/* Featured Blog - Horizontal Layout */}
         {featuredPost && (
           <div className="mb-16 sm:mb-20 lg:mb-24">
@@ -92,7 +92,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
               <Link href={`/ai-blog/${featuredPost.slug}`} className="block">
                 <div className="bg-gradient-to-br from-gray-900/50 to-purple-900/20 rounded-2xl lg:rounded-3xl border border-white/10 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-purple-500/30 hover:shadow-2xl hover:shadow-purple-500/10">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                    
+
                     {/* Image Section */}
                     <div className="relative aspect-[16/10] lg:aspect-[4/3] overflow-hidden">
                       <BlogImage
@@ -102,10 +102,10 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
                         height={600}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
-                      
+
                       {/* Overlay gradient */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-black/30"></div>
-                      
+
                       {/* Category badge */}
                       <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
                         <span className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-purple-600/90 backdrop-blur-sm text-white text-sm font-semibold rounded-full border border-purple-400/30">
@@ -117,7 +117,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
                     {/* Content Section */}
                     <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10 xl:p-12">
                       <div className="space-y-4 sm:space-y-6">
-                        
+
                         {/* Title with Arrow */}
                         <div className="flex items-start gap-4">
                           <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight group-hover:text-purple-300 transition-colors duration-300 flex-1">
@@ -184,11 +184,11 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
         {/* 2x2 Grid Layout */}
         {gridPosts.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
-            {gridPosts.map((post, index) => (
+            {gridPosts.map((post) => (
               <article key={post.id} className="group">
                 <Link href={`/ai-blog/${post.slug}`} className="block h-full">
                   <div className="bg-gradient-to-br from-gray-900/30 to-purple-900/10 rounded-xl lg:rounded-2xl border border-white/5 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-purple-500/20 hover:shadow-xl hover:shadow-purple-500/5 h-full flex flex-col">
-                    
+
                     {/* Image */}
                     <div className="relative aspect-[16/10] overflow-hidden">
                       <BlogImage
@@ -198,7 +198,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
                         height={400}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
-                      
+
                       {/* Category badge */}
                       <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
                         <span className="inline-flex items-center px-2.5 py-1 sm:px-3 sm:py-1.5 bg-black/60 backdrop-blur-sm text-purple-300 text-xs sm:text-sm font-medium rounded-full border border-purple-400/20">
@@ -212,7 +212,7 @@ export default function BlogPostsSection({ blogPosts }: BlogPostsSectionProps) {
 
                     {/* Content */}
                     <div className="p-5 sm:p-6 lg:p-7 flex-1 flex flex-col">
-                      
+
                       {/* Title with Arrow */}
                       <div className="flex items-start gap-3 mb-3 sm:mb-4">
                         <h3 className="text-white text-lg sm:text-xl lg:text-2xl font-bold leading-tight group-hover:text-purple-300 transition-colors duration-300 flex-1 line-clamp-2">
