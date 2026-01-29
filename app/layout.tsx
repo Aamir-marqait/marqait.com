@@ -103,7 +103,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* Truintel script */}
         <Script
           src="https://truintel.vercel.app/ts.js"
-          data-brand-id="cmkz2euaa0004l204a27yigk1"
+          data-brand-id="cmkz9q4q90004l104u67k4jgx"
           strategy="afterInteractive"
         />
 

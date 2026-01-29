@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const BRAND_ID = 'cmkz2euaa0004l204a27yigk1';
+const BRAND_ID = 'cmkz9q4q90004l104u67k4jgx';
 const TRUINTEL_API = 'https://truintel.vercel.app/api/traffic/collect';
 
 // Comprehensive AI crawler patterns (Updated January 2026)
