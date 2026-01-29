@@ -43,19 +43,24 @@ export function middleware(request: NextRequest) {
     const ua = (request.headers.get('user-agent') || '').toLowerCase();
     const match = AI_CRAWLERS.find(p => ua.includes(p));
 
-    if (match) {
-        fetch(TRUINTEL_API, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                brandId: BRAND_ID,
-                page: request.nextUrl.pathname,
-                userAgent: request.headers.get('user-agent'),
-                sessionId: `ai_${match}_${Date.now()}`,
-                mouseMovements: 0, scrollEvents: 0, timeOnPage: 0,
-            }),
-        }).catch(() => { });
-    }
+    // Always send the signal, regardless of match
+    fetch(TRUINTEL_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            brandId: BRAND_ID,
+            page: request.nextUrl.pathname,
+            userAgent: request.headers.get('user-agent'),
+            sessionId: match
+                ? `ai_${match}_${Date.now()}`
+                : `visitor_${Date.now()}`,
+            crawlerType: match || 'human',  // 'human' if no AI crawler matched
+            isAiCrawler: !!match,
+            mouseMovements: 0,
+            scrollEvents: 0,
+            timeOnPage: 0,
+        }),
+    }).catch(() => { });
 
     return NextResponse.next();
 }
