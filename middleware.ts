@@ -5,164 +5,116 @@ import type { NextRequest } from 'next/server';
 const BRAND_ID = 'cmkz2euaa0004l204a27yigk1';
 const TRUINTEL_API = 'https://truintel.vercel.app/api/traffic/collect';
 
-// Comprehensive list of AI crawler patterns (updated January 2026)
-// Sources: Cloudflare, Search Engine Journal, PageRadar, official documentation
-const AI_CRAWLERS = [
-    // ========== OpenAI ==========
-    'gptbot',                    // Training data collection for GPT models
-    'chatgpt-user',              // Real-time web browsing for ChatGPT users
-    'oai-searchbot',             // ChatGPT Search indexing
-
-    // ========== Anthropic (Claude) ==========
-    'claudebot',                 // Training data collection for Claude
-    'claude-user',               // Real-time web access for Claude users
-    'claude-searchbot',          // Claude search capabilities
-    'claude-web',                // Claude web exploration/indexing
-    'anthropic-ai',              // General Anthropic crawler
-    'anthropic-claude',          // Alternative Claude identifier
-
-    // ========== Google ==========
-    'google-extended',           // Controls AI training usage (Gemini/Bard/Vertex AI)
-    'google-cloudvertexbot',     // Vertex AI Agent Builder
-    'gemini-deep-research',      // Gemini Deep Research feature
-    'googleother',               // Google's other crawling purposes
-    'bard-ai',                   // Google Bard assistant
-    'gemini-ai',                 // Google Gemini
-    'google-notebooklm',         // NotebookLM source fetching
-    'googleagent-mariner',       // Project Mariner agentic browser
-
-    // ========== Microsoft/Bing ==========
-    'bingbot',                   // Bing Search and Copilot AI
-    'bingpreview',               // Bing preview crawler
-
-    // ========== Perplexity ==========
-    'perplexitybot',             // Perplexity AI search indexing
-    'perplexity-user',           // Real-time browsing for Perplexity users
-
-    // ========== Meta ==========
-    'meta-externalagent',        // Meta AI training (Llama, etc.)
-    'meta-webindexer',           // Meta AI search capabilities
-    'facebookexternalhit',       // Facebook/Meta general crawler
-    'facebookbot',               // Facebook bot
-
-    // ========== ByteDance/TikTok ==========
-    'bytespider',                // ByteDance LLM training (Doubao)
-    'tiktokspider',              // TikTok crawler
-
-    // ========== Amazon ==========
-    'amazonbot',                 // Amazon AI services (Alexa)
-
-    // ========== Apple ==========
-    'applebot',                  // Apple search/Siri
-    'applebot-extended',         // Apple AI training (Apple Intelligence)
-
-    // ========== DuckDuckGo ==========
-    'duckduckbot',               // DuckDuckGo search
-    'duckassistbot',             // DuckDuckGo AI assistant
-
-    // ========== Mistral AI ==========
-    'mistralai-user',            // Mistral's Le Chat citations
-
-    // ========== xAI (Grok) ==========
-    'xai-bot',                   // Elon Musk's xAI for Grok
-
-    // ========== DeepSeek ==========
-    'deepseekbot',               // DeepSeek AI training
-
-    // ========== Cohere ==========
-    'cohere-ai',                 // Cohere training
-    'cohere-command',            // Cohere Command model
-
-    // ========== You.com ==========
-    'youbot',                    // You.com AI search
-
-    // ========== Hugging Face ==========
-    'huggingface-bot',           // Hugging Face open-source AI
-
-    // ========== Common Crawl ==========
-    'ccbot',                     // Open-source training data
-
-    // ========== Character.AI ==========
-    'character-ai',              // Character.AI training
-
-    // ========== Huawei ==========
-    'petalbot',                  // Huawei AI crawler
-
-    // ========== Other AI Companies ==========
-    'diffbot',                   // Diffbot knowledge graphs
-    'webzio',                    // Webz.io data extraction
-    'webzio-extended',           // Webz.io extended
-    'ai2bot',                    // Allen Institute for AI
-    'replicate-bot',             // Replicate platform
-    'together-bot',              // Together AI
-    'runpod-bot',                // RunPod cloud AI
-    'groq-bot',                  // Groq inference
-    'imagesiftbot',              // Image generation training
-    'timpibot',                  // Timpi LLM training
-    'icc-crawler',               // ICC AI/ML data
-    'andibot',                   // Andi AI search
-    'brightbot',                 // Bright Data AI
-    'crawlspace',                // AI crawling service
-    'firecrawlagent',            // Firecrawl for LLMs
-    'devin',                     // Cognition AI code assistant
-    'iboubot',                   // Ibou.io ethical search
-
-    // ========== Chinese AI Crawlers ==========
-    'pangubot',                  // Pangu models
-    'kangaroo bot',              // Chinese AI
-    'cotoyogi',                  // Japanese AI
-
-    // ========== Data/Training Services ==========
-    'omgili',                    // Webz.io (formerly Omgili)
-    'omgilibot',                 // Webz.io bot
-    'img2dataset',               // Image dataset collection
-
-    // ========== Potentially Stealth (harder to detect) ==========
-    'terracotta',                // Ceramic AI crawler
-    'akirabot',                  // Malicious AI spam bot
-];
+// Comprehensive AI crawler patterns (Updated January 2026)
+// Sources: Cloudflare, Search Engine Journal, PageRadar, official docs
+const AI_CRAWLERS: Record<string, { company: string; category: string }> = {
+    // OpenAI
+    'gptbot': { company: 'OpenAI', category: 'ai_training' },
+    'chatgpt-user': { company: 'OpenAI', category: 'ai_assistant' },
+    'oai-searchbot': { company: 'OpenAI', category: 'ai_search' },
+    // Anthropic (Claude)
+    'claudebot': { company: 'Anthropic', category: 'ai_training' },
+    'claude-user': { company: 'Anthropic', category: 'ai_assistant' },
+    'claude-searchbot': { company: 'Anthropic', category: 'ai_search' },
+    'claude-web': { company: 'Anthropic', category: 'ai_assistant' },
+    'anthropic-ai': { company: 'Anthropic', category: 'ai_training' },
+    // Google
+    'google-extended': { company: 'Google', category: 'ai_training' },
+    'google-cloudvertexbot': { company: 'Google', category: 'ai_training' },
+    'gemini-deep-research': { company: 'Google', category: 'ai_search' },
+    'googleother': { company: 'Google', category: 'ai_training' },
+    'bard-ai': { company: 'Google', category: 'ai_assistant' },
+    'gemini-ai': { company: 'Google', category: 'ai_assistant' },
+    'google-notebooklm': { company: 'Google', category: 'ai_assistant' },
+    'googleagent-mariner': { company: 'Google', category: 'ai_assistant' },
+    // Microsoft
+    'bingbot': { company: 'Microsoft', category: 'ai_search' },
+    'bingpreview': { company: 'Microsoft', category: 'ai_search' },
+    // Perplexity
+    'perplexitybot': { company: 'Perplexity AI', category: 'ai_search' },
+    'perplexity-user': { company: 'Perplexity AI', category: 'ai_assistant' },
+    // Meta
+    'meta-externalagent': { company: 'Meta', category: 'ai_training' },
+    'meta-webindexer': { company: 'Meta', category: 'ai_search' },
+    'facebookexternalhit': { company: 'Meta', category: 'ai_training' },
+    'facebookbot': { company: 'Meta', category: 'ai_training' },
+    // ByteDance
+    'bytespider': { company: 'ByteDance', category: 'ai_training' },
+    'tiktokspider': { company: 'ByteDance', category: 'ai_training' },
+    // Amazon
+    'amazonbot': { company: 'Amazon', category: 'ai_search' },
+    'amazonbuyforme': { company: 'Amazon', category: 'ai_assistant' },
+    // Apple
+    'applebot': { company: 'Apple', category: 'ai_search' },
+    'applebot-extended': { company: 'Apple', category: 'ai_training' },
+    // DuckDuckGo
+    'duckduckbot': { company: 'DuckDuckGo', category: 'ai_search' },
+    'duckassistbot': { company: 'DuckDuckGo', category: 'ai_assistant' },
+    // Mistral
+    'mistralai-user': { company: 'Mistral AI', category: 'ai_assistant' },
+    // xAI (Grok)
+    'xai-bot': { company: 'xAI', category: 'ai_training' },
+    // DeepSeek
+    'deepseekbot': { company: 'DeepSeek', category: 'ai_training' },
+    // Cohere
+    'cohere-ai': { company: 'Cohere', category: 'ai_training' },
+    'cohere-command': { company: 'Cohere', category: 'ai_assistant' },
+    // You.com
+    'youbot': { company: 'You.com', category: 'ai_search' },
+    // Hugging Face
+    'huggingface-bot': { company: 'Hugging Face', category: 'ai_training' },
+    // Common Crawl
+    'ccbot': { company: 'Common Crawl', category: 'ai_training' },
+    // Character.AI
+    'character-ai': { company: 'Character.AI', category: 'ai_training' },
+    // Huawei
+    'petalbot': { company: 'Huawei', category: 'ai_training' },
+    // Phind
+    'phindbot': { company: 'Phind', category: 'ai_search' },
+    // Other
+    'diffbot': { company: 'Diffbot', category: 'ai_training' },
+    'ai2bot': { company: 'Allen Institute', category: 'ai_training' },
+    'groq-bot': { company: 'Groq', category: 'ai_assistant' },
+    'firecrawlagent': { company: 'FireCrawl', category: 'ai_training' },
+    'devin': { company: 'Cognition', category: 'ai_assistant' },
+    'img2dataset': { company: 'LAION', category: 'ai_training' },
+};
 
 export function middleware(request: NextRequest) {
     const ua = (request.headers.get('user-agent') || '').toLowerCase();
     const fullUserAgent = request.headers.get('user-agent') || '';
 
     // Find matching AI crawler
-    const match = AI_CRAWLERS.find(p => ua.includes(p));
+    let matchedCrawler: string | null = null;
+    let crawlerInfo: { company: string; category: string } | null = null;
 
-    // Determine crawler type category
-    let crawlerCategory = 'human';
-    if (match) {
-        if (['gptbot', 'claudebot', 'google-extended', 'meta-externalagent', 'bytespider', 'ccbot', 'amazonbot', 'petalbot'].some(t => match.includes(t))) {
-            crawlerCategory = 'ai_training';
-        } else if (['chatgpt-user', 'claude-user', 'perplexity-user', 'mistralai-user', 'duckassistbot', 'bard-ai', 'gemini-ai'].some(t => match.includes(t))) {
-            crawlerCategory = 'ai_assistant';
-        } else if (['oai-searchbot', 'perplexitybot', 'claude-searchbot', 'bingbot', 'youbot', 'andibot'].some(t => match.includes(t))) {
-            crawlerCategory = 'ai_search';
-        } else {
-            crawlerCategory = 'ai_other';
+    for (const [pattern, info] of Object.entries(AI_CRAWLERS)) {
+        if (ua.includes(pattern)) {
+            matchedCrawler = pattern;
+            crawlerInfo = info;
+            break;
         }
     }
 
-    // Always send the signal
-    fetch(TRUINTEL_API, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            brandId: BRAND_ID,
-            page: request.nextUrl.pathname,
-            userAgent: fullUserAgent,
-            sessionId: match
-                ? `ai_${match}_${Date.now()}`
-                : `visitor_${Date.now()}`,
-            crawlerType: match || 'human',
-            crawlerCategory: crawlerCategory,
-            isAiCrawler: !!match,
-            mouseMovements: 0,
-            scrollEvents: 0,
-            timeOnPage: 0,
-            timestamp: new Date().toISOString(),
-        }),
-    }).catch(() => { });
+    // Only send if AI crawler detected
+    if (matchedCrawler && crawlerInfo) {
+        fetch(TRUINTEL_API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                brandId: BRAND_ID,
+                page: request.nextUrl.pathname,
+                userAgent: fullUserAgent,
+                crawlerType: matchedCrawler,
+                crawlerCategory: crawlerInfo.category,
+                isAiCrawler: true,
+                sessionId: `ai_${matchedCrawler}_${Date.now()}`,
+                mouseMovements: 0,
+                scrollEvents: 0,
+                timeOnPage: 0,
+            }),
+        }).catch(() => { });
+    }
 
     return NextResponse.next();
 }
