@@ -2,13 +2,41 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const BRAND_ID = 'cmkxzgefz0004dcn0gbg6mpts';
+const BRAND_ID = 'cmkz2euaa0004l204a27yigk1';
 const TRUINTEL_API = 'https://truintel.vercel.app/api/traffic/collect';
 
+// Comprehensive list of AI crawler patterns
 const AI_CRAWLERS = [
-    'gptbot', 'chatgpt-user', 'claudebot', 'claude-web',
-    'perplexitybot', 'googlebot', 'google-extended',
-    'bingbot', 'facebookexternalhit', 'applebot', 'amazonbot'
+    // OpenAI
+    'gptbot', 'chatgpt-user', 'oai-searchbot', 'openai',
+    // Anthropic (Claude)
+    'claudebot', 'claude-web', 'anthropic-ai', 'claude-searchbot',
+    // Google (Gemini)
+    'google-extended', 'googlebot', 'googleother',
+    // Perplexity
+    'perplexitybot', 'perplexity-user',
+    // Microsoft (Bing/Copilot)
+    'bingbot', 'bingpreview',
+    // Meta
+    'facebookexternalhit', 'meta-externalagent',
+    // ByteDance
+    'bytespider', 'tiktokspider',
+    // Amazon
+    'amazonbot', 'amazonbuyforme',
+    // Apple
+    'applebot', 'applebot-extended',
+    // DuckDuckGo
+    'duckduckbot', 'duckassistbot',
+    // Common Crawl
+    'ccbot',
+    // Cohere
+    'cohere-ai', 'cohere-training-data-crawler',
+    // You.com
+    'youbot',
+    // Phind
+    'phindbot',
+    // Other
+    'img2dataset'
 ];
 
 export function middleware(request: NextRequest) {
