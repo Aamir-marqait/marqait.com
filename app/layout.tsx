@@ -181,6 +181,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
 
         {children}
+
+        <Script
+          src="https://truintel.vercel.app/lv.js"
+          data-brand-id="cmkz9q4q90004l104u67k4jgx"
+          data-debug="true"
+        />
       </body>
     </html>
   );
