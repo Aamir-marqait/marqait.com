@@ -103,7 +103,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* Truintel script */}
         <Script
           src="https://truintel.vercel.app/ts.js"
-          data-brand-id="cmkz9q4q90004l104u67k4jgx"
+          data-brand-id="cml0nmhh70008dcg4wma7hdo8"
           strategy="afterInteractive"
         />
 
@@ -182,11 +182,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         {children}
 
-        <Script
+        <script
           src="https://truintel.vercel.app/lv.js"
-          data-brand-id="cmkzg4m8g0006jr04y354x5jv"
-          data-debug="true"
-        />
+          data-brand-id="cml0nmhh70008dcg4wma7hdo8"
+          data-debug="true">
+        </script>
       </body>
     </html>
   );
