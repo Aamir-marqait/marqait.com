@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin=""
         />
 
-        {/* Truintel script */}
+        {/* TruIntel — single script handles everything */}
         <Script
           src="https://api.truintel.ai/api/v1/traffic/tracker.js"
           data-brand-id="b9610a8c-99b3-4bcf-b03b-6462aa3a4b85"
