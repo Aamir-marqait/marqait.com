@@ -103,7 +103,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* Truintel script */}
         <Script
           src="https://api.truintel.ai/api/v1/traffic/tracker.js"
-          data-brand-id="5d2a34f4-34ad-4a75-8091-e19dfa9dfee1"
+          data-brand-id="b9610a8c-99b3-4bcf-b03b-6462aa3a4b85"
           strategy="afterInteractive"
         />
         <Script
@@ -112,7 +112,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           dangerouslySetInnerHTML={{
             __html: `
               window.TruIntel = window.TruIntel || {};
-              window.TruIntel.brandId = '5d2a34f4-34ad-4a75-8091-e19dfa9dfee1';
+              window.TruIntel.brandId = 'b9610a8c-99b3-4bcf-b03b-6462aa3a4b85';
               window.TruIntel.apiUrl = 'https://api.truintel.ai/api/v1';
               var s = document.createElement('script');
               s.async = true;
