@@ -102,9 +102,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         {/* Truintel script */}
         <Script
-          src="https://truintel.vercel.app/ts.js"
-          data-brand-id="cml0nmhh70008dcg4wma7hdo8"
+          src="https://api.truintel.ai/api/v1/traffic/tracker.js"
+          data-brand-id="5d2a34f4-34ad-4a75-8091-e19dfa9dfee1"
           strategy="afterInteractive"
+        />
+        <Script
+          id="truintel-tracker"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.TruIntel = window.TruIntel || {};
+              window.TruIntel.brandId = '5d2a34f4-34ad-4a75-8091-e19dfa9dfee1';
+              window.TruIntel.apiUrl = 'https://api.truintel.ai/api/v1';
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = window.TruIntel.apiUrl + '/traffic/tracker.js';
+              document.head.appendChild(s);
+            `,
+          }}
         />
 
         {/* Structured Data for Organization */}
@@ -181,12 +196,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </Script>
 
         {children}
-
-        <Script
-          src="https://truintel.vercel.app/lv.js"
-          data-brand-id="cml0nmhh70008dcg4wma7hdo8"
-          data-debug="true"
-        />
       </body>
     </html>
   );
