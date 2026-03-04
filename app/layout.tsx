@@ -100,27 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin=""
         />
 
-        {/* TruIntel — single script handles everything */}
-        <Script
-          src="https://api.truintel.ai/api/v1/traffic/tracker.js"
-          data-brand-id="b9610a8c-99b3-4bcf-b03b-6462aa3a4b85"
-          strategy="afterInteractive"
-        />
-        <Script
-          id="truintel-tracker"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.TruIntel = window.TruIntel || {};
-              window.TruIntel.brandId = 'b9610a8c-99b3-4bcf-b03b-6462aa3a4b85';
-              window.TruIntel.apiUrl = 'https://api.truintel.ai/api/v1';
-              var s = document.createElement('script');
-              s.async = true;
-              s.src = window.TruIntel.apiUrl + '/traffic/tracker.js';
-              document.head.appendChild(s);
-            `,
-          }}
-        />
+      
 
         {/* Structured Data for Organization */}
         <Script id="structured-data-org" type="application/ld+json">
@@ -194,6 +174,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             gtag('config', 'G-F9REM2WQ5H');
           `}
         </Script>
+
+
+
+        <Script
+          id="truintel-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.TruIntel={brandId:'dca071f0-badc-4e3a-9756-bc1f4f18d9f0',apiUrl:'https://api.truintel.ai/api/v1'};`,
+          }}
+        />
+        <Script
+          src="https://api.truintel.ai/api/v1/traffic/tracker.js"
+          strategy="afterInteractive"
+        />
 
         {children}
       </body>
