@@ -41,6 +41,25 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
+  async rewrites() {
+    return [
+      // Proxy TruIntel tracking through first-party domain to avoid
+      // browser tracking protection (Brave Shields, Firefox ETP, etc.)
+      {
+        source: "/ti/traffic/tracker.js",
+        destination: "https://api.truintel.ai/api/v1/traffic/tracker.js",
+      },
+      {
+        source: "/ti/traffic/collect",
+        destination: "https://api.truintel.ai/api/v1/traffic/collect",
+      },
+      {
+        source: "/ti/leads/verify",
+        destination: "https://api.truintel.ai/api/v1/leads/verify",
+      },
+    ];
+  },
+
   async redirects() {
     return [
       {
