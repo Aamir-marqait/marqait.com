@@ -181,11 +181,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           id="truintel-config"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'dca071f0-badc-4e3a-9756-bc1f4f18d9f0',apiUrl:'https://api.truintel.ai/api/v1'};`,
+            __html: `window.TruIntel={brandId:'dca071f0-badc-4e3a-9756-bc1f4f18d9f0',apiUrl:'/ti'};`,
           }}
         />
         <Script
-          src="https://api.truintel.ai/api/v1/traffic/tracker.js"
+          src="/ti/traffic/tracker.js"
           strategy="afterInteractive"
         />
 
