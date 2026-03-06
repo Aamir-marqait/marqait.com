@@ -100,8 +100,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin=""
         />
 
-      
-
         {/* Structured Data for Organization */}
         <Script id="structured-data-org" type="application/ld+json">
           {JSON.stringify({
@@ -175,19 +173,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `}
         </Script>
 
-
-
         <Script
           id="truintel-config"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'dca071f0-badc-4e3a-9756-bc1f4f18d9f0',apiUrl:'/ti'};`,
+            __html: `window.TruIntel={brandId:'88ef846d-1e63-459c-9ba0-c2dc88e39766',apiUrl:'/ti'};`,
           }}
         />
-        <Script
-          src="/ti/traffic/tracker.js"
-          strategy="afterInteractive"
-        />
+        <Script src="/ti/traffic/tracker.js" strategy="afterInteractive" />
 
         {children}
       </body>
