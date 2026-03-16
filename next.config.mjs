@@ -41,17 +41,6 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
-  async rewrites() {
-    return [
-      // Proxy TruIntel tracker script (GET only — rewrites work fine for GET)
-      {
-        source: "/ti/traffic/tracker.js",
-        destination: "https://api.truintel.ai/api/v1/traffic/tracker.js",
-      },
-      // POST endpoints use API route handlers in app/api/ti/ to preserve request body
-    ];
-  },
-
   async redirects() {
     return [
       {
