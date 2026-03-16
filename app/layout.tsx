@@ -177,7 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           id="truintel-config"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'cfdb70b4-7f8b-4dca-b613-3d971d3dd5be',apiUrl:'/ti'};`,
+            __html: `window.TruIntel={brandId:'cfdb70b4-7f8b-4dca-b613-3d971d3dd5be',apiUrl:'/api/ti'};`,
           }}
         />
         <Script src="/ti/traffic/tracker.js" strategy="afterInteractive" />
