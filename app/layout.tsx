@@ -177,10 +177,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           id="truintel-config"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'cfdb70b4-7f8b-4dca-b613-3d971d3dd5be',apiUrl:'https://api.truintel.ai/api/v1'};`,
+            __html: `window.TruIntel={brandId:'cfdb70b4-7f8b-4dca-b613-3d971d3dd5be',apiUrl:'/ti'};`,
           }}
         />
-        <Script src="https://api.truintel.ai/api/v1/traffic/tracker.js" strategy="afterInteractive" />
+        <Script src="/ti/traffic/tracker.js" strategy="afterInteractive" />
 
         {children}
       </body>
