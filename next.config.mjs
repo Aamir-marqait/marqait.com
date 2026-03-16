@@ -43,20 +43,12 @@ const nextConfig = {
 
   async rewrites() {
     return [
-      // Proxy TruIntel tracking through first-party domain to avoid
-      // browser tracking protection (Brave Shields, Firefox ETP, etc.)
+      // Proxy TruIntel tracker script (GET only — rewrites work fine for GET)
       {
         source: "/ti/traffic/tracker.js",
         destination: "https://api.truintel.ai/api/v1/traffic/tracker.js",
       },
-      {
-        source: "/ti/traffic/collect",
-        destination: "https://api.truintel.ai/api/v1/traffic/collect",
-      },
-      {
-        source: "/ti/leads/verify",
-        destination: "https://api.truintel.ai/api/v1/leads/verify",
-      },
+      // POST endpoints use API route handlers in app/api/ti/ to preserve request body
     ];
   },
 
