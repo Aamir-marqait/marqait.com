@@ -4,7 +4,6 @@ import type { NextRequest } from "next/server";
 
 const TRUINTEL_BRAND_ID = "cfdb70b4-7f8b-4dca-b613-3d971d3dd5be";
 const TRUINTEL_API = "https://api.truintel.ai/api/v1/i/e";
-const TRUINTEL_BASE = "https://api.truintel.ai/api/v1";
 
 // AI crawlers — OpenAI, Anthropic, Google, Meta, xAI, etc.
 const AI_CRAWLERS = [
@@ -113,66 +112,12 @@ function isBot(ua: string): boolean {
   return true; // non-browser UA = likely a bot
 }
 
-// TruIntel proxy paths: /ti/traffic/collect and /ti/leads/verify
-// Next.js rewrites don't forward POST bodies, so we proxy here instead
-const TI_PROXY_MAP: Record<string, string> = {
-  "/ti/traffic/collect": `${TRUINTEL_BASE}/traffic/collect`,
-  "/ti/leads/verify": `${TRUINTEL_BASE}/leads/verify`,
-};
+// TruIntel proxy is handled by Route Handlers:
+//   app/ti/traffic/collect/route.ts
+//   app/ti/leads/verify/route.ts
+// Middleware only handles bot detection below.
 
 export async function middleware(request: NextRequest) {
-  const path = request.nextUrl.pathname;
-
-  // --- TruIntel proxy (handles /ti/* POST and OPTIONS requests) ---
-  const proxyDest = TI_PROXY_MAP[path];
-  if (proxyDest) {
-    // Handle CORS preflight for fetch() fallback
-    if (request.method === "OPTIONS") {
-      return new NextResponse(null, {
-        status: 204,
-        headers: {
-          "Access-Control-Allow-Origin":
-            request.headers.get("origin") || "*",
-          "Access-Control-Allow-Methods": "POST, OPTIONS",
-          "Access-Control-Allow-Headers":
-            "Content-Type, User-Agent, X-Forwarded-For",
-          "Access-Control-Max-Age": "86400",
-        },
-      });
-    }
-
-    if (request.method === "POST") {
-      try {
-        const body = await request.text();
-        const res = await fetch(proxyDest, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "User-Agent": request.headers.get("user-agent") || "",
-            "X-Forwarded-For":
-              request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-              "",
-          },
-          body,
-        });
-        const data = await res.text();
-        return new NextResponse(data, {
-          status: res.status,
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin":
-              request.headers.get("origin") || "*",
-          },
-        });
-      } catch {
-        return new NextResponse(
-          JSON.stringify({ success: false, message: "Proxy error" }),
-          { status: 502, headers: { "Content-Type": "application/json" } },
-        );
-      }
-    }
-  }
-
   // --- Bot detection (fire-and-forget to TruIntel) ---
   const ua = request.headers.get("user-agent") || "";
 
@@ -200,8 +145,7 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all pages + /ti/* proxy paths, exclude static assets
-    "/((?!_next/static|_next/image|favicon.ico|api/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|woff|woff2)$).*)",
-    "/ti/:path*",
+    // Match all pages for bot detection, exclude static assets and API routes
+    "/((?!_next/static|_next/image|favicon.ico|api/|ti/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|woff|woff2)$).*)",
   ],
 };
