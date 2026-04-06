@@ -100,6 +100,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin=""
         />
 
+        {/* TruIntel config — raw script in head guarantees execution before tracker.js */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.TruIntel={brandId:'cfdb70b4-7f8b-4dca-b613-3d971d3dd5be',apiUrl:'/ti'};`,
+          }}
+        />
+
         {/* Structured Data for Organization */}
         <Script id="structured-data-org" type="application/ld+json">
           {JSON.stringify({
@@ -173,13 +180,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `}
         </Script>
 
-        <Script
-          id="truintel-config"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'cfdb70b4-7f8b-4dca-b613-3d971d3dd5be',apiUrl:'/ti'};`,
-          }}
-        />
         <Script src="/ti/traffic/tracker.js" strategy="afterInteractive" />
 
         {children}
