@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const TRUINTEL_BRAND_ID = "cfdb70b4-7f8b-4dca-b613-3d971d3dd5be";
+const TRUINTEL_BRAND_ID = "c0aba032-8528-4453-a17a-25286b8cdadc";
 const TRUINTEL_API = "https://api.truintel.ai/api/v1/i/e";
 
 // AI crawlers — OpenAI, Anthropic, Google, Meta, xAI, etc.
@@ -112,13 +112,7 @@ function isBot(ua: string): boolean {
   return true; // non-browser UA = likely a bot
 }
 
-// TruIntel proxy is handled by Route Handlers:
-//   app/ti/traffic/collect/route.ts
-//   app/ti/leads/verify/route.ts
-// Middleware only handles bot detection below.
-
-export async function middleware(request: NextRequest) {
-  // --- Bot detection (fire-and-forget to TruIntel) ---
+export function middleware(request: NextRequest) {
   const ua = request.headers.get("user-agent") || "";
 
   if (isBot(ua)) {
@@ -145,7 +139,6 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all pages for bot detection, exclude static assets and API routes
-    "/((?!_next/static|_next/image|favicon.ico|api/|ti/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|woff|woff2)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|api/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|woff|woff2)$).*)",
   ],
 };

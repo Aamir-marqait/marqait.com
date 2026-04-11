@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { z } from "zod";
-import { verifyLead } from "@/lib/truintel";
-
 const contactFormSchema = z.object({
   fullName: z.string().min(2, "Full name must be at least 2 characters").max(50, "Full name must be less than 50 characters"),
   email: z.string().email("Please enter a valid email address"),
@@ -58,14 +56,6 @@ export default function ContactForm() {
       setIsSubmitting(false);
       return;
     }
-
-    // TruIntel lead verification (fire-and-forget, non-blocking)
-    verifyLead({
-      email: formData.email,
-      name: formData.fullName,
-      company: formData.company,
-      message: formData.message,
-    });
 
     const formDataToSend = new FormData();
     formDataToSend.append("access_key", "0a3a70cf-9b31-4dcd-9b68-934df7b505fa");

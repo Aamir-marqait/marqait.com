@@ -100,13 +100,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossOrigin=""
         />
 
-        {/* TruIntel config — raw script in head guarantees execution before tracker.js */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'cfdb70b4-7f8b-4dca-b613-3d971d3dd5be',apiUrl:'/ti'};`,
-          }}
-        />
-
         {/* Structured Data for Organization */}
         <Script id="structured-data-org" type="application/ld+json">
           {JSON.stringify({
@@ -151,6 +144,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             name: "Marqait",
           })}
         </Script>
+
+        <Script
+          id="truintel-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.TruIntel={brandId:'c0aba032-8528-4453-a17a-25286b8cdadc',apiUrl:'https://api.truintel.ai/api/v1'};`,
+          }}
+        />
+        <Script
+          src="https://api.truintel.ai/api/v1/traffic/tracker.js"
+          strategy="afterInteractive"
+        />
       </head>
 
       <body
@@ -179,8 +184,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             gtag('config', 'G-F9REM2WQ5H');
           `}
         </Script>
-
-        <Script src="/ti/traffic/tracker.js" strategy="afterInteractive" />
 
         {children}
       </body>

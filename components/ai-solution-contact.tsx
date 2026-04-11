@@ -332,7 +332,6 @@
 import type React from "react";
 import Image from "next/image";
 import { useState } from "react";
-import { verifyLead } from "@/lib/truintel";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -359,14 +358,6 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: "", message: "" });
-
-    // TruIntel lead verification (fire-and-forget, non-blocking)
-    verifyLead({
-      email: formData.email,
-      name: formData.fullName,
-      company: formData.company,
-      message: formData.message,
-    });
 
     const formDataToSend = new FormData();
     formDataToSend.append("access_key", "0a3a70cf-9b31-4dcd-9b68-934df7b505fa");

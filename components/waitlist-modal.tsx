@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { X, Mail, ArrowRight, Check } from "lucide-react";
 import { trackCTAClick } from "../analytics";
-import { verifyLead } from "@/lib/truintel";
-
 interface WaitlistModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -33,9 +31,6 @@ export default function WaitlistModal({
     }
 
     setIsSubmitting(true);
-
-    // TruIntel lead verification (fire-and-forget, non-blocking)
-    verifyLead({ email, subject: "Waitlist Signup" });
 
     try {
       const formData = new FormData();

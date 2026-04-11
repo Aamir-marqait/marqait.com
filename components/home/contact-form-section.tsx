@@ -1,8 +1,6 @@
 import { useState, forwardRef, Ref } from "react";
 import Image from "next/image";
 import { trackCTAClick } from "../../analytics";
-import { verifyLead } from "@/lib/truintel";
-
 const ContactFormSection = forwardRef<HTMLElement>(
   (_props, ref: Ref<HTMLElement>) => {
     const [formData, setFormData] = useState({
@@ -28,14 +26,6 @@ const ContactFormSection = forwardRef<HTMLElement>(
       trackCTAClick("Book Demo", "Contact Form Section");
       setIsSubmitting(true);
       setSubmitStatus({ type: "", message: "" });
-
-      // TruIntel lead verification (fire-and-forget, non-blocking)
-      verifyLead({
-        email: formData.email,
-        name: formData.fullName,
-        company: formData.company,
-        message: formData.message,
-      });
 
       const formDataToSend = new FormData();
       formDataToSend.append(
