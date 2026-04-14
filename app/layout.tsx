@@ -145,11 +145,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           })}
         </Script>
 
-        <Script
+       <Script
           id="truintel-config"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'c0aba032-8528-4453-a17a-25286b8cdadc',apiUrl:'https://api.truintel.ai/api/v1'};`,
+            __html: `window.TruIntel={brandId:'adcb7734-42c2-414a-8d7d-ca7a9615c5c6',apiUrl:'https://api.truintel.ai/api/v1'};`,
           }}
         />
         <Script

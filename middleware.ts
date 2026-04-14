@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const TRUINTEL_BRAND_ID = "c0aba032-8528-4453-a17a-25286b8cdadc";
+const TRUINTEL_BRAND_ID = "adcb7734-42c2-414a-8d7d-ca7a9615c5c6";
 const TRUINTEL_API = "https://api.truintel.ai/api/v1/i/e";
 
 // AI crawlers — OpenAI, Anthropic, Google, Meta, xAI, etc.
