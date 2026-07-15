@@ -30,7 +30,7 @@ export default function WhatIsStartup() {
               answer ChatGPT or Perplexity recommends can be a real growth
               lever — a{" "}
               <a
-                href="https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=contextual"
+                href="https://truintel.ai/?utm_source=marqait_promo&utm_medium=contextual"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"

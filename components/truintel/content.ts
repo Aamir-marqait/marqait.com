@@ -10,8 +10,9 @@ export const TRUINTEL = {
     "TruIntel helps your brand become the answer inside ChatGPT, Gemini, Google AI Overviews, Perplexity and Claude.",
   urls: {
     home: "https://truintel.ai/?utm_source=marqait&utm_medium=cross-promo",
-    audit:
-      "https://truintel.ai/website-audit?utm_source=marqait&utm_medium=cross-promo",
+    // Audit-labeled CTAs land on the TruIntel homepage (user preference —
+    // all conversion traffic goes to truintel.ai, not deep pages).
+    audit: "https://truintel.ai/?utm_source=marqait&utm_medium=cross-promo",
     register:
       "https://app.truintel.ai/register?utm_source=marqait&utm_medium=cross-promo",
   },
