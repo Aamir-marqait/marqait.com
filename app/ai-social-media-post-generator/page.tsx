@@ -29,6 +29,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default function AISocialMediaPostGenerator() {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
@@ -37,6 +39,7 @@ export default function AISocialMediaPostGenerator() {
       <WhyToChoose />
       <DevelopmentProcessSection />
       <UseAISocialMedia />
+      <TruIntelCTASection />
       <FaqSection />
       <FinalCtaSection />
     </div>

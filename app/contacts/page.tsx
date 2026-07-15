@@ -13,6 +13,8 @@ const contactFormSchema = z.object({
 });
 
 
+import { TruIntelBanner } from "@/components/truintel";
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -626,6 +628,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+      <TruIntelBanner />
     </div>
   );
 }

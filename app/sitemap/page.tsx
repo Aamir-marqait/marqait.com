@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   keywords: "sitemap, navigation, AI tools, AI solutions, BrandMark AI, ContentSpark AI, marketing automation, website structure",
 };
 
+import { TruIntelBanner } from "@/components/truintel";
+
 export default function Sitemap() {
   // Generate sitemap sections dynamically
   const sitemapSections = generateSitemapSections();
@@ -174,6 +176,7 @@ export default function Sitemap() {
           </div>
         </div>
       </div>
+      <TruIntelBanner />
     </div>
   );
 }

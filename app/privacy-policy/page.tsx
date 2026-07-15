@@ -25,6 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelBanner } from "@/components/truintel";
+
 export default function PrivacyPolicy() {
 
   return (
@@ -383,6 +385,7 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </div>
+      <TruIntelBanner />
     </div>
   );
 }

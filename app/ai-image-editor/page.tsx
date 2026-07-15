@@ -31,6 +31,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelBanner } from "@/components/truintel";
+
 export default function AIEditor() {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
@@ -43,6 +45,7 @@ export default function AIEditor() {
       <FeatureTwo />
       <FeatureThree />
       <Benefits />
+      <TruIntelBanner message="See if AI recommends your brand — not your competitors." />
       <FaqSection />
       <FinalCtaSection />
     </div>

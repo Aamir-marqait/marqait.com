@@ -13,6 +13,8 @@ export const metadata = {
   description: "AI for startups to grow with AI-powered automation solutions. Enhanced decision-making, operational efficiency, and personalized customer engagement."
 };
 
+import { TruIntelShowcase } from "@/components/truintel";
+
 function page() {
   return (
     <div className="bg-black relative overflow-hidden">
@@ -25,6 +27,7 @@ function page() {
       <Role />
       <Benefits />
       <FaqSection />
+      <TruIntelShowcase />
       <ContactSection />
     </div>
   );

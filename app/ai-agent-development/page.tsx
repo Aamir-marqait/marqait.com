@@ -14,6 +14,8 @@ export const metadata = {
   description: "Marqait AI is an AI agent development company creating intelligent AI agents that automate tasks. Discover our custom AI Agents development services."
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 function page() {
   return (
     <div className="bg-black">
@@ -25,6 +27,7 @@ function page() {
       <IndustriesSection />
       <AIAgentBenefits />
       <FaqSection />
+      <TruIntelCTASection />
       <ContactSection />
     </div>
   );

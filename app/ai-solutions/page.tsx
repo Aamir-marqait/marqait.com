@@ -31,6 +31,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default function GrowthPods() {
   return (
     <div className="min-h-screen bg-[#05000A] w-screen overflow-x-hidden">
@@ -38,6 +40,7 @@ export default function GrowthPods() {
       <EveryIndustry />
       <How />
       <Why />
+      <TruIntelCTASection />
       <ContactSection />
       {/* <CaseStudies /> */}
       {/* <CTASection /> */}

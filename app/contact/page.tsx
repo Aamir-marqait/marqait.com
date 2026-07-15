@@ -25,6 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default function ContactPage() {
   return (
     <div
@@ -160,6 +162,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+      <TruIntelCTASection />
     </div>
   );
 }
