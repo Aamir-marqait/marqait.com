@@ -18,7 +18,18 @@ export default function WhatIsAiSeo() {
               improve website visibility and rankings on search engines. Unlike
               traditional SEO, which relies heavily on manual research and
               repetitive tasks, AI for SEO optimization automates processes and
-              provides data-driven recommendations in real time.
+              provides data-driven recommendations in real time. Search itself
+              is changing too — answers now come from ChatGPT, Gemini, and
+              Google AI Overviews, which is why{" "}
+              <a
+                href="https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                AI search monitoring
+              </a>{" "}
+              is becoming part of every serious SEO strategy.
             </p>
 
             <div className="space-y-4">

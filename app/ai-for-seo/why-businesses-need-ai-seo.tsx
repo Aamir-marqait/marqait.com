@@ -111,7 +111,16 @@ export default function WhyBusinessesNeedAiSeo() {
             Traditional SEO methods alone are no longer enough. That's why
             businesses are turning to AI for SEO to gain an edge. Using
             Artificial intelligence makes SEO effort easier, smarter, faster,
-            and more data-driven.
+            and more data-driven. Not sure where you stand today? Start with a{" "}
+            <a
+              href="https://truintel.ai/free-seo-audit?utm_source=marqait_promo&utm_medium=contextual"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+            >
+              free SEO audit
+            </a>{" "}
+            to see exactly what needs fixing.
           </p>
         </div>
 

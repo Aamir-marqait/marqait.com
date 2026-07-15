@@ -123,9 +123,18 @@ export default function About() {
                   that Fortune 500 companies use to drive growth.
                 </p>
                 <p className="text-lg">
-                  Our AI-powered platform breaks down these barriers, offering intuitive tools that 
-                  require no technical expertise, affordable pricing that scales with your business, 
-                  and results that speak for themselves.
+                  Our AI-powered platform breaks down these barriers, offering intuitive tools that
+                  require no technical expertise, affordable pricing that scales with your business,
+                  and results that speak for themselves. Today that same conviction powers{" "}
+                  <a
+                    href="https://truintel.ai/?utm_source=marqait_promo&utm_medium=contextual"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+                  >
+                    TruIntel
+                  </a>
+                  , our platform for tracking how brands appear in AI search.
                 </p>
               </div>
             </div>

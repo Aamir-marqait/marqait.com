@@ -30,7 +30,18 @@ export default function WhatIsAgent() {
               With AI, doctors can detect diseases earlier, predict patient
               risks, and make smarter, data-driven decisions in real time. This
               leads to more personalized treatment plans, better outcomes, and
-              improved patient satisfaction.
+              improved patient satisfaction. Patients also research providers
+              through AI assistants now, so it helps to know how your practice
+              shows up — the{" "}
+              <a
+                href="https://truintel.ai/blog?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                TruIntel blog
+              </a>{" "}
+              explains how AI search visibility works.
             </p>
           </div>
 

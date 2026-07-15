@@ -24,7 +24,17 @@ export default function Introduction() {
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
               Whether you’re starting a business, running a company, or building
               your personal brand, Marqait’s Free AI Logo Generator helps you
-              create best logos that stand out
+              create best logos that stand out. A logo is step one — being
+              recommended by ChatGPT and Google AI Overviews is the next; a{" "}
+              <a
+                href="https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                free AI visibility audit
+              </a>{" "}
+              shows where your brand stands.
             </p>
             <a
               href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"

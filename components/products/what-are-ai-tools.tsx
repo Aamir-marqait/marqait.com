@@ -39,7 +39,18 @@ export default function WhatAreTools() {
             manage, and optimize marketing campaigns faster and more
             effectively. Instead of spending hours brainstorming, designing, or
             analyzing, marketers can use AI tools to automate repetitive tasks
-            and generate high-performing content in minutes.
+            and generate high-performing content in minutes. The newest
+            frontier is Answer Engine Optimization — making sure ChatGPT,
+            Gemini, and Perplexity recommend your brand — and you can learn{" "}
+            <a
+              href="https://truintel.ai/methodology?utm_source=marqait_promo&utm_medium=contextual"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+            >
+              how AI engines choose answers
+            </a>{" "}
+            before your competitors do.
           </p>
         </div>
 

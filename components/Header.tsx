@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { trackCTAClick } from "../analytics";
+import TruIntelPauseBar from "./truintel/TruIntelPauseBar";
 
 interface DropdownItem {
   name: string;
@@ -143,6 +144,7 @@ export default function Header() {
       className="fixed top-0 left-0 right-0 w-full bg-[#020103] z-50 border-b"
       style={{ borderColor: "#FFFFFF26" }}
     >
+      <TruIntelPauseBar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <div className="flex items-center space-x-8">

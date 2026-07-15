@@ -32,7 +32,17 @@ export default function Introduction() {
               <strong>Launch Ads on Meta & Google:</strong> Deploy your
               campaigns directly to Google and Meta without leaving the
               platform. Track performance in real-time and let AI optimize for
-              maximum ROI automatically.
+              maximum ROI automatically. Great ads also work harder when your
+              brand shows up in AI answers — see how with{" "}
+              <a
+                href="https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                AI search monitoring
+              </a>
+              .
             </p>
             <Link
               href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"

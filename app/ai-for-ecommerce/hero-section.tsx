@@ -4,12 +4,13 @@ import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import WaitlistModal from "../../components/waitlist-modal";
+import { openTruIntelAnnouncement } from "../../components/truintel";
 
 export default function HeroSection() {
   const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
 
   const openWaitlistModal = () => {
-    window.open("https://truintel.ai/contact?utm_source=marqait_promo&utm_medium=cta", "_blank", "noopener,noreferrer");
+    openTruIntelAnnouncement();
   };
 
   const closeWaitlistModal = () => {

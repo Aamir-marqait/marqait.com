@@ -25,7 +25,17 @@ export default function WhatIsAgent() {
               systems that can perceive their environment, make decisions, and
               take actions to achieve specific goals. These autonomous agents
               use machine learning, natural language processing, and advanced
-              algorithms to simulate human-like reasoning and behavior.
+              algorithms to simulate human-like reasoning and behavior. A good
+              primer on this shift is{" "}
+              <a
+                href="https://truintel.ai/how-it-works?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                how TruIntel&apos;s AI visibility platform works
+              </a>{" "}
+              — an AI system built to monitor other AI systems.
             </p>
           </div>
 

@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { Roboto, Sora, Inter, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { TruIntelPopup } from "../components/truintel";
+import {
+  TruIntelPopup,
+  TruIntelAnnouncementModal,
+} from "../components/truintel";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -190,6 +193,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         {/* Site-wide TruIntel cross-promo popup */}
         <TruIntelPopup />
+        {/* "Marqait is on pause" modal — intercepts all conversion CTAs */}
+        <TruIntelAnnouncementModal />
       </body>
     </html>
   );

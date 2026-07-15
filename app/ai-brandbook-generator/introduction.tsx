@@ -31,7 +31,18 @@ export default function Introduction() {
               decision-making and reduce inconsistencies. Whether you’re
               launching a new brand, refreshing an existing one, or scaling
               across multiple channels, it ensures every touchpoint reflects
-              your brand’s true identity with clarity and confidence.
+              your brand’s true identity with clarity and confidence. Curious
+              how consistently AI engines like ChatGPT describe your brand
+              today? Check your{" "}
+              <a
+                href="https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                AI visibility with a free audit
+              </a>
+              .
             </p>
             <a
               href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
