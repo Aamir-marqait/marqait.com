@@ -113,7 +113,7 @@ export default function WhyBusinessesNeedAiSeo() {
             Artificial intelligence makes SEO effort easier, smarter, faster,
             and more data-driven. Not sure where you stand today? Start with a{" "}
             <a
-              href="https://truintel.ai/free-seo-audit?utm_source=marqait_promo&utm_medium=contextual"
+              href="https://truintel.ai/free-seo-audit"
               target="_blank"
               rel="noopener noreferrer"
               className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"

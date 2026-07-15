@@ -13,15 +13,13 @@ import { TRUINTEL } from "./content";
  * explains the transition first, then hands them to TruIntel through its own
  * CTAs. Two triggers:
  *
- *   1. A capture-phase click listener that catches any anchor whose href is a
- *      truintel.ai conversion link (utm_medium=cta / contact-cta). No changes
- *      needed in the dozens of files that render those links.
+ *   1. A capture-phase click listener that catches any anchor marked with the
+ *      `data-ti-cta` attribute (all conversion CTAs carry it).
  *   2. `openTruIntelAnnouncement()` for programmatic CTAs (buttons that used
  *      to call `window.open`).
  *
- * Contextual/footer links (utm_medium=footer / contextual / cross-promo)
- * intentionally pass straight through — the user already knows those go to
- * TruIntel.
+ * Contextual/footer/promo links (no data-ti-cta) intentionally pass straight
+ * through — the user already knows those go to TruIntel.
  */
 
 export const TRUINTEL_ANNOUNCE_EVENT = "truintel:announce";
@@ -30,13 +28,8 @@ export function openTruIntelAnnouncement() {
   window.dispatchEvent(new Event(TRUINTEL_ANNOUNCE_EVENT));
 }
 
-const PRIMARY_URL =
-  "https://truintel.ai/?utm_source=marqait_promo&utm_medium=pause-modal";
-const EXPLORE_URL =
-  "https://truintel.ai/?utm_source=marqait_promo&utm_medium=pause-modal";
-
-// Only conversion CTAs open the modal; informational links navigate directly.
-const INTERCEPT_MEDIUMS = /utm_medium=(cta|contact-cta)(&|$)/;
+const PRIMARY_URL = "https://truintel.ai/";
+const EXPLORE_URL = "https://truintel.ai/";
 
 export default function TruIntelAnnouncementModal() {
   const [mounted, setMounted] = useState(false);
@@ -73,12 +66,10 @@ export default function TruIntelAnnouncementModal() {
       )
         return;
       const anchor = (e.target as HTMLElement | null)?.closest?.("a");
-      if (!anchor) return;
+      // Only conversion CTAs (marked data-ti-cta) open the modal.
+      if (!anchor || !anchor.hasAttribute("data-ti-cta")) return;
       // Links inside the modal itself must navigate normally.
       if (anchor.closest("[data-ti-announce]")) return;
-      const href = anchor.getAttribute("href") ?? "";
-      if (!href.includes("truintel.ai") || !INTERCEPT_MEDIUMS.test(href))
-        return;
       e.preventDefault();
       e.stopPropagation();
       show();

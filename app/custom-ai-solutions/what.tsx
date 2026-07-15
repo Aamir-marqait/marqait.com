@@ -28,7 +28,7 @@ export default function What() {
               requirements and deliver measurable results. One example from our
               own team is{" "}
               <a
-                href="https://truintel.ai/?utm_source=marqait_promo&utm_medium=contextual"
+                href="https://truintel.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"

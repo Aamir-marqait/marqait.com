@@ -246,7 +246,7 @@ export default function Header() {
           {/* Desktop Get Started Button */}
           <div className="hidden lg:block cursor-pointer">
             <a
-              href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
+              data-ti-cta href="https://app.truintel.ai/register"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
@@ -398,7 +398,7 @@ export default function Header() {
               {/* Mobile Sign Up Button */}
               <div className="pt-4 pb-2">
                 <a
-                  href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
+                  data-ti-cta href="https://app.truintel.ai/register"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => {

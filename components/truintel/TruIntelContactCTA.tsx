@@ -4,7 +4,7 @@ import { TRUINTEL } from "./content";
 import TruIntelLockup from "./TruIntelLockup";
 
 const CONTACT_URL =
-  "https://truintel.ai/contact?utm_source=marqait_promo&utm_medium=contact-cta";
+  "https://truintel.ai/contact";
 
 /**
  * Contact / demo CTA that replaces Marqait's lead-capture forms. Every path
@@ -49,6 +49,7 @@ export default function TruIntelContactCTA({
 
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
+              data-ti-cta
               href={CONTACT_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -58,6 +59,7 @@ export default function TruIntelContactCTA({
               Book a TruIntel Demo
             </Link>
             <Link
+              data-ti-cta
               href={TRUINTEL.urls.register}
               target="_blank"
               rel="noopener noreferrer"

@@ -22,7 +22,7 @@ export default function WhatIsEcommerce() {
               stay competitive. Shoppers also increasingly ask AI assistants
               what to buy, which makes{" "}
               <a
-                href="https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=contextual"
+                href="https://truintel.ai/ai-search-monitoring"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"

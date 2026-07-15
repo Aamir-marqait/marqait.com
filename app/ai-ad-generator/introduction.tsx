@@ -35,7 +35,7 @@ export default function Introduction() {
               maximum ROI automatically. Great ads also work harder when your
               brand shows up in AI answers — see how with{" "}
               <a
-                href="https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=contextual"
+                href="https://truintel.ai/ai-search-monitoring"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
@@ -45,7 +45,7 @@ export default function Introduction() {
               .
             </p>
             <Link
-              href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
+              data-ti-cta href="https://app.truintel.ai/register"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
