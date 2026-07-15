@@ -25,7 +25,17 @@ export default function Introduction() {
               conversions, ReelCraft helps your content perform at its best. By
               taking the complexity out of video creation, it empowers brands to
               focus on growth while delivering consistent, high-quality
-              storytelling.
+              storytelling. Reels win attention on social — but more buyers now
+              ask AI assistants for recommendations, so it pays to understand{" "}
+              <a
+                href="https://truintel.ai/methodology?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                how AI engines choose answers
+              </a>
+              .
             </p>
             <a
               href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"

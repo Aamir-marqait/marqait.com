@@ -26,7 +26,18 @@ export default function WhatIsStartup() {
               save time, and make smarter, data-driven decisions. Ultimately, AI
               for startups aims to increase efficiency, reduce human error, and
               help small businesses scale faster by working alongside
-              entrepreneurs and their teams.
+              entrepreneurs and their teams. For early-stage brands, being the
+              answer ChatGPT or Perplexity recommends can be a real growth
+              lever — a{" "}
+              <a
+                href="https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                free AI visibility audit
+              </a>{" "}
+              shows where you stand today.
             </p>
           </div>
 

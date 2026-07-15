@@ -26,7 +26,17 @@ export default function Introduction() {
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">
               Perfect for businesses, creators, and personal use, Marqait AI
               Photo Editor helps you get polished photos instantly. Fast, easy,
-              and professional – all in one tool.
+              and professional – all in one tool. And once your visuals are
+              ready, make sure people can actually find you — the{" "}
+              <a
+                href="https://truintel.ai/blog?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                TruIntel blog
+              </a>{" "}
+              covers how brands get discovered in AI search.
             </p>
             <a
               href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"

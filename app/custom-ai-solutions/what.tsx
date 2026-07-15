@@ -25,7 +25,18 @@ export default function What() {
               Whether you're looking to automate processes, enhance
               decision-making, or create entirely new AI-powered products, our
               custom AI solutions are designed to meet your unique business
-              requirements and deliver measurable results.
+              requirements and deliver measurable results. One example from our
+              own team is{" "}
+              <a
+                href="https://truintel.ai/?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                TruIntel
+              </a>
+              , a purpose-built platform for monitoring brand visibility in AI
+              search.
             </p>
           </div>
 

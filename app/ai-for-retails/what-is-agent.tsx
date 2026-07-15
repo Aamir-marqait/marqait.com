@@ -31,7 +31,18 @@ export default function WhatIsAgent() {
               Our systems also use predictive analytics for demand forecasting,
               enabling businesses to plan effectively, reduce waste, and improve
               profit margins. With AI automation, every stage of the retail
-              supply chain becomes more efficient and reliable.
+              supply chain becomes more efficient and reliable. And since
+              shoppers now ask ChatGPT and Google AI Overviews where to buy,
+              tracking your{" "}
+              <a
+                href="https://truintel.ai/ai-overview-tracker?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                presence in AI Overviews
+              </a>{" "}
+              matters as much as shelf placement.
             </p>
           </div>
 

@@ -8,4 +8,9 @@ export { default as TruIntelCallout } from "./TruIntelCallout";
 export { default as TruIntelContactCTA } from "./TruIntelContactCTA";
 export { default as TruIntelLockup } from "./TruIntelLockup";
 export { default as TruIntelPopup } from "./TruIntelPopup";
+export {
+  default as TruIntelAnnouncementModal,
+  openTruIntelAnnouncement,
+} from "./TruIntelAnnouncementModal";
+export { default as TruIntelPauseBar } from "./TruIntelPauseBar";
 export { TRUINTEL, TRUINTEL_FEATURES } from "./content";

@@ -19,7 +19,17 @@ export default function WhatIsEcommerce() {
               tailored recommendations — and traditional ecommerce setups can no
               longer keep up with these demands. That’s why AI in ecommerce is
               not just an advantage, but a necessity for businesses that want to
-              stay competitive.
+              stay competitive. Shoppers also increasingly ask AI assistants
+              what to buy, which makes{" "}
+              <a
+                href="https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                AI search monitoring
+              </a>{" "}
+              a new must-have for online stores.
             </p>
 
             <p className="text-[#FFFFFFE5] opacity-90 font-inter text-[20px] leading-[150%] tracking-[0%]">

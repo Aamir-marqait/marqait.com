@@ -61,7 +61,17 @@ function UI() {
               marketing automation dashboard. Track performance, monitor
               campaigns, and optimize results in real time — all from one place.
               Marqait simplifies marketing management so you can focus on
-              creativity and growth.
+              creativity and growth. And as discovery shifts to AI assistants,
+              our team's new platform helps you track your{" "}
+              <a
+                href="https://truintel.ai/?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                AI visibility
+              </a>{" "}
+              across ChatGPT, Gemini, and Google AI Overviews.
             </p>
           </div>
         </motion.div>

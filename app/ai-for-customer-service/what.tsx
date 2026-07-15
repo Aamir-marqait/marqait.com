@@ -27,7 +27,18 @@ export default function What() {
               understand customer intent, while sentiment analysis helps detect
               customer emotions for better responses. By combining automation,
               personalization, and predictive insights, we enable brands to
-              deliver consistent and scalable customer support.
+              deliver consistent and scalable customer support. Support quality
+              even shapes what AI assistants say about you — see what customers
+              hear when they ask about your brand with{" "}
+              <a
+                href="https://truintel.ai/chatgpt-visibility-tracker?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                ChatGPT visibility tracking
+              </a>
+              .
             </p>
           </div>
 

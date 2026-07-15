@@ -26,7 +26,17 @@ export default function Introduction() {
               Marqait’s free AI post generator goes beyond random text—it
               analyzes your input, identifies your audience, and creates
               engaging posts tailored for Instagram, LinkedIn, Facebook, and X
-              (Twitter), optimized for maximum impact.
+              (Twitter), optimized for maximum impact. Social feeds are one
+              channel — discovery increasingly happens inside{" "}
+              <a
+                href="https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=contextual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
+              >
+                AI search
+              </a>{" "}
+              too.
             </p>
             <a
               href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
