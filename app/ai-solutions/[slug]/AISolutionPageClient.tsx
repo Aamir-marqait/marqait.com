@@ -407,12 +407,14 @@ export default function AISolutionPageClient({ solution }: AISolutionPageClientP
                       ></textarea>
                     </div>
 
-                    <button
-                      type="submit"
-                      className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+                    <a
+                      href="https://truintel.ai/contact?utm_source=marqait_promo&utm_medium=cta"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-center w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
                     >
-                      Book Demo
-                    </button>
+                      Book a TruIntel Demo
+                    </a>
                   </form>
                 </div>
 
@@ -480,10 +482,12 @@ export default function AISolutionPageClient({ solution }: AISolutionPageClientP
               {solution.heroSection?.ctaButton && (
                 <div className="pt-2">
                   <Link
-                    href={solution.heroSection.ctaButton.link || '/consultation'}
+                    href="https://truintel.ai/contact?utm_source=marqait_promo&utm_medium=cta"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-8 py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-full text-md transition-all duration-300 transform hover:scale-105 shadow-lg"
                   >
-                    {solution.heroSection.ctaButton.text || 'Book a Free Consultation'}
+                    {solution.heroSection.ctaButton.text || 'Book a TruIntel Demo'}
                   </Link>
                 </div>
               )}

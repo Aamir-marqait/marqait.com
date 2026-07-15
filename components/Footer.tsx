@@ -31,7 +31,22 @@ export default function Footer() {
     aiTools: Array<{ text: string; url: string }>;
     aiSolutions: Array<{ text: string; url: string }>;
     quickLinks: Array<{ text: string; url: string }>;
+    truintel: Array<{ text: string; url: string }>;
   } = {
+    truintel: [
+      { text: "AI Visibility Audit", url: "https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "AI Search Monitoring", url: "https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "ChatGPT Visibility Tracker", url: "https://truintel.ai/chatgpt-visibility-tracker?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "Gemini Visibility Tracker", url: "https://truintel.ai/gemini-visibility-tracker?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "Perplexity Visibility Tracker", url: "https://truintel.ai/perplexity-visibility-tracker?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "Claude Visibility Tracker", url: "https://truintel.ai/claude-visibility-tracker?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "AI Overview Tracker", url: "https://truintel.ai/ai-overview-tracker?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "Competitor Analysis Tool", url: "https://truintel.ai/competitor-analysis-tool?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "Free SEO Audit", url: "https://truintel.ai/free-seo-audit?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "TruIntel AI CMS", url: "https://truintel.ai/ai-cms?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "Pricing", url: "https://truintel.ai/pricing?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "Get Started Free", url: "https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=footer" },
+    ],
     aiTools: [
       { text: "AI Logo Generator", url: "/ai-logo-generator" },
       {
@@ -103,7 +118,7 @@ export default function Footer() {
             </div>
 
             <div className="lg:col-span-8">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
                 {/* AI Tools Column */}
                 <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   <h3
@@ -147,6 +162,32 @@ export default function Footer() {
                         >
                           {link.text}
                         </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* TruIntel Column */}
+                <div className="space-y-3 sm:space-y-4 lg:space-y-6">
+                  <h3
+                    className="font-inter font-semibold leading-5 tracking-[0.7px] uppercase
+                    text-xs sm:text-sm bg-gradient-to-r from-emerald-300 to-[#8C45FF] bg-clip-text text-transparent"
+                  >
+                    TRUINTEL
+                  </h3>
+                  <ul className="space-y-2 sm:space-y-3 lg:space-y-4">
+                    {footerLinks.truintel.map((link, index) => (
+                      <li key={index}>
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => trackCTAClick(link.text, "Footer TruIntel")}
+                          className="text-white/90 hover:text-emerald-300 hover:underline transition-colors duration-200 font-inter font-normal leading-6
+                            text-sm sm:text-base"
+                        >
+                          {link.text}
+                        </a>
                       </li>
                     ))}
                   </ul>

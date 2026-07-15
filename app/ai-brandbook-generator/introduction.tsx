@@ -34,7 +34,7 @@ export default function Introduction() {
               your brand’s true identity with clarity and confidence.
             </p>
             <a
-              href="https://app.marqait.com/"
+              href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
@@ -57,7 +57,7 @@ export default function Introduction() {
                 color: "#F2F0F5",
               }}
             >
-              Generate BrandBlueprint
+              Try TruIntel Free
             </a>
           </div>
 

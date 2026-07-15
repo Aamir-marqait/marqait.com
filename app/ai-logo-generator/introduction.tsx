@@ -27,7 +27,7 @@ export default function Introduction() {
               create best logos that stand out
             </p>
             <a
-              href="https://app.marqait.com/"
+              href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
@@ -50,7 +50,7 @@ export default function Introduction() {
                 color: "#F2F0F5",
               }}
             >
-              Generate a logo with AI
+              Try TruIntel Free
             </a>
           </div>
 

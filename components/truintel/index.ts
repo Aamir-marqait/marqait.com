@@ -5,6 +5,7 @@ export { default as TruIntelCTASection } from "./TruIntelCTASection";
 export { default as TruIntelShowcase } from "./TruIntelShowcase";
 export { default as TruIntelSpotlight } from "./TruIntelSpotlight";
 export { default as TruIntelCallout } from "./TruIntelCallout";
+export { default as TruIntelContactCTA } from "./TruIntelContactCTA";
 export { default as TruIntelLockup } from "./TruIntelLockup";
 export { default as TruIntelPopup } from "./TruIntelPopup";
 export { TRUINTEL, TRUINTEL_FEATURES } from "./content";

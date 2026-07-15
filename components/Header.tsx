@@ -244,7 +244,7 @@ export default function Header() {
           {/* Desktop Get Started Button */}
           <div className="hidden lg:block cursor-pointer">
             <a
-              href="https://app.marqait.com/"
+              href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
@@ -271,7 +271,7 @@ export default function Header() {
                 color: "#F2F0F5",
               }}
             >
-              Get Started
+              Get Started with TruIntel
               <Image
                 className="cursor-pointer"
                 src="/icons/arrow.svg"
@@ -396,7 +396,7 @@ export default function Header() {
               {/* Mobile Sign Up Button */}
               <div className="pt-4 pb-2">
                 <a
-                  href="https://app.marqait.com/"
+                  href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => {
@@ -410,7 +410,7 @@ export default function Header() {
                     fontSize: "15.9px",
                   }}
                 >
-                  Get Started
+                  Get Started with TruIntel
                   <Image
                     src="/icons/arrow.svg"
                     alt="arrow-right"
