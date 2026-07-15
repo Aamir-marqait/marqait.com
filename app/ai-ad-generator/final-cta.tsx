@@ -20,7 +20,7 @@ export default function FinalCtaSection() {
               </p>
               <div className="flex justify-center">
                 <Link
-                  href="https://app.marqait.com/"
+                  href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
@@ -44,7 +44,7 @@ export default function FinalCtaSection() {
                   }}
                 >
                   <Zap className="w-4 h-4" />
-                  Generate My Ad Campaign
+                  Try TruIntel Free
                 </Link>
               </div>
             </div>

@@ -84,7 +84,7 @@ export default function HeroSection() {
 
           <div className="z-1 inline-flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 lg:gap-10 pt-3 sm:pt-6 lg:pt-[15px] mx-auto relative">
             <a
-              href="https://app.marqait.com/"
+              href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
               target="_blank"
               // rel="noopener noreferrer"
               className="cursor-pointer flex items-center text-white font-inter font-semibold rounded-2xl transition-all duration-200 justify-center gap-2 border border-[#E6D4FF99]
@@ -99,7 +99,7 @@ export default function HeroSection() {
                 borderRadius: "16px",
               }}
             >
-              Get Started
+              Get Started with TruIntel
               <Image
                 src="/icons/arrow.svg"
                 alt="arrow-right"

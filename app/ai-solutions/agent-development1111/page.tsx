@@ -69,10 +69,12 @@ export default function AIAgentDevelopment() {
               {/* CTA Button */}
               <div className="pt-2">
                 <Link
-                  href="/consultation"
+                  href="https://truintel.ai/contact?utm_source=marqait_promo&utm_medium=cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold rounded-full text-md transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
-                  Book a Free Consultation
+                  Book a TruIntel Demo
                 </Link>
               </div>
             </div>

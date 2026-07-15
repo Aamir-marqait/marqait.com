@@ -8,7 +8,7 @@ export default function AiAgentHero() {
   const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
 
   const openWaitlistModal = () => {
-    setIsWaitlistModalOpen(true);
+    window.open("https://truintel.ai/contact?utm_source=marqait_promo&utm_medium=cta", "_blank", "noopener,noreferrer");
   };
 
   const closeWaitlistModal = () => {
@@ -103,7 +103,7 @@ export default function AiAgentHero() {
               cursor: "pointer",
             }}
           >
-            Book a Free Consultation
+            Book a TruIntel Demo
           </button>
         </div>
       </div>

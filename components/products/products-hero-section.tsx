@@ -161,7 +161,7 @@ export default function AiPowerhouseHero() {
 
           {/* CTA Button */}
           <a
-            href="https://app.marqait.com/"
+            href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer mx-auto inline-flex items-center transition-all duration-200 justify-center gap-2"
@@ -184,7 +184,7 @@ export default function AiPowerhouseHero() {
               color: "#F2F0F5",
             }}
           >
-            Get Started Now
+            Get Started with TruIntel
             <Image
               src="/icons/arrow.svg"
               alt="arrow-right"
