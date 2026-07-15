@@ -30,8 +30,8 @@ export function openTruIntelAnnouncement() {
   window.dispatchEvent(new Event(TRUINTEL_ANNOUNCE_EVENT));
 }
 
-const AUDIT_URL =
-  "https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=pause-modal";
+const PRIMARY_URL =
+  "https://truintel.ai/?utm_source=marqait_promo&utm_medium=pause-modal";
 const EXPLORE_URL =
   "https://truintel.ai/?utm_source=marqait_promo&utm_medium=pause-modal";
 
@@ -199,7 +199,7 @@ export default function TruIntelAnnouncementModal() {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
-              href={AUDIT_URL}
+              href={PRIMARY_URL}
               onClick={close}
               className="group inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#8C45FF] to-emerald-500 px-6 py-3.5 text-sm font-semibold text-white transition-opacity duration-200 hover:opacity-90"
             >
