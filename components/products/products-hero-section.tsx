@@ -161,7 +161,7 @@ export default function AiPowerhouseHero() {
 
           {/* CTA Button */}
           <a
-            href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
+            data-ti-cta href="https://app.truintel.ai/register"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer mx-auto inline-flex items-center transition-all duration-200 justify-center gap-2"

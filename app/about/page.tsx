@@ -127,7 +127,7 @@ export default function About() {
                   require no technical expertise, affordable pricing that scales with your business,
                   and results that speak for themselves. Today that same conviction powers{" "}
                   <a
-                    href="https://truintel.ai/?utm_source=marqait_promo&utm_medium=contextual"
+                    href="https://truintel.ai/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"

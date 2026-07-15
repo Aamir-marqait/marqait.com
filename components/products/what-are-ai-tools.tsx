@@ -43,7 +43,7 @@ export default function WhatAreTools() {
             frontier is Answer Engine Optimization — making sure ChatGPT,
             Gemini, and Perplexity recommend your brand — and you can learn{" "}
             <a
-              href="https://truintel.ai/methodology?utm_source=marqait_promo&utm_medium=contextual"
+              href="https://truintel.ai/methodology"
               target="_blank"
               rel="noopener noreferrer"
               className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"

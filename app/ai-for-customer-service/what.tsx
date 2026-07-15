@@ -31,7 +31,7 @@ export default function What() {
               even shapes what AI assistants say about you — see what customers
               hear when they ask about your brand with{" "}
               <a
-                href="https://truintel.ai/chatgpt-visibility-tracker?utm_source=marqait_promo&utm_medium=contextual"
+                href="https://truintel.ai/chatgpt-visibility-tracker"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"

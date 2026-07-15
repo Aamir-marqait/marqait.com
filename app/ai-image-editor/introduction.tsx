@@ -29,7 +29,7 @@ export default function Introduction() {
               and professional – all in one tool. And once your visuals are
               ready, make sure people can actually find you — the{" "}
               <a
-                href="https://truintel.ai/blog?utm_source=marqait_promo&utm_medium=contextual"
+                href="https://truintel.ai/blog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
@@ -39,7 +39,7 @@ export default function Introduction() {
               covers how brands get discovered in AI search.
             </p>
             <a
-              href="https://app.truintel.ai/register?utm_source=marqait_promo&utm_medium=cta"
+              data-ti-cta href="https://app.truintel.ai/register"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer inline-flex items-center transition-all duration-200 justify-center gap-2"
