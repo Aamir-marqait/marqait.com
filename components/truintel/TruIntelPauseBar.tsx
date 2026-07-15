@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
 const AUDIT_URL =
-  "https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=pause-bar";
+  "https://truintel.ai/?utm_source=marqait_promo&utm_medium=pause-bar";
 
 /**
  * Slim site-wide announcement strip rendered at the top of the fixed header.

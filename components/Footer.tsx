@@ -34,7 +34,7 @@ export default function Footer() {
     truintel: Array<{ text: string; url: string }>;
   } = {
     truintel: [
-      { text: "AI Visibility Audit", url: "https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=footer" },
+      { text: "AI Visibility Audit", url: "https://truintel.ai/?utm_source=marqait_promo&utm_medium=footer" },
       { text: "AI Search Monitoring", url: "https://truintel.ai/ai-search-monitoring?utm_source=marqait_promo&utm_medium=footer" },
       { text: "ChatGPT Visibility Tracker", url: "https://truintel.ai/chatgpt-visibility-tracker?utm_source=marqait_promo&utm_medium=footer" },
       { text: "Gemini Visibility Tracker", url: "https://truintel.ai/gemini-visibility-tracker?utm_source=marqait_promo&utm_medium=footer" },

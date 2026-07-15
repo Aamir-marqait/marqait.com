@@ -27,7 +27,7 @@ export default function Introduction() {
               create best logos that stand out. A logo is step one — being
               recommended by ChatGPT and Google AI Overviews is the next; a{" "}
               <a
-                href="https://truintel.ai/website-audit?utm_source=marqait_promo&utm_medium=contextual"
+                href="https://truintel.ai/?utm_source=marqait_promo&utm_medium=contextual"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-emerald-300 underline decoration-emerald-400/40 underline-offset-2 hover:text-emerald-200"
