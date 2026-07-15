@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelShowcase } from "@/components/truintel";
+
 const AITools = () => {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
@@ -38,6 +40,7 @@ const AITools = () => {
         <OurPowerfulTools />
         <KeyBenefits />
         <WhatAreTools />
+        <TruIntelShowcase />
         <FaqSection />
         <FinalCtaSection />
       </div>

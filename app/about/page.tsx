@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelSpotlight } from "@/components/truintel";
+
 export default function About() {
 
   return (
@@ -210,6 +212,14 @@ export default function About() {
           </div>
         </div>
       </div>
+      <TruIntelSpotlight
+        heading="The same team also built TruIntel"
+        points={[
+          "AI Search Monitoring across ChatGPT, Gemini, Perplexity & Google AI",
+          "SEO intelligence and competitor research in one place",
+          "An AI CMS that creates and optimizes content at scale",
+        ]}
+      />
     </div>
   );
 }

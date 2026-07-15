@@ -22,12 +22,15 @@ export const metadata: Metadata = {
   }
 };
 
+import { TruIntelShowcase } from "@/components/truintel";
+
 const Products = () => {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
       <div className="w-full max-w-none">
         <ProductsHeroSection />
         <AIProductsSection />
+        <TruIntelShowcase />
       </div>
     </div>
   );

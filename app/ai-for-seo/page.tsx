@@ -8,6 +8,7 @@ import OurSeoServices from "./our-seo-services";
 import BenefitsSection from "./benefits-section";
 import FaqSection from "./faq-section";
 import ContactSection from "../../components/ai-solution-contact";
+import { TruIntelSpotlight } from "@/components/truintel";
 
 export const metadata = {
   title: "AI for SEO - AI SEO Automation Services | Marqait AI",
@@ -32,6 +33,14 @@ function page() {
       <OurSeoServices />
       <BenefitsSection />
       <FaqSection />
+      <TruIntelSpotlight
+        heading="AI search is the new SEO. Are you visible?"
+        points={[
+          "See how ChatGPT, Gemini & Perplexity cite your brand",
+          "Find the AI queries your competitors win — and you don't",
+          "Get a clear action plan to rank in AI answers",
+        ]}
+      />
       <ContactSection />
     </div>
   );

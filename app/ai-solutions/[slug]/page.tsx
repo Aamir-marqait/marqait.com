@@ -67,6 +67,8 @@ export async function generateStaticParams() {
   return slugs.map((slug: string) => ({ slug }));
 }
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default async function AISolutionPage(
   { params }: { params: Promise<RouteParams> }
 ) {
@@ -110,6 +112,7 @@ export default async function AISolutionPage(
       />
 
       <AISolutionPageClient solution={solution} />
+      <TruIntelCTASection />
     </>
   );
 }

@@ -25,6 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelBanner } from "@/components/truintel";
+
 export default function TermsOfService() {
 
   return (
@@ -440,6 +442,7 @@ export default function TermsOfService() {
           </div>
         </div>
       </div>
+      <TruIntelBanner />
     </div>
   );
 }

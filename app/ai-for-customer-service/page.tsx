@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   description: "Marqait AI provides AI solutions for customer service to automate responses, deliver instant support and improve customer care efficiency.",
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 function page() {
   return (
     <div className="bg-black">
@@ -26,6 +28,9 @@ function page() {
       <IndustriesSection />
       <AIAgentBenefits />
       <FaqSection />
+      <TruIntelCTASection
+        subheading="Support starts long before the ticket — customers ask ChatGPT, Gemini and Perplexity first. TruIntel shows what AI says about your brand so you can shape the answer."
+      />
       <ContactSection />
     </div>
   );

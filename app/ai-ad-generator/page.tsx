@@ -29,6 +29,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelBanner } from "@/components/truintel";
+
 export default function AISocialMediaPostGenerator() {
   return (
     <div className="min-h-screen bg-[#05000A] w-full overflow-x-hidden">
@@ -39,6 +41,7 @@ export default function AISocialMediaPostGenerator() {
       <Benefits />
       <BrandPage />
       <MadeEveryBrand />
+      <TruIntelBanner message="Great ads win clicks. TruIntel wins the AI answer before the click." />
       <FaqSection />
       <FinalCtaSection />
     </div>

@@ -50,6 +50,8 @@ export async function generateStaticParams() {
   }));
 }
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default async function DynamicPage(
   { params }: { params: Promise<RouteParams> }
 ) {
@@ -61,7 +63,12 @@ export default async function DynamicPage(
     notFound();
   }
 
-  return <DynamicPageClient page={page} />;
+  return (
+    <>
+      <DynamicPageClient page={page} />
+      <TruIntelCTASection />
+    </>
+  );
 }
 
 export const revalidate = 3600;

@@ -16,6 +16,8 @@ export const metadata: Metadata = {
     "Marqait AI provides AI solutions for Retail to boost sales, personalize shopping, optimize inventory, and improve customer experience.",
 };
 
+import { TruIntelSpotlight } from "@/components/truintel";
+
 function page() {
   return (
     <div className="bg-black">
@@ -27,6 +29,15 @@ function page() {
       <IndustriesSection />
       <AIAgentBenefits />
       <FaqSection />
+      <TruIntelSpotlight
+        reverse
+        heading="Own the AI answer for every product category you sell"
+        points={[
+          "Track brand mentions across ChatGPT, Gemini & Perplexity",
+          "Benchmark against competing retailers in AI results",
+          "Turn AI visibility gaps into an action plan",
+        ]}
+      />
       <ContactSection />
     </div>
   );

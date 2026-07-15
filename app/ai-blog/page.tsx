@@ -26,6 +26,8 @@ export const metadata: Metadata = {
   }
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default async function Blog() {
   // Fetch all published blog posts
   const blogPosts = await getAllPublishedPosts();
@@ -35,6 +37,7 @@ export default async function Blog() {
       {/* <BlogHeroSection /> */}
       <BlogPostsSection blogPosts={blogPosts} />
       <AllBlogPostsSection blogPosts={blogPosts} />
+      <TruIntelCTASection />
     </div>
   );
 }

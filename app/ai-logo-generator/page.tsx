@@ -32,6 +32,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default function AILogoGenerator() {
   return (
     <>
@@ -68,6 +70,7 @@ export default function AILogoGenerator() {
         <LogoCategoriesSection />
         <ProTipsSection />
         <ComparisonTableSection />
+        <TruIntelCTASection />
         <FaqSection />
         <FinalCtaSection />
       </div>

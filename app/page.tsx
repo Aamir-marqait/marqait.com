@@ -17,6 +17,7 @@ import FreeTierAgents from "@/components/home/featured-agents-free-tier";
 import ProTierAgents from "@/components/home/featured-agents-pro-tier";
 import UniqueFeatured from "@/components/home/featured-unique";
 import MarketingTransforms from "@/components/home/marketing-transforms";
+import { TruIntelShowcase } from "@/components/truintel";
 
 export default function Home() {
   const contactFormRef = useRef<HTMLDivElement>(null);
@@ -98,6 +99,7 @@ export default function Home() {
         <UniqueFeatured />
         <MarketingTransforms />
         {/* <ClientTestimonialsSection /> */}
+        <TruIntelShowcase />
         <ContactFormSection ref={contactFormRef} />
         {/* <FAQSection /> */}
         <Toast

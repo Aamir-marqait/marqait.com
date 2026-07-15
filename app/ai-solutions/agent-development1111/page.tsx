@@ -26,6 +26,8 @@ export const metadata: Metadata = {
   }
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 export default function AIAgentDevelopment() {
   return (
      <div className="min-h-screen bg-gradient-to-br from-[#1a0b2e] via-[#16213e] to-[#0f051a] w-full overflow-x-hidden">
@@ -940,6 +942,7 @@ export default function AIAgentDevelopment() {
   </div>
 </section>
 
+      <TruIntelCTASection />
     </div>
   );
 }

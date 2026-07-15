@@ -16,6 +16,8 @@ export const metadata: Metadata = {
     "Marqait AI provides AI solutions for healthcare to improve diagnostics, automate workflows, enhance patient care, and optimize hospital efficiency.",
 };
 
+import { TruIntelCTASection } from "@/components/truintel";
+
 function page() {
   return (
     <div className="bg-black">
@@ -27,6 +29,17 @@ function page() {
       <IndustriesSection />
       <AIAgentBenefits />
       <FaqSection />
+      <TruIntelCTASection
+        heading={
+          <>
+            Patients ask AI before they ask you.{" "}
+            <span className="bg-gradient-to-r from-emerald-300 via-green-400 to-emerald-500 bg-clip-text text-transparent">
+              Be the trusted answer.
+            </span>
+          </>
+        }
+        subheading="TruIntel monitors how ChatGPT, Gemini, Perplexity and Google AI describe your practice or brand — so you build trust at the very first touchpoint."
+      />
       <ContactSection />
     </div>
   );

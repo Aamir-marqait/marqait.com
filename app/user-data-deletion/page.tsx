@@ -11,6 +11,8 @@ const deleteDataFormSchema = z.object({
   consent: z.boolean().refine(val => val === true, "You must confirm your request to proceed")
 });
 
+import { TruIntelBanner } from "@/components/truintel";
+
 export default function DeleteUserDataPage() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -526,6 +528,7 @@ export default function DeleteUserDataPage() {
           </div>
         </div>
       </div>
+      <TruIntelBanner />
     </div>
   );
 }

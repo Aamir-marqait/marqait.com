@@ -195,6 +195,8 @@ function formatCategoryName(category: string): string {
 
 
 // Make the page async and await params
+import { TruIntelCallout } from "@/components/truintel";
+
 export default async function BlogPost(
   { params }: { params: Promise<RouteParams> }
 ) {
@@ -372,6 +374,7 @@ export default async function BlogPost(
   <article className="prose prose-invert prose-lg max-w-none prose-headings:font-inter prose-p:font-inter prose-li:font-inter prose-h2:mt-10 prose-h2:mb-3 prose-h3:mt-8 prose-h3:mb-2">
     {renderBlogContent(blogPost.content)}
   </article>
+  <TruIntelCallout className="mt-10 not-prose" />
 </div>
 
 

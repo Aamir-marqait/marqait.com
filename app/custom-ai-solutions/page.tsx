@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   description: "Marqait AI is a leading AI software development company in India. We offer custom AI solutions that automate repetitive tasks and increase productivity.",
 };
 
+import { TruIntelShowcase } from "@/components/truintel";
+
 function page() {
   return (
     <div className="bg-black">
@@ -26,6 +28,7 @@ function page() {
       <IndustriesSection />
       <AIAgentBenefits />
       <FaqSection />
+      <TruIntelShowcase />
       <ContactSection />
     </div>
   );
