@@ -119,15 +119,20 @@ export function middleware(request: NextRequest) {
     const ip =
       request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "";
 
-    // Fire-and-forget — does NOT block or slow down the response
+    // Fire-and-forget — does NOT block or slow down the response.
+    // client_ip carries the real visitor IP in the body: TruIntel ignores
+    // client-supplied X-Forwarded-For (spoofable), and without the real IP
+    // its crawler-IP verification would flag every genuine Googlebot/GPTBot
+    // visit reported from here as a "spoofed UA".
     fetch(TRUINTEL_API, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "X-Forwarded-For": ip },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         brand_id: TRUINTEL_BRAND_ID,
         page: request.nextUrl.pathname + request.nextUrl.search,
         user_agent: ua,
         referrer: request.headers.get("referer") || null,
+        client_ip: ip,
         is_new_session: true,
         is_new_visitor: true,
       }),
