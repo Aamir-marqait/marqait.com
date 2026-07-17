@@ -153,12 +153,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           id="truintel-config"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.TruIntel={brandId:'1adcb9df-37ee-4823-81c3-79c52bde37df',apiUrl:'https://api.truintel.ai/api/v1'};`,
+            __html: `window.TruIntel={brandId:'b14f0cff-c034-45ae-a39b-5dfe0e8011da',apiUrl:'https://api.truintel.ai/api/v1'};`,
           }}
         />
-        {/* Served from the /i/t.js alias — the old /traffic/tracker.js path is on
-            ad-blocker filter lists and got ERR_BLOCKED_BY_CLIENT'd for visitors
-            running uBlock/Brave/AdGuard. */}
         <Script
           src="https://api.truintel.ai/api/v1/i/t.js"
           strategy="afterInteractive"
