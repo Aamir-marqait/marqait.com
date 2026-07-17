@@ -2,8 +2,10 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const TRUINTEL_BRAND_ID = "1adcb9df-37ee-4823-81c3-79c52bde37df";
+const TRUINTEL_BRAND_ID = "b14f0cff-c034-45ae-a39b-5dfe0e8011da";
 const TRUINTEL_API = "https://api.truintel.ai/api/v1/i/e";
+// Proves this request comes from YOUR server — required for client_ip to be trusted
+const TRUINTEL_KEY = "1cd0d11fbab153c8ca712f40a7a44fcd4311a785";
 
 // AI crawlers — OpenAI, Anthropic, Google, Meta, xAI, etc.
 const AI_CRAWLERS = [
@@ -116,14 +118,12 @@ export function middleware(request: NextRequest) {
   const ua = request.headers.get("user-agent") || "";
 
   if (isBot(ua)) {
+    // Real visitor IP — sent as client_ip in the body so TruIntel can
+    // verify crawler IPs against the operators' published ranges.
     const ip =
       request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "";
 
-    // Fire-and-forget — does NOT block or slow down the response.
-    // client_ip carries the real visitor IP in the body: TruIntel ignores
-    // client-supplied X-Forwarded-For (spoofable), and without the real IP
-    // its crawler-IP verification would flag every genuine Googlebot/GPTBot
-    // visit reported from here as a "spoofed UA".
+    // Fire-and-forget — does NOT block or slow down the response
     fetch(TRUINTEL_API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -133,6 +133,7 @@ export function middleware(request: NextRequest) {
         user_agent: ua,
         referrer: request.headers.get("referer") || null,
         client_ip: ip,
+        integration_key: TRUINTEL_KEY,
         is_new_session: true,
         is_new_visitor: true,
       }),
